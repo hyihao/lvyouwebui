@@ -1,0 +1,559 @@
+﻿<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+    <title></title>
+    <link href="Css/Basic.css" rel="stylesheet" />
+    <link href="Css/zhusu/index.css" rel="stylesheet" />
+
+    <script src="JavaScript/jquery-1.4.4.min.js"></script>
+    <script>
+        $(function () {
+            (function ($) {
+                $.fn.Slide = function (options) {
+                    var defaults = {
+                        item: "slide-item",
+                        nav: "slide-nav",
+                        nowClass: "nownav"
+                    },
+                        options = options || {};
+                    options = $.extend(defaults, options);
+                    var cont = $(this),
+                        item = cont.find("." + options.item),
+                        nav = cont.find("." + options.nav),
+                        curr = options.nowClass,
+                        len = item.length,
+                        width = item.width(),
+                        html = "",
+                        index = order = 0,
+                        timer = null,
+                        lw = "-" + width + "px",
+                        rw = width + "px",
+                        newtimer;
+                    item.each(function (i) {
+                        $(this).hover(function () {
+                            _stop();
+                        }, function () {
+                            auto();
+                        }).css({ left: i === index ? 0 : (i > index ? width + 'px' : '-' + width + 'px') });
+                        html += '<a href="javascript:">' + (i + 1) + '</a>';
+                    });
+                    html += '<div class="nav-mask"></div>';
+                    nav.html(html);
+                    var navitem = nav.find("a");
+                    navitem.eq(index).addClass(curr);
+                    function anim(index, dir) {
+                        if (order === len - 1 && dir === 'next') {
+                            item.eq(order).stop(true, false).animate({
+                                left: lw
+                            });
+                            item.eq(index).css({
+                                left: rw
+                            }).stop(true, false).animate({
+                                left: 0
+                            });
+                        } else if (order === 0 && dir === 'prev') {
+                            item.eq(0).stop(true, false).animate({
+                                left: rw
+                            });
+                            item.eq(index).css({
+                                left: lw
+                            }).stop(true, false).animate({
+                                left: 0
+                            });
+
+                        } else {
+                            item.eq(order).stop(true, false)
+                                .animate({
+                                    left: index > order ? lw : rw
+                                });
+                            item.eq(index).stop(true, false)
+                                .css({
+                                    left: index > order ? rw : lw
+                                })
+                                .animate({
+                                    left: 0
+                                });
+                        }
+                        order = index;
+                        navitem.removeClass(curr).eq(index).addClass(curr);
+                    }
+
+                    function next() {
+                        index = index >= len - 1 ? 0 : index + 1;
+                        anim(index, 'next');
+                    }
+
+                    function prev() {
+                        index = index <= 0 ? len - 1 : index - 1;
+                        anim(index, 'prev');
+                    }
+
+                    function auto() {
+                        timer = setInterval(next, 5000);
+                    }
+
+                    function _stop() {
+                        clearInterval(timer);
+                    }
+
+                    return this.each(function () {
+                        auto();
+                        navitem.hover(function () {
+                            _stop();
+                            var i = navitem.index(this);
+                            if (/nownav/.test($(this).attr('class'))) {
+                                return false;
+                            }
+                            if (newtimer) clearTimeout(newtimer);
+                            newtimer = setTimeout(function () {
+                                anim(i, this);
+                            }, 250);
+                        }, auto);
+                        $("#next,#prev").hover(function () {
+                            _stop();
+                        }, auto);
+                        $('#next').on('click', next);
+                        $('#prev').on('click', prev);
+                    });
+                };
+            })(jQuery);
+            $("#slide").Slide();
+
+
+            $('#searchValue').bind({
+                "focus": function () {
+                    $('#lblSearchTips').hide();
+                },
+                "blur": function () {
+                    var strSearchKey = $(this).val();
+                    strSearchKey = $.trim(strSearchKey);
+                    if (strSearchKey == '') {
+                        $('#lblSearchTips').show();
+                    } else {
+                        $('#lblSearchTips').hide();
+                    }
+                }
+            });
+
+            $('#z-search-btn').click(function () {
+                if (!$('#searchValue').val()) {
+                    $('#searchValue').focus();
+                }
+            });
+        })
+    </script>
+</head>
+<body>
+    <div class="core-banner clearfix">
+        <div class="slide" id="slide">
+            <ul class="slide-cont">
+                <li class="slide-item" style="left: 0px;">
+                    <a href="#" title="" target="blank">
+                        <img src="http://img.elongstatic.com/hotel/indexbanner/ad3_150423.jpg" alt="" />
+                    </a>
+                </li>
+                <li class="slide-item" style="left: 0px;">
+                    <a href="#" title=" 城市建造类游戏推荐" target="blank">
+                        <img src="http://img.elongstatic.com/hotel/indexbanner/ad3_150710.jpg" alt="" />
+                    </a>
+                </li>
+                <li class="slide-item" style="left: 0px;">
+                    <a href="#" title=" 城市建造类游戏推荐" target="blank">
+                        <img src="http://lvyou.baidu.com/static/business/widget/hotel/main/maincolumn/img/bg_666667f.jpg" alt="" />
+                    </a>
+                </li>
+            </ul>
+            <div class="slide-nav">
+            </div>
+            <a href="javascript:;" title="" id="next"></a>
+            <a href="javascript:;" title="" id="prev"></a>
+        </div>
+        <div class="search_wrap clearfix">
+            <h2>你要住宿的酒店，这里都有了</h2>
+            <p>全国50万+精选酒店，等你睡</p>
+            <div class="zhususearch clearfix">
+                <div class="f_l">
+                    <div class="input-wrapper" id="z-name-wrapper">
+                        <input type="text" value="" name="q" maxlength="100" autocomplete="off" placeholder="" id="searchValue" class="ac_input">
+                        <label for="searchValue" id="lblSearchTips" style="position: absolute; top: 1px; left: 11px; font: 400 14px/22px 'Microsoft Yahei'; line-height: 38px; display: block;">
+                            请输入酒店、城市
+                        </label>
+                    </div>
+                </div>
+                <div class="f_l">
+                    <div class="check_in">
+                        <div class="input-wrapper">
+                            <input name="date" type="text" id="j-date-picker" class="hasDatepicker" value="2015-09-16">
+                            <label class="icon iconfont icon-date" for="j-date-picker">&#xe651;</label>
+                        </div>
+                    </div>
+
+                    <div class="check_in">
+                        <div class="input-wrapper" id="j-days-select-change">
+                            <input type="text" placeholder="天数">
+
+                            <div class="up">
+                                <i></i>
+                            </div>
+                            <div class="down">
+                                <i></i>
+                            </div>
+                        </div>
+                    </div>
+
+                </div>
+                <div class="f_l">
+                    <button class="search-btn" id="z-search-btn">搜索</button>
+                </div>
+            </div>
+            <div class="zhusu_hot_search clearfix">
+                <a href="" target="_blank">北京</a>
+                <a href="" target="_blank">上海</a>
+                <a href="" target="_blank">广州</a>
+                <a href="" target="_blank">成都</a>
+                <a href="" target="_blank">杭州</a>
+                <a href="" target="_blank">南京</a>
+                <a href="" target="_blank">深圳</a>
+                <a href="" target="_blank">西安</a>
+                <a href="" target="_blank">珠海</a>
+                <a href="" target="_blank">厦门</a>
+            </div>
+        </div>
+    </div>
+    <div class="intro3 clearfix">
+        <div class="hot_p_w_title clearfix">
+            <div class="span4">
+                <a href="#" target="_blank">
+                    <span class="s_process s_p_1 f_l"></span>
+                    <span class="f_l process_title">
+                        <h4 class="colorRed">海量酒店</h4>
+                        <em>100多家酒店预订网站 实时获取全网酒店最低价</em>
+                    </span>
+                </a>
+            </div>
+            <div class="span4">
+                <a href="#" target="_blank">
+                    <span class="s_process s_p_2 f_l"></span>
+                    <span class="f_l process_title">
+                        <h4 class="colorRed">简单搜索</h4>
+                        <em>一次简单搜索，比较所有顶级旅行网站。就是这么简单！</em>
+                    </span>
+                </a>
+            </div>
+            <div class="span4">
+                <a href="#" target="_blank">
+                    <span class="s_process s_p_3 f_l"></span>
+                    <span class="f_l process_title">
+                        <h4 class="colorRed">精品精选</h4>
+                        <em>360个城市的贴心服务，精品酒店，品质保障</em>
+                    </span>
+                </a>
+            </div>
+            <div class="span4 span4last">
+                <a href="#" target="_blank">
+                    <span class="s_process s_p_4 f_l"></span>
+                    <span class="f_l process_title">
+                        <h4 class="colorRed">快捷支付</h4>
+                        <em>支付宝、微信支付、银联支付、财付通等多种支付方式可选</em>
+                    </span>
+                </a>
+            </div>
+
+        </div>
+    </div>
+<div class="hot_p_w_title clearfix">
+    <h3>热门城市酒店住宿 <span>珠海 <i class="icon iconfont" id="weatherImg">&#xe6d8;</i></span></h3>
+    <p class="en-t">Hot City Hotel</p>
+    </div>
+<div class="hot_p_w_title clearfix">
+    <ul class="hot_city_hotel clearfix">
+        <li>
+            <a href="/view/501" target="_self">
+                <div class="course-list-img">
+                    <img width="240" height="135" alt="北京" src="http://webmap1.map.bdimg.com/maps/services/thumbnails?width=525&height=295&quality=100&align=middle,middle&src=http://hiphotos.baidu.com/lvpics/pic/item/e824b899a9014c08705e1d3e0a7b02087af4f4c7.jpg">
+                </div>
+                <h5>
+                    <span>珠海2000年大酒店</span>
+                </h5>
+                <div class="region clearfix">
+                    <span class="region-keyword_1">香洲区</span>
+                    <span class="region-keyword_2">拱北区</span>
+                </div>
+                <div class="text-ellipsis address"><i class="icon iconfont">&#xe68e;</i>香洲人民东路121号(公交车站滨海楼站旁)</div>
+               
+                <div class="tips clearfix">
+                    <span class="f_l price">
+                        ¥ <dfn>197</dfn>起
+                    </span>
+                </div>
+
+
+
+                <span class="time-label">
+                    最新预订：2小时前
+                </span>
+            </a>
+        </li>
+        <li>
+            <a href="/view/501" target="_self">
+                <div class="course-list-img">
+                    <img width="240" height="135" alt="北京" src="http://webmap1.map.bdimg.com/maps/services/thumbnails?width=525&height=295&quality=100&align=middle,middle&src=http://hiphotos.baidu.com/lvpics/pic/item/e824b899a9014c08705e1d3e0a7b02087af4f4c7.jpg">
+                </div>
+                <h5>
+                    <span>珠海2000年大酒店</span>
+                </h5>
+                <div class="region clearfix">
+                    <span class="region-keyword_1">香洲区</span>
+                    <span class="region-keyword_2">拱北区</span>
+                </div>
+                <div class="text-ellipsis">香洲人民东路121号(公交车站滨海楼站旁)</div>
+                <div class="tips clearfix">
+                    <span class="f_l price">
+                        ¥ <dfn>197</dfn>
+                    </span>
+                </div>
+                <span class="time-label">
+                    最新预订：2小时前
+                </span>
+            </a>
+        </li>
+        <li>
+            <a href="/view/501" target="_self">
+                <div class="course-list-img">
+                    <img width="240" height="135" alt="北京" src="http://webmap1.map.bdimg.com/maps/services/thumbnails?width=525&height=295&quality=100&align=middle,middle&src=http://hiphotos.baidu.com/lvpics/pic/item/e824b899a9014c08705e1d3e0a7b02087af4f4c7.jpg">
+                </div>
+                <h5>
+                    <span>珠海2000年大酒店</span>
+                </h5>
+                <div class="region clearfix">
+                    <span class="region-keyword_1">香洲区</span>
+                    <span class="region-keyword_2">拱北区</span>
+                </div>
+                <div class="text-ellipsis">香洲人民东路121号(公交车站滨海楼站旁)</div>
+                <div class="tips clearfix">
+                    <span class="f_l price">
+                        ¥ <dfn>197</dfn>
+                    </span>
+                </div>
+                <span class="time-label">
+                    最新预订：2小时前
+                </span>
+            </a>
+        </li>
+        <li>
+            <a href="/view/501" target="_self">
+                <div class="course-list-img">
+                    <img width="240" height="135" alt="北京" src="http://webmap1.map.bdimg.com/maps/services/thumbnails?width=525&height=295&quality=100&align=middle,middle&src=http://hiphotos.baidu.com/lvpics/pic/item/e824b899a9014c08705e1d3e0a7b02087af4f4c7.jpg">
+                </div>
+                <h5>
+                    <span>珠海2000年大酒店</span>
+                </h5>
+                <div class="region clearfix">
+                    <span class="region-keyword_1">香洲区</span>
+                    <span class="region-keyword_2">拱北区</span>
+                </div>
+                <div class="text-ellipsis">香洲人民东路121号(公交车站滨海楼站旁)</div>
+                <div class="tips clearfix">
+                    <span class="f_l price">
+                        ¥ <dfn>197</dfn>
+                    </span>
+                </div>
+                <span class="time-label">
+                    最新预订：2小时前
+                </span>
+            </a>
+        </li>
+        <li>
+            <a href="/view/501" target="_self">
+                <div class="course-list-img">
+                    <img width="240" height="135" alt="北京" src="http://webmap1.map.bdimg.com/maps/services/thumbnails?width=525&height=295&quality=100&align=middle,middle&src=http://hiphotos.baidu.com/lvpics/pic/item/e824b899a9014c08705e1d3e0a7b02087af4f4c7.jpg">
+                </div>
+                <h5>
+                    <span>珠海2000年大酒店</span>
+                </h5>
+                <div class="region clearfix">
+                    <span class="region-keyword_1">香洲区</span>
+                    <span class="region-keyword_2">拱北区</span>
+                </div>
+                <div class="text-ellipsis">香洲人民东路121号(公交车站滨海楼站旁)</div>
+                <div class="tips clearfix">
+                    <span class="f_l price">
+                        ¥ <dfn>197</dfn>
+                    </span>
+                </div>
+                <span class="time-label">
+                    最新预订：2小时前
+                </span>
+            </a>
+        </li>
+        <li>
+            <a href="/view/501" target="_self">
+                <div class="course-list-img">
+                    <img width="240" height="135" alt="北京" src="http://webmap1.map.bdimg.com/maps/services/thumbnails?width=525&height=295&quality=100&align=middle,middle&src=http://hiphotos.baidu.com/lvpics/pic/item/e824b899a9014c08705e1d3e0a7b02087af4f4c7.jpg">
+                </div>
+                <h5>
+                    <span>珠海2000年大酒店</span>
+                </h5>
+                <div class="region clearfix">
+                    <span class="region-keyword_1">香洲区</span>
+                    <span class="region-keyword_2">拱北区</span>
+                </div>
+                <div class="text-ellipsis address">香洲人民东路121号(公交车站滨海楼站旁)</div>
+                <div class="tips clearfix">
+                    <span class="f_l price">
+                        ¥ <dfn>197</dfn>
+                    </span>
+                </div>
+                <span class="time-label">
+                    最新预订：2小时前
+                </span>
+            </a>
+        </li>
+    </ul>
+    <!--<img src="Images/20150917210502.png"/>-->
+</div>
+    <div class="intro2">
+        <h4>热门品牌</h4>
+        <p class="en-t">Tuijian Service</p>
+        <div class="hot_p_w_title clearfix">
+            <ul class="recom_brand clearfix">
+                <li class="icon-feature1" data-lazyclass="icon-feature1">
+                    <a class="linkt" title="洲际酒店集团" href="http://promotion.elong.com/hotel/cn/brand/ihg/index.html" target="_blank">
+                        <i class="zhouji"></i>
+                        <p>洲际酒店集团</p>
+                    </a>
+                </li>
+                <li class="icon-feature1" data-lazyclass="icon-feature1">
+                    <a class="linkt" title="万豪酒店集团" href="http://promotion.elong.com/hotel/cn/brand/ihg/index.html" target="_blank">
+                        <i class="wanhao"></i>
+                        <p>万豪酒店集团</p>
+                    </a>
+                </li>
+                <li class="icon-feature1" data-lazyclass="icon-feature1">
+                    <a class="linkt" title="如家快捷酒店" href="http://promotion.elong.com/hotel/cn/brand/ihg/index.html" target="_blank">
+                        <i class="rujia"></i>
+                        <p>如家</p>
+                    </a>
+                </li>
+
+                <li class="icon-feature1" data-lazyclass="icon-feature1">
+                    <a class="linkt" title="希尔顿" href="http://promotion.elong.com/hotel/cn/brand/ihg/index.html" target="_blank">
+                        <i class="xierdun"></i>
+                        <p>希尔顿</p>
+                    </a>
+                </li>
+                <li class="recom_brand_last" data-lazyclass="icon-feature1">
+                    <a class="linkt" title="七天连锁酒店" href="http://promotion.elong.com/hotel/cn/brand/ihg/index.html" target="_blank">
+                        <i class="qitian"></i>
+                        <p>7天</p>
+                    </a>
+                </li>
+
+                <li class="icon-feature1" data-lazyclass="icon-feature1">
+                    <a class="linkt" title="雅诗阁酒店" href="http://promotion.elong.com/hotel/cn/brand/ihg/index.html" target="_blank">
+                        <i class="yashige"></i>
+                        <p>雅诗阁</p>
+                    </a>
+                </li>
+                <li class="icon-feature1" data-lazyclass="icon-feature1">
+                    <a class="linkt" title="桔子水晶酒店" href="http://promotion.elong.com/hotel/cn/brand/ihg/index.html" target="_blank">
+                        <i class="juzi"></i>
+                        <p>桔子酒店</p>
+                    </a>
+                </li>
+                <li class="icon-feature1" data-lazyclass="icon-feature1">
+                    <a class="linkt" title="莫泰168酒店" href="http://promotion.elong.com/hotel/cn/brand/ihg/index.html" target="_blank">
+                        <i class="motai"></i>
+                        <p>莫泰</p>
+                    </a>
+                </li>
+                <li class="icon-feature1" data-lazyclass="icon-feature1">
+                    <a class="linkt" title="华住酒店" href="http://promotion.elong.com/hotel/cn/brand/ihg/index.html" target="_blank">
+                        <i class="hanting"></i>
+                        <p>汉庭</p>
+                    </a>
+                </li>
+                <li class="icon-feature1" data-lazyclass="icon-feature1">
+                    <a class="linkt" title="锦江之星" href="http://promotion.elong.com/hotel/cn/brand/ihg/index.html" target="_blank">
+                        <i class="jinjiangzhixing"></i>
+                        <p>锦江之星</p>
+                    </a>
+                </li>
+                <li class="icon-feature1" data-lazyclass="icon-feature1">
+                    <a class="linkt" title="凯悦酒店集团" href="http://promotion.elong.com/hotel/cn/brand/ihg/index.html" target="_blank">
+                        <i class="kaiyue"></i>
+                        <p>凯悦酒店集团</p>
+                    </a>
+                </li>
+                <li class="icon-feature1" data-lazyclass="icon-feature1">
+                    <a class="linkt" title="喜达屋酒店" href="http://promotion.elong.com/hotel/cn/brand/ihg/index.html" target="_blank">
+                        <i class="xidawu"></i>
+                        <p>喜达屋酒店</p>
+                    </a>
+                </li>
+                <li class="icon-feature1" data-lazyclass="icon-feature1">
+                    <a class="linkt" title="洲际酒店集团" href="http://promotion.elong.com/hotel/cn/brand/ihg/index.html" target="_blank">
+                        <i class="xianggelila"></i>
+                        <p>香格里拉</p>
+                    </a>
+                </li>
+                <li class="icon-feature1" data-lazyclass="icon-feature1">
+                    <a class="linkt" title="布丁酒店" href="http://promotion.elong.com/hotel/cn/brand/ihg/index.html" target="_blank">
+                        <i class="buding"></i>
+                        <p>布丁酒店</p>
+                    </a>
+                </li>
+                <li class="icon-feature1" data-lazyclass="icon-feature1">
+                    <a class="linkt" title="速八酒店" href="http://promotion.elong.com/hotel/cn/brand/ihg/index.html" target="_blank">
+                        <i class="suba"></i>
+                        <p>速8</p>
+                    </a>
+                </li>
+            </ul>
+        </div>
+    </div>
+    <div class="intro1">
+        <h4>金牌服务</h4>
+        <p class="en-t">Gold Medal Service</p>
+        <ul>
+            <li class="i-1">
+                <h5 style="margin-top: 15px;">拒绝不安全产品</h5>
+                <p>121店专业品控团队，以消费者安全保障为前提，严审资质，精选各国好货</p>
+            </li>
+            <li class="i-3">
+                <h5 style="margin-top: 15px;">消费权威倡导者</h5>
+                <p>我说好，才是好！改变传统销售模式，净化商业环境，让我们自己成为市场权威倡导者</p>
+            </li>
+            <li class="i-2">
+                <h5 style="margin-top: 15px;">为好产品代言</h5>
+                <p>遇见好产品，光自己知道怎么行！分享我的体验，为好产品代言</p>
+            </li>
+            <li class="i-4">
+                <h5 style="color: #fc624a;">持续红包奖励</h5>
+                <p style="color: #fc624a;">动动手指，轻松分享；不影响工作，不耽误学习，在碎片化的时间里获得持续红包收入</p>
+            </li>
+            <li class="i-5">
+                <h5>年轻人的人脉乐园</h5>
+                <p>线下沙龙，精彩不断。与百万分享家团队做朋友，第一时间体验各款优质生活消费品</p>
+            </li>
+        </ul>
+    </div>
+ 
+
+    <div class="hot_p_w_title clearfix">
+        <div class="hot_p_w_head">
+            <h4>推荐品牌</h4>
+            <p class="en-t">Tuijian Service</p>
+            <ul>
+                <li class="icon-feature1" data-lazyclass="icon-feature1">
+                    <a class="linkt" title="洲际酒店集团" href="http://promotion.elong.com/hotel/cn/brand/ihg/index.html" target="_blank">
+                        <i class="zhouji"></i>
+                        <p>洲际酒店集团</p>
+                    </a>
+                </li>
+            </ul>
+        </div>
+    </div>
+</body>
+</html>

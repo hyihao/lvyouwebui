@@ -1,0 +1,105 @@
+﻿.container-title {
+margin-top:40px;
+}
+.mod_hd {
+  position: relative;
+  zoom: 1;
+  border-bottom: 2px solid #ff6701;
+  height: 54px;
+  padding-top: 20px;
+}
+.mod_hd h1 {
+  font-size: 30px;
+  font-weight: normal;
+  color: #ff6701;
+  margin-right: 20px;
+  display: inline;
+}
+.mod_hd .title_tips {
+  color: #999;
+  font-size: 14px;
+  display: inline;
+}
+.mod_hd .title_img {
+  position: absolute;
+  right: 40px;
+  bottom: 0;
+  width: 151px;
+  height: 61px;
+}
+.title_img {
+  background-image: url(../Images/mdd/ticket_bg.png);
+  background-repeat: no-repeat;
+}
+.mainfun
+{ 
+    margin: 10px -11px 0 -9px;
+    zoom: 1;
+    overflow: hidden;
+}
+.mainfun li
+{ 
+    float: left;
+    width: 300px;
+}
+.mainfun li a {
+height: 265px;
+display: block;
+position: relative;
+overflow: hidden;
+/*height: 270px;*/
+cursor: pointer;
+padding: 8px;
+border: 1px solid #fff;
+color: #666;
+}
+.mainfun .list_pic {
+width: 280px;
+height: 158px;
+display: block;
+background-color:#eee;
+}
+.fun_desp {
+  font-size: 16px;
+  margin-right: 2px;
+  color: #ff6701;
+  margin-bottom: 15px;
+}
+
+.mainfun .list_title {
+font-size: 16px;
+font-weight: normal;
+margin: 10px 0 9px;
+overflow: hidden;
+white-space: nowrap;
+text-overflow: ellipsis;
+color: #333;
+width: 100%;
+}
+.mainfun .list_time {
+  color: #ff6701;
+  margin-bottom: 10px;
+  width: 100%;
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  height: 18px;
+}
+ .mainfun li a:hover {
+background: #fff;
+text-decoration: none;
+border-color: #ff6701;
+}
+  .mainfun .base_price {
+  margin-bottom: 5px;
+}
+ .mainfun .base_price dfn {
+  font-size: 16px;
+  margin-left: 4px;
+}
+  .mainfun .base_price strong {
+  font: normal 24px tahoma,arial,sans-serif;
+  margin-right: 2px;
+}
+
+.list_title:hover{text-decoration:underline;}

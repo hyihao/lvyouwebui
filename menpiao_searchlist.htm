@@ -1,0 +1,1686 @@
+﻿<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head runat="server">
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>国内旅游|旅游门票|出游指南–奇比拉旅游</title>
+    <meta name="keywords" content="国内旅游,旅游排行排名,旅游景点" />
+    <meta name="description" content="最佳的国内旅游导向、精彩游记、旅游地图、交通出行、游玩路线、饮食、购物等旅游信息。" />
+    <link href="Css/Basic.css" rel="stylesheet" />
+    <link href="Css/index.css" rel="stylesheet" />
+    <link href="Css/jingdian.css" rel="stylesheet" />
+    <link href="Css/scrollbar/scrollbar.css" rel="stylesheet" type="text/css" />
+    <script src="JavaScript/jquery-1.4.4.min.js"></script>
+    <script src="JavaScript/scrollbar/jquery.mCustomScrollbar.min.js" type="text/javascript"></script>
+    <script src="JavaScript/banner.js" type="text/javascript"></script>
+    <script src="JavaScript/jquery.lazyload.js"></script>
+</head>
+<body>
+    <div class="narrow_page">
+        <div id="header">
+            <div class="nav-channel clearfix" role="navigation">
+                <div class="clsPanle">
+                    <ul class="nav-warpper">
+                        <li class="currenActived"><a href="#">首页</a> </li>
+                        <li class="actived"><a href="/spotdis.aspx">旅游景点</a> </li>
+                        <li><i class="hot">酒店预订</i> <a href="#">酒店住宿</a> </li>
+                        <li><a href="/menpiao_index.html">景点门票</a> </li>
+                        <li><a href="#">团购</a> </li>
+                        <li><a href="#">电影</a> </li>
+                        <li><a href="#">汽车票</a> </li>
+                        <li><a href="#">火车票</a> </li>
+                        <li><a href="#">飞机票</a> </li>
+                        <li><a href="#">演出票</a> </li>
+                        <li><a href="#">网购优惠券</a> </li>
+                        <li><i class="hot">2014航展门票购买</i> <a href="#">手机游戏</a> </li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+        <div class="menuNav">
+            <div class="clsPanle">
+                <div class="channel">
+                    <div class="cate_hd">
+                        <div class="cateall">
+                            <i></i><span class="at-name">珠海</span> <b></b>
+                        </div>
+                        <div class="changecity-box" id="changecity-box">
+                            <div class="at-city">
+                                <div class="gray-ban">
+                                    推荐城市</div>
+                                <div class="city-hot">
+                                    <a href="javascript:void(0)" cid="3" class="">北京</a><a href="javascript:void(0)"
+                                        cid="25" class="">上海</a><a href="javascript:void(0)" cityid="80" class="">广州</a><a
+                                            href="javascript:void(0)" cityid="91" class="">深圳</a><a href="javascript:void(0)"
+                                                cityid="324" class="">成都</a><a href="javascript:void(0)" cityid="226" class="">苏州</a><a
+                                                    href="javascript:void(0)" cityid="383" class="">杭州</a><a href="javascript:void(0)"
+                                                        cid="394" class="">重庆</a><a href="javascript:void(0)" cityid="192" class="">武汉</a><a
+                                                            href="javascript:void(0)" cityid="373">昆明</a><a href="javascript:void(0)" cityid="317">西安</a><a
+                                                                href="javascript:void(0)" cityid="295">威海</a><a href="javascript:void(0)" cid="395"
+                                                                    class="">香港</a>
+                                </div>
+                                <div class="gray-ban">
+                                    全国城市列表</div>
+                                <ul class="city-all">
+                                    <li><b class="ca-l">直辖市</b>
+                                        <div class="ca-r">
+                                            <a href="javascript:void(0)" cid="3">北京</a><a href="javascript:void(0)" cid="27">天津</a><a
+                                                href="javascript:void(0)" cid="25" class="">上海</a><a href="javascript:void(0)" cid="32"
+                                                    class="">重庆</a>
+                                        </div>
+                                    </li>
+                                    <li><a class="ca-l" href="javascript:void(0)" cid="16">江苏</a>
+                                        <div class="ca-r">
+                                            <a href="javascript:void(0)" cityid="221">常州</a><a href="javascript:void(0)" cityid="222">淮安</a><a
+                                                href="javascript:void(0)" cityid="223">连云港</a><a href="javascript:void(0)" cityid="224">南京</a><a
+                                                    href="javascript:void(0)" cityid="225">南通</a><a href="javascript:void(0)" cityid="226">苏州</a><a
+                                                        href="javascript:void(0)" cityid="227">宿迁</a><a href="javascript:void(0)" cityid="228">泰州</a><a
+                                                            href="javascript:void(0)" cityid="229">无锡</a><a href="javascript:void(0)" cityid="230">徐州</a><a
+                                                                href="javascript:void(0)" cityid="231">盐城</a><a href="javascript:void(0)" cityid="232">扬州</a><a
+                                                                    href="javascript:void(0)" cityid="233">镇江</a>
+                                        </div>
+                                    </li>
+                                    <li><a class="ca-l" href="javascript:void(0)" cid="31">浙江</a>
+                                        <div class="ca-r">
+                                            <a href="javascript:void(0)" cityid="383">杭州</a><a href="javascript:void(0)" cityid="384"
+                                                class="">湖州</a><a href="javascript:void(0)" cityid="385">嘉兴</a><a href="javascript:void(0)"
+                                                    cityid="386">金华</a><a href="javascript:void(0)" cityid="387">丽水</a><a href="javascript:void(0)"
+                                                        cityid="388">宁波</a><a href="javascript:void(0)" cityid="389">绍兴</a><a href="javascript:void(0)"
+                                                            cityid="390">台州</a><a href="javascript:void(0)" cityid="391">温州</a><a href="javascript:void(0)"
+                                                                cityid="392">舟山</a><a href="javascript:void(0)" cityid="393">衢州</a>
+                                        </div>
+                                    </li>
+                                    <li><a class="ca-l" href="javascript:void(0)" cid="2">安徽</a>
+                                        <div class="ca-r">
+                                            <a href="javascript:void(0)" cityid="36">安庆</a><a href="javascript:void(0)" cityid="37">蚌埠</a><a
+                                                href="javascript:void(0)" cityid="52">亳州</a><a href="javascript:void(0)" cityid="38">巢湖</a><a
+                                                    href="javascript:void(0)" cityid="39">池州</a><a href="javascript:void(0)" cityid="40">滁州</a><a
+                                                        href="javascript:void(0)" cityid="41">阜阳</a><a href="javascript:void(0)" cityid="42">合肥</a><a
+                                                            href="javascript:void(0)" cityid="43">淮北</a><a href="javascript:void(0)" cityid="44">淮南</a><a
+                                                                href="javascript:void(0)" cityid="45">黄山</a><a href="javascript:void(0)" cityid="46">六安</a><a
+                                                                    href="javascript:void(0)" cityid="47">马鞍山</a><a href="javascript:void(0)" cityid="48">宿州</a><a
+                                                                        href="javascript:void(0)" cityid="49">铜陵</a><a href="javascript:void(0)" cityid="50">芜湖</a><a
+                                                                            href="javascript:void(0)" cityid="51">宣城</a>
+                                        </div>
+                                    </li>
+                                    <li><a class="ca-l" href="javascript:void(0)" cid="4">福建</a>
+                                        <div class="ca-r">
+                                            <a href="javascript:void(0)" cityid="54">福州</a><a href="javascript:void(0)" cityid="55">龙岩</a><a
+                                                href="javascript:void(0)" cityid="56">南平</a><a href="javascript:void(0)" cityid="57">宁德</a><a
+                                                    href="javascript:void(0)" cityid="58">莆田</a><a href="javascript:void(0)" cityid="59">泉州</a><a
+                                                        href="javascript:void(0)" cityid="60">三明</a><a href="javascript:void(0)" cityid="61">厦门</a><a
+                                                            href="javascript:void(0)" cityid="62">漳州</a>
+                                        </div>
+                                    </li>
+                                    <li><a class="ca-l" href="javascript:void(0)" cid="5">甘肃</a>
+                                        <div class="ca-r">
+                                            <a href="javascript:void(0)" cityid="63">白银</a><a href="javascript:void(0)" cityid="64">定西</a><a
+                                                href="javascript:void(0)" cityid="65">甘南</a><a href="javascript:void(0)" cityid="66">嘉峪关</a><a
+                                                    href="javascript:void(0)" cityid="67">金昌</a><a href="javascript:void(0)" cityid="68">酒泉</a><a
+                                                        href="javascript:void(0)" cityid="69">兰州</a><a href="javascript:void(0)" cityid="70">临夏</a><a
+                                                            href="javascript:void(0)" cityid="71">陇南</a><a href="javascript:void(0)" cityid="72">平凉</a><a
+                                                                href="javascript:void(0)" cityid="73">庆阳</a><a href="javascript:void(0)" cityid="74">天水</a><a
+                                                                    href="javascript:void(0)" cityid="75">武威</a><a href="javascript:void(0)" cityid="76">张掖</a>
+                                        </div>
+                                    </li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="nav_top">
+                    <ul class="nav_top_ul">
+                        <li style="display: none"><a href="#">首页</a> </li>
+                        <li><a href="menpiao_index.html">景点门票</a> </li>
+                        <li><a href="http://lvyou.qibila.com/spotdis.aspx" target="_blank" title="旅游景点">旅游城市</a>
+                        </li>
+                        <li><a href="quan">旅游排行</a> </li>
+                        <li><a href="quan">港澳台签证</a> </li>
+                        <li><a href="quan">旅游资讯</a> </li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+        <div class="clsPanle">
+            <div class="nvGprs">
+                <span class="gprs"></span>您的位置： <a href="#" title="门票首页" target="_blank">旅游首页</a>&nbsp;›&nbsp;
+                <a href="#" title="门票首页" target="_blank">门票首页</a>&nbsp;›&nbsp; <a href="#" title="景点门票查询"
+                    target="_blank">景点门票查询</a>&nbsp;›&nbsp; <a href="#">珠海</a></div>
+            <div class="piao-search-cls">
+                <div class="piao-search">
+                    <form method="get" action="" class="search_box" id="searchForm">
+                        <div class="search_keywords" style="position: relative;">
+                            <input type="text" value="珠海" maxlength="100" autocomplete="off" name="keyword" placeholder=""
+                                   id="searchValue">
+                            <label class="i_search" for="searchValue">
+                            </label>
+                            <label for="searchValue" style="position: absolute; top: 0px; left: 30px; display: none;
+                                                                                                                                                                                                                 font-size: 14px; color: rgb(136, 136, 136); line-height: 29px;">
+                                请输入景点、主题、城市
+                            </label>
+                        </div>
+                        <input type="submit" hidefocus="true" value="搜索" id="searchBtn" class="search_btn">
+                        <input type="hidden" name="region" id="searchCity">
+                        <input type="hidden" name="from" value="mpl_search_suggest" id="search-from">
+                        <div id="search-city-container">
+                        </div>
+                        <div class="search_suggest_list" id="suggestList" style="display: none;">
+                        </div>
+                        <div class="search_recommend" style="display: none;" id="defaultSuggest">
+                            <p class="recommend_atten">
+                                可直接选择或输入 景点、主题、城市</p>
+                        </div>
+                    </form>
+                </div>
+
+                <div class="hotsearch-hd">
+                    <a href="#">故宫</a>
+                    <a href="#">北京</a>
+                    <a href="#">珠海海洋王国</a>
+                    <a href="#">珠海渔女</a>
+                    <a href="#">长鹿山庄</a>
+                    <a href="#">广州塔</a>
+                    <a href="#">八达岭长城</a>
+                    <a href="#">珠海长隆马戏</a>
+                    <a href="#">珠海海洋王国</a>
+
+                </div>
+
+            </div>
+            <div class="part clearfix">
+            <div class="menpiao-search-left f_l">
+            <div class="mpsearch-list">
+            <div class="mpsearch-item" id="mpsearch-item-0">
+            <div class="menpiao-detail clearfix">
+                <div class="sight_item_img">
+                    <a href="" target="_blank" hidefocus="true" title="珠海海洋王国">
+                        <img data-original="http://img1.qunarzz.com/sight/p0/201301/15/7d0515aee39dd55e93835fbb.jpg_280x200_3d293dd4.jpg?"
+                             alt="珠海海洋王国" src="http://img1.qunarzz.com/sight/p0/201301/15/7d0515aee39dd55e93835fbb.jpg_280x200_3d293dd4.jpg?">
+                    </a>
+                </div>
+                <div class="sight_item_content">
+                    <h2>
+                        <a href="#" title="" class="name">珠海海洋王国</a>
+                    </h2>
+                    <div class="sight_item_info">
+                        <span class="area">[<a href="/ticket/list_广东.html#from=mps_search_suggest" target="_blank"
+                                        hidefocus="true" title="广东">广东</a>&nbsp;•&nbsp;<a href="/ticket/list_珠海.html#from=mps_search_suggest"
+                                            target="_blank" hidefocus="true" title="珠海">珠海</a>&nbsp;•&nbsp;<a href="/ticket/list_香洲区.html#from=mps_search_suggest"
+                                                target="_blank" hidefocus="true" title="香洲区">香洲区</a>] </span>
+                        <span class="star-box">
+                                    <span class="small-star">
+                                        <span class="star-9"></span>
+                                    </span>
+                                    4.4分</span>
+                                    
+                        <div class="detail color999">
+                            <span title="广东省珠海市香洲区横琴岛上">地址：广东省珠海市香洲区横琴岛上广东省珠海市香洲区横琴岛上广东省珠海市香洲区横琴岛上</span>
+                        </div>
+                        <div class="detail color999" title="泉水清冽甘甜、清爽畅快，休闲度假胜地。">泉水清冽甘甜、清爽畅广东省珠海市香洲区横琴岛上广东省珠海市香洲区横琴岛上广东省珠海市香洲区横琴岛上泉水清冽甘甜、清爽畅快，休闲度假胜地。</div>
+                        <a href="" target="_blank" class="sight_item_action">查看景点&nbsp;<span>»</span></a>
+                    </div>
+                </div>
+            </div>
+            <div class="ticket_detail  clearfix">
+            <h3>广东珠海海洋王国景点门票</h3>
+            <ul class="scener-ticket-list clearfix" id="scener-ticket-list-0">
+
+            <li class="clearfix " data-hide=""><span class="ticket-item-num">
+            1 </span>
+                <div class="ticket-list-content">
+                    <div class="ticket-title-wrapper f_l">
+                        故宫＋北海公园＋恭王府+天安门广场+黄包车一日游（含车+餐+导）
+                    </div>
+                    <div class="ticket-title-tips f_l">
+                        <p>
+                            <span><i class="tips-i"></i>最早可订04月29日门票</span><!-- <span><i class="tips-i"></i>支持退款</span>-->
+                        </p>
+                    </div>
+                    <div class="ticket-title-price f_l">
+                        <div class="price-container">
+                            <span class="price-now"><b class="icon-rmb">￥</b>218.00</span>
+                            <span class="price-original">￥388.00</span>
+                        </div>
+                    </div>
+
+                    <div class="ticket-title-booking f_r">
+                        <a href="http://piao.qunar.com/order/form.htm?productId=3886619285&amp;sightId=38170&amp;ex_track=bd_menpiao_b&amp;bd_from_id=bd_lvyou_pc" title="" class="booking-btn">预订</a>
+                    </div>
+                </div>
+                <div class="ticket-list-more">
+                    <div class="ticket-list-moreinfo">
+
+                        <dl class="clearfix">
+                            <dt>费用说明</dt>
+                            <dd>
+                                费用包含1)交通：不含旅游车（景点间距离较近，全程步行）。2)用餐：行程内所列餐食（庆丰包子铺：三两包子（9个）、粥或炒肝。）。3)门票：行程中所含的景点首道大门票（故宫、北海公园、乘坐黄包车、恭王府）。4)导服：中文导游费用（自由活动期间除外）
+                            </dd>
+                        </dl>
+
+                        <dl class="clearfix">
+                            <dt>使用说明</dt>
+                            <dd>
+                                北京故宫＋天安门广场+毛主席纪念堂+北海＋恭王府＋黄包车＋烟袋斜街深度纯玩一日游07：30 天安门广场人民英雄纪念碑的西南角（导游举橘红色“旭冉假期”导游旗）集合 游览【天安门广场】参观毛主席纪念堂（周一闭馆）游览时间60分钟 (温馨提示：当天参团有大件行李的游客请提前安排妥当，参观不易携带） 09：00 前往景点：【故宫博物院】（60元，已含）游览时间：120分钟（除暑期及节假日外，故宫每周一闭馆。即改为乘坐地铁去登中央电视塔，高空俯览北京全貌） 11：30 【庆丰包子铺】享用特色中餐：三两包子（9个）粥或炒肝 13：00 【北海公园】游览时间：60分钟 14：20 乘坐【黄包车】（10元，已含）游览老北京胡同、四合院。游览时间：30分钟15：00 天下第一大贪官和砷府邸——【恭王府】（40元，已含）游览时间：90分钟17：00 【烟袋斜街】自由活动和散团提示：本行程景区都串联在一起、距离较近，不安排用车，需步行儿童价：身高1.2m以上，2-12岁儿童，包含半价门票费用、餐费、导游服务费，如产生额外费用请自理，现场付款导游：148元 （儿童价）无须网上下单！
+                            </dd>
+                        </dl>
+
+                        <dl class="clearfix">
+                            <dt>有效时间</dt>
+                            <dd>
+                                游玩日期当日有效;
+                            </dd>
+                        </dl>
+
+                        <dl class="clearfix">
+                            <dt>入园信息</dt>
+                            <dd>
+                                凭确认短信，在天安门广场集合换票，天安门广场集合 入园您将在出发前一天导游与您联系收到入园凭证。
+                            </dd>
+                        </dl>
+
+                        <dl class="clearfix">
+                            <dt>退款说明</dt>
+                            <dd>
+                                管理员审核退票
+                            </dd>
+                        </dl>
+
+                    </div>
+                    <span class="btn-close">收起</span>
+                </div>
+            </li>
+
+            <li class="clearfix " data-hide=""><span class="ticket-item-num">
+            2 </span>
+                <div class="ticket-list-content">
+                    <div class="ticket-title-wrapper f_l">
+                        故宫＋北海公园＋恭王府＋黄包车＋烟袋斜街一日游（含车+餐+导）
+                    </div>
+                    <div class="ticket-title-tips f_l">
+                        <p>
+                            <span><i class="tips-i"></i>最早可订04月29日门票</span><!-- <span><i class="tips-i"></i>支持退款</span>-->
+                        </p>
+                    </div>
+                    <div class="ticket-title-price f_l">
+                        <div class="price-container">
+                            <span class="price-now"><b class="icon-rmb">￥</b>198.00</span>
+                            <span class="price-original">￥298.00</span>
+                        </div>
+                    </div>
+
+                    <div class="ticket-title-booking f_r">
+                        <a href="http://piao.qunar.com/order/form.htm?productId=674338514&amp;sightId=38170&amp;ex_track=bd_menpiao_b&amp;bd_from_id=bd_lvyou_pc" title="" class="booking-btn">预订</a>
+                    </div>
+                </div>
+                <div class="ticket-list-more">
+                    <div class="ticket-list-moreinfo">
+
+                        <dl class="clearfix">
+                            <dt>费用说明</dt>
+                            <dd>
+                                费用包含:2.用餐：行程内所列中餐15元/人 庆丰包子铺，三两包子（9个）+ 一碗粥。3.门票：行程中所含的景点首道大门票（故宫、北海公园、乘坐黄包车、恭王府）。4.导服：中文导游费用（自由活动期间除外）费用不包含：晚餐及自有活动时间产生的费用
+                            </dd>
+                        </dl>
+
+                        <dl class="clearfix">
+                            <dt>使用说明</dt>
+                            <dd>
+                                北京故宫＋天安门广场+毛主席纪念堂+北海＋恭王府＋黄包车＋烟袋斜街深度纯玩一日游行程描述：7：30天安门广场毛主席纪念堂门口（导游举橘红色“旭冉假期”导游旗）集合。游览【天安门广场】，可入内参观毛主席纪念堂（周一闭馆）。游览时间：60分钟。 09：00 前往景点：【故宫博物院】游览时间：120分钟。（除暑期及节假日外，故宫景点每周一闭馆。） 11：30前往庆丰包子铺享用庆丰包子（每人三两、9个包子，一碗粥）。13：00 前往景点：【北海公园】。游览时间：60分钟。 14：20 乘坐【黄包车】。游览老北京胡同。游览时间：30分钟。 15：00 前往天下第一大贪官和砷府邸——【恭王府】。游览时间：90分钟。 17：00 前往景点：【烟袋斜街】。自由活动和散团。
+                            </dd>
+                        </dl>
+
+                        <dl class="clearfix">
+                            <dt>有效时间</dt>
+                            <dd>
+                                游玩日期当日有效;
+                            </dd>
+                        </dl>
+
+                        <dl class="clearfix">
+                            <dt>入园信息</dt>
+                            <dd>
+                                凭短信和身份证，在7：30天安门广场毛主席纪念堂门口找导游（导游举橘红色“旭冉假期”导游旗）换票，北京天安门广场人民英雄纪念碑南面毛主席纪念堂门口 入园您将在支付完成后的1分钟收到入园凭证。
+                            </dd>
+                        </dl>
+
+                        <dl class="clearfix">
+                            <dt>退款说明</dt>
+                            <dd>
+                                有效期截止当天00:00前可以申请退款行程开始当日，收取订单总费用的 30%。行程前1日至3日，收取订单总费用的20%。支持改期
+                            </dd>
+                        </dl>
+
+                    </div>
+                    <span class="btn-close">收起</span>
+                </div>
+            </li>
+
+            <li class="clearfix " data-hide=""><span class="ticket-item-num">
+            3 </span>
+                <div class="ticket-list-content">
+                    <div class="ticket-title-wrapper f_l">
+                        故宫＋八达岭长城一日游（含车+餐+导）
+                    </div>
+                    <div class="ticket-title-tips f_l">
+                        <p>
+                            <span><i class="tips-i"></i>最早可订04月29日门票</span><!-- <span><i class="tips-i"></i>支持退款</span>-->
+                        </p>
+                    </div>
+                    <div class="ticket-title-price f_l">
+                        <div class="price-container">
+                            <span class="price-now"><b class="icon-rmb">￥</b>228.00</span>
+                            <span class="price-original">￥328.00</span>
+                        </div>
+                    </div>
+
+                    <div class="ticket-title-booking f_r">
+                        <a href="http://piao.qunar.com/order/form.htm?productId=3700090937&amp;sightId=38170&amp;ex_track=bd_menpiao_b&amp;bd_from_id=bd_lvyou_pc" title="" class="booking-btn">预订</a>
+                    </div>
+                </div>
+                <div class="ticket-list-more">
+                    <div class="ticket-list-moreinfo">
+
+                        <dl class="clearfix">
+                            <dt>费用说明</dt>
+                            <dd>
+                                费用包含：1）交通：全程空调旅游车。2）用餐：行程内午餐费用。3）门票：行程中所含的景点首道大门票（故宫、八达岭长城）。4）导服：中文导游费用（自由活动期间除外）。费用不含：乘客自由活动时产生的费用
+                            </dd>
+                        </dl>
+
+                        <dl class="clearfix">
+                            <dt>使用说明</dt>
+                            <dd>
+                                【快递.纯玩】北京天安门＋故宫＋八达岭长城＋世贸天阶一日游7：30天安门广场毛主席纪念堂门口（导游举橘红色“旭冉假期”导游旗）集合。游览【天安门广场】，可入内参观毛主席纪念堂（周一闭馆）。游览时间：1小时。 09：00 前往景点：【故宫博物院】（除暑期及节假日外，故宫景点每周一闭馆)。 步行时间：30分钟；游览时间：2小时。 11：30 前往【庆丰包子铺】享用庆丰包子（每人三两、9个包子，一碗粥）。用餐时间：1小时。 12：30 乘车赴【八达岭长城】。行程距离：约70公里；行驶时间：约2小时；游览时间：2小时。 “不到长城非好汉”，八达岭长城是中华民族精神的象征之一，是世界各国元首、首脑、政要访华必须造访之处。登上八达岭长城，可以看到脚下的长城依山就势，蜿蜒起伏，如一条不见首尾的巨龙在绵绵山岭上翻滚爬动，气势磅礴，雄伟壮观。 16：30 前往景点【世贸天阶】自由活动和散团。
+                            </dd>
+                        </dl>
+
+                        <dl class="clearfix">
+                            <dt>有效时间</dt>
+                            <dd>
+                                游玩日期当日有效;
+                            </dd>
+                        </dl>
+
+                        <dl class="clearfix">
+                            <dt>入园信息</dt>
+                            <dd>
+                                凭短信和身份证，在7：30天安门广场毛主席纪念堂门口（导游举橘红色“旭冉假期”导游旗）集合换票，北京天安门广场 入园您将在支付完成后的1分钟收到入园凭证。
+                            </dd>
+                        </dl>
+
+                        <dl class="clearfix">
+                            <dt>退款说明</dt>
+                            <dd>
+                                有效期截止当天00:00前可以申请退款行程前3日至1日，收取订单总费用的20%；行程开始当日，收取订单总费用的 30%支持改期
+                            </dd>
+                        </dl>
+
+                    </div>
+                    <span class="btn-close">收起</span>
+                </div>
+            </li>
+
+            <li class="clearfix item-hide" data-hide="item-hide"><span class="ticket-item-num">
+            4 </span>
+                <div class="ticket-list-content">
+                    <div class="ticket-title-wrapper f_l">
+                        故宫+恭王府+颐和园+南锣鼓巷一日游（含车+餐+导）
+                    </div>
+                    <div class="ticket-title-tips f_l">
+                        <p>
+                            <span><i class="tips-i"></i>最早可订04月29日门票</span><!-- <span><i class="tips-i"></i>支持退款</span>-->
+                        </p>
+                    </div>
+                    <div class="ticket-title-price f_l">
+                        <div class="price-container">
+                            <span class="price-now"><b class="icon-rmb">￥</b>218.00</span>
+                            <span class="price-original">￥290.00</span>
+                        </div>
+                    </div>
+
+                    <div class="ticket-title-booking f_r">
+                        <a href="http://piao.qunar.com/order/form.htm?productId=955351377&amp;sightId=38170&amp;ex_track=bd_menpiao_b&amp;bd_from_id=bd_lvyou_pc" title="" class="booking-btn">预订</a>
+                    </div>
+                </div>
+                <div class="ticket-list-more">
+                    <div class="ticket-list-moreinfo">
+
+                        <dl class="clearfix">
+                            <dt>费用说明</dt>
+                            <dd>
+                                【费用包含】1．交通：空调旅游车2．用餐：中餐（八菜一汤、十人一桌）3．景点：行程内所列各景点首道大门票（含故宫、颐和园、恭王府门票）4．导游：中文导游服务5、保险：旅行社责任险和旅游意外伤害险
+                            </dd>
+                        </dl>
+
+                        <dl class="clearfix">
+                            <dt>使用说明</dt>
+                            <dd>
+                                【参考行程】约05：00-07：00在五环内接人（具体时间我社通知，五环内免费接）；约07：30集合出发，游览世界上最大的皇家园林—【颐和园】，如若乘坐慈禧水道费用自理（需自费90元），感受北方园林的气势滂沱与江南园林的清幽秀美交织辉映；约11：30游览清末五大当铺之一的万庆当铺、老北京内城最高点的“水准点石碑”、齐白石老先生的故居—【南锣鼓巷】，南锣鼓巷里印刻着北京古老记忆的老建筑；约12：00享用团队午餐；约12：30参观游览大贪官和坤的私人府邸--【恭王府】，藏有康熙御笔之宝字卑，隐于密云洞中，谓之『洞天福地』，此福被誉为天下第一福，多田多子多才多寿多福之意；约14：00参观紫禁城—【故宫博物院】，游览故宫三大殿（太和殿、中和殿、保和殿）；游客就此散团，您可观看庄严的降旗仪式也可欣赏北京长安街美丽的夜景，结束愉快的旅行！（此行程不安排万寿寺）【使用须知】1、预订后，请来电预约，预约成功后凭预留姓名在指定地点集合上车2、预约时间：09:00-18:00之间预约(预约成功后才能顺利出行)3、此行程暂不接待港澳台外宾西藏新疆等少数民族
+                            </dd>
+                        </dl>
+
+                        <dl class="clearfix">
+                            <dt>有效时间</dt>
+                            <dd>
+                                游玩日期当日有效;
+                            </dd>
+                        </dl>
+
+                        <dl class="clearfix">
+                            <dt>入园信息</dt>
+                            <dd>
+                                凭确认短信，在北京五环内免费上门接换票，颐和园景区 入园您将在出发前一天18：00-22:00通知收到入园凭证。
+                            </dd>
+                        </dl>
+
+                        <dl class="clearfix">
+                            <dt>退款说明</dt>
+                            <dd>
+                                退款手续费¥40/张有效期截止前1天14:00前可以申请退款如需改期，请至少提前1天12:00前，不接受临时改期；如需退票，请至少提前1天12:00前，需要退票手续费40元/张，之后退票收取200元/张的损失
+                            </dd>
+                        </dl>
+
+                    </div>
+                    <span class="btn-close">收起</span>
+                </div>
+            </li>
+
+            <li class="clearfix item-hide" data-hide="item-hide"><span class="ticket-item-num">
+            5 </span>
+                <div class="ticket-list-content">
+                    <div class="ticket-title-wrapper f_l">
+                        故宫+天坛+颐和园+南锣鼓巷一日游（含餐+车+导）
+                    </div>
+                    <div class="ticket-title-tips f_l">
+                        <p>
+                            <span><i class="tips-i"></i>最早可订04月29日门票</span><!-- <span><i class="tips-i"></i>支持退款</span>-->
+                        </p>
+                    </div>
+                    <div class="ticket-title-price f_l">
+                        <div class="price-container">
+                            <span class="price-now"><b class="icon-rmb">￥</b>187.00</span>
+                            <span class="price-original">￥380.00</span>
+                        </div>
+                    </div>
+
+                    <div class="ticket-title-discount f_l">
+                        <span class="bar-ticket-return"></span><span class="return-price"><em style="font-family: arial;">
+                        ￥</em>3</span> <span class="right-corner"></span>
+                    </div>
+
+                    <div class="ticket-title-booking f_r">
+                        <a href="http://piao.qunar.com/order/form.htm?productId=2301620989&amp;sightId=38170&amp;ex_track=bd_menpiao_b&amp;bd_from_id=bd_lvyou_pc" title="" class="booking-btn">预订</a>
+                    </div>
+                </div>
+                <div class="ticket-list-more">
+                    <div class="ticket-list-moreinfo">
+
+                        <dl class="clearfix">
+                            <dt>费用说明</dt>
+                            <dd>
+                                【费用包含】1．交通：空调旅游车2．用餐：中餐（八菜一汤、十人一桌）3．景点：行程内所列各景点首道大门票（含故宫、颐和园、天坛门票）4．导游：中文导游服务5．保险：旅行社责任险和旅游意外伤害险
+                            </dd>
+                        </dl>
+
+                        <dl class="clearfix">
+                            <dt>使用说明</dt>
+                            <dd>
+                                【参考行程】约05：00-07：00派专车到游客指定地点接（具体时间我社通知，五环内免费接）；约07：30集合出发，游览世界上最大的皇家园林——【颐和园】，如若乘坐慈禧水道费用自理（自愿自费90元/人），感受北方园林的气势滂沱与江南园林的清幽秀美交织辉映。约11：30游览清末五大当铺之一的万庆当铺、老北京内城最高点的“水准点石碑”、齐白石老先生的故居——【南锣鼓巷】，南锣鼓巷里印刻着北京古老记忆的老建筑，正“原汁原味”逐步恢复，向中外游客展示京城的历史和文化。约12：00享用团队午餐；约12：30参观明清两代帝王用以祭天和祈祷丰年的建筑——【天坛】约14：00参观紫禁城——【故宫博物院】，游览故宫三大殿（太和殿、中和殿、保和殿）；明清宫廷五百多年的历史，包含了帝后活动，等级制度、权力斗争、宗教祭祀等；游客就此散团，您可观看庄严的降旗仪式也可欣赏北京长安街美丽的夜景，结束愉快的旅行！（此行程不安排万寿寺）【使用须知】1、预订后，请来电预约，预约成功后凭预留姓名在指定地点集合上车2、预约时间：09:00-18:00之间预约(预约成功后才能顺利出行)
+                            </dd>
+                        </dl>
+
+                        <dl class="clearfix">
+                            <dt>有效时间</dt>
+                            <dd>
+                                游玩日期当日有效;
+                            </dd>
+                        </dl>
+
+                        <dl class="clearfix">
+                            <dt>入园信息</dt>
+                            <dd>
+                                凭确认短信，在北京五环内免费上门接换票，颐和园景区 入园您将在出发前一天18：00-22:00通知收到入园凭证。
+                            </dd>
+                        </dl>
+
+                        <dl class="clearfix">
+                            <dt>退款说明</dt>
+                            <dd>
+                                退款手续费¥30/张有效期截止前1天14:00前可以申请退款如需改期，请至少提前1天12:00前，不接受临时改期；如需退票，请至少提前1天14:00前，需要退票手续费30元/张，之后退票收取180元/张的损失
+                            </dd>
+                        </dl>
+
+                    </div>
+                    <span class="btn-close">收起</span>
+                </div>
+            </li>
+
+            <li class="clearfix item-hide" data-hide="item-hide"><span class="ticket-item-num">
+            6 </span>
+                <div class="ticket-list-content">
+                    <div class="ticket-title-wrapper f_l">
+                        故宫+天坛+圆明园一日游（含车+餐+导）
+                    </div>
+                    <div class="ticket-title-tips f_l">
+                        <p>
+                            <span><i class="tips-i"></i>最早可订04月29日门票</span><!-- <span><i class="tips-i"></i>支持退款</span>-->
+                        </p>
+                    </div>
+                    <div class="ticket-title-price f_l">
+                        <div class="price-container">
+                            <span class="price-now"><b class="icon-rmb">￥</b>258.00</span>
+                            <span class="price-original">￥298.00</span>
+                        </div>
+                    </div>
+
+                    <div class="ticket-title-booking f_r">
+                        <a href="http://piao.qunar.com/order/form.htm?productId=1894400563&amp;sightId=38170&amp;ex_track=bd_menpiao_b&amp;bd_from_id=bd_lvyou_pc" title="" class="booking-btn">预订</a>
+                    </div>
+                </div>
+                <div class="ticket-list-more">
+                    <div class="ticket-list-moreinfo">
+
+                        <dl class="clearfix">
+                            <dt>费用说明</dt>
+                            <dd>
+                                【费用包含】1、故宫旺季门票80，淡季60（赠送珍宝馆、钟表馆）；2、天坛通票 旺季35元/人，淡季30 （含大门票、祈年殿、圜丘坛、皇穹宇)等3、赠送圆明园套票 （含大门票、西洋楼遗址、海晏堂、残雕沉思、黄花阵等）4、午餐品尝烤鸭费用5、团队游览中文导游6、旅游用车费用。7、儿童价（1.2米以下）：不含景点门票其余同成人【费用不含】1、其它私人消费2、团费不含旅游意外保险，建议客人自愿购买旅游意外保险【行程安排】：07:30/07：50 参观世界文化遗产、国家名片之一——【故宫博物院】（含首道门票，不含珍宝馆、钟表馆20元人）。大约08:40时进入故宫。12：00 享用豪华团队午餐：【便宜坊烤鸭店】。或【满德楼饭庄】（2008捷克和斯洛伐克奥运之家）著名的“中华老字号”饭庄、国家特级酒家。13：30 赴参观世界文化遗产、国家名片之一、最大的祭天古建筑群——【天坛】 。14：30 赠送景观【圆明园】。18：00 左右返回王府井、崇文门新侨饭店饭店晚餐：自理。
+                            </dd>
+                        </dl>
+
+                        <dl class="clearfix">
+                            <dt>使用说明</dt>
+                            <dd>
+                                【入园凭证】：付款后商家会主动与您联系确认，或客人主动发送验证码至18500089960，进行预约。预约成功后，导游会在提前一天19:00左右主动联系游客，如20:00还无联系请与我们联系。【上车时间安排】：第一上车点：早07：30，北京新侨诺富特饭店（地铁2号线崇文门站A/B口出既是，010-65133366）；第二上车点：早07:45，南锣鼓巷，星海琪假日酒店（地铁6号、8号南锣鼓巷站E口西）第二上车点：早08：30，王府井万程华府国际/飘HOME经济连锁酒店(东城区东安门大街43号，中国儿童剧院门口；距天安门、故宫步行仅10分钟）； 三个集合地，您可以三选一。
+                            </dd>
+                        </dl>
+
+                        <dl class="clearfix">
+                            <dt>有效时间</dt>
+                            <dd>
+                                游玩日期当日有效;
+                            </dd>
+                        </dl>
+
+                        <dl class="clearfix">
+                            <dt>入园信息</dt>
+                            <dd>
+                                凭确认短信，在凭确认短信，电话或短信（验证码）至18500089960验证。导游提前一天通知联系 入园换票，导游提前一天通知联系 入园 入园您将在支付完成后的120分钟收到入园凭证。
+                            </dd>
+                        </dl>
+
+                        <dl class="clearfix">
+                            <dt>退款说明</dt>
+                            <dd>
+                                1、一日游和用车服务支持预订后/出发前1天的中午12点前通知本店无条件全额退款；2、如果当天临时取消，仅退还未发生门票共计：旺季（故宫通票80、天坛通票35）；3、特别提醒：为保证您的利益，请将所有费用在支付宝中交易，以保障您的利益！（导游全部是我社正式签约导游，参加自费项目和特殊情况可以直接交付导游）注意：亲，如果提出退款请务必事先电话通知客服：18500089960否则可能得不到及时有效的退款处理
+                            </dd>
+                        </dl>
+
+                    </div>
+                    <span class="btn-close">收起</span>
+                </div>
+            </li>
+
+            <li class="clearfix item-hide" data-hide="item-hide"><span class="ticket-item-num">
+            7 </span>
+                <div class="ticket-list-content">
+                    <div class="ticket-title-wrapper f_l">
+                        故宫+颐和园一日游（含车+餐+导）
+                    </div>
+                    <div class="ticket-title-tips f_l">
+                        <p>
+                            <span><i class="tips-i"></i>最早可订04月29日门票</span><!-- <span><i class="tips-i"></i>支持退款</span>-->
+                        </p>
+                    </div>
+                    <div class="ticket-title-price f_l">
+                        <div class="price-container">
+                            <span class="price-now"><b class="icon-rmb">￥</b>198.00</span>
+                            <span class="price-original">￥238.00</span>
+                        </div>
+                    </div>
+
+                    <div class="ticket-title-booking f_r">
+                        <a href="http://piao.qunar.com/order/form.htm?productId=3536054593&amp;sightId=38170&amp;ex_track=bd_menpiao_b&amp;bd_from_id=bd_lvyou_pc" title="" class="booking-btn">预订</a>
+                    </div>
+                </div>
+                <div class="ticket-list-more">
+                    <div class="ticket-list-moreinfo">
+
+                        <dl class="clearfix">
+                            <dt>费用说明</dt>
+                            <dd>
+                                【费用包含】1、故宫首道旺季门票60 、颐和园首道门票30；2、团队游行程中午餐；3、团队游览中文导游、用车费用；【费用不含】1、慈禧水道（景区内小交通工具门市价98，淘宝优惠价80；自愿自理）2、其它私人消费3、个人旅游意外保险
+                            </dd>
+                        </dl>
+
+                        <dl class="clearfix">
+                            <dt>使用说明</dt>
+                            <dd>
+                                【入园凭证】：付款后商家会主动与您联系确认，或客人主动发送验证码至18500089960，进行预约。预约成功后，导游会在提前一天19:00左右主动联系游客，如20:00还无联系请与我们联系。【集合时间地点】：08：30 故宫午门外广场【故宫游客中心】集合（穿过天安门城楼、端门城楼后左手边朝房）。
+                            </dd>
+                        </dl>
+
+                        <dl class="clearfix">
+                            <dt>有效时间</dt>
+                            <dd>
+                                游玩日期当日有效;
+                            </dd>
+                        </dl>
+
+                        <dl class="clearfix">
+                            <dt>入园信息</dt>
+                            <dd>
+                                凭确认短信，在游在出发前一天7点左右，会联系客人集合信息。紧急联系人王晓宇18500089960换票，导游在出发前一天7点左右，会联系客人集合信息。紧急联系人王晓宇18500089960 入园您将在支付完成后的60分钟收到入园凭证。
+                            </dd>
+                        </dl>
+
+                        <dl class="clearfix">
+                            <dt>退款说明</dt>
+                            <dd>
+                                团队游支持预订后/出发前3天无条件全额退款；● 一日游和用车服务支持预订后/出发前1天无条件全额退款；★ 特别提醒：为保证您的利益，请将所有费用在支付宝中交易，以保障您的利益！（导游全部是我社正式签约导游，参加自费项目和特殊情况可以直接交付导游）注意：亲，如果提出退款请务必事先电话通知客服：18500089960，否则可能得不到及时有效的退款处理
+                            </dd>
+                        </dl>
+
+                    </div>
+                    <span class="btn-close">收起</span>
+                </div>
+            </li>
+
+            <li class="clearfix item-hide" data-hide="item-hide"><span class="ticket-item-num">
+            8 </span>
+                <div class="ticket-list-content">
+                    <div class="ticket-title-wrapper f_l">
+                        [儿童]故宫+八达岭长城+定陵一日游（含车+餐+导）
+                    </div>
+                    <div class="ticket-title-tips f_l">
+                        <p>
+                            <span><i class="tips-i"></i>最早可订04月29日门票</span><!-- <span><i class="tips-i"></i>支持退款</span>-->
+                        </p>
+                    </div>
+                    <div class="ticket-title-price f_l">
+                        <div class="price-container">
+                            <span class="price-now"><b class="icon-rmb">￥</b>198.00</span>
+                            <span class="price-original">￥298.00</span>
+                        </div>
+                    </div>
+
+                    <div class="ticket-title-discount f_l">
+                        <span class="bar-ticket-return"></span><span class="return-price"><em style="font-family: arial;">
+                        ￥</em>10</span> <span class="right-corner"></span>
+                    </div>
+
+                    <div class="ticket-title-booking f_r">
+                        <a href="http://piao.qunar.com/order/form.htm?productId=3836369856&amp;sightId=38170&amp;ex_track=bd_menpiao_b&amp;bd_from_id=bd_lvyou_pc" title="" class="booking-btn">预订</a>
+                    </div>
+                </div>
+                <div class="ticket-list-more">
+                    <div class="ticket-list-moreinfo">
+
+                        <dl class="clearfix">
+                            <dt>费用说明</dt>
+                            <dd>
+                                费用包含：1、包含(儿童/学生)故宫电子票一张（不含钟表馆、珍宝馆）。如提前一天未收到请联系我们。2、八达岭长城、定陵一日游：往返旅游车、八达岭、定陵大门票、中餐、导游服务。 费用不含：1、故宫珍宝馆：10元/人。2、钟表馆：10元/人。3、八达岭往返缆车（单程80、往返100元/人）4、个人用餐及个人消费等【特别说明】：故宫1、一张身份证最多订5张门票，且只能预订一次，一张身份证预订的人必须统一入园。2、预订概不退换，请下单时慎重考虑总人数，以免给您带来不必要的损失。3、预订好后的游玩日期不能修改，请谨慎选择。6、因身份证丢失或损坏无法检票，可凭预售登记的身份证号到指定售票窗口补领纸质门票进门【行程安排】07:00/07:20/07:40 车览“燕京八景” 【居庸叠翠】， 赴AAAAA级景区【八达岭长城】 12：30，享用团队午餐：【金肆维餐厅】（餐标30元人餐）14：00，前往世界文化遗产、陵寝文化代表【十三陵定陵】（含地宫） 。 约16：00 往【国家奥林匹克中心】 外观【鸟巢】【水立方】，入内门票需要自理。 解散自由活动或跟车返回【王府井】
+                            </dd>
+                        </dl>
+
+                        <dl class="clearfix">
+                            <dt>使用说明</dt>
+                            <dd>
+                                一、故宫取票时间：预订当天故宫午门（南门）专用“预订票入口”刷儿带身份证快速检票通过。【预留信息】：请下单时务必准确填写故宫的游玩日期，以及参加八达岭一日游的日期。故宫预留游玩人姓名（一个）、联系方式（一个）、身份证号码（只限大陆客人），游玩时间到买家留言中，便于我们给您预订。二、北京八达岭长城+十三陵定陵+鸟巢+水立方奥运一日游高品质纯玩绝对不进店！（请您填好游览日期）早出发赴八达岭，含中餐，下午游览定陵，自愿自理观赏精彩杂技表演后送回王府井。导游会提前一天17：00-19：00短信或电话联系您，请保持联系，如果没有20：00还没有接到联系，请立即联系我们，紧急联系人：王晓宇18500089960。以免影响您的正常出行。谢谢！
+                            </dd>
+                        </dl>
+
+                        <dl class="clearfix">
+                            <dt>有效时间</dt>
+                            <dd>
+                                游玩日期当日有效;
+                            </dd>
+                        </dl>
+
+                        <dl class="clearfix">
+                            <dt>入园信息</dt>
+                            <dd>
+                                凭身份证，在故宫检票处电子门票专用通道直接入园您将在参观前五天内收到入园凭证。
+                            </dd>
+                        </dl>
+
+                        <dl class="clearfix">
+                            <dt>退款说明</dt>
+                            <dd>
+                                游客申请退款的时间及方式：预订成功的门票概不退换，请下单的时候慎重考虑总人数及成员，以免给您带来不必要的损失。
+                            </dd>
+                        </dl>
+
+                    </div>
+                    <span class="btn-close">收起</span>
+                </div>
+            </li>
+
+            <li class="clearfix item-hide" data-hide="item-hide"><span class="ticket-item-num">
+            9 </span>
+                <div class="ticket-list-content">
+                    <div class="ticket-title-wrapper f_l">
+                        [成人]故宫+八达岭长城+定陵一日游（含车+餐+导）
+                    </div>
+                    <div class="ticket-title-tips f_l">
+                        <p>
+                            <span><i class="tips-i"></i>最早可订04月29日门票</span><!-- <span><i class="tips-i"></i>支持退款</span>-->
+                        </p>
+                    </div>
+                    <div class="ticket-title-price f_l">
+                        <div class="price-container">
+                            <span class="price-now"><b class="icon-rmb">￥</b>248.00</span>
+                            <span class="price-original">￥298.00</span>
+                        </div>
+                    </div>
+
+                    <div class="ticket-title-discount f_l">
+                        <span class="bar-ticket-return"></span><span class="return-price"><em style="font-family: arial;">
+                        ￥</em>10</span> <span class="right-corner"></span>
+                    </div>
+
+                    <div class="ticket-title-booking f_r">
+                        <a href="http://piao.qunar.com/order/form.htm?productId=837031595&amp;sightId=38170&amp;ex_track=bd_menpiao_b&amp;bd_from_id=bd_lvyou_pc" title="" class="booking-btn">预订</a>
+                    </div>
+                </div>
+                <div class="ticket-list-more">
+                    <div class="ticket-list-moreinfo">
+
+                        <dl class="clearfix">
+                            <dt>费用说明</dt>
+                            <dd>
+                                费用包含：1、包含成人故宫电子票一张（不含钟表馆、珍宝馆）。如提前一天未收到请联系我们。2、八达岭长城、定陵一日游：往返旅游车、八达岭、定陵大门票、中餐、导游服务。 费用不含：1、故宫珍宝馆：10元/人。2、钟表馆：10元/人。3、八达岭往返缆车（单程80、往返100元/人）4、个人用餐及个人消费等【特别说明】：故宫1、一张身份证最多订5张门票，且只能预订一次，一张身份证预订的人必须统一入园。2、预订概不退换，请下单时慎重考虑总人数，以免给您带来不必要的损失。3、预订好后的游玩日期不能修改，请谨慎选择。6、因身份证丢失或损坏无法检票，可凭预售登记的身份证号到指定售票窗口补领纸质门票进门【行程安排】07:00/07:20/07:40 车览“燕京八景” 【居庸叠翠】， 赴AAAAA级景区【八达岭长城】 12：30，享用团队午餐：【金肆维餐厅】（餐标30元人餐）14：00，前往世界文化遗产、陵寝文化代表【十三陵定陵】（含地宫） 。 约16：00 往【国家奥林匹克中心】 外观【鸟巢】【水立方】，入内门票需要自理。 解散自由活动或跟车返回【王府井】
+                            </dd>
+                        </dl>
+
+                        <dl class="clearfix">
+                            <dt>使用说明</dt>
+                            <dd>
+                                一、故宫取票时间：预订当天故宫午门（南门）专用“预订票入口”刷二代身份证快速检票通过。【预留信息】：请下单时务必准确填写故宫的游玩日期，以及参加八达岭一日游的日期。故宫预留游玩人姓名（一个）、联系方式（一个）、身份证号码（只限大陆客人）。二、八达岭长城+十三陵定陵+鸟巢水立方一日游高品质纯玩不进店！（请您填好游览日期）早出发赴八达岭，含中餐，下午游览定陵。导游会提前一天17：00-19：00短信或电话联系您，请保持联系，如果没有20：00还没有接到联系，请立即联系紧急联系人：王晓宇18500089960。以免影响您的出行。谢谢！【上车地点】：第一上车点： 早07：00， 崇文门，新侨诺富特饭店 （地铁2号线、5号线“崇文门站”A/B口出既是）第二上车点： 早07：20， 王府井，万程华府酒店 (中国儿童剧院门口；距天安门步行仅10分钟）第三上车点： 早07：30， 南锣鼓巷，星海琪假日酒店 (地铁6号、8号南锣鼓巷站E口西）第四上车点： 早07：40， 北土城，地铁站 (奥体中心区域；地铁8号线B口、地铁10号线C1口)
+                            </dd>
+                        </dl>
+
+                        <dl class="clearfix">
+                            <dt>有效时间</dt>
+                            <dd>
+                                游玩日期当日有效;
+                            </dd>
+                        </dl>
+
+                        <dl class="clearfix">
+                            <dt>入园信息</dt>
+                            <dd>
+                                凭身份证，在北京故宫检票处电子门票专用通道直接入园您将在参观前五天内收到入园凭证。
+                            </dd>
+                        </dl>
+
+                        <dl class="clearfix">
+                            <dt>退款说明</dt>
+                            <dd>
+                                游客申请退款的时间及方式：预订成功的门票概不退换，请下单的时候慎重考虑总人数及成员，以免给您带来不必要的损失。
+                            </dd>
+                        </dl>
+
+                    </div>
+                    <span class="btn-close">收起</span>
+                </div>
+            </li>
+
+            <li class="clearfix item-hide" data-hide="item-hide"><span class="ticket-item-num">
+            10 </span>
+                <div class="ticket-list-content">
+                    <div class="ticket-title-wrapper f_l">
+                        故宫成人票+导游
+                    </div>
+                    <div class="ticket-title-tips f_l">
+                        <p>
+                            <span><i class="tips-i"></i>最早可订04月29日门票</span><!-- <span><i class="tips-i"></i>支持退款</span>-->
+                        </p>
+                    </div>
+                    <div class="ticket-title-price f_l">
+                        <div class="price-container">
+                            <span class="price-now"><b class="icon-rmb">￥</b>119.00</span>
+                            <span class="price-original">￥199.00</span>
+                        </div>
+                    </div>
+
+                    <div class="ticket-title-booking f_r">
+                        <a href="http://piao.qunar.com/order/form.htm?productId=1403839793&amp;sightId=38170&amp;ex_track=bd_menpiao_b&amp;bd_from_id=bd_lvyou_pc" title="" class="booking-btn">预订</a>
+                    </div>
+                </div>
+                <div class="ticket-list-more">
+                    <div class="ticket-list-moreinfo">
+
+                        <dl class="clearfix">
+                            <dt>费用说明</dt>
+                            <dd>
+                                【费用包含】1、故宫淡季40元人、旺季60元人；2、钟表馆、珍宝馆套票20元人、大小同价；3、北京导游讲解服务；【费用不含】1、当天中餐；2、未列明其它私人消费；3、导游服务小费（完全自愿自理）；08:30 故宫午门外广场【故宫游客中心】集合（穿过天安门城楼、端门城楼后左手边朝房）。 【路线安排】:上午08：30 —— 12：00 结束 （为保参观质量仅开放上午半日）故宫【午门】——【内金水桥】——金銮殿-【太和殿】——皇帝休息处-【中和 殿】——状元考场兼国宴大厅-【保和殿】——走进【钟表馆】（赏西洋自鸣钟等 ）——【珍宝馆】（26方传国玉玺、大禹治水玉山等） ——皇帝寝宫-【乾清宫】 ——【交泰殿】（皇后过生日）——【坤宁宫】（皇帝的洞房）——【御花园】等。御花园结束，您可以自行参观东西六宫、养心殿、玉器馆、青铜器馆等；也可以由【神武门】出紫禁城，继续游览景山、北海等。
+                            </dd>
+                        </dl>
+
+                        <dl class="clearfix">
+                            <dt>使用说明</dt>
+                            <dd>
+                                【入园凭证】：付款后商家会主动与您联系，或客人主动发送验证码至18500089960，进行预约。预约成功后，导游会在提前一天19:00左右主动联系游客，如无联系请与我们联系。【集合时间及地点】：08:30 故宫午门外广场【故宫游客中心】集合（穿过天安门城楼、端门城楼后左手边朝房）。
+                            </dd>
+                        </dl>
+
+                        <dl class="clearfix">
+                            <dt>有效时间</dt>
+                            <dd>
+                                游玩日期当日有效;
+                            </dd>
+                        </dl>
+
+                        <dl class="clearfix">
+                            <dt>入园信息</dt>
+                            <dd>
+                                凭确认短信，在电话或短信（验证码）至18500089960验证。换票，导游提前一天通知联系 入园您将在支付完成后的120分钟收到入园凭证。
+                            </dd>
+                        </dl>
+
+                        <dl class="clearfix">
+                            <dt>退款说明</dt>
+                            <dd>
+                                出发7天前（不含7日）通知取消，买家承担卖家预订实际损失费。出发7日至4日，按订单费用总额50%，支付卖家业务损失费。出发3日至1日，按订单费用总额60%，支付卖家业务损失费。出发当日，按订单费用总额80%，支付卖家业务损失费。注：如按上述比例支付的业务损失费不足以赔偿卖家的实际损失，买家应当按实际损失对卖家予以赔偿，但最高额不应当超过订单费用总额。
+                            </dd>
+                        </dl>
+
+                    </div>
+                    <span class="btn-close">收起</span>
+                </div>
+            </li>
+
+            <li class="clearfix item-hide" data-hide="item-hide"><span class="ticket-item-num">
+            11 </span>
+                <div class="ticket-list-content">
+                    <div class="ticket-title-wrapper f_l">
+                        故宫老人票（VIP通道免排队）
+                    </div>
+                    <div class="ticket-title-tips f_l">
+                        <p>
+                            <span><i class="tips-i"></i>最早可订04月29日门票</span><!-- <span><i class="tips-i"></i>支持退款</span>-->
+                        </p>
+                    </div>
+                    <div class="ticket-title-price f_l">
+                        <div class="price-container">
+                            <span class="price-now"><b class="icon-rmb">￥</b>30.00</span>
+                            <span class="price-original">￥30.00</span>
+                        </div>
+                    </div>
+
+                    <div class="ticket-title-booking f_r">
+                        <a href="http://piao.qunar.com/order/form.htm?productId=1934979152&amp;sightId=38170&amp;ex_track=bd_menpiao_b&amp;bd_from_id=bd_lvyou_pc" title="" class="booking-btn">预订</a>
+                    </div>
+                </div>
+                <div class="ticket-list-more">
+                    <div class="ticket-list-moreinfo">
+
+                        <dl class="clearfix">
+                            <dt>费用说明</dt>
+                            <dd>
+                                费用包含：1、故宫老人（60岁以上）电子票一张（不含钟表馆、珍宝馆）。费用不包含：1、珍宝馆：（即进入宁寿宫区，还包括戏曲馆、石鼓馆）参观门票：每张门票为人民币10元。2、钟表馆：（即进入奉先殿区）参观门票：每张门票为人民币10元。故宫【预留信息】：预留游玩人姓名（一个）、联系方式（一个）、二代身份证号码（只限大陆客人），(一张身份证最多可以预订5张门票，每个身份证每天只能预订一次。)游玩时间到买家留言中，便于我们给您预订。（预留信息的人游玩的时候携带好身份证、老年证）【预订要求】：需要提前2个工作日前预订，16:00之前下单。例如：9月10日可以订9月12日以后的，门票张数有限，请抓紧时间抢购。
+                            </dd>
+                        </dl>
+
+                        <dl class="clearfix">
+                            <dt>使用说明</dt>
+                            <dd>
+                                【特别说明】：1、一张身份证最多可以预订5张门票，每个身份证每天只能预订一次。2、散客网上购票暂不提供报销凭证，如有需要可通过现场购票获取。3、每张身份证预订的人数必须统一入园，不能分批次入场。4、预订的游玩日期不能修改，请谨慎选择，以免给您带来不必要的损失。预订成功之后请您在选择游玩日期当天游玩，门票不退换。5、故宫门票需要到故宫指定窗口领取。6、因二代身份证丢失或损坏无法检票的，可凭预售登记的身份证号到指定售票窗口补领纸质门票检票进门取票时间：预订当天赴故宫午门（预订票入口），直接刷身份证检票通过。【营业时间】&nbsp;故宫博物院全年开放，开放时间按照淡、旺季会有所改变，遇到法定假期也会延长或缩短开放时间，请随时注意故宫网站的公告。一、每年【11月1日——3月31日】采用淡季开放时间：08:30清场时间：16:30二、每年【4月1日——10月31日】采用旺季开放时间：08:30清场时间：17:00三、遇重大活动或特殊情况，开放时间如有改变，故宫网站将特别发布公告。四、从2013年4月1日起，除法定节假日和暑期(每年7月1日至8月31日)外，全年实行周一闭馆。
+                            </dd>
+                        </dl>
+
+                        <dl class="clearfix">
+                            <dt>有效时间</dt>
+                            <dd>
+                                游玩日期当日有效;
+                            </dd>
+                        </dl>
+
+                        <dl class="clearfix">
+                            <dt>入园信息</dt>
+                            <dd>
+                                凭身份证，在故宫检票处电子门票专用通道直接入园您将在参观前五天内收到入园凭证。
+                            </dd>
+                        </dl>
+
+                        <dl class="clearfix">
+                            <dt>退款说明</dt>
+                            <dd>
+                                游客申请退款的时间及方式：预订成功的门票概不退换，请下单的时候慎重考虑总人数及成员，以免给您带来不必要的损失。
+                            </dd>
+                        </dl>
+
+                    </div>
+                    <span class="btn-close">收起</span>
+                </div>
+            </li>
+
+            <li class="clearfix item-hide" data-hide="item-hide"><span class="ticket-item-num">
+            12 </span>
+                <div class="ticket-list-content">
+                    <div class="ticket-title-wrapper f_l">
+                        故宫学生票（VIP通道免排队）
+                    </div>
+                    <div class="ticket-title-tips f_l">
+                        <p>
+                            <span><i class="tips-i"></i>最早可订04月29日门票</span><!-- <span><i class="tips-i"></i>支持退款</span>-->
+                        </p>
+                    </div>
+                    <div class="ticket-title-price f_l">
+                        <div class="price-container">
+                            <span class="price-now"><b class="icon-rmb">￥</b>20.00</span>
+                            <span class="price-original">￥20.00</span>
+                        </div>
+                    </div>
+
+                    <div class="ticket-title-booking f_r">
+                        <a href="http://piao.qunar.com/order/form.htm?productId=706016053&amp;sightId=38170&amp;ex_track=bd_menpiao_b&amp;bd_from_id=bd_lvyou_pc" title="" class="booking-btn">预订</a>
+                    </div>
+                </div>
+                <div class="ticket-list-more">
+                    <div class="ticket-list-moreinfo">
+
+                        <dl class="clearfix">
+                            <dt>费用说明</dt>
+                            <dd>
+                                1、故宫电子票一张（不含钟表馆、珍宝馆）。2、如果是没有身份证的儿童，请留下同行的一个大人的身份证预订3、如果过同行中有成人，老人，和儿童，在下单时候请确保每个订单留不同的身份证号。注明：珍宝馆：（即进入宁寿宫区，还包括戏曲馆、石鼓馆）参观门票：每张门票为人民币10元/人。钟表馆：（即进入奉先殿区）参观门票：每张门票为人民币10元/人【优惠说明】：1. 购买学生票，检票入院时需出示本人学生证，一个学生证只能购买一张学生票(不含成人教育、研究生)2. 60岁以上（包括60岁）老年人凭有效证件持半价票入园3. 残疾人凭残疾人证件、离休干部凭离休证及身高1.2米以下儿童随监护人免票参观
+                            </dd>
+                        </dl>
+
+                        <dl class="clearfix">
+                            <dt>使用说明</dt>
+                            <dd>
+                                购买春节期间的故宫门票，以故宫最终假期安排为准，如不有问题客服会联系您。1.最迟需提前一天订票，并须在指定日期当天入园。2.同一入院日期，一个身份证号码预订人数不能超过5人，且需要同时入院，不得分批次验证入院。3.预售门票概不退票，每个身份证最多预购 5 张，请在下单前安排好自己的出行人数及成员组合4.【取票方式】：预订成功后，凭下单时所留二代身份证至午门（南门）专用入口快速检票验证入院参观5、下单后我们会在出行前一天预订完毕，期间保持手机畅通，有问题我们客服会电话联系。6、关于发票：如果需要发票，请到景区直接购票。本电子票暂时无法开发票。【景区开放时间】：旺季：每年4月1日至10月31日采用旺季开放时间开始售票、开放进馆时间： 08:30止票时间（含钟表馆、珍宝馆）：16:00停止入馆时间： 16:10清场时间： 17:00 淡季每年11月1日至来年3月31日采用淡季开放时间开始售票、开放进馆时间： 08:30止票时间（含钟表馆、珍宝馆）：15:30停止入馆时间： 15:40清场时间：
+                            </dd>
+                        </dl>
+
+                        <dl class="clearfix">
+                            <dt>有效时间</dt>
+                            <dd>
+                                游玩日期当日有效;
+                            </dd>
+                        </dl>
+
+                        <dl class="clearfix">
+                            <dt>入园信息</dt>
+                            <dd>
+                                凭身份证，在凭下单时所留二代身份证至故宫午门（南门）专用入口快速检票验证入院参观直接入园您将在入园前一天处理完成，直接持身份证入园，无短信入园码收到入园凭证。
+                            </dd>
+                        </dl>
+
+                        <dl class="clearfix">
+                            <dt>退款说明</dt>
+                            <dd>
+                                指定入园日期当天有效，不改期，不退票，不退款，购买前请规划好出行日期和人数。故宫博物院春节期间2月18日（除夕）、2月19日（大年初一）对外开放时间调整如下：一、2月18日（除夕）开馆时间：8：30－12：00 停止售票时间：上午11：00停止检票时间：上午11：10闭馆时间：上午12：00二、2月19日（大年初一）开馆时间：12：00-16：30停止售票时间：下午15：30停止检票时间：下午15：40闭馆时间：下午16：30
+                            </dd>
+                        </dl>
+
+                    </div>
+                    <span class="btn-close">收起</span>
+                </div>
+            </li>
+
+            <li class="clearfix item-hide" data-hide="item-hide"><span class="ticket-item-num">
+            13 </span>
+                <div class="ticket-list-content">
+                    <div class="ticket-title-wrapper f_l">
+                        故宫成人票（VIP通道免排队）
+                    </div>
+                    <div class="ticket-title-tips f_l">
+                        <p>
+                            <span><i class="tips-i"></i>最早可订04月29日门票</span><!-- <span><i class="tips-i"></i>支持退款</span>-->
+                        </p>
+                    </div>
+                    <div class="ticket-title-price f_l">
+                        <div class="price-container">
+                            <span class="price-now"><b class="icon-rmb">￥</b>60.00</span>
+                            <span class="price-original">￥60.00</span>
+                        </div>
+                    </div>
+
+                    <div class="ticket-title-booking f_r">
+                        <a href="http://piao.qunar.com/order/form.htm?productId=616458789&amp;sightId=38170&amp;ex_track=bd_menpiao_b&amp;bd_from_id=bd_lvyou_pc" title="" class="booking-btn">预订</a>
+                    </div>
+                </div>
+                <div class="ticket-list-more">
+                    <div class="ticket-list-moreinfo">
+
+                        <dl class="clearfix">
+                            <dt>费用说明</dt>
+                            <dd>
+                                注意：3月8日当天成年女性可购买半价票，请单独拍妇女节半价票。如自己忽略没有购买，概不退补差价。人故宫电子票一张（不含钟表馆、珍宝馆）。 注明：珍宝馆：（即进入宁寿宫区，还包括戏曲馆、石鼓馆）参观门票：每张门票为人民币10元/人。 钟表馆：（即进入奉先殿区）参观门票：每张门票为人民币10元/人【优惠说明】： 1. 购买学生票，检票入院时需出示本人学生证，一个学生证只能购买一张学生票(不含成人教育、研究生) 2. 60岁以上（包括60岁）老年人凭有效证件持半价票入园 3. 残疾人凭残疾人证件、离休干部凭离休证及身高1.2米以下儿童随监护人免票参观
+                            </dd>
+                        </dl>
+
+                        <dl class="clearfix">
+                            <dt>使用说明</dt>
+                            <dd>
+                                1. 最迟需提前一天订票，并须在指定日期当天入园。2.同一入院日期，一个身份证号码预订人数不能超过5人，且需要同时入院，不得分批次验证入院。3. 下单时请在留言处写明：身份证号+手机号码+入园人数+游玩日期4. 预售门票概不退票，每个身份证最多预购 5 张，请在下单前安排好自己的出行人数及成员组合5.取票方式：预订成功后，凭下单时所留二代身份证至午门（南门）专用入口快速检票验证入院参观（下单时请保持游玩人、取票人信息一致，有效证件目前仅支持二代身份证，其它暂不支持）。6、关于发票：如果需要发票，请到景区直接购票。本电子票暂时无法开发票。【景区开放时间】：旺季：每年4月1日至10月31日采用旺季开放时间开始售票、开放进馆时间： 08:30止票时间（含钟表馆、珍宝馆）：16:00停止入馆时间： 16:10清场时间： 17:00 淡季每年11月1日至来年3月31日采用淡季开放时间开始售票、开放进馆时间： 08:30止票时间（含钟表馆、珍宝馆）：15:30停止入馆时间： 15:40清场时间：
+                            </dd>
+                        </dl>
+
+                        <dl class="clearfix">
+                            <dt>有效时间</dt>
+                            <dd>
+                                游玩日期当日有效;
+                            </dd>
+                        </dl>
+
+                        <dl class="clearfix">
+                            <dt>入园信息</dt>
+                            <dd>
+                                凭身份证，在凭下单时所留二代身份证至故宫午门（南门）专用入口快速检票验证入院参观直接入园您将在入园前一天处理完成，直接持身份证入园，无短信入园码收到入园凭证。
+                            </dd>
+                        </dl>
+
+                        <dl class="clearfix">
+                            <dt>退款说明</dt>
+                            <dd>
+                                指定入园日期当天有效，不改期，不退票，不退款，购买前请规划好出行日期和人数。（故宫系统在指定日期前4天内可以进行预订，所以如果您订的日期是从现在数五天以外的，请耐心等待，预订成功后会发通知短信到您预留的手机上，如果出行前一天还未收到，电话联系我们）故宫博物院春节期间2月18日（除夕）、2月19日（大年初一）对外开放时间调整如下：一、2月18日（除夕）开馆时间：8：30－12：00 停止售票时间：上午11：00停止检票时间：上午11：10闭馆时间：上午12：00二、2月19日（大年初一）开馆时间：12：00-16：30停止售票时间：下午15：30停止检票时间：下午15：40闭馆时间：下午16：30
+                            </dd>
+                        </dl>
+
+                    </div>
+                    <span class="btn-close">收起</span>
+                </div>
+            </li>
+
+            </ul>
+            <a href="javascript:void(0)" class="more-ticket-block" data-text="收起">查看更多长隆海洋王国门票
+                <span>(20)</span> <i class="globel-iconfont">
+                </i></a>
+
+
+            </div>
+            </div>
+            <div class="mpsearch-item" id="mpsearch-item-1">
+                <div class="menpiao-detail clearfix">
+                    <div class="sight_item_img">
+                        <a href="" target="_blank" hidefocus="true" title="珠海海洋王国">
+                            <img data-original="http://img1.qunarzz.com/sight/p0/201301/15/7d0515aee39dd55e93835fbb.jpg_280x200_3d293dd4.jpg?"
+                                 alt="珠海海洋王国" src="http://img1.qunarzz.com/sight/p0/201301/15/7d0515aee39dd55e93835fbb.jpg_280x200_3d293dd4.jpg?">
+                        </a>
+                    </div>
+                    <div class="sight_item_content">
+                        <h2>
+                            <a href="#" title="" class="name">珠海海洋王国</a>
+                        </h2>
+                        <div class="sight_item_info">
+                            <span class="area">[<a href="/ticket/list_广东.html#from=mps_search_suggest" target="_blank"
+                                        hidefocus="true" title="广东">广东</a>&nbsp;•&nbsp;<a href="/ticket/list_珠海.html#from=mps_search_suggest"
+                                            target="_blank" hidefocus="true" title="珠海">珠海</a>&nbsp;•&nbsp;<a href="/ticket/list_香洲区.html#from=mps_search_suggest"
+                                                target="_blank" hidefocus="true" title="香洲区">香洲区</a>] </span>
+                            <span class="star-box">
+                                    <span class="small-star">
+                                        <span class="star-9"></span>
+                                    </span>
+                                    4.4分</span>
+                                    
+                            <div class="detail color999">
+                                <span title="广东省珠海市香洲区横琴岛上">地址：广东省珠海市香洲区横琴岛上广东省珠海市香洲区横琴岛上广东省珠海市香洲区横琴岛上</span>
+                            </div>
+                            <div class="detail color999" title="泉水清冽甘甜、清爽畅快，休闲度假胜地。">泉水清冽甘甜、清爽畅广东省珠海市香洲区横琴岛上广东省珠海市香洲区横琴岛上广东省珠海市香洲区横琴岛上泉水清冽甘甜、清爽畅快，休闲度假胜地。</div>
+                            <a href="" target="_blank" class="sight_item_action">查看景点&nbsp;<span>»</span></a>
+                        </div>
+                    </div>
+                </div>
+                <div class="ticket_detail  clearfix">
+                    <h3>广东珠海海洋王国景点门票</h3>
+                    <ul class="scener-ticket-list clearfix" id="scener-ticket-list-1">
+
+                        <li class="clearfix " data-hide=""><span class="ticket-item-num">
+            1 </span>
+                            <div class="ticket-list-content">
+                                <div class="ticket-title-wrapper f_l">
+                                    故宫＋北海公园＋恭王府+天安门广场+黄包车一日游（含车+餐+导）
+                                </div>
+                                <div class="ticket-title-tips f_l">
+                                    <p>
+                                        <span><i class="tips-i"></i>最早可订04月29日门票</span><!-- <span><i class="tips-i"></i>支持退款</span>-->
+                                    </p>
+                                </div>
+                                <div class="ticket-title-price f_l">
+                                    <div class="price-container">
+                                        <span class="price-now"><b class="icon-rmb">￥</b>218.00</span>
+                                        <span class="price-original">￥388.00</span>
+                                    </div>
+                                </div>
+
+                                <div class="ticket-title-booking f_r">
+                                    <a href="http://piao.qunar.com/order/form.htm?productId=3886619285&amp;sightId=38170&amp;ex_track=bd_menpiao_b&amp;bd_from_id=bd_lvyou_pc" title="" class="booking-btn">预订</a>
+                                </div>
+                            </div>
+                            <div class="ticket-list-more">
+                                <div class="ticket-list-moreinfo">
+
+                                    <dl class="clearfix">
+                                        <dt>费用说明</dt>
+                                        <dd>
+                                            费用包含1)交通：不含旅游车（景点间距离较近，全程步行）。2)用餐：行程内所列餐食（庆丰包子铺：三两包子（9个）、粥或炒肝。）。3)门票：行程中所含的景点首道大门票（故宫、北海公园、乘坐黄包车、恭王府）。4)导服：中文导游费用（自由活动期间除外）
+                                        </dd>
+                                    </dl>
+
+                                    <dl class="clearfix">
+                                        <dt>使用说明</dt>
+                                        <dd>
+                                            北京故宫＋天安门广场+毛主席纪念堂+北海＋恭王府＋黄包车＋烟袋斜街深度纯玩一日游07：30 天安门广场人民英雄纪念碑的西南角（导游举橘红色“旭冉假期”导游旗）集合 游览【天安门广场】参观毛主席纪念堂（周一闭馆）游览时间60分钟 (温馨提示：当天参团有大件行李的游客请提前安排妥当，参观不易携带） 09：00 前往景点：【故宫博物院】（60元，已含）游览时间：120分钟（除暑期及节假日外，故宫每周一闭馆。即改为乘坐地铁去登中央电视塔，高空俯览北京全貌） 11：30 【庆丰包子铺】享用特色中餐：三两包子（9个）粥或炒肝 13：00 【北海公园】游览时间：60分钟 14：20 乘坐【黄包车】（10元，已含）游览老北京胡同、四合院。游览时间：30分钟15：00 天下第一大贪官和砷府邸——【恭王府】（40元，已含）游览时间：90分钟17：00 【烟袋斜街】自由活动和散团提示：本行程景区都串联在一起、距离较近，不安排用车，需步行儿童价：身高1.2m以上，2-12岁儿童，包含半价门票费用、餐费、导游服务费，如产生额外费用请自理，现场付款导游：148元 （儿童价）无须网上下单！
+                                        </dd>
+                                    </dl>
+
+                                    <dl class="clearfix">
+                                        <dt>有效时间</dt>
+                                        <dd>
+                                            游玩日期当日有效;
+                                        </dd>
+                                    </dl>
+
+                                    <dl class="clearfix">
+                                        <dt>入园信息</dt>
+                                        <dd>
+                                            凭确认短信，在天安门广场集合换票，天安门广场集合 入园您将在出发前一天导游与您联系收到入园凭证。
+                                        </dd>
+                                    </dl>
+
+                                    <dl class="clearfix">
+                                        <dt>退款说明</dt>
+                                        <dd>
+                                            管理员审核退票
+                                        </dd>
+                                    </dl>
+
+                                </div>
+                                <span class="btn-close">收起</span>
+                            </div>
+                        </li>
+                        <li class="clearfix " data-hide=""><span class="ticket-item-num">
+            2 </span>
+                            <div class="ticket-list-content">
+                                <div class="ticket-title-wrapper f_l">
+                                    故宫＋北海公园＋恭王府+天安门广场+黄包车一日游（含车+餐+导）
+                                </div>
+                                <div class="ticket-title-tips f_l">
+                                    <p>
+                                        <span><i class="tips-i"></i>最早可订04月29日门票</span><!-- <span><i class="tips-i"></i>支持退款</span>-->
+                                    </p>
+                                </div>
+                                <div class="ticket-title-price f_l">
+                                    <div class="price-container">
+                                        <span class="price-now"><b class="icon-rmb">￥</b>218.00</span>
+                                        <span class="price-original">￥388.00</span>
+                                    </div>
+                                </div>
+
+                                <div class="ticket-title-booking f_r">
+                                    <a href="http://piao.qunar.com/order/form.htm?productId=3886619285&amp;sightId=38170&amp;ex_track=bd_menpiao_b&amp;bd_from_id=bd_lvyou_pc" title="" class="booking-btn">预订</a>
+                                </div>
+                            </div>
+                            <div class="ticket-list-more">
+                                <div class="ticket-list-moreinfo">
+
+                                    <dl class="clearfix">
+                                        <dt>费用说明</dt>
+                                        <dd>
+                                            费用包含1)交通：不含旅游车（景点间距离较近，全程步行）。2)用餐：行程内所列餐食（庆丰包子铺：三两包子（9个）、粥或炒肝。）。3)门票：行程中所含的景点首道大门票（故宫、北海公园、乘坐黄包车、恭王府）。4)导服：中文导游费用（自由活动期间除外）
+                                        </dd>
+                                    </dl>
+
+                                    <dl class="clearfix">
+                                        <dt>使用说明</dt>
+                                        <dd>
+                                            北京故宫＋天安门广场+毛主席纪念堂+北海＋恭王府＋黄包车＋烟袋斜街深度纯玩一日游07：30 天安门广场人民英雄纪念碑的西南角（导游举橘红色“旭冉假期”导游旗）集合 游览【天安门广场】参观毛主席纪念堂（周一闭馆）游览时间60分钟 (温馨提示：当天参团有大件行李的游客请提前安排妥当，参观不易携带） 09：00 前往景点：【故宫博物院】（60元，已含）游览时间：120分钟（除暑期及节假日外，故宫每周一闭馆。即改为乘坐地铁去登中央电视塔，高空俯览北京全貌） 11：30 【庆丰包子铺】享用特色中餐：三两包子（9个）粥或炒肝 13：00 【北海公园】游览时间：60分钟 14：20 乘坐【黄包车】（10元，已含）游览老北京胡同、四合院。游览时间：30分钟15：00 天下第一大贪官和砷府邸——【恭王府】（40元，已含）游览时间：90分钟17：00 【烟袋斜街】自由活动和散团提示：本行程景区都串联在一起、距离较近，不安排用车，需步行儿童价：身高1.2m以上，2-12岁儿童，包含半价门票费用、餐费、导游服务费，如产生额外费用请自理，现场付款导游：148元 （儿童价）无须网上下单！
+                                        </dd>
+                                    </dl>
+
+                                    <dl class="clearfix">
+                                        <dt>有效时间</dt>
+                                        <dd>
+                                            游玩日期当日有效;
+                                        </dd>
+                                    </dl>
+
+                                    <dl class="clearfix">
+                                        <dt>入园信息</dt>
+                                        <dd>
+                                            凭确认短信，在天安门广场集合换票，天安门广场集合 入园您将在出发前一天导游与您联系收到入园凭证。
+                                        </dd>
+                                    </dl>
+
+                                    <dl class="clearfix">
+                                        <dt>退款说明</dt>
+                                        <dd>
+                                            管理员审核退票
+                                        </dd>
+                                    </dl>
+
+                                </div>
+                                <span class="btn-close">收起</span>
+                            </div>
+                        </li>
+                    </ul>
+                    <a href="javascript:void(0)" class="more-ticket-block" data-text="收起">查看更多长隆海洋王国门票
+                        <span>(20)</span> <i class="globel-iconfont">
+                        </i></a>
+
+                </div>
+            </div>
+            </div>
+            </div>
+
+            <div class="menpiao-search-right f_r">
+                <div class="mp-service">
+                    <div class="mp-ser-hd">
+                        <span class="icon"></span>
+                        <h4>奇比拉门票<span>Ticket</span></h4>
+                    </div>
+                    <ul class="mp-serv-content clearfix">
+                        <li>
+                            <h4 class="cap">全面覆盖</h4>
+                            <div class="corner"></div>
+                            <div class="txt">3万景区，5万产品售卖，应有尽有</div>
+                        </li>
+                        <li>
+                            <h4 class="cap">超值低价</h4>
+                            <div class="corner"></div>
+                            <div class="txt">折扣连连，活动多多，尽享超值</div>
+                        </li>
+                        <li>
+                            <h4 class="cap">购票便捷</h4>
+                            <div class="corner"></div>
+                            <div class="txt">快速选择、便捷购票、快速出票</div>
+                        </li>
+                        <li>
+                            <h4 class="cap">入园保障</h4>
+                            <div class="corner"></div>
+                            <div class="txt">顺利入园、快速服务、无须排队</div>
+                        </li>
+                        <li>
+                            <h4 class="cap">保障计划</h4>
+                            <div class="corner"></div>
+                            <div class="txt">门票保障计划，助您游玩无忧</div>
+                        </li>
+
+                    </ul>
+                </div>
+                <div >
+                    <div class="mp-tuijian">
+                        <h4>相关门票推荐 </h4>
+                        </div>
+                    <ul class="mp-tuijian-ul clearfix">
+                          <!--显示10条-->
+                        <li>
+                            <a href="#" title="中国大竹海">
+                                <img src="http://img1.qunarzz.com/sight/p0/1505/68/685c11723f9a30fc.water.jpg_280x200_bc3e068a.jpg?"></img>
+                                <dl class="reco_list_param">
+                                    <dt>中国大竹海</dt>
+                                    <dd title="观竹王,望竹海,以竹为景,以海为境">观竹王,望竹海,以竹为景,以海为境</dd>
+                                    <dd class="dt-price"><em class="price-now">￥104</em> <em class="price-original">￥200</em></dd>
+                                </dl>
+                            </a>
+                        </li>
+                        <li>
+                            <a>
+                                <img src="http://img1.qunarzz.com/sight/p0/1505/68/685c11723f9a30fc.water.jpg_280x200_bc3e068a.jpg?"></img>
+                                <dl class="reco_list_param">
+                                    <dt>中国大竹海</dt>
+                                    <dd>观竹王,望竹海,以竹为景,以海为境</dd>
+                                    <dd class="dt-price"><em class="price-now">￥104</em> <em class="price-original">￥200</em></dd>
+                                </dl>
+                            </a>
+                        </li>
+                        <li>
+                            <a>
+                                <img src="http://img1.qunarzz.com/sight/p0/1505/68/685c11723f9a30fc.water.jpg_280x200_bc3e068a.jpg?"></img>
+                                <dl class="reco_list_param">
+                                    <dt>中国大竹海</dt>
+                                    <dd>观竹王,望竹海,以竹为景,以海为境</dd>
+                                    <dd class="dt-price"><em class="price-now">￥104</em> <em class="price-original">￥200</em></dd>
+                                </dl>
+                            </a>
+                        </li>
+                    </ul>
+                    
+                </div>
+            </div>
+
+            </div>
+        </div>
+        <div class="clsPanle botDesNameBox">
+            <div class="botDesNameList">
+                <h4>
+                    东北</h4>
+                <a href="http://lvyou.qibila.com/beijing/" target="_blank">北京</a><a href="http://lvyou.qibila.com/qinhuangdao/"
+                    target="_blank">秦皇岛</a><a href="http://lvyou.qibila.com/tianjin/" target="_blank">天津</a><a
+                        href="http://lvyou.qibila.com/chengde/" target="_blank">承德</a><a href="http://lvyou.qibila.com/pingyao/"
+                            target="_blank">平遥</a><a href="http://lvyou.qibila.com/tangshan/" target="_blank">唐山</a><a
+                                href="http://lvyou.qibila.com/wutaishan/" target="_blank">五台山</a><a href="http://lvyou.qibila.com/baiyangdian/"
+                                    target="_blank">白洋淀</a><a href="http://lvyou.qibila.com/shijiazhuang/" target="_blank">石家庄</a><a
+                                        href="http://lvyou.qibila.com/taiyuan/" target="_blank">太原</a><a href="http://lvyou.qibila.com/datong/"
+                                            target="_blank">大同</a><a href="http://lvyou.qibila.com/huhehaote/" target="_blank">呼和浩特</a><a
+                                                href="http://lvyou.qibila.com/baodingyixian/" target="_blank">易县</a><a href="http://lvyou.qibila.com/handan/"
+                                                    target="_blank">邯郸</a><a href="http://lvyou.qibila.com/zhangjiakou/" target="_blank">张家口</a><a
+                                                        href="http://lvyou.qibila.com/baotou/" target="_blank">包头</a>
+            </div>
+            <div class="botDesNameList">
+                <h4>
+                    华北</h4>
+                <a href="http://lvyou.qibila.com/changbaishan/" target="_blank">长白山</a><a href="http://lvyou.qibila.com/shenyang/"
+                    target="_blank">沈阳</a><a href="http://lvyou.qibila.com/haerbin/" target="_blank">哈尔滨</a><a
+                        href="http://lvyou.qibila.com/changchun/" target="_blank">长春</a><a href="http://lvyou.qibila.com/hulunbeier/"
+                            target="_blank">呼伦贝尔</a><a href="http://lvyou.qibila.com/dalian/" target="_blank">大连</a><a
+                                href="http://lvyou.qibila.com/mohe/" target="_blank">漠河</a><a href="http://lvyou.qibila.com/dandong/"
+                                    target="_blank">丹东</a><a href="http://lvyou.qibila.com/huludao/" target="_blank">葫芦岛</a><a
+                                        href="http://lvyou.qibila.com/wudalianchi/" target="_blank">五大连池</a><a href="http://lvyou.qibila.com/hailaer/"
+                                            target="_blank">海拉尔</a><a href="http://lvyou.qibila.com/manzhouli/" target="_blank">满洲里</a><a
+                                                href="http://lvyou.qibila.com/lvshun/" target="_blank">旅顺</a><a href="http://lvyou.qibila.com/jinzhou/"
+                                                    target="_blank">锦州</a><a href="http://lvyou.qibila.com/aershan/" target="_blank">阿尔山</a>
+            </div>
+            <div class="botDesNameList">
+                <h4>
+                    西北</h4>
+                <a href="http://lvyou.qibila.com/xian/" target="_blank">西安</a><a href="http://lvyou.qibila.com/qinghaihu/"
+                    target="_blank">青海湖</a><a href="http://lvyou.qibila.com/dunhuang/" target="_blank">敦煌</a><a
+                        href="http://lvyou.qibila.com/yinchuan/" target="_blank">银川</a><a href="http://lvyou.qibila.com/wulumuqi/"
+                            target="_blank">乌鲁木齐</a><a href="http://lvyou.qibila.com/gannan/" target="_blank">甘南</a><a
+                                href="http://lvyou.qibila.com/huashan/" target="_blank">华山</a><a href="http://lvyou.qibila.com/xining/"
+                                    target="_blank">西宁</a><a href="http://lvyou.qibila.com/lanzhou/" target="_blank">兰州</a><a
+                                        href="http://lvyou.qibila.com/yanan/" target="_blank">延安</a><a href="http://lvyou.qibila.com/baojitaibaishan/"
+                                            target="_blank">太白山</a><a href="http://lvyou.qibila.com/kanasi/" target="_blank">喀纳斯</a><a
+                                                href="http://lvyou.qibila.com/jiayuguan/" target="_blank">嘉峪关</a><a href="http://lvyou.qibila.com/tianshui/"
+                                                    target="_blank">天水</a><a href="http://lvyou.qibila.com/kashi/" target="_blank">喀什</a><a
+                                                        href="http://lvyou.qibila.com/ejinaqi/" target="_blank">额济纳旗</a>
+            </div>
+            <div class="botDesNameList botNoMr">
+                <h4>
+                    西南</h4>
+                <a href="http://lvyou.qibila.com/lasa/" target="_blank">拉萨</a><a href="http://lvyou.qibila.com/lijiang/"
+                    target="_blank">丽江</a><a href="http://lvyou.qibila.com/chengdu/" target="_blank">成都</a><a
+                        href="http://lvyou.qibila.com/jiuzhaigou/" target="_blank">九寨沟</a><a href="http://lvyou.qibila.com/xishuangbanna/"
+                            target="_blank">西双版纳</a><a href="http://lvyou.qibila.com/qiandongnan/" target="_blank">黔东南</a><a
+                                href="http://lvyou.qibila.com/chongqing/" target="_blank">重庆</a><a href="http://lvyou.qibila.com/kunming/"
+                                    target="_blank">昆明</a><a href="http://lvyou.qibila.com/emeishan/" target="_blank">峨眉山</a><a
+                                        href="http://lvyou.qibila.com/xianggelila/" target="_blank">香格里拉</a><a href="http://lvyou.qibila.com/tengchong/"
+                                            target="_blank">腾冲</a><a href="http://lvyou.qibila.com/dali/" target="_blank">大理</a><a
+                                                href="http://lvyou.qibila.com/hanzhong/" target="_blank">汉中</a><a href="http://lvyou.qibila.com/luguhu/"
+                                                    target="_blank">泸沽湖</a><a href="http://lvyou.qibila.com/guiyang/" target="_blank">贵阳</a><a
+                                                        href="http://lvyou.qibila.com/kangding/" target="_blank">康定</a>
+            </div>
+            <div class="botDesNameList">
+                <h4>
+                    华中</h4>
+                <a href="http://lvyou.qibila.com/zhangjiajie/" target="_blank">张家界</a><a href="http://lvyou.qibila.com/wuhan/"
+                    target="_blank">武汉</a><a href="http://lvyou.qibila.com/changsha/" target="_blank">长沙</a><a
+                        href="http://lvyou.qibila.com/fenghuang/" target="_blank">凤凰</a><a href="http://lvyou.qibila.com/luoyang/"
+                            target="_blank">洛阳</a><a href="http://lvyou.qibila.com/kaifeng/" target="_blank">开封</a><a
+                                href="http://lvyou.qibila.com/wudangshan/" target="_blank">武当山</a><a href="http://lvyou.qibila.com/yuntaishan/"
+                                    target="_blank">云台山</a><a href="http://lvyou.qibila.com/enshi/" target="_blank">恩施</a><a
+                                        href="http://lvyou.qibila.com/shennongjia/" target="_blank">神农架</a><a href="http://lvyou.qibila.com/zhengzhou/"
+                                            target="_blank">郑州</a><a href="http://lvyou.qibila.com/hengyanghengshan/" target="_blank">衡山</a><a
+                                                href="http://lvyou.qibila.com/sanmenxia/" target="_blank">三门峡</a><a href="http://lvyou.qibila.com/yueyang/"
+                                                    target="_blank">岳阳</a><a href="http://lvyou.qibila.com/yichang/" target="_blank">宜昌</a><a
+                                                        href="http://lvyou.qibila.com/nanyang/" target="_blank">南阳</a><a href="http://lvyou.qibila.com/shaoshan/"
+                                                            target="_blank">韶山</a>
+            </div>
+            <div class="botDesNameList">
+                <h4>
+                    华东</h4>
+                <a href="http://lvyou.qibila.com/xiamen/" target="_blank">厦门</a><a href="http://lvyou.qibila.com/hangzhou/"
+                    target="_blank">杭州</a><a href="http://lvyou.qibila.com/huangshan/" target="_blank">黄山</a><a
+                        href="http://lvyou.qibila.com/qingdao/" target="_blank">青岛</a><a href="http://lvyou.qibila.com/qiandaohu/"
+                            target="_blank">千岛湖</a><a href="http://lvyou.qibila.com/shanghai/" target="_blank">上海</a><a
+                                href="http://lvyou.qibila.com/wuzhen/" target="_blank">乌镇</a><a href="http://lvyou.qibila.com/yangzhou/"
+                                    target="_blank">扬州</a><a href="http://lvyou.qibila.com/taishan/" target="_blank">泰山</a><a
+                                        href="http://lvyou.qibila.com/wuyuan/" target="_blank">婺源</a><a href="http://lvyou.qibila.com/lushan/"
+                                            target="_blank">庐山</a><a href="http://lvyou.qibila.com/suzhou/" target="_blank">苏州</a><a
+                                                href="http://lvyou.qibila.com/nanjing/" target="_blank">南京</a><a href="http://lvyou.qibila.com/xitang/"
+                                                    target="_blank">西塘</a><a href="http://lvyou.qibila.com/wuyishan/" target="_blank">武夷山</a><a
+                                                        href="http://lvyou.qibila.com/jinggangshan/" target="_blank">井冈山</a><a href="http://lvyou.qibila.com/putuoshan/"
+                                                            target="_blank">普陀山</a>
+            </div>
+            <div class="botDesNameList">
+                <h4>
+                    华南</h4>
+                <a href="http://lvyou.qibila.com/sanya/" target="_blank">三亚</a><a href="http://lvyou.qibila.com/guilin/"
+                    target="_blank">桂林</a><a href="http://lvyou.qibila.com/guangzhou/" target="_blank">广州</a><a
+                        href="http://lvyou.qibila.com/beihai/" target="_blank">北海</a><a href="http://lvyou.qibila.com/haikou/"
+                            target="_blank">海口</a><a href="http://lvyou.qibila.com/nanning/" target="_blank">南宁</a><a
+                                href="http://lvyou.qibila.com/shenzhen/" target="_blank">深圳</a><a href="http://lvyou.qibila.com/zhuhai/"
+                                    target="_blank">珠海</a><a href="http://lvyou.qibila.com/zhaoqing/" target="_blank">肇庆</a><a
+                                        href="http://lvyou.qibila.com/shaoguan/" target="_blank">韶关</a><a href="http://lvyou.qibila.com/qingyuan/"
+                                            target="_blank">清远</a><a href="http://lvyou.qibila.com/nanaodao/" target="_blank">南澳岛</a><a
+                                                href="http://lvyou.qibila.com/foshan/" target="_blank">佛山</a><a href="http://lvyou.qibila.com/guangdonghuizhou/"
+                                                    target="_blank">惠州</a><a href="http://lvyou.qibila.com/conghua/" target="_blank">从化</a><a
+                                                        href="http://lvyou.qibila.com/dongguan/" target="_blank">东莞</a><a href="http://lvyou.qibila.com/bama/"
+                                                            target="_blank">巴马</a><a href="http://lvyou.qibila.com/zhanjiang/" target="_blank">湛江</a>
+            </div>
+            <div class="botDesNameList botNoMr">
+                <h4>
+                    港澳台</h4>
+                <a href="http://lvyou.qibila.com/xianggang/" target="_blank">香港</a><a href="http://lvyou.qibila.com/aomen/"
+                    target="_blank">澳门</a><a href="http://lvyou.qibila.com/taibei/" target="_blank">台北</a><a
+                        href="http://lvyou.qibila.com/gaoxiong/" target="_blank">高雄</a><a href="http://lvyou.qibila.com/jinmen/"
+                            target="_blank">金门</a><a href="http://lvyou.qibila.com/kending/" target="_blank">垦丁</a><a
+                                href="http://lvyou.qibila.com/alishan/" target="_blank">阿里山</a><a href="http://lvyou.qibila.com/danshui/"
+                                    target="_blank">淡水</a><a href="http://lvyou.qibila.com/jilong/" target="_blank">基隆</a><a
+                                        href="http://lvyou.qibila.com/hualian/" target="_blank">花莲</a><a href="http://lvyou.qibila.com/tainan/"
+                                            target="_blank">台南</a><a href="http://lvyou.qibila.com/taoyuan/" target="_blank">桃园</a><a
+                                                href="http://lvyou.qibila.com/riyuetan/" target="_blank">日月潭</a><a href="http://lvyou.qibila.com/penghu/"
+                                                    target="_blank">澎湖</a><a href="http://lvyou.qibila.com/lvdao/" target="_blank">绿岛</a><a
+                                                        href="http://lvyou.qibila.com/taizhong/" target="_blank">台中</a>
+            </div>
+        </div>
+    </div>
+    <div class="footgray">
+        <div class="footinner clearfix">
+            <dl>
+                <dt>网站地图</dt>
+                <dd>
+                    景点导航</dd>
+                <dd>
+                    门票导航</dd>
+                <dd>
+                    酒店导航</dd>
+                <dd>
+                    电影导航</dd>
+                <dd>
+                    院线导航</dd>
+                <dd>
+                    景点排行榜</dd>
+            </dl>
+            <dl>
+                <dt>网站相关</dt>
+                <dd>
+                    <a title="关于我们" href="/content/about.aspx">关于我们</a></dd>
+                <dd>
+                    <a title="联系我们" href="/content/contact.aspx">联系我们</a></dd>
+                <dd>
+                    <a title="航展展区分布图" href="/content/Distribution.aspx">诚聘英才</a></dd>
+                <dd>
+                    <a title="航展日程安排" href="/content/schedule.aspx">法律声明</a></dd>
+                <dd>
+                    <a title="第十届航展入场须知" href="/content/know.aspx">用户协议</a></dd>
+            </dl>
+            <dl>
+                <dt>服务提供</dt>
+                <dd>
+                    旅游攻略</dd>
+                <dd>
+                    景点介绍</dd>
+                <dd>
+                    景点门票</dd>
+                <dd>
+                    热门电影</dd>
+                <dd>
+                    在线购票</dd>
+                <dd>
+                    团购</dd>
+                <dd>
+                    汽车票</dd>
+                <dd>
+                    火车票</dd>
+            </dl>
+            <dl>
+                <dt>客服热线</dt>
+                <dd>
+                    400 676 0405</dd>
+                <dd>
+                    15989768355</dd>
+                <dd>
+                    0756-6855591</dd>
+                <dd>
+                </dd>
+            </dl>
+            <dl>
+                <dt>微信关注</dt>
+                <dd>
+                    <img src="/templates/hangzhan/Images/weixin.jpg" width="175px"></dd>
+            </dl>
+        </div>
+    </div>
+<div class="copyright">
+    <span class="">© 版权所有2003-2015 基于互联网大数据提供最专业最全面的旅游咨询服务-奇比拉有限公司, All rights reserved.</span><br>
+    粤ICP备14066312号-1 欢迎合作:qibila#163.com|
+    <script src="http://c.cnzz.com/core.php?web_id=1253259831&amp;show=pic&amp;t=z" charset="utf-8"
+            type="text/javascript"></script>
+    <a href="http://www.cnzz.com/stat/website.php?web_id=1253259831" target="_blank"
+       title="站长统计">
+        <img border="0" hspace="0" vspace="0" src="http://icon.cnzz.com/img/pic.gif"></a>
+</div>
+ 
+    <script type="text/javascript">
+        $(function () {
+            //ticket
+            $('.more-ticket-block').each(function (index, dom) {
+                $(this).click(function () {
+                    var me = $(this);
+                    var data_text = $(me).attr('data-text');
+                    if (data_text == '收起') {
+                        //show all 
+                        $('#scener-ticket-list-' + index + ' .item-hide').removeClass('item-hide');
+                        $(me).attr('data-text', '展开');
+                        $("html,body").stop(true);
+
+                        $("html,body").animate({ scrollTop: $('#mpsearch-item-' + index).offset().top + 201 }, 1000);
+                        $(me).data('intext', me.html());
+                        $(me).html('收起');
+
+                    } else {
+                        //hide all
+                        $('#scener-ticket-list-' + index).find('li[data-hide=item-hide]').addClass('item-hide');
+                        $(me).attr('data-text', '收起');
+                        $(me).html($(me).data('intext'));
+                        $("html,body").stop(true);
+                        $("html,body").animate({ scrollTop: $('#mpsearch-item-' + index).offset().top }, 1000);
+                    }
+                });
+            });
+            $('.scener-ticket-list li .ticket-list-content').each(function (index, dom) {
+                $(this).click(function (event) {
+                    var me = $(this).parent('li');
+                    if (me.hasClass("active")) {
+                        me.find('.ticket-list-more').animate({ opacity: 0 }, 0.1);
+                        me.removeClass("active");
+                    } else {
+                        me.addClass("active");
+                        me.find('.ticket-list-more').animate({ opacity: 1 }, 0.1);
+                    }
+                });
+            });
+            $(".btn-close").click(function () {
+                $(this).closest("li").removeClass("active");
+            });
+
+            //ticketent
+
+            $('.scener-line-title-ul li').each(function (index, dom) {
+                $(this).bind("mouseover", function () {
+                    $(this).siblings().removeClass("current");
+                    $(this).addClass("current");
+                    $('.main-line-wrap ul li').eq(index).siblings().hide();
+                    $('.main-line-wrap ul li').eq(index).show();
+                });
+            });
+            $('.more-content-block').attr('flag', '0');
+            $('.more-content-block').click(function () {
+                var flag = $('.more-content-block').attr('flag');
+                if (flag == 0) {
+                    $('.list-content').css('height', 'auto');
+                    $('.more-content-block').attr('flag', 1);
+                    $('.more-content-block').html('收起');
+                } else {
+                    $('.list-content').css('height', '100px');
+                    $('.more-content-block').attr('flag', 0);
+                    $('.more-content-block').html('查看更多');
+                }
+            });
+
+
+            $("img").lazyload({ effect: "fadeIn" });
+           
+            $('.cate_hd').bind({
+                "mouseover": function () {
+                    $('.changecity-box').show();
+                },
+                "mouseout": function () {
+                    $('.changecity-box').hide();
+                }
+            });
+
+            //选择城市Scroll
+            $("#changecity-box").mCustomScrollbar({
+                setHeight: 400,
+                theme: "dark"
+            });
+
+            //当前缤纷主题
+            $('#cur-theme-ul li').each(function (a, b) {
+                $(this).bind("click", function () {
+                    oliw = $('.curtheme-itemlist').outerWidth(); //每次移动的宽度  
+                    mv(parseInt(a));
+                    $(this).addClass("on").siblings().each(function () {
+                        $(this).removeClass("on");
+                    });
+                });
+            });
+
+            $('#cls-scenery-ticket li').each(function (a, b) {
+                $(this).bind("click", function () {
+                    $(this).addClass("on").siblings().each(function () {
+                        $(this).removeClass("on");
+                    });
+                    $('.mainfun').eq(a).css('display', "block").siblings().each(function () {
+                        $(this).css('display', "none");
+                    });
+                });
+            });
+
+        });
+        /*** cur-theme move***/
+        var extime;
+        var dnow = 0;
+        var oliw = $('.curtheme-itemlist').outerWidth(); //每次移动的宽度  
+        var oli = $('.curtheme-itemlist'); //所有itemlist列表
+        var o = document.getElementById("curtheme-main");
+        var olf = 0;
+        var lastIndex = 0;
+        function mv(itemIndex) {
+            dnow = itemIndex; //当前位置   
+            clearInterval(extime);
+            extime = setInterval(bc, 30);
+            lastIndex = itemIndex;
+        }
+        function bc() {
+            var ns = ((dnow * oliw + olf) - o["scrollLeft"]) /*+ ((dnow + 1) * 10)*/;
+            var v = ns > 0 ? Math.ceil(ns / 10) : Math.floor(ns / 10);
+            o["scrollLeft"] += v;
+            if (v == 0) {
+                clearInterval(extime);
+                v = null;
+            }
+        }
+
+        /*** cur-theme move End***/
+
+
+    </script>
+</body>
+</html>

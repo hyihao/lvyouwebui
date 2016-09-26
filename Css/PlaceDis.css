@@ -1,0 +1,220 @@
+﻿/*********PlackDis目的地大全********/
+.PDcontent {
+    padding-top: 20px;
+}
+
+.narrow_page .sitemap {
+    height: 30px;
+    width: 100%;
+}
+
+    .narrow_page .sitemap a {
+        line-height: 30px;
+        color: #666;
+        cursor: pointer;
+        padding: 0px 15px;
+        height: 30px;
+        display: block;
+        float: left;
+    }
+
+        .narrow_page .sitemap a.first {
+            padding: 0px 0px;
+        }
+
+    .narrow_page .sitemap i {
+        float: left;
+        height: 30px;
+        display: block;
+        line-height: 30px;
+        padding: 0px 5px;
+    }
+
+.map_wrap {
+    position: relative;
+}
+
+.place_wrap {
+   margin:35px auto;
+    width: 504px;
+    height: 58px;
+    background: url(../images/mdd/plaInd-sprite.png) no-repeat 0 0;
+}
+
+    .place_wrap .ps-title {
+        float: left;
+        width: 96px;
+        line-height: 58px;
+        font-size: 24px;
+        color: #fff;
+        text-indent: 17px;
+        visibility: hidden;
+    }
+
+    .place_wrap .ps-txt {
+        float: left;
+        padding: 12px 32px 13px 0;
+        width: 324px;
+        height: 33px;
+    }
+        .place_wrap .ps-txt input {
+            width: 300px;
+            height: 20px;
+            border: 0 none;
+            border-radius: 3px;
+            padding: 6px 12px 7px;
+            margin: 0;
+            font-size: 14px;
+            line-height: 20px;
+            vertical-align: top;
+        }
+    .place_wrap .ps-btn {
+        float: left;
+        margin: 5px 0 0;
+        width: 51px;
+        height: 48px;
+        border: 0;
+        padding: 0;
+        cursor: pointer;
+        background: none;
+    }
+    .place_wrap .ps-btn input {
+  filter: alpha(opacity=0);
+  opacity: 0;
+  border: 0;
+  width: 51px;
+  height: 48px;
+  padding: 0;
+  overflow: hidden;
+  cursor: pointer;
+}
+.place_list_ul{ 
+  display: block;
+  height: 230px;
+  width:580px;  
+  margin-top: 50px;
+}
+
+ .place_list_ul li {
+  float: left;
+  width: 100px;
+  margin: 0 16px 12px 0;
+  position: relative;
+  display: inline;
+  overflow: hidden;
+  height: 100px;
+}
+.place_list_ul li img {
+  border-radius: 5px;
+}
+.place_list_ul li span {
+  color: white;
+  bottom: 0;
+  width: 100px;
+  line-height: 24px;
+  position: absolute;
+  text-align: center;
+  filter: alpha(opacity=80);
+  position: absolute;
+  left: 0;
+  background: black;
+  opacity: 0.8;
+  border-radius: 0 0 5px 5px;
+  font-size: 14px;
+}
+.rmss {
+    font-weight:normal;
+    font-size:22px;
+}
+ .rmss a {
+  font-size: 14px;
+  margin-left: 10px;
+  color: #F2E409;
+}
+.city_map {
+    padding: 15px 0px;
+    width: 100%;
+    height: auto;
+    background: #4bb7ef;
+    margin-bottom: 20px;
+}
+
+.city_map_fl {
+    position: relative;
+}
+
+.map_wrap_left {
+    margin-right: 40px;
+    position: relative;
+}
+
+.city_map_title {
+    font-size: 30px;
+    font-family: "microsoft yahei";
+    color: white;
+    margin-right: 10px;
+    display: inline-block;
+    vertical-align: top;
+    float: left;
+}
+
+
+.PDcontent .hd {
+    margin: 25px auto 0;
+    color: #444;
+}
+
+.PDcontent .sitemap_toptag {
+    margin: 25px 0 0;
+    word-wrap: break-word;
+}
+
+
+.sitemap_toptag a {
+    float: left;
+    padding: 2px 4px;
+    margin: 0 5px 0 0;
+    white-space: nowrap;
+    color: #666;
+}
+
+    .sitemap_toptag a.link-hot {
+        color: #ff3600;
+    }
+
+.sitemap_block {
+    margin: 25px auto 0;
+}
+
+    .sitemap_block .hd {
+        height: 30px;
+        line-height: 30px;
+        border-bottom: 1px solid #ededed;
+        margin: 0 0 10px;
+        font-size: 18px;
+          font-weight:bold;
+    }
+
+    .sitemap_block li {
+        float: left;
+        display: inline;
+        margin-right: 45px;
+        width: 65px;
+    }
+
+        .sitemap_block li a {
+            color: #666;
+        }
+
+            .sitemap_block li a.link-hot {
+                color: #ff3600;
+            }
+
+.map_linklist {
+    height: auto;
+    margin: 0 auto 25px;
+}
+
+    .map_linklist li {
+        line-height: 20px;
+    }

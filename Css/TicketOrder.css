@@ -1,0 +1,907 @@
+﻿.order-container
+{
+     margin: 0 auto;
+  padding-bottom: 80px;
+}
+.order-container, .order-pay .pay_box {
+  width: 1180px;
+}
+.order-pay .pay_box
+{
+     margin: 0 auto;
+}
+.order-head
+{ 
+    width:100%;
+
+   height: 60px;  
+
+}
+.progress_bar{
+	width: 100%;
+	padding: 30px 0 10px;
+}
+.progress_bar li {
+float: left;
+width: 25%;
+border-top: 6px solid #D7D7D7;
+text-align: center;
+color: #999;
+position: relative;
+line-height: 42px;
+}
+.progress_bar li i {
+position: absolute;
+left: 50%;
+margin-left: -10px;
+top: -13px;
+height: 20px;
+width: 20px;
+background-position: 28px 0;
+}
+.progress_bar .complete {
+color: #FF9813;
+border-top: 6px solid #FF9813;
+}
+.progress_bar .complete i {
+background-position: -0px 0;
+}
+/*********progress_bar******/
+.product-wrap , .contact-head
+{
+    margin-top: 25px;
+  clear: both;
+}
+
+.product-wrap .product-head, .contact_box .contact-head {
+  padding-bottom: 10px;
+  border-bottom: 2px solid #fe9c00;
+}
+.product-wrap .product-head h2, .contact_box .contact-head h2 {
+  display: inline;
+  font-weight: 400;
+  font-size: 22px;
+  color: #fe9c00;
+}
+.contact_box .contact-head  i {
+  color: #fe9c00;
+  font-size: 20px;
+}
+.product-wrap .product-head a {
+  float: right;
+  height: 38px;
+  line-height: 38px;
+  margin-top: -5px;
+  padding: 0 20px 0 25px;
+  border-radius: 4px;
+  color: #fff;
+  font-size: 16px;
+  background-color: #f60;
+}
+.product-list
+{
+    overflow:hidden;
+}
+.product-item{
+  position: relative;
+  padding-top: 10px;
+  margin-top: -1px;
+  border-top: 1px dotted #cdcdcd;
+}
+.product-item .delete {
+  position: absolute;
+  top: 10px;
+  right: 0;
+  width: 50px;
+  height: 20px;
+  font-size: 16px;
+  color: #1873c1;
+
+}
+.product-item .title {
+  color: #333;
+  font-size: 20px;
+  font-weight: 300;
+  width: 860px;
+}
+.detail_btn {
+  position: relative;
+  display: inline-block;
+  margin-left: 6px;
+  padding-right: 5px;
+  font-size: 14px;
+}
+.detail_btn i {
+  position: absolute;
+  top: 10px;
+  margin: 0 0 2px 4px;
+  border: 6px dashed transparent;
+  border-top: 5px solid #0065bb;
+  border-bottom: 0 none;
+}
+.product-item .pro_info {
+  margin: 16px 0 20px;
+}
+.product-item .form_item {
+  margin-top: 10px;
+  padding-left: 182px;
+  font-size: 14px;
+  clear: both;
+}
+.product-item .form_item label {
+  float: left;
+  width: 182px;
+  height: 30px;
+  line-height: 30px;
+  text-align: right;
+  margin-left: -182px;
+}
+.product-item  .form_item label i {
+  color: red;
+}
+.input_m {
+  width: 325px;
+  height: 30px;
+  line-height: 30px;
+  text-indent: 5px;
+  border: 1px solid #ccc;
+}
+.calendar_input {
+  width: 245px;
+  padding: 0 3px 0 8px;
+  font-weight: 500;
+  border-color: #6ac0ff;
+  background-position: 228px -130px;
+  -webkit-user-select: none;  
+}
+.product-item .number_box {
+  overflow: hidden;
+  border: 1px solid #099fde;
+  height: 28px;
+  display: inline-block;
+}
+address, cite, dfn, em, i, var {
+  font-style: normal;
+}
+.product-item .form_item {
+  margin-top: 10px;
+  padding-left: 182px;
+  font-size: 14px;
+  clear: both;
+}
+.product-item  .number_box .num_cut {
+  background-color: #099fde;
+   background-position: -48px -131px;
+}
+.product-item .number_box .num_cut.disable {
+  background-position: -47px -109px;
+}
+.product-item .number_box .disable {
+  background-color: #f4f4f4;
+  cursor: not-allowed;
+}
+.product-item .number_box .num_add {
+  background-color: #099fde;
+  background-position: -24px -109px;
+}
+.product-item .number_box a {
+  display: inline-block;
+  width: 28px;
+  height: 28px;
+  vertical-align: top;
+}
+.product-item .number_box .num_input {
+  width: 22px;
+  height: 28px;
+  line-height: 28px;
+  border: 0;
+  text-align: center;
+}
+.calendar_input ,.progress_bar li i ,.product-item .number_box a, .product_list .item_box .item_content .title a i,.product_list .item_box .detail_box .arrow {
+
+   display: inline-block;
+  background-image: url(../Images/un_tickets.png);
+  background-repeat: no-repeat;
+}
+.product-item .price_box {
+  float: left;
+  margin-top: -10px;
+  font-size: 32px;
+  height:58px;
+  line-height:59px;
+}
+.product-item .price_box dfn {
+  vertical-align: -4px;
+  color: #f60;
+}
+.product-item .price_box .tip {
+  font-size: 14px;
+  color: #666;
+}
+.product-item .price_box .tip i {
+  margin-left: 5px;
+}
+.hidden {
+  display: none!important;
+}
+.form_item:after {
+  clear: both;
+  content: '';
+  display: block;
+  height: 0;
+  overflow: hidden;
+}
+.product-item .num_tip {
+  color: #aaa;
+  height: 30px;
+  line-height: 30px;
+  vertical-align: top;
+}
+.order-pay
+{
+  position: fixed;
+  bottom: 0;
+  z-index: 500;
+  width: 100vw;
+  width: 100% ;
+  margin-left: calc(100% - 100vw);
+  height: 70px;
+  background-color: #f3f4f5;
+  border-top: 1px solid #dee6ec;
+  overflow: hidden;
+}
+ .btn_submit {
+  display: inline-block;
+  width: 180px;
+  height: 44px;
+  line-height: 44px;
+  margin-top: 15px;
+  text-align: center;
+  font-size: 24px;
+  color: #fff;
+  background-color: #f60;
+  border-radius: 4px;
+}
+.btn_submit:hover{background-color:#ff5400}
+.total_price {
+  display: table-cell;
+  vertical-align: middle;
+  width: 200px;
+  height: 70px;
+  line-height: 70px;
+  font-size: 14px;
+  color: #767c81;
+}
+.total_price dfn {
+  margin-left: 10px;
+  font-size: 28px;
+  color: #f60;
+  vertical-align: -4px;
+}
+.contact_input_box {
+  margin-top: 24px;
+    margin-bottom: 30px;
+}
+.contact_input_box .header h3 {
+  display: inline-block;
+  font-size: 18px;
+  font-weight: 300;
+}
+.contact_input_box .header .tip {
+  font-size: 14px;
+  color: #fe9c00;
+}
+.fill_box dl
+{
+      font-size: 14px;
+  margin-top: 10px;
+}
+.fill_box dl dt
+{
+ width: 182px;
+  float: left;
+  height: 30px;
+  line-height: 30px;
+  text-align: right;
+}
+.fill_box dl dt i {
+  color: red;
+}
+.input_error {
+  border-color: #ff461b;
+}
+.ticket-item-more-content
+{
+      position: relative;
+      width: 800px;
+      min-height: 50px;
+      line-height: 1.5;
+      margin: 10px 0;
+      padding: 5px 25px 15px;
+      border: 1px solid #e6e8ea;
+      background-color: #f4f5f6;
+      font-size: 12px;
+      color: #a6a9ab;
+      display:none;
+}
+.ticket-item-more-content dl {
+  clear: both;
+  font: 400 12px/20px 'microsoft yahei';
+  color: #666;
+  line-height: 20px;
+  padding: 4px 0;
+  border: 0;
+}
+ .ticket-item-more-content dl dt {
+  color: #333;
+  font-weight: 700;
+  float: left;
+  width: 6em;
+  text-align: right;
+  padding-right: 10px;
+}
+ .ticket-item-more-content dl dd {
+  float: left;
+  width: 590px;
+  word-break: break-all;
+}
+
+/****弹窗****/
+.t-more-box 
+{
+    padding:19px;
+    font-size:12px;
+}
+.t-more-box .header {
+  position: relative;
+  margin-bottom: 10px;
+}
+.t-more-box .header h2 {
+  color: #fe9c00;
+  font-size: 20px;
+  font-weight: 400;
+}
+.product_list
+{
+    width:100%;
+    overflow:hidden;
+}
+.product_list .list_top {
+  color: #999;
+  border: 1px solid #dfdfdf;
+}
+.product_list .list_top .w_01 {
+  text-indent: 145px;
+}
+ .product_list .list_top li {
+  float: left;
+  height: 30px;
+  line-height: 30px;
+  background-color: #eee;
+}
+.t-more-box .w_01 {
+  width: 550px;
+}
+.t-more-box .w_02, .t-more-box .w_03 {
+  width: 70px;
+}
+ .t-more-box  .w_04 {
+  width: 80px;
+}
+ .t-more-box  .w_05 {
+  width: 90px;
+}
+.product_list .list_content {
+  max-height: 385px;
+  overflow-y: scroll;
+}
+.product_list .list_content {
+  max-height: 385px;
+  overflow-y: scroll;
+}
+ .product_list .item_box {
+  margin-top: -1px;
+  border: 1px solid #dfdfdf;
+  background-color: #f3f3f3;
+  color: #333;
+}
+.product_list .item_box .item_type {
+  float: left;
+  width: 76px;
+  padding-top: 10px;
+  border-top: 1px solid #fff;
+  text-align: center;
+}
+.product_list .item_box .item_content {
+  float: left;
+  border-left: 1px solid #dfdfdf;
+  background-color: #fff;
+}
+.product_list .item_box .item_content .item_list {
+  border-bottom: 1px #dadada dashed;
+  margin-bottom: -1px;
+}
+.product_list .item_box .item_content .item {
+  padding: 10px 0;
+}
+.product_list .item_box .item_content .item:hover {
+  background-color: #eaf9ff;
+}
+ .product_list .item_box .item_content .item .w_01 {
+  width: 426px;
+  padding-right: 30px;
+}
+.product_list .item_box .item_content .item dt {
+  float: left;
+}
+.product_list .item_box .item_content .title {
+  padding-left: 65px;
+}
+.product_list .item_box .item_content .title span {
+  margin: 0 10px 0 -45px;
+}
+ .product_list .item_box .item_content .title a i
+ {
+  width: 10px;
+  height: 16px;
+  margin-left: 5px;
+  background-position: -107px -207px;
+  }
+  .product_list .item_box .item_content .title a.on i {
+  background-position: -119px -207px;
+}
+  .product_list .item_box .item_content .item .w_02 {
+  margin-top: 3px;
+  color: #999;
+  text-decoration: line-through;
+  text-indent: 15px;
+}
+.product_list .item_box .item_content .item dfn {
+  margin-right: 2px;
+}
+.product_list .item_box .item_content .item .w_02 {
+  margin-top: 3px;
+  color: #999;
+  text-decoration: line-through;
+  text-indent: 15px;
+}
+.product_list .item_box .item_content .item .w_03 {
+  margin-top: 3px;
+  color: #f60;
+  font-weight: 700;
+  text-indent: 15px;
+}
+.product_list .item_box .item_content .item .w_04 {
+  margin-top: 1px;
+}
+.product_list .item_box .item_content .item .w_05 {
+  text-align: center;
+}
+.booking_btn.disable,.booking_btn.disable:hover {
+  background-color: #cecece;
+  cursor: not-allowed;
+}
+.booking_btn {
+  display: inline-block;
+  width: 70px;
+  height: 24px;
+  line-height: 24px;
+  text-align: center;
+  background-color: #ff8400;
+  color: #fff;
+  border-radius: 2px;
+  box-shadow: 0 1px 1px #ccc;
+}
+.booking_btn:hover{background-color:#f60;text-decoration:none;color: #fff;}
+.product_list .item_box .detail_box {
+  position: relative;
+  width: 693px;
+  margin: 0 auto 10px;
+  padding: 10px 25px 30px;
+  min-height: 70px;
+  color: #898b8c;
+  border: 1px solid #badeeb;
+  background-color: #f0fbff;
+}
+.detail_box {
+  display: none;
+  position: relative;
+  width: 800px;
+  min-height: 50px;
+  line-height: 1.5;
+  margin: 10px 0;
+  padding: 5px 25px 15px;
+  border: 1px solid #e6e8ea;
+  background-color: #f4f5f6;
+  font-size: 12px;
+  color: #a6a9ab;
+}
+.product_list .item_box .detail_box .arrow {
+  position: absolute;
+  top: -11px;
+  left: 70px;
+  display: block;
+  width: 22px;
+  height: 11px;
+  background-position: -152px -27px;
+}
+.product_list .item_box .detail_box .packup-btn {
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  width: 100%;
+  height: 30px;
+  line-height: 30px;
+  background-color: #e8f9ff;
+}
+.product_list .item_box .detail_box .packup-btn a {
+  display: block;
+  width: 50px;
+  margin: 0 auto;
+  color: #06c;
+  text-decoration: none;
+}
+a {
+  color: #0065bb;
+  outline: 0;
+}
+.product_list .item_box .detail_box dl {
+  position: relative;
+  padding-left: 80px;
+  margin-bottom: 10px;
+  min-height: 20px;
+}
+.product_list .item_box .detail_box dt {
+  position: absolute;
+  margin: 0 0 0 -90px;
+  color: #333;
+}
+.detail_box dt {
+  margin: 5px 0;
+  font-weight: 700;
+}
+.layui-layer-page .layui-layer-content
+{
+    overflow:visible !important;
+}
+/****弹窗****/
+/*支付*/
+.pay_box_wrap  {
+      padding: 14px 15px 10px;
+  border-top: 1px solid #FFFCDE;
+  background-color: #FFFCD8;
+}
+.pay_title
+{
+	display: inline;
+float: left;
+width: 750px;
+
+padding-left: 15px;
+font-size: 14px;
+
+}
+.pay_title h1{
+  font-size: 24px;
+    line-height: 33px;
+  font-weight: 700;
+  color: #585858;
+  }
+.pay_title p
+{
+  font-size: 13px;
+  line-height: 35px;
+  color: #585858;
+}
+.payinfo_price
+{
+	float: right;
+margin-left: 15px;
+padding-left: 15px;
+    margin-right: 50px;
+border-left: 2px solid #E6DFC2;
+}
+.payinfo_price  p.order_price {
+    font-size: 14px;
+  line-height: 35px;
+}
+.payinfo_price .price {
+font-weight: bold;
+font-size: 26px;
+line-height: 1.2;
+}
+.paytitle .price {
+font-size: 18px;
+vertical-align: -2px;
+}
+.price {
+font: 20px/1.5 Arial;
+color: #F60;
+}
+.paytitle
+{
+	margin: 25px 0 8px;
+	font-size: 14px;
+}
+.paytitle strong
+{
+	font-size: 14px;
+}
+#goodsTabs {
+    margin-top: 30px;
+}
+.pro-tabs
+{
+	z-index: 998;
+	border-bottom: 2px solid #09F;
+	background-color: #EEE;
+	width: 1180px;
+}
+.pro-tabs ul li  {
+margin-right: 8px;
+font: 400 18px/39px "Microsoft Yahei",Arial,sans-serif;
+color: #333;
+float:left;
+}
+.pro-tabs ul li a.current ,.pro-tabs ul li label.current  {
+border-color: #09F;
+background: #09F;
+color:White;
+}
+.pro-tabs ul li a,.pro-tabs ul li label
+{
+	display:block;
+height: 39px;
+padding: 0 24px;
+border: 1px solid #D9D9D9;
+border-bottom: 0 none;
+background: white;
+-webkit-border-radius: 2px 2px 0 0;
+-moz-border-radius: 2px 2px 0 0;
+border-radius: 2px 2px 0 0;
+cursor: pointer;
+color:#333;
+}
+.product_ticket {
+margin: 15px 0 0;
+}
+.product_ticket_item {
+margin: 20px 0 -1px;
+border: 1px solid #C8C8C8;
+}
+.clspaytype
+{padding: 20px 25px;
+border: 2px solid #09F;
+background-color: white;
+border-top:0px solid white;	
+}
+.nobgcolor
+{
+	background-color:White;
+}
+.paylist
+{
+	overflow:hidden;	
+}
+.paylist li {
+float: left;
+padding: 15px 40px 15px 0;
+}
+.paylist li input {
+float: left;
+width: 13px;
+height: 13px;
+margin: 15px 5px 0 0;
+cursor: pointer;
+}
+
+.paylist li label {
+float: left;
+width: 132px;
+height: 45px;
+cursor: pointer;
+border: 1px solid #DDD;
+background-color: white;
+}
+.more_alipay {
+background-image: url(http://image01.qilabi.com/icon/payicon/alipay.png);
+background-repeat: no-repeat;
+}
+.more_weixin{
+background-image: url(http://image01.qilabi.com/icon/payicon/weicha.png);
+background-repeat: no-repeat;
+}
+.paylist li  .more_tenpay {
+background-image: url(http://image01.qilabi.com/icon/payicon/tenpay.png);
+background-repeat: no-repeat;
+}
+.more_onlinepay
+{
+	background-image: url(http://image01.qilabi.com/icon/payicon/onlinepay.jpg);
+	background-repeat: no-repeat;
+	background-position:-9px -12px;
+}
+.paysubmit {
+padding: 0 20px;
+text-align: center;
+margin:20px 10px ;
+}
+.btn_paysubmit
+{
+	display: inline-block;
+	width: 148px;
+	height: 34px;
+	text-align: center;
+	vertical-align: middle;
+	cursor: pointer;
+	font: bold 16px/34px "Microsoft YaHei",SimSun;
+	color: white;
+	border: 1px solid #F88500;
+	background-color: #FFB000;
+	border-radius: 3px;
+	box-shadow: 0 1px 0 rgba(95,50,0,0.7);
+	text-shadow: 1px 1px 0 #CF7000;
+	-webkit-appearance: none;
+	appearance: none;
+}
+.order_pay_cls {
+    margin-top: 45px;
+}
+.order_pay_cls .order_pay_title {
+    position: relative;
+  border-bottom: 1px solid #f3f3f3;
+  height: 60px;
+  line-height: 60px;
+}
+.order_pay_title  .titleh3 {
+  font-size: 30px;
+  font-family: "microsoft yahei";
+  color: #111;
+  margin-right: 10px;
+  display: inline-block;
+  vertical-align: top;
+  font-weight: normal;
+}
+
+/*支付结果*/
+.msg_tips {
+  margin: 70px auto;
+  position: relative;
+  width: 430px;
+}
+.msg_tips .ico {
+  display: block;
+  float: left;
+  background:  url(../Images/un_tickets.png);
+  width: 73px;
+  height: 66px;
+  text-indent: -99999px;
+  overflow: hidden;
+}
+.msg_tips .ico.error {
+   background-position: -76px -44px;
+}
+.msg_tips .ico.succeed {
+   background-position: 2px -44px;
+}
+.msg_tips .msg {
+  margin-left: 100px;
+}
+.msg_tips .msg p {
+  line-height: 1.8em;
+}
+.msg_tips .msg strong {
+  margin-bottom: 10px;
+  font-size: 16px;
+  color: #444;
+}
+.clslogo {
+   margin-top: 5px;
+  height: 60px;
+  width: 168px;
+  background-repeat: no-repeat;
+  overflow: hidden;
+  float: left;
+  background-image: url("http://image01.qilabi.com/icon/top_bg.png");
+    background-position: -163px -163px;
+  text-indent: -999em;
+}
+.logotitle {
+    line-height: 35px;
+    font-size: 28px;
+}
+.logosubtitle {
+     line-height: 25px;
+    font-size: 18px;
+}
+.mar-right10 {
+    margin-right: 10px;
+}
+.logocontent {
+  float: right;
+  width: 422px;
+  padding-top: 25px;
+  text-align: right;
+  color: #bbb;
+}
+.logocontent .cui_username {
+  color: #06c;
+  margin-right: 8px;
+}
+.mp-tips-wrap {
+  color: #f00;
+  background-color: #fff5f3;
+  border: 1px solid #fdafa9;
+  margin-top: 8px;
+  height: 35px;
+  line-height: 35px;
+  padding-left: 20px;
+  margin-bottom: 10px;
+}
+.ng-isolate-scope
+{
+      padding-top: 150px;
+  background: url(http://image01.qilabi.com/icon/payicon/wechat.png) no-repeat center top;
+  margin: 50px 0;
+  text-align:center;
+}
+
+/* 弹窗内容 */
+.pay-popup { padding: 36px 40px; }
+.pay-popup h3 { font-size: 16px; color: #666; font-weight: bold; }
+.pay-popup ul { font-size: 16px; padding: 30px 0; }
+.pay-popup li { padding: 10px 0; }
+.pay-popup li span { font-size: 14px; margin-left: 2px; color: red;display:block;padding-top:10px; }
+.pay-popup li a { font-size: 18px; color: #fff; display: inline-block; zoom: 1; *display: inline; width: 124px; line-height: 38px; text-align: center; background: #ff7800; border-radius: 4px; }
+.pay-popup li .icon { background: url(http://image01.qilabi.com/icon/payicon/pay_status.png) no-repeat 0 0; display: inline-block; zoom: 1; *display: inline; width: 30px; height: 30px; vertical-align: middle; margin-right: 8px; position: relative; top: -2px; }
+.pay-popup li .icon-no { background-position: 0 -30px; }
+.pay-popup p strong { font-weight: bold; color: #ff7800; }
+
+.peisongrow {
+    color: #404040;
+  font-size: 14px;
+  display: block;
+}
+.peisongrow select {
+  float: left;
+  font-size: 14px;
+  margin-right: 10px;
+  height: 30px;
+    line-height: 30px;
+  padding: 4px 10px 5px;
+ display: inline;
+ border: 1px solid #ccc;
+ *height:25px
+}
+.peisongrow select option {
+  line-height: 100px;
+  height: 100px;
+  font-size: 14px;
+}
+
+.clsoptional {
+  border-top: 1px dashed #BEBEBE;
+  margin: 30px 30px;
+  padding-left: 45px;
+}
+.seperaterLine {
+  margin-top: -10px;
+  color: #989898;
+  font-size: 14px;
+  background: white;
+  float: left;
+  padding: 0 5px;
+  zoom: 1;
+  overflow: hidden;
+  position: relative;
+}
+.contact_box {
+    margin-bottom: 10px;
+}
+.span_adr {
+    float: left;
+  height: 30px;
+  line-height: 30px;
+  padding-right: 8px;
+  font-size: 14px;
+}

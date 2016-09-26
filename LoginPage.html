@@ -1,0 +1,41 @@
+﻿<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8"/>
+    <script src="JavaScript/jquery-1.4.4.min.js"></script>
+    <script src="JavaScript/lhgdialog/lhgdialog.js?skin=idialog"></script>
+    <title></title>
+</head>
+<body>
+    <script type="text/javascript" language="javascript">
+        var isLogin = false;
+        if (!isLogin) {
+            if (window.localStorage.dialogLogin=='false') {
+                $.dialog({
+                    width: 900,
+                    height: 500,
+                    id: 'a15',
+                    content: 'url:loginPanel.html',
+                    min: false,
+                    max: false,
+                    init: function() {
+                    },
+                    title: '会员登录',
+                    button: [
+                        {
+                            name: '关闭且不再登录',
+                            callback: function() {
+                                window.localStorage.dialogLogin = true;
+                                this.close();
+                            }
+                        }, { name: '关闭', callback: function() { this.close(); } }
+                    ],
+                    lock: true,
+                    padding: 0
+                });
+
+            }
+        }
+    </script>
+</body>
+</html>

@@ -1,0 +1,719 @@
+﻿* {
+    margin: 0px;
+    padding: 0px;
+}
+
+html, body, div, span, applet, object, iframe, h1, h2, h3, h4, h5, h6, p, blockquote, pre, a, abbr, acronym, address, big, cite, code, del, dfn, em, font, img, ins, kbd, q, s, samp, small, strike, strong, sub, sup, tt, var, b, u, i, center, dl, dt, dd, ol, ul, li, fieldset, form, label, legend, table, caption, tbody, tfoot, thead, tr, th, td {
+    margin: 0;
+    padding: 0;
+    border: 0;
+    outline: 0;
+}
+
+body, textarea, select, input, button {
+    font-family: 'Microsoft YaHei UI', 'Microsoft YaHei',DengXian,SimSun, 'Segoe UI',Tahoma,Helvetica,sans-serif;
+}
+
+body {
+    margin: 0;
+    font-size: 14px;
+    line-height: 20px;
+    color: #333;
+}
+
+a {
+    text-decoration: none;
+}
+
+    a:hover {
+        color: #4084C3;
+    }
+
+ul, li {
+    list-style: none;
+}
+
+em, u {
+    font-style: normal;
+    text-decoration: none;
+}
+
+.f_l {
+    float: left;
+}
+
+.f_r {
+    float: right;
+}
+
+.blank10 {
+    clear: both;
+    height: 10px;
+    overflow: hidden;
+    visibility: visible;
+}
+
+.blank1 {
+    clear: both;
+    overflow: hidden;
+    visibility: visible;
+    height: 1px;
+}
+
+.blank0 {
+    clear: both;
+    overflow: hidden;
+    visibility: visible;
+}
+
+.blank15 {
+    height: 15px;
+    clear: both;
+    overflow: hidden;
+    visibility: visible;
+}
+
+.line20 {
+    clear: both;
+    font-size: 0px;
+    height: 20px;
+    overflow: hidden;
+}
+
+.padding_right20 {
+    padding-right: 20px;
+}
+
+.clearfix {
+    zoom: 1;
+}
+
+.narrow_page .clsPanle {
+    width: 1200px;
+}
+
+.clsPanle {
+    margin: 0 auto;
+    width: 990px;
+    height: 100%;
+}
+
+    .clearfix:after, .boxwrap:after, .clsPanle:after, .pagefoot:after {
+        content: '\20';
+        display: block;
+        clear: both;
+        height: 0;
+        overflow: hidden;
+        visibility: hidden;
+    }
+
+.nav-warpper {
+    position: relative;
+}
+/*导航*/
+.nav-channel {
+    background: #fff;
+    border-bottom: #ededed 1px solid;
+    font: 16px/45px "microsoft yahei";
+    position: relative;
+    height: 45px;
+    z-index: 1;
+}
+
+
+
+.nav-warpper li i.hot {
+    background: url(../images/ico-nav-channel.png) no-repeat;
+}
+
+.nav-warpper li {
+    float: left;
+    padding: 0px 15px;
+    margin: 14.5px 0;
+    padding: 0 15px;
+    height: 16px;
+    border-right: #999 1px solid;
+    border-right: rgba(0,0,0,.1) 1px solid;
+    position: relative;
+}
+
+    .nav-warpper li i {
+        width: 16px;
+        height: 16px;
+        font: normal 12px/16px 'microsoft yahei';
+        color: #fff;
+        border-radius: 2px;
+        text-align: center;
+        display: block;
+        position: absolute;
+        top: -13px;
+        right: 5px;
+        overflow: hidden;
+        text-indent: -9999px;
+    }
+
+        .nav-warpper li i.hot {
+            background-position: 0 -48px;
+        }
+
+    .nav-warpper li a {
+        font-size: 14px;
+        overflow: visible;
+        display: block;
+        color: #333;
+        cursor: pointer;
+        padding: 0px 10px;
+        margin-top: -14.5px;
+        position: relative;
+    }
+
+    .nav-warpper li.currenActived a, .nav-warpper li.currenActived a:hover {
+        color: #0091d9;
+    }
+
+    .nav-warpper li.actived a, .nav-warpper li.actived a:hover {
+        color: #cc0000;
+    }
+
+    .nav-warpper li a:hover {
+        color: #999;
+    }
+
+.menuNav {
+    height: 55px;
+    border-top: 1px solid #135DBC;
+    background: #0096ff;
+    color: white;
+    display: block;
+}
+
+    .menuNav .clsPanle {
+        background: #0096ff url(http://image01.qilabi.com/icon/menu_bg.jpg) right 0 no-repeat;
+    }
+
+.nav_top_ul {
+    zoom: 1;
+    float: left;
+}
+
+    .nav_top_ul li {
+        float: left;
+        height: 55px;
+        display: inline;
+        position: relative;
+    }
+
+        .nav_top_ul li.current {
+            background-color: #3586F2;
+        }
+
+        .nav_top_ul li i {
+            height: 11px;
+            overflow: hidden;
+            position: absolute;
+            text-indent: -9999px;
+            left: 110px;
+            top: -8px;
+            width: 21px;
+            display: inline-block;
+        }
+
+            .nav_top_ul li i.hot {
+                background: url(http://www.qibila.com/images/quan/bg3.png) -173px 0;
+            }
+
+        .nav_top_ul li a {
+            float: left;
+            display: inline;
+            padding: 0 28px;
+            height: 55px;
+            font: 16px/50px "microsoft yahei",tahoma,arial,sans-serif;
+            text-decoration: none;
+            color: #fff;
+            text-align: center;
+        }
+
+    .nav_top_ul .on a {
+        position: relative;
+        z-index: 1;
+        margin-top: -2px;
+        float: left;
+        height: 38px;
+        line-height: 36px;
+        border-top: 2px solid rgb(240,240,240);
+        background-color: white;
+        color: #017DFF;
+    }
+
+    .nav_top_ul li a:hover {
+        background-color: #1275fc;
+        color: white;
+        text-decoration: none;
+    }
+
+
+.footgray {
+    width: 100%;
+    padding: 30px 0;
+    background: #666;
+    margin: 30px 0 15ox 0px;
+}
+
+    .footgray .footinner {
+        width: 980px;
+        margin: 0 auto;
+    }
+
+        .footgray .footinner dl {
+            width: 175px;
+            overflow: hidden;
+            float: left;
+            padding-right: 20px;
+        }
+
+        .footgray .footinner dt {
+            color: #fff;
+            padding-bottom: 24px;
+            font-size: 18px;
+        }
+
+        .footgray .footinner dd {
+            line-height: 24px;
+            font-size: 14px;
+            color: #fff;
+        }
+
+        .footgray .footinner a {
+            color: #fff;
+            font-size: 14px;
+        }
+
+.copyright {
+    margin-top: 20px;
+    padding-bottom: 20px;
+    background-color: #f7f7f7;
+    text-align: center;
+    overflow: hidden;
+    clear: both;
+}
+
+.line-keyword_1 {
+    background-color: #ff7800;
+}
+
+.line-keyword_2 {
+    background-color: #2b89ea;
+}
+
+.line-keyword_3 {
+    background-color: #7abb15;
+}
+
+h1, h2, h3, h4, h5, h6 {
+    font-size: 100%;
+    font-weight: normal;
+}
+/*菜单导航*/
+.menuNav {
+    height: 55px;
+    border-top: 1px solid #135DBC;
+    background: #0096ff;
+    color: white;
+    display: block;
+}
+
+    .menuNav .clsPanle {
+        background: #0096ff url(http://image01.qilabi.com/icon/menu_bg.jpg) right 0 no-repeat;
+    }
+
+.channel {
+    position: relative;
+    z-index: 600;
+    margin-top: -1px;
+    float: left;
+    width: 208px;
+    height: 55px;
+    background-color: #4593FD;
+    box-shadow: 2px -1px 3px rgba(55,55,55,.5);
+}
+
+.cate_hd {
+    height: 55px;
+    border-bottom: 1px solid #4A98FF;
+    font: 400 16px/38px "微软雅黑E\8F6F\96C5\9ED1",Arial;
+    zoom: 1;
+    border-color: #3586F2;
+    position: relative;
+    cursor: pointer;
+}
+
+    .cate_hd .cur {
+        display: block;
+    }
+
+.cateall {
+    float: left;
+    font: 400 16px/38px "微软雅黑E\8F6F\96C5\9ED1",Arial;
+    line-height: 55px;
+    position: relative;
+}
+
+    .cateall i {
+        background: url(http://image01.qilabi.com/icon/maptop_48.png) no-repeat;
+        display: inline-block;
+        width: 48px;
+        height: 48px;
+        margin: 3px 10px;
+        float: left;
+    }
+
+    .cateall .at-name {
+        display: inline-block;
+        width: 100px;
+        height: 46px;
+        line-height: 46px;
+        overflow: hidden;
+        white-space: nowrap;
+        text-overflow: ellipsis;
+        font: 20px/50px "microsoft yahei",tahoma,arial,sans-serif;
+    }
+
+    .cateall b {
+        display: inline-block;
+        width: 24px;
+        height: 24px;
+        background: url(http://image01.qilabi.com/icon/xiala.png) no-repeat;
+        float: right;
+        margin-top: 14px;
+    }
+
+.changecity-box {
+    position: absolute;
+    top: 56px;
+    left: 0;
+    transition: all ease-out .2s;
+    width: 420px;
+    overflow: hidden;
+    background: #fff;
+    z-index: 10;
+    background-color: #fff;
+    border-radius: 3px;
+    display: none;
+}
+
+.at-city {
+    float: left;
+    margin: 15px 10px 10px 15px;
+    width: 420px;
+    overflow: hidden;
+    height: auto;
+    display: block;
+}
+
+.gray-ban {
+    line-height: 22px;
+    color: #999;
+    font: normal normal normal 14px/20px "Microsoft YaHei";
+    border-bottom: 1px solid #f3f3f3;
+    padding-bottom: 10px;
+}
+
+.city-hot {
+    padding: 10px;
+    width: 385px;
+    overflow: hidden;
+}
+
+.city-all li {
+    width: 385px;
+    overflow: hidden;
+    color: #999;
+    transition: all ease .2s;
+    padding: 6px 0;
+}
+
+    .city-all li .ca-l {
+        float: left;
+        font-weight: bold;
+        width: 40px;
+        text-align: right;
+        margin-right: 10px;
+        margin-bottom: 0;
+        padding: 0 5px 0 0;
+        font: normal normal normal 14px/20px "Microsoft YaHei";
+        color: #333;
+    }
+
+    .city-all li b.ca-l {
+        color: #999;
+    }
+
+.changecity-box a {
+    float: left;
+    color: #333;
+    margin-right: 17px;
+    margin-bottom: 5px;
+    line-height: 20px;
+    padding: 0 5px;
+    white-space: nowrap;
+    transition: all ease .2s;
+    font: normal normal normal 14px/20px "Microsoft YaHei";
+}
+
+.city-all li a.ca-l {
+    color: #333;
+    font-weight: bold;
+}
+
+.ca-r {
+    float: left;
+    width: 330px;
+    overflow: hidden;
+    white-space: nowrap;
+}
+
+.nav_top {
+    float: left;
+    font: 400 18px/38px "微软雅黑E\8F6F\96C5\9ED1",Arial;
+}
+
+.nav_top_ul {
+    zoom: 1;
+    float: left;
+}
+
+    .nav_top_ul li {
+        float: left;
+        height: 55px;
+        display: inline;
+        position: relative;
+    }
+
+        .nav_top_ul li.current {
+            background-color: #3586F2;
+        }
+
+        .nav_top_ul li i {
+            height: 11px;
+            overflow: hidden;
+            position: absolute;
+            text-indent: -9999px;
+            left: 110px;
+            top: -8px;
+            width: 21px;
+            display: inline-block;
+        }
+
+            .nav_top_ul li i.hot {
+                background: url(http://www.qibila.com/images/quan/bg3.png) -173px 0;
+            }
+
+        .nav_top_ul li a {
+            float: left;
+            display: inline;
+            padding: 0 28px;
+            height: 55px;
+            font: 16px/50px "microsoft yahei",tahoma,arial,sans-serif;
+            text-decoration: none;
+            color: #fff;
+            text-align: center;
+        }
+
+    .nav_top_ul .on a {
+        position: relative;
+        z-index: 1;
+        margin-top: -2px;
+        float: left;
+        height: 38px;
+        line-height: 36px;
+        border-top: 2px solid rgb(240,240,240);
+        background-color: white;
+        color: #017DFF;
+    }
+
+    .nav_top_ul li a:hover {
+        background-color: #1275fc;
+        color: white;
+        text-decoration: none;
+    }
+
+/****导航****/
+.nvGprs {
+    color: #555;
+    line-height: 25px;
+    height: 25px;
+    font-size: 12px;
+    width: 100%;
+    text-align: left;
+    margin-top: 10px;
+    margin-bottom: 10px;
+}
+
+.gprs {
+    height: 21px;
+    width: 16px;
+    background: url(http://image01.qilabi.com/icon/map_nav.png) no-repeat 5px 4px;
+    display: inline-block;
+    float: left;
+    padding-right: 10px;
+}
+
+.nvGprs a {
+    color: #333;
+}
+
+.color999 {
+    color: #999;
+}
+
+.fixed {
+    position: fixed !important;
+    top: 0;
+    z-index: 2000;
+}
+
+.orange {
+    color: #f76120;
+}
+
+table {
+    border-collapse: collapse;
+    table-layout: fixed;
+    width: 100%;
+}
+
+.ellipsis {
+    overflow: hidden;
+    white-space: nowrap;
+    -o-text-overflow: ellipsis;
+    text-overflow: ellipsis;
+}
+
+i {
+    font-style: normal;
+}
+
+.public_ft_list {
+    height: 50px;
+    padding: 9px 0;
+    border: 1px solid #eee;
+    background: #fbfbfb;
+    font-size: 12px;
+    position: relative;
+    overflow: hidden;
+    zoom: 1;
+}
+
+    .public_ft_list li {
+        width: 25%;
+        float: left;
+        margin-left: -2px;
+        height: 40px;
+        padding: 5px 0;
+        position: relative;
+        color: #999;
+        font-size: 12px;
+        line-height: 16px;
+        border-left: #eee solid 1px;
+        overflow: hidden;
+        white-space: nowrap;
+    }
+
+        .public_ft_list li .ft_ioc1 {
+            background-position: 0px 0;
+        }
+
+        .public_ft_list li .ft_ioc2 {
+            background-position: -50px 0;
+        }
+
+        .public_ft_list li .ft_ioc3 {
+            background-position: -100px 0;
+        }
+
+        .public_ft_list li .ft_ioc4 {
+            background-position: -150px 0;
+        }
+
+        .public_ft_list li i {
+            float: left;
+            width: 40px;
+            height: 40px;
+            margin: 0 10px 0 20px;
+        }
+
+        .honour_wrap a, .public_ft_list li i {
+            background: url(http://image01.qilabi.com/icon/bottom-icon.png) no-repeat;
+        }
+
+    .public_ft_list strong {
+        display: block;
+        line-height: 20px;
+        margin-bottom: 4px;
+        font-family: "Microsoft Yahei";
+        font-size: 18px;
+        font-weight: normal;
+    }
+
+.foot_tips {
+    margin-bottom: 50px !important;
+}
+
+.honour_wrap {
+    display: inline-block;
+    padding-top: 10px;
+    text-align: left;
+}
+
+    .honour_wrap a {
+        float: left;
+        margin: 0 5px;
+        width: 88px;
+        height: 32px;
+        border: 1px solid #d1d1d1;
+        border-radius: 2px;
+        font: 12px/32px Simsun;
+        color: #666;
+        overflow: hidden;
+        background-color: #fff;
+        background-repeat: no-repeat;
+        background-position: 0 0;
+        text-indent: -99em;
+        white-space: normal;
+    }
+
+    .honour_wrap .honour1 {
+        background-position: -129px -45px;
+        text-indent: 36px;
+    }
+
+    .honour_wrap .honour2 {
+        background-position: -131px -81px;
+        text-indent: 36px;
+    }
+
+    .honour_wrap .honour3 {
+        background-position: -41px -45px;
+    }
+
+    .honour_wrap .honour4 {
+        background-position: -132px -114px;
+        text-indent: 0;
+        padding: 2px 0 2px 37px;
+        width: 51px;
+        height: 28px;
+        line-height: 1.2;
+    }
+
+    .honour_wrap .honour5 {
+        background-position: -41px -80px;
+    }
+
+    .honour_wrap .honour6 {
+        background-position: -42px -113px;
+    }
+
+    .honour_wrap .honour8 {
+        background-position: -133px -147px;
+        text-indent: 36px;
+    }

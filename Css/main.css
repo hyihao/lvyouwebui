@@ -1,0 +1,1670 @@
+﻿.container-title {
+    padding-top: 30px;
+}
+
+.core-left {
+    width: 669px;
+    padding-right: 40px;
+    border-right: 1px solid #efefef;
+}
+
+.narrow_page .core-left {
+    width: 859px;
+}
+
+.core-left .scener-info {
+    height: 295px;
+    color: #333;
+    font-family: "microsoft yahei";
+    font-size: 12px;
+}
+
+.scener-ticket-list .item-hide {
+    display: none;
+}
+
+.core-banner {
+    width: 525px;
+    height: 295px;
+    float: left;
+    position: relative;
+    overflow: hidden;
+}
+
+.scener-desc {
+    width: 270px;
+    padding-left: 30px;
+    float: left;
+    font-size: 12px;
+}
+
+.main-score {
+    height: 24px;
+    line-height: 24px;
+    color: #666;
+    margin-top: 6px;
+}
+
+    .main-score .star-new {
+        margin-top: 4px;
+        float: left;
+        margin-right: 2px;
+    }
+
+.scener-desc h1.title {
+    margin-top: 0;
+    font-size: 24px;
+    font-family: "microsoft yahei";
+    font-weight: 500;
+    color: #111;
+    line-height: 24px;
+}
+
+.scener-desc .scener-content {
+    margin: 15px 0;
+}
+
+    .scener-desc .scener-content .main-desc-tip {
+        font-weight: 700;
+    }
+
+    .scener-desc .scener-content p {
+        line-height: 20px;
+        color: #666;
+    }
+
+#more-click {
+    cursor: pointer;
+    color: white;
+    display: inline;
+    padding: 0px 1px;
+    font-size: 12px;
+}
+
+#slides, .slides_container, #slides img {
+    width: 525px;
+    height: 295px;
+}
+
+.pic-count {
+    position: absolute;
+    right: 0;
+    bottom: 0;
+    text-align: right;
+    color: #fff;
+    cursor: pointer;
+    zoom: 1;
+    z-index: 9;
+}
+
+.more-pic-tip {
+    -webkit-transition: all .2s ease;
+    -moz-transition: all .2s ease;
+    -ms-transition: all .2s ease;
+    -o-transition: all .2s ease;
+    transition: all .2s ease;
+    background-color: #000;
+    background-color: rgba(0,0,0,.8);
+    color: #fff;
+    font: 400 14px/20px 'microsoft yahei';
+    padding: 16px 0 16px 20px;
+    display: inline-block;
+    vertical-align: top;
+}
+
+.pic-more-content {
+    display: inline-block;
+    vertical-align: top;
+    zoom: 1;
+    float: left;
+}
+
+.globel-iconfont {
+    float: left;
+    font-size: 40px;
+    line-height: 1;
+    color: #fff;
+    color: rgba(255,255,255,.6);
+    text-align: left;
+}
+
+.core-right {
+    width: 300px;
+    margin-top: -30px;
+    float: right;
+}
+
+.wish-order {
+    padding: 30px;
+    padding-top: 25px;
+    padding-right: 0;
+    border-bottom: 1px #f3f3f3 solid;
+    width: 270px;
+    position: relative;
+}
+
+    .wish-order h2 {
+        margin-top: 20px;
+        margin-bottom: 9px;
+        font-size: 18px;
+        color: #2ea8e5;
+    }
+
+.plan-wish-order {
+    padding-bottom: 0;
+    color: #666;
+    display: block;
+    font-family: "microsoft yahei";
+}
+
+    .plan-wish-order span {
+        font-size: 18px;
+        margin-right: 10px;
+        color: #111;
+    }
+
+.right-wrap {
+    padding: 25px 0 30px 30px;
+    border-bottom: 1px #f3f3f3 solid;
+    width: 270px;
+}
+
+.right-wrap-title {
+    font-size: 18px;
+    color: #111;
+    height: 24px;
+    line-height: 24px;
+}
+
+.right_wrap_place {
+    padding-bottom: 10px;
+    border-bottom: 1px solid #f3f3f3;
+}
+
+.right-wrap .more {
+    color: #0091d9;
+    font-size: 12px;
+    float: right;
+    margin-top: 3px;
+}
+
+.hot-ticket-box {
+    padding: 5px 10px 0 10px;
+}
+
+    .hot-ticket-box li {
+        width: 248px;
+        overflow: hidden;
+        padding-top: 10px;
+        padding-bottom: 10px;
+        position: relative;
+    }
+
+        .hot-ticket-box li .ticketpic {
+            width: 60px;
+            height: 60px;
+            background: url(http://pages.c-ctrip.com/gs_static/ttd2/img/ttd_nopic.png?t=bfc53a17a732737e620387c8ee47da80) no-repeat 0 -339px;
+            overflow: hidden;
+            float: left;
+        }
+
+        .hot-ticket-box li dl {
+            width: 175px;
+            float: right;
+        }
+
+        .hot-ticket-box li dt a {
+            color: #666;
+            font-size: 14px;
+        }
+
+        .hot-ticket-box li dd .comment_score {
+            color: #00a7e1;
+            padding-right: 8px;
+        }
+
+        .hot-ticket-box li dd .comments {
+            color: #999;
+        }
+
+        .hot-ticket-box li dd a.pricelink {
+            color: #ff5200;
+            margin-right: 10px;
+        }
+
+        .hot-ticket-box li dd .sp_tips {
+            width: 16px;
+            height: 17px;
+            overflow: hidden;
+            display: inline-block;
+            color: #fff;
+            text-align: center;
+            line-height: 17px;
+            background: #fba62e;
+            vertical-align: text-bottom;
+        }
+
+        .hot-ticket-box li .tips_ranking {
+            width: 15px;
+            height: 15px;
+            overflow: hidden;
+            display: inline-block;
+            text-align: center;
+            line-height: 15px;
+            background: #fba62e;
+            color: #fff;
+            position: absolute;
+            top: 10px;
+            font-weight: bold;
+            left: 0;
+        }
+
+.want-wapper {
+    border-top: 1px solid rgb(204,225,209);
+    font-size: 14px;
+}
+
+.adide-wapper {
+    font-size: 14px;
+    margin-top: 25px;
+}
+
+.want-wapper li {
+    border-bottom: 1px solid rgb(204,225,209);
+    line-height: 35px;
+    height: 35px;
+}
+
+    .want-wapper li i {
+        padding-right: 20px;
+        font-style: normal;
+    }
+
+.narrow_page .scener-mod {
+    margin-top: 45px;
+    width: 860px;
+}
+
+.scener-mod {
+    margin-top: 35px;
+    width: 680px;
+}
+
+    .scener-mod h3.title {
+        height: 40px;
+        font-size: 30px;
+        font-family: "microsoft yahei";
+        color: #111;
+        margin-right: 10px;
+        display: inline-block;
+        vertical-align: top;
+        font-weight: normal;
+        line-height: 40px;
+    }
+
+        .scener-mod h3.title a {
+            font-size: 14px;
+            margin-left: 10px;
+            color: #06C;
+            text-decoration: none;
+        }
+
+.scener-unmiss {
+}
+
+/*景点列表1*/
+.ticket-item-num {
+    width: 20px;
+    height: 20px;
+    line-height: 20px;
+    font: 14px tahoma;
+    color: #fff;
+    text-align: center;
+    margin: 23px 13px 0 11px;
+    background: #f60;
+    float: left;
+    border-radius: 20px 20px 20px 20px;
+}
+
+.scener-ticket-list li {
+    border-bottom: 1px dotted #dadada;
+    cursor: pointer;
+}
+
+    .scener-ticket-list li.active, .scener-ticket-list li:hover {
+        background: #f7f9fa;
+    }
+
+.scener-ticket-list .btn-close {
+    display: block;
+    background: #eff7fb;
+    color: #666;
+    text-align: center;
+    font: 400 12px/40px 'microsoft yahei';
+    cursor: pointer;
+}
+
+.ticket-list-content {
+    float: left;
+    width: 815px;
+    padding: 20px 0 10px;
+}
+
+    .ticket-list-content .ticket-title-wrapper {
+        color: #333;
+        width: 280px;
+        margin-right: 45px;
+        font: 400 14px/24px 'microsoft yahei';
+    }
+
+        .ticket-list-content .ticket-title-wrapper:hover, .scener-ticket-list .active .ticket-title-wrapper {
+            color: #0091d9;
+        }
+
+.main-ticket .main-ticket-wrap li.active .ticket-name .name span, .main-ticket .main-ticket-wrap li:hover .ticket-name .name span {
+}
+
+.ticket-list-content .ticket-title-tips {
+    width: 185px;
+    color: #666;
+    margin-right: 0;
+    font: 400 12px/20px 'microsoft yahei';
+}
+
+.ticket-title-tips p span {
+    display: block;
+}
+
+.ticket-title-tips .tips-i {
+    display: inline-block;
+    width: 24px;
+    height: 24px;
+    vertical-align: top;
+    font-size: 24px;
+    cursor: pointer;
+    color: #5aceb2;
+}
+
+.ticket-list-content .ticket-title-price {
+    width: 100px;
+    margin: 0;
+}
+
+    .ticket-list-content .ticket-title-price.price-container {
+        display: inline-block;
+        margin-top: 6px;
+    }
+
+.price-now, .price-original {
+    color: #ff8b06;
+    font: 400 18px/1 Arial;
+}
+
+.price-original {
+    font-size: 12px;
+    color: #999;
+    text-decoration: line-through;
+}
+
+.ticket-list-content .ticket-title-discount {
+    width: 95px;
+    position: relative;
+    min-height: 40px;
+    margin-right: 0;
+}
+
+.ticket-list-content .ticket-title-booking {
+    margin-right: 22px;
+}
+
+.booking-btn {
+    color: #fff;
+    background-color: #ff8400;
+    border-radius: 2px;
+    display: inline-block;
+    width: 75px;
+    height: 30px;
+    line-height: 30px;
+    text-align: center;
+}
+
+    .booking-btn:hover {
+        color: #fff;
+        background-color: #f60;
+    }
+
+.ticket-list-more {
+    width: 100%;
+    height: 0;
+    opacity: 0;
+    overflow: hidden;
+    -webkit-transition: all .2s ease-out;
+    -moz-transition: all .2s ease-out;
+    -ms-transition: all .2s ease-out;
+    transition: all .2s ease-out;
+}
+
+.scener-ticket-list li.active .ticket-list-more {
+    min-height: 50px;
+    height: auto;
+    opacity: 1;
+}
+
+.ticket-list-moreinfo {
+    padding: 0 20px 25px 40px;
+    max-height: 275px;
+    overflow: auto;
+}
+
+    .ticket-list-moreinfo dl {
+        clear: both;
+        font: 400 12px/20px 'microsoft yahei';
+        color: #666;
+        line-height: 20px;
+        padding: 4px 0;
+        border: 0;
+    }
+
+        .ticket-list-moreinfo dl dt {
+            color: #333;
+            font-weight: 700;
+            float: left;
+            width: 5em;
+        }
+
+        .ticket-list-moreinfo dl dd {
+            float: left;
+            width: 590px;
+            word-break: break-all;
+        }
+
+/*景点列表1*/
+
+/*景点列表2*/
+.nearby-ticket-list {
+    margin-top: 20px;
+}
+
+    .nearby-ticket-list .ticket-item {
+        margin: 15px 0;
+        height: 50px;
+        position: relative;
+        border: 1px solid #e5e5e5;
+        padding-left: 10px;
+    }
+
+.ticket-item .ticket-item-round {
+    width: 20px;
+    height: 20px;
+    line-height: 20px;
+    font: 14px tahoma;
+    color: #fff;
+    text-align: center;
+    margin-top: 15px;
+    background: #111;
+    float: left;
+    border-radius: 20px 20px 20px 20px;
+}
+
+.ticket-item .scener-title {
+    margin-top: 13px;
+    font-size: 14px;
+    line-height: 24px;
+    float: left;
+    font-weight: 700;
+    margin-left: 5px;
+    color: #007ed9;
+}
+
+.ticket-item .ticket-item-sceneritem {
+    margin-top: 13px;
+    font-size: 14px;
+    line-height: 24px;
+    margin-left: 4px;
+    color: #666;
+    float: left;
+}
+
+    .ticket-item .ticket-item-sceneritem em {
+        margin-right: 4px;
+    }
+
+.ticket-item .hot {
+    background: url(../images/hot.png) right no-repeat;
+    padding-right: 32px;
+}
+
+.ticket-item .bar-folder {
+    margin-top: 15px;
+    margin-right: 10px;
+    float: right;
+    width: 81px;
+    height: 21px;
+    background: url(../images/ticket-icon.png);
+    font-size: 12px;
+    line-height: 21px;
+    color: #fff;
+    text-indent: 8px;
+}
+
+    .ticket-item .bar-folder:hover {
+        color: #fff;
+        text-decoration: none;
+        text-indent: 8px;
+    }
+
+.ticket-item .title-bar-price {
+    margin-top: 16px;
+    font: 18px tahoma;
+    color: #f48d2e;
+    float: left;
+    width: 80px;
+}
+
+.ticket-title-bar em.up {
+    font: 12px sinsum;
+    color: #999;
+    position: relative;
+    top: -2px;
+    margin-left: 5px;
+}
+
+.list-traffic .list-icon-circle, .list-tips .list-icon-circle, .bar-ticket-save, .save-price, .right-corner, .table_opentime_day, .table_opentime_night, .detailcon .subscript {
+    background: url(http://image01.qilabi.com/icon/ticket-icon.png) no-repeat;
+}
+
+.bar-ticket-save-wrap {
+    margin-top: 15px;
+    float: left;
+    height: 18px;
+    margin: 18px 5px 0 10px;
+    width: 60px;
+}
+
+.bar-ticket-save {
+    background-position: 0 -98px;
+    width: 18px;
+    height: 18px;
+    float: left;
+}
+
+.save-price {
+    background-position: 0 -78px;
+    height: 18px;
+    font: 12px sinsum;
+    line-height: 18px;
+    float: left;
+    color: #fda702;
+}
+
+.right-corner {
+    background-position: 0 -56px;
+    width: 6px;
+    height: 18px;
+    float: left;
+}
+
+.narrow_page .unmiss-box-warp {
+    width: 276px;
+    float: left;
+    margin-right: 10px;
+}
+
+    .narrow_page .unmiss-box-warp .unmiss-title {
+        font-size: 16px;
+        color: #333;
+        line-height: 58px;
+        display: block;
+        width: 240px;
+        margin: 10px 18px 0px 18px;
+        text-align: center;
+        position: relative;
+    }
+
+        .narrow_page .unmiss-box-warp .unmiss-title strong {
+            padding: 0 10px;
+            position: relative;
+            z-index: 2;
+            font-weight: 500;
+            background: #fff;
+        }
+
+            .narrow_page .unmiss-box-warp .unmiss-title strong span {
+                color: #ff9c00;
+            }
+
+    .narrow_page .unmiss-box-warp .unmiss-more, .more-ticket-block {
+        height: 38px;
+        background-color: #f8f8f8;
+        display: block;
+        text-align: center;
+        line-height: 38px;
+        color: #666;
+    }
+
+        .unmis-more span, .more-ticket-block span {
+            color: #ff8300;
+        }
+
+.unmiss-title .icon-line {
+    position: absolute;
+    display: inline-block;
+    z-index: 1;
+    width: 100%;
+    height: 50%;
+    top: 0;
+    left: 0;
+    border-bottom: #999 1px solid;
+}
+
+.narrow_page .unmiss-ul li {
+    height: auto;
+    width: 276px;
+    position: relative;
+}
+
+.unmiss-ul li a, .unmiss-scenery li a {
+    display: block;
+    position: relative;
+    overflow: hidden;
+    height: 210px;
+    cursor: pointer;
+    padding: 8px;
+    border: 1px solid #f6f6f6;
+    border-color: #fff;
+}
+
+    .unmiss-ul li a:hover, .unmiss-scenery li a:hover {
+        background: #fff;
+        text-decoration: none;
+        border-color: #ff6701;
+    }
+
+.unmiss-scenery li h4 {
+    color: #333;
+    font-weight: normal;
+}
+
+.unmiss-ul li h4 {
+    font-size: 16px;
+    font-weight: normal;
+    margin: 10px 0 5px;
+    overflow: hidden;
+    white-space: nowrap;
+    text-overflow: ellipsis;
+    color: #333;
+    width: 100%;
+}
+
+.unmiss-ul li .list_time, .unmiss-scenery .list_time {
+    color: #ff6701;
+    margin-bottom: 10px;
+    width: 100%;
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    height: 18px;
+}
+
+.unmiss-scenery .list_time {
+    font-size: 12px;
+    margin-bottom: 2px;
+}
+
+.narrow_page .unmiss-ul li .list_pic, .unmiss-scenery li .list_pic {
+    width: 260px;
+}
+
+.unmiss-scenery .star-box {
+    font-size: 12px;
+    color: #333;
+}
+
+.scener-notes {
+    border-bottom: 1px solid #f3f3f3;
+    line-height: 60px;
+}
+
+.notes-box {
+    overflow: hidden;
+    padding: 20px 0;
+    _zoom: 1;
+    height: 140px;
+    border-bottom: 1px dashed #cecece;
+}
+
+    .notes-box .item-photo {
+        float: left;
+        margin-right: 20px;
+        height: 140px;
+        display: inline-block;
+        overflow: hidden;
+        width: 210px;
+        position: relative;
+    }
+
+.item-nopic {
+    background: url(http://pages.c-ctrip.com/gs_static/ttd2/img/ttd_nopic.png?t=bfc53a17a732737e620387c8ee47da80) no-repeat scroll -105px -70px;
+}
+
+.notes-box dl, .item-user, .item-short, .item-prac {
+    width: 520px;
+}
+
+.scener-notes-wrap dt {
+    font-weight: normal;
+    font-size: 18px;
+    padding-bottom: 3px;
+    float: left;
+    padding-bottom: 10px;
+    color: #ff7200;
+    width: 378px;
+    font-family: Microsoft YaHei,Hiragino Sans GB;
+    line-height: 28px;
+}
+
+.item-user {
+    width: 378px;
+    color: #999;
+    margin-bottom: 16px;
+    font-size: 12px;
+}
+
+    .item-user span.lastreply {
+        padding-left: 20px;
+        font-size: 12px;
+    }
+
+.item-short {
+    color: #333;
+    font-size: 14px;
+    width: 378px;
+    line-height: 22px;
+}
+
+.item-prac {
+    color: #999;
+    line-height: 20px;
+    margin-top: 4px;
+    height: 40px;
+    width: 378px;
+    position: absolute;
+    bottom: 0;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    white-space: nowrap;
+}
+
+.item-infor {
+    width: 76px;
+    float: right;
+    padding-left: 14px;
+    background: url(http://pages.c-ctrip.com/gs_static/ttd2/img/ttd2.png?t=c3b56437f97760c6eb5297fcf6fa5f7d) no-repeat -296px -133px;
+    overflow: hidden;
+}
+
+    .item-infor li {
+        padding-bottom: 10px;
+    }
+
+    .item-infor i {
+        color: #aaa;
+        line-height: 12px;
+    }
+
+i.numreply, i.want, i.numview {
+    background: url(http://pages.c-ctrip.com/gs_static/common/img/icon.png?t=4c33a7b291c693ffab61d44185b185ad);
+    display: inline-block;
+    font-size: 0;
+    vertical-align: middle;
+    margin-right: 5px;
+}
+
+i.numview {
+    background-position: -201px -10px;
+    height: 12px;
+    min-width: 14px;
+    font-size: 12px;
+    color: #aaa;
+    padding-left: 15px;
+    font-style: normal;
+    line-height: 1;
+}
+
+i.want {
+    background-position: -200px -62px;
+    height: 12px;
+    min-width: 14px;
+    font-size: 12px;
+    color: #aaa;
+    padding-left: 15px;
+    font-style: normal;
+    line-height: 1;
+}
+
+i.numreply {
+    background-position: -200px 2px;
+    height: 12px;
+    min-width: 12px;
+    font-size: 12px;
+    color: #aaa;
+    padding-left: 12px;
+    font-style: normal;
+    line-height: 1;
+}
+/********不可错过*********/
+.unmiss-scenery {
+    margin-top: 30px;
+}
+
+    .unmiss-scenery li {
+        width: 276px;
+        float: left;
+        margin-right: 10px;
+        position: relative;
+    }
+
+        .unmiss-scenery li .scenery-index {
+            width: 25px;
+            height: 25px;
+            display: block;
+            background-color: #ff9c00;
+            color: #fff;
+            text-align: center;
+            line-height: 25px;
+            position: absolute;
+            top: 8px;
+            left: 8px;
+        }
+
+/*shopping*/
+.shop-main-left {
+    width: 680px;
+    padding-right: 40px;
+    border-right: 1px solid #efefef;
+}
+
+.shop-main-right {
+    width: 269px;
+    float: right;
+}
+
+.poi-list {
+}
+
+    .poi-list li {
+        padding: 26px 7px 30px 225px;
+        border-bottom: 1px dashed #d0d0d0;
+        position: relative;
+    }
+
+    .poi-list .item .img {
+        float: left;
+        width: 215px;
+        height: 135px;
+        margin: 4px 0 0 -225px;
+        position: relative;
+    }
+
+    .poi-list .title {
+        height: 35px;
+    }
+
+        .poi-list .title h3 {
+            height: 30px;
+            font-size: 16px;
+            font-weight: normal;
+            line-height: 30px;
+            overflow: hidden;
+        }
+
+            .poi-list .title h3 a {
+                color: #ff8a00;
+                font-size: 18px;
+            }
+
+    .poi-list .rev-info {
+        margin-top: 8px;
+        line-height: 24px;
+        overflow: hidden;
+        font-size: 12px;
+    }
+
+        .poi-list .rev-info a {
+            float: left;
+            margin-right: 4px;
+            color: #f57000;
+        }
+
+    .poi-list .rev-txt {
+        margin-top: 8px;
+        padding: 0 0 0 25px;
+        position: relative;
+    }
+
+.i-before, .i-after {
+    position: absolute;
+    width: 13px;
+    height: 10px;
+    background: url(http://css.mafengwo.net/images/mdd/detail_v2/poi-listBg10.png) no-repeat;
+    overflow: hidden;
+}
+
+.poi-list .rev-txt .i-before {
+    left: 3px;
+    top: 5px;
+    background-position: -80px 0;
+}
+
+.poi-list .rev-txt .i-after {
+    right: 4px;
+    bottom: 0;
+    background-position: -100px 0;
+}
+
+.shop-addr {
+    margin-left: 10px;
+    color: #666;
+    font-size: 14px;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    white-space: nowrap;
+    word-break: normal;
+    word-wrap: normal;
+}
+
+.shop-main-left h1 {
+    height: 40px;
+    font-size: 30px;
+    font-family: "microsoft yahei";
+    color: #111;
+    margin-right: 10px;
+    display: inline-block;
+    vertical-align: top;
+    font-weight: normal;
+    line-height: 40px;
+}
+
+.narrow_page .aside-main {
+    padding: 30px;
+    width: 270px;
+}
+
+.aside-main {
+    padding: 20px;
+    padding-top: 25px;
+    padding-right: 0;
+    border-bottom: 1px #f3f3f3 solid;
+    width: 249px;
+    position: relative;
+}
+
+.aside-title {
+    font-size: 18px;
+    color: #111;
+}
+
+    .aside-title .more {
+        color: #0091d9;
+        font-size: 12px;
+        float: right;
+        margin-top: 5px;
+    }
+
+.main-info-dialog {
+    height: 300px;
+    width: 700px;
+    min-height: 0px;
+    max-height: none;
+    overflow-y: auto;
+    padding: 15px;
+    background-color: #fff;
+    font-size: 14px;
+    display: none;
+}
+
+.main-info-more, more-info-more {
+    color: #666;
+    margin-bottom: 15px;
+}
+
+
+    .main-info-more span, .more-info-more span {
+        line-height: 30px;
+        color: #333;
+        font-weight: 700;
+    }
+
+.more-info-wrap {
+    width: 100%;
+    color: #666;
+}
+
+    .more-info-wrap div {
+        width: 100%;
+        display: block;
+        margin-bottom: 10px;
+    }
+
+        .more-info-wrap div p {
+            display: inline-block;
+            width: 96.55%;
+            vertical-align: top;
+        }
+
+            .more-info-wrap div p span {
+                display: inline;
+                font-weight: 700;
+            }
+
+    .more-info-wrap span.split {
+        margin-right: 5px;
+        font-weight: 500;
+    }
+
+.scenery-warp p span, .scenery-warp-icon {
+    margin-right: 10px;
+    padding-left: 20px;
+    background: url(../images/sprite.gif) no-repeat;
+}
+
+    .scenery-warp p span.scenery-besttime, .more-info-wrap .main-besttime {
+        background-position: left -158px;
+    }
+
+    .scenery-warp p span.scenery-type, .more-info-wrap .scenery-type, .more-info-wrap .scenery-common-icon {
+        background-position: left -76px;
+    }
+
+    .scenery-warp p span.scenery-more {
+        background-position: left -36px;
+        color: #0091d9;
+    }
+
+.scenery-warp .point-rank {
+    margin-bottom: 5px;
+    height: 26px;
+}
+
+    .scenery-warp .point-rank .rank {
+        color: #ff9c00;
+        display: inline;
+        font-size: 14px;
+        margin-left: 3px;
+    }
+
+.scenery-warp p {
+    line-height: 27px;
+    width: 100%;
+    display: block;
+    color: #666;
+}
+
+
+
+
+.core-left .scener-common-title {
+    position: relative;
+    border-bottom: 1px solid #f3f3f3;
+    height: 60px;
+    line-height: 60px;
+}
+
+.scener-common-title .titleh3 {
+    font-size: 30px;
+    font-family: "microsoft yahei";
+    color: #111;
+    margin-right: 10px;
+    display: inline-block;
+    vertical-align: top;
+    font-weight: normal;
+}
+
+.scener-common-title a {
+    color: #17a1e6;
+    font-size: 12px;
+    margin-top: 8px;
+    display: inline-block;
+    height: 40px;
+}
+
+    .scener-common-title a:hover {
+        color: #ff9c00;
+    }
+
+.scener-line-title-ul {
+    display: block;
+    width: 580px;
+    float: left;
+    overflow: hidden;
+    position: relative;
+}
+
+    .scener-line-title-ul li {
+        margin-left: 24px;
+        cursor: pointer;
+        height: 50px;
+        padding-top: 10px;
+        font-weight: 500;
+        color: #666;
+        float: left;
+        font-size: 14px;
+    }
+
+        .scener-line-title-ul li.current {
+            color: #0091d9;
+            border-bottom: 1px solid #0091d9;
+        }
+
+.scenery-line .main-line-wrap {
+    padding-top: 30px;
+    width: 100%;
+}
+
+    .scenery-line .main-line-wrap ul {
+        width: 100%;
+        margin: 0;
+        overflow: hidden;
+    }
+
+        .scenery-line .main-line-wrap ul li {
+            display: none;
+        }
+
+            .scenery-line .main-line-wrap ul li.current {
+                display: block;
+            }
+
+.main-line-wrap img {
+    width: 260px;
+    height: 145px;
+    float: left;
+    overflow: hidden;
+    position: relative;
+    background: url(../images/mdd/bg-line.png) no-repeat;
+    border: 0;
+}
+
+.main-line-wrap .line-info-wrap {
+    float: left;
+    width: 535px;
+    margin-left: 30px;
+    min-height: 147px;
+    font-size: 12px;
+}
+
+.line-info-wrap .line-title-bar {
+    font-size: 18px;
+    line-height: 18px;
+    color: #333;
+}
+
+.line-info-wrap .line-keyword {
+    width: 100%;
+    margin-top: 7px;
+}
+
+    .line-info-wrap .line-keyword span {
+        display: inline-block;
+        color: #fff;
+        padding: 0 5px;
+        border-radius: 3px;
+        margin-right: 10px;
+        float: left;
+        line-height: 19px;
+    }
+
+.line-info-wrap .line-desc {
+    height: 72px;
+    overflow: hidden;
+    margin-top: 6px;
+    width: 530px;
+}
+
+    .line-info-wrap .line-desc p {
+        height: 24px;
+        line-height: 24px;
+        overflow: hidden;
+        padding-left: 20px;
+        background: url(../images/sprite.gif) no-repeat;
+        background-position: left -73px;
+    }
+
+.line-info-wrap .open {
+    color: #0091d9;
+    cursor: pointer;
+    height: 24px;
+    line-height: 24px;
+    padding-left: 20px;
+    background: url(../images/sprite.gif) no-repeat;
+    background-position: left -32px;
+}
+
+.line-keyword_1 {
+    background-color: rgb(239,178,206);
+}
+
+.line-keyword_2 {
+    background-color: rgb(239,142,8);
+}
+
+.line-keyword_3 {
+    background-color: rgb(140,146,206);
+}
+
+.line-keyword_4 {
+    background-color: rgb(255,207,181);
+}
+
+.line-keyword_5 {
+    background-color: rgb(33,211,90);
+}
+
+.line-keyword_6 {
+    background-color: rgb(140,97,16);
+}
+
+.line-keyword_7 {
+    background-color: rgb(198,150,8);
+}
+
+.list-wrapper ul {
+    padding: 15px 0;
+}
+
+.list-wrapper li {
+    position: relative;
+    margin-top: 15px;
+}
+
+.list-wrapper .list-icon {
+    display: inline-block;
+    position: absolute;
+    left: 0;
+    top: 0;
+    width: 80px;
+    *width: 10px;
+    height: auto;
+    text-align: center;
+    vertical-align: middle;
+}
+
+.list-wrapper .list-content {
+    margin-left: 80px;
+    height: 100px;
+    overflow: hidden;
+}
+
+.list-wrapper h4 {
+    font: 400 18px/1 'microsoft yahei';
+    margin: 0 0 10px;
+    color: #333;
+}
+
+.list-wrapper h5 {
+    padding: 6px 0px;
+    color: #111;
+}
+
+.list-wrapper .list-content p {
+    margin: 0;
+    font-size: 14px;
+    line-height: 24px;
+    color: #666;
+}
+
+.list-wrapper .more-content-block {
+    display: block;
+    background: #f9f9f9;
+    color: #666;
+    font: 400 12px/3.125 'microsoft yahei';
+    text-align: center;
+}
+
+.list-wrapper table.bdsz {
+    border-collapse: collapse;
+    height: 220px;
+    width: 100%;
+    border: 1px rgb(255,213,7) solid;
+}
+
+    .list-wrapper table.bdsz tr {
+        border: 1px rgb(255,213,7) solid;
+    }
+
+        .list-wrapper table.bdsz tr td {
+            border: 1px rgb(255,213,7) solid;
+            text-align: center;
+            vertical-align: middle;
+        }
+
+        .list-wrapper table.bdsz tr .table_opentime_day, .list-wrapper table.bdsz tr .table_opentime_night {
+            float: left;
+            height: 40px;
+            margin-left: 70px;
+            width: 39px;
+            padding-right: 10px;
+        }
+
+        .list-wrapper table.bdsz tr .table_opentime_day, .list-wrapper table.bdsz tr .table_opentime_night {
+            background-position: -94px 1px;
+        }
+
+        .list-wrapper table.bdsz tr .table_opentime_night {
+            background-position: -103px -98px;
+        }
+
+
+.list-traffic .list-icon-circle {
+    background-position: -60px -128px;
+    position: absolute;
+    display: block;
+    width: 50px;
+    height: 50px;
+    margin: 0 auto;
+}
+
+.list-tips .list-icon-circle {
+    background-position: 0px -128px;
+    position: absolute;
+    display: block;
+    width: 50px;
+    height: 50px;
+    margin: 0 auto;
+}
+
+.related-scene {
+    margin: 20px 0px;
+}
+
+    .related-scene li {
+        height: 76px;
+        overflow: hidden;
+        width: 100%;
+        display: block;
+        margin-top: 15px;
+    }
+
+        .related-scene li a.related-pic {
+            width: 130px;
+            height: 76px;
+            display: block;
+            float: left;
+            overflow: hidden;
+        }
+
+            .related-scene li a.related-pic img {
+                width: 130px;
+                height: auto;
+                display: block;
+            }
+
+        .related-scene li .related-info {
+            float: left;
+            width: 125px;
+            margin-left: 15px;
+            height: 76px;
+        }
+
+            .related-scene li .related-info .name {
+                display: block;
+                color: #333;
+            }
+
+            .related-scene li .related-info .score {
+                display: block;
+                color: #666;
+                width: 125px;
+            }
+
+            .related-scene li .related-info .remark {
+                display: block;
+                color: #666;
+            }
+
+            .related-scene li .related-info .distance {
+                display: block;
+                color: #999;
+            }
+
+.hot-scene {
+    width: 300px;
+}
+
+    .hot-scene li {
+        height: 94px;
+        overflow: hidden;
+        width: 100%;
+        display: block;
+        margin-top: 15px;
+    }
+
+        .hot-scene li a {
+            display: block;
+            cursor: pointer;
+            color: #333;
+            padding: 8px;
+            border: 1px solid #f6f6f6;
+            border-color: #fff;
+            height: 76px;
+        }
+
+            .hot-scene li a:hover {
+                color: #ff5200;
+                border-color: #ff6701;
+            }
+
+            .hot-scene li a:active {
+                color: #0091d9;
+            }
+
+        .hot-scene li p {
+            float: left;
+            width: 132px;
+            margin-right: 15px;
+            height: 76px;
+        }
+
+        .hot-scene li a:hover .btn-hotticket-buy {
+            background-color: #ff5200;
+        }
+
+    .hot-scene span {
+        display: block;
+        line-height: 24px;
+    }
+
+    .hot-scene .hot-scene_price {
+        color: #ff5200;
+        margin-right: 10px;
+    }
+
+    .hot-scene li img {
+        float: left;
+    }
+
+.provicne-city-guide-list {
+    padding-top: 10px;
+}
+
+    .provicne-city-guide-list li {
+        float: left;
+        width: 120px;
+        margin-right: 4px;
+        line-height: 25px;
+        overflow: hidden;
+        text-overflow: ellipsis;
+        white-space: nowrap;
+    }
+
+        .provicne-city-guide-list li i {
+            font-size: 16px;
+            color: #00a7e1;
+            margin-right: 5px;
+            vertical-align: middle;
+        }
+
+    .provicne-city-guide-list a {
+        color: #00a7e1;
+    }
+
+.des_n_hot_ranking {
+    padding-top: 10px;
+}
+
+    .des_n_hot_ranking li {
+        width: 245px;
+        overflow: hidden;
+        text-overflow: ellipsis;
+        white-space: nowrap;
+        line-height: 30px;
+        list-style: none;
+        position: relative;
+        zoom: 1;
+        padding: 0 0 0px 25px;
+    }
+
+        .des_n_hot_ranking li i.num {
+            position: absolute;
+            left: 7px;
+            font-size: 20px;
+            color: #f90541;
+            font-family: helvetica;
+        }
+
+        .des_n_hot_ranking li a {
+            color: #00a7e1;
+        }
+
+            .des_n_hot_ranking li a:hover {
+                text-decoration: underline;
+            }
+/*交通*/
+.jiaotong-desc {
+    margin-top: 10px;
+    margin-bottom: 20px;
+}
+
+    .jiaotong-desc p {
+        font-size: 14px;
+        margin-bottom: 10px;
+        line-height: 28px;
+    }
+
+.ul-remote {
+    padding: 10px 19px 10px 19px;
+    margin-bottom: 20px;
+}
+
+    .ul-remote a {
+        height: 20px;
+        font-size: 14px;
+        line-height: 20px;
+        padding: 6px 10px;
+        margin-right: 5px;
+        display: inline-block;
+        color: #666;
+    }
+
+        .ul-remote a:hover {
+            background: #00a7e1;
+            color: #fff;
+            text-decoration: none;
+        }
+
+.detailcon {
+    font-size: 14px;
+    color: #666;
+   
+    word-break: break-all;
+    word-wrap: break-word;
+    width: 100%;
+    margin: 10px auto 15px auto;
+    background: #eff8fe;
+    line-height: 24px;
+    padding: 15px 10px 15px 35px;
+    position: relative;
+}
+
+    .detailcon h2 {
+        font-size: 18px;
+        color: #333;
+        padding-bottom: 16px;
+        font-family: Microsoft YaHei,Hiragino Sans GB;
+        font-weight: normal;
+    }
+
+    .detailcon .remote-text {
+        line-height: 26px;
+        font-family: Microsoft YaHei,Hiragino Sans GB;
+        padding-bottom: 15px;
+    }
+
+        .detailcon .remote-text p {
+            line-height: 26px;
+            font-family: Microsoft YaHei,Hiragino Sans GB;
+            padding-bottom: 15px;
+        }
+
+        .detailcon .remote-text strong {
+            color: #333;
+            display: inline-block;
+            font-size: 16px;
+            color: #333;
+            padding-bottom: 8px;
+            font-family: Microsoft YaHei,Hiragino Sans GB;
+            font-weight: normal;
+        }
+
+    .detailcon .item-short {
+        width: 520px;
+    }
+
+    .detailcon dt {
+        font-weight: normal;
+        font-size: 18px;
+        padding-bottom: 3px;
+        float: left;
+        padding-bottom: 10px;
+        color: #ff7200;
+        width: 100%;
+        font-family: Microsoft YaHei,Hiragino Sans GB;
+        line-height: 28px;
+    }
+
+    .detailcon .subscript {
+        position: absolute;
+        left: -2px;
+        top: -2px;
+        width: 60px;
+        height: 60px;
+        overflow: hidden;
+        display: inline-block;
+        background-position:-4px -177px;
+    }
+    .detailcon li i {
+  font-size: 26px;
+  color: #8ccdf9;
+  vertical-align: middle;
+  margin-right: 7px;
+}
+    /*交通指南*/
+.oc_title_en{font-size:30px;}
+.traffic_encon{width:100%;border-top:1px solid #cecece;font-family:"微软雅黑";}
+.traffic_encon h4{width:100%;font-size:24px;text-align:center;margin:30px auto;}
+.traffic_encon h4 em{display:inline-block;width:113px;height:38px;background:url(/Oceankingdom/EN/images/wave.png) center top no-repeat;position:relative;top:13px;*top:7px;margin:0px 8px;}
+
+.traffic_encon_intro p{width:90%;text-indent:2em;margin:10px auto;line-height:20px;}
+
+.traffic_table table{border-collapse: collapse;border:1px solid #c7c7c7;margin:0 auto;width:760px;}
+.traffic_table table .table_title td{height:67px;font: normal 18px "微软雅黑";color:#25b6ed;font-weight:bold;}
+.traffic_table table .table_title2 td{height:67px;background:#fff6ee;font: normal 24px "微软雅黑";color:#df6e00;}
+.traffic_table table tr td{height:46px;  border: 1px solid #f3f3f3;font: normal 14px "微软雅黑";color:#555555;text-align:center;padding:5px;word-break: break-word;  border: solid 1px #3dc5eb;}
+.traffic_table table th {
+  text-align: center;
+  border: solid 1px #3dc5eb;
+  padding: 10px;
+  font: normal 14px/24px "微软雅黑";
+  font-weight: 700;
+}
+

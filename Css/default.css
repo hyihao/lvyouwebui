@@ -1,0 +1,1086 @@
+﻿.Slide {
+    width: 100%;
+    height: 340px;
+    overflow: hidden;
+    position: relative;
+}
+
+.slide-cont {
+    width: 100%;
+    height: 340px;
+    position: relative;
+    overflow: hidden;
+}
+
+.slide-item {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    left: -306px;
+}
+
+    .slide-item a {
+        display: block;
+        width: 100%;
+        height: 100%;
+    }
+
+    .slide-item img {
+        width: 100%;
+        height: 340px;
+    }
+
+#prev, #next {
+    display: block;
+    width: 35px;
+    height: 44px;
+    position: absolute;
+    top: 150px;
+    background: url(../images/news/icon.png) no-repeat;
+    display: none;
+}
+
+#prev {
+    left: 0;
+    background-position: -36px 0;
+}
+
+    #prev:hover {
+        background-position: -36px -45px;
+    }
+
+#next {
+    right: 0;
+    background-position: 0 0;
+}
+
+    #next:hover {
+        background-position: 0 -45px;
+    }
+
+.slide-txt {
+    width: 100%;
+    height: 40px;
+    position: absolute;
+    left: 0;
+    bottom: 0px;
+    z-index: 1;
+}
+
+    .slide-txt .txt_bg {
+        width: 100%;
+        height: 40px;
+        background: #0f0f0f;
+        opacity: 0.7;
+        filter: alpha(opacity=70);
+    }
+
+    .slide-txt a {
+        display: inline-block;
+        width: 286px;
+        height: 40px;
+        line-height: 38px;
+        font-size: 16px;
+        padding: 0 10px;
+        overflow: hidden;
+        color: #fff;
+        position: absolute;
+        left: 0;
+        top: 0;
+    }
+
+.slide-nav {
+    width: auto;
+    height: 11px;
+    display: inline-block;
+    overflow: hidden;
+    position: absolute;
+    z-index: 100;
+    bottom: 46px;
+    right: 35%;
+    margin-right: -36px;
+    overflow: hidden;
+}
+
+    .slide-nav a {
+        display: block;
+        width: 11px;
+        height: 11px;
+        -moz-border-radius: 5px;
+        -webkit-border-radius: 5px;
+        border-radius: 5px;
+        background: #929292;
+        cursor: pointer;
+        -webkit-transition: all .5s ease;
+        -moz-transition: all .5s ease;
+        -ms-transition: all .5s ease;
+        -o-transition: all .5s ease;
+        transition: all .5s ease;
+        margin-left: 5px;
+        float: left;
+        text-indent: -99em;
+        overflow: hidden;
+    }
+
+    .slide-nav .nownav {
+        width: 21px;
+        background: #FF4939;
+    }
+
+.mod {
+    margin-top: -340px;
+    height: 340px;
+}
+
+.searchbox {
+    position: absolute;
+    z-index: 12;
+    margin: 20px 0;
+    background-color: #fff;
+    width: 580px;
+    height: 300px;
+    box-shadow: 0 1px 5px rgba(0, 0, 0, 0.2);
+}
+
+.s_tab {
+    position: absolute;
+    top: 0;
+    left: 0;
+    background-color: #3586F2;
+    width: 90px;
+    height: 300px;
+}
+
+    .s_tab li {
+        float: left;
+        display: inline-block;
+        width: 60px;
+        height: 42px;
+        padding: 0 17px 0 13px;
+        margin: 0;
+        border-left: 4px solid #2577e3;
+        font: 16px/42px "Microsoft YaHei", SimSun, Tahoma, Verdana, Arial, sans-serif;
+        text-align: left;
+        color: #fff;
+    }
+
+    .s_tab .s_tab_current {
+        position: relative;
+        border-left: 4px solid #ff9915;
+        color: #2577e3;
+        background: #fff;
+        cursor: default;
+    }
+
+    .s_tab li b {
+        display: block;
+        border-bottom: 1px dashed #aac3f1;
+        font-weight: normal;
+    }
+
+    .s_tab .s_tab_current b, .s_tab li:hover b {
+        border-bottom: none;
+    }
+
+.s_tab_nocurrent {
+    cursor: pointer;
+}
+
+    .s_tab_nocurrent:hover {
+        border-left: 4px solid #ff9915;
+        color: #2577e3;
+        background: #fff;
+    }
+
+.s_content {
+    background-color: #fff;
+    margin-left: 90px;
+    width: 451px;
+    height: 275px;
+    padding: 20px 20px 5px;
+    _overflow: hidden;
+    text-align: left;
+}
+
+h4.detail-sub-title {
+    font: 24px/36px Microsoft yahei;
+    height: 36px;
+    color: #06c;
+    margin-bottom: 20px;
+    border-bottom: 1px solid #EDEDED;
+    padding: 0 0 10px;
+}
+
+    h4.detail-sub-title span {
+        font: 12px/14px Microsoft yahei;
+        height: 36px;
+        color: #525558;
+    }
+
+h5.detail-sub-title {
+    margin-bottom: 10px;
+    height: 25px;
+    line-height: 25px;
+    margin-top: -20px;
+}
+
+.s_item_input {
+    clear: both;
+    width: 100%;
+    height: 42px;
+    line-height: 28px;
+}
+
+    .s_item_input label {
+        position: relative;
+        top: 0;
+        font-family: Microsoft Yahei;
+        vertical-align: top;
+        color: #333;
+    }
+
+    .s_item_input .en {
+        position: absolute;
+        top: 19px;
+        left: 0;
+        color: #999;
+        font: 12px arial;
+    }
+
+.s_item_btn {
+    clear: both;
+    width: 100%;
+    height: 42px;
+    line-height: 28px;
+    margin-top: 20px;
+}
+
+.hotel-checking-in, .hotel-checking-out {
+    margin-right: 37px;
+    float: left;
+    position: relative;
+}
+
+.hotel-city {
+    float: left;
+    position: relative;
+}
+
+.hotel-checking-out {
+    margin-right: 0px;
+}
+
+.hotel-city input {
+    width: 333px;
+    padding: 7px 10px 7px 30px;
+    cursor: pointer;
+    text-indent: 2px;
+    border: 1px solid #EAEAEA;
+}
+
+.hotel-checking-in input, .hotel-checking-out input {
+    width: 95px;
+    padding: 7px 10px 7px 25px ;
+    cursor: pointer;
+    text-indent: 10px;
+    border: 1px solid #EAEAEA;
+}
+
+.search-box-input-where, .search-box-input-bg, .search-box-input-hname,.search-box-input-departcity,.search-box-input-arrivecity {
+    background: url(../Images/icon/iconqbldefault.png) no-repeat;
+}
+
+.search-box-input-bg {
+    width: 14px;
+    height: 14px;
+    position: absolute;
+    top: 10px;
+    right: 112px;
+    background-position: 0 -275px;
+    background-repeat: no-repeat;
+}
+
+.search-box-input-where {
+  width: 19px;
+  height: 14px;
+  position: absolute;
+  top: 9px;
+  right: 348px;
+  background-position: -166px -206px;
+}
+
+.search-box-input-hname {
+    width: 14px;
+    height: 14px;
+    position: absolute;
+    top: 9px;
+    right: 355px;
+    background-position: -1px -43px;
+}
+.search-box-input-departcity {
+  width: 24px;
+  height: 24px;
+  position: absolute;
+  top: 9px;
+  right: 104px;
+  background-position: -97px -227px;
+}
+
+.search-box-input-arrivecity {
+  width: 24px;
+  height: 24px;
+  position: absolute;
+  top: 8px;
+  right: 104px;
+  background-position: -130px -227px;
+}
+
+
+.hotel-checking-in:hover .search-box-input-bg,
+.hotel-checking-out:hover .search-box-input-bg {
+    background: url(../Images/icon/iconqbldefault.png) 0 -251px;
+    background-image: -webkit-image-set(url(../Images/icon/iconqbldefault.png) 1x,url(../Images/icon/iconqbldefault.png) 2x);
+    background-repeat: no-repeat;
+}
+
+.hotel-search-btn {
+    margin-right: 16px;
+    text-align: center;
+    font-size: 14px;
+    color: #fff;
+    float: right;
+    width: 96px;
+    border: 0;
+    font: 14px Microsoft Yahei;
+    cursor: pointer;
+    height: 36px;
+    line-height: 36px;
+    background: #1899f5;
+    border-radius: 2px;
+    outline: 0;
+}
+
+    .hotel-search-btn:hover {
+        background: #1899f5;
+        text-decoration: none;
+    }
+
+.s-line {
+    padding-bottom: 6px;
+}
+
+    .s-line p {
+        margin-bottom: 10px;
+        width: 100%;
+        height: 20px;
+        overflow: hidden;
+    }
+
+        .s-line p.row {
+            padding-left: 70px;
+            width: auto;
+            height: auto;
+        }
+
+            .s-line p.row strong {
+                margin-left: -70px;
+                font-weight: normal;
+                float: left;
+                color: #666;
+            }
+
+            .s-line p.row a {
+                font-size: 12px;
+                display: inline-block;
+                white-space: nowrap;
+                margin-right: 4px;
+                color: #3983E5;
+                text-decoration: none;
+            }
+
+                .s-line p.row a:hover {
+                    text-decoration: underline;
+                }
+.jipiao-box {
+    position: relative;
+}
+.s_exchange {
+  position: absolute;
+  z-index: 1;
+  top: 20px;
+  left: 207px;
+  width: 10px;
+  height: 42px;
+  border: 1px solid #ddd;
+  border-left: none;
+  text-indent: 0;
+  font: 12px/1.5 simsun,sans-serif;
+}
+.s_exchange a {
+  position: absolute;
+  z-index: 1;
+  width: 18px;
+  left: 3px;
+  top: 12px;
+  background-color: #c9cacb;
+  color: #fff;
+  text-align: center;
+}
+.s_exchange a:hover {
+  background-color: #ff8400;
+  text-decoration: none;
+}
+
+/*景点门票*/
+.cls-scenery-ticket {
+    margin-top: 20px;
+}
+.common-title
+{
+    position: relative;
+    border-bottom: 1px solid #f3f3f3;
+    height: 60px;
+    line-height: 60px;
+    overflow: hidden;
+}
+
+.common-title .title
+{
+    font-size: 30px;
+    font-family: "microsoft yahei";
+    color: #111;
+    margin-right: 10px;
+    display: inline-block;
+    vertical-align: top;
+    font-weight: normal;
+}
+
+.common-title-ul
+{
+    display: block;
+    float: left;
+    overflow: hidden;
+    position: relative;
+}
+
+.common-title-ul li
+{
+    margin-left: 15px;
+    cursor: pointer;
+    height: 50px;
+    padding-top: 10px;
+    font-weight: 500;
+    color: #666;
+    float: left;
+    font-size: 14px;
+    position: relative;
+}
+
+.common-title-ul li a
+{
+    display: block;
+    padding: 0 5px;
+    _width: 75px;
+    height: 30px;
+    color: #333;
+    font: normal 18px/30px 'Microsoft Yahei';
+}
+
+.common-title-ul li.on a
+{
+    background-color: #16bfdd;
+    color: #fff;
+    border-radius: 3px;
+}
+.bg-ticket li.on a
+{
+    background-color: #8c96a2;
+}
+
+.common-title-ul li.on span
+{
+    border-color: #16bfdd transparent transparent;
+}
+.bg-ticket li.on span
+{
+    border-color: #8c96a2 transparent transparent;
+}
+
+.common-title-ul li span
+{
+    position: absolute;
+    top: 48px;
+    left: 45%;
+    width: 0;
+    height: 0;
+    line-height: 0;
+    border-width: 5px;
+    border-color: #fff transparent transparent;
+    border-style: solid dashed dashed;
+    font-size: 0;
+}
+
+.common-title a
+{
+    color: #17a1e6;
+    font-size: 12px;
+    margin-top: 8px;
+    display: inline-block;
+    height: 40px;
+}
+
+.common-title a:hover
+{
+    text-decoration: none;
+}
+
+.common-title-ul li a:hover
+{
+    color: #f60;
+    text-decoration: none;
+}
+
+.common-title-ul .on a:hover
+{
+    color: #fff;
+}
+
+.hot .common-title a.hottheme
+{
+    font-size: 16px;
+    color: #666;
+    margin: 8px 10px 0 10px;
+}
+.mainfun
+{ 
+    margin: 10px -11px 0 -9px;
+    zoom: 1;
+    overflow: hidden;
+}
+.mainfun li
+{ 
+    float: left;
+    width: 303px;
+}
+.mainfun li a {
+height: 265px;
+display: block;
+position: relative;
+overflow: hidden;
+/*height: 270px;*/
+cursor: pointer;
+padding: 8px;
+border: 1px solid #fff;
+color: #666;
+}
+.mainfun .list_pic {
+width: 283px;
+height: 158px;
+display: block;
+background-color:#eee;
+}
+.fun_desp {
+  font-size: 16px;
+  margin-right: 2px;
+  color: #ff6701;
+  margin-bottom: 15px;
+}
+
+.mainfun .list_title {
+font-size: 16px;
+font-weight: normal;
+margin: 10px 0 9px;
+overflow: hidden;
+white-space: nowrap;
+text-overflow: ellipsis;
+color: #333;
+width: 100%;
+}
+.mainfun .list_time {
+  color: #ff6701;
+  margin-bottom: 10px;
+  width: 100%;
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  height: 18px;
+}
+ .mainfun li a:hover {
+background: #fff;
+text-decoration: none;
+border-color: #ff6701;
+}
+  .mainfun .base_price {
+  margin-bottom: 5px;
+}
+ .mainfun .base_price dfn {
+  font-size: 16px;
+  margin-left: 4px;
+}
+  .mainfun .base_price strong {
+  font: normal 24px tahoma,arial,sans-serif;
+  margin-right: 2px;
+}
+
+.list_title:hover{text-decoration:underline;}
+/*景点门票*/
+
+/***酒店预订***/
+ .hotel-warp {
+     width: 238px;
+ }
+.brand_list {
+      border: 1px solid #e5e5e5;
+  border-width: 2px 0 0 1px;
+    float:right;
+  width: 235px;
+}
+.brand_list li {
+  float: left;
+  border: 1px solid #e5e5e5;
+  border-width: 0 1px 1px 0;
+  width: 77px;
+  height: 83px;
+  position: relative;
+  overflow: hidden;
+   vertical-align: top;
+}
+.brand_list li a {
+  display: block;
+  padding: 3px;
+  background: #fff;
+  cursor: pointer;
+}
+.brand_list li a img {
+  width: 71px;
+  height: 71px;
+  cursor: pointer;
+  background-color: #fff;
+  padding: 3px 0;
+}
+.hotel-list {
+      float: left;
+  margin-top: 15px;
+  width: 726px;
+}
+.hotel-list ul li {
+  float: left;
+  width: 363px;
+  margin-top: 10px;
+}
+.hotel-list  .detail-img {
+  width: 140px;
+  height: 88px;
+    float: left;
+      opacity: 1;
+}
+.hotel-list  .detail-infos {
+        float: left;
+  margin-left: 13px;
+  width: 210px;
+}
+ .hotel-list .detail-infos .detail-title {
+  width: 210px;
+  overflow: hidden;
+  white-space: nowrap;
+  text-overflow: ellipsis;
+  font-size: 18px;
+  color: #333;
+  margin-top: 4px;
+}
+ .hotel-list  .detail-infos .detail-level {
+  font-size: 14px;
+  color: #333;
+  margin-top: 6px;
+}
+ .hotel-list  .detail-infos .detail-seller {
+  float: right;
+  color: #999;
+  font-size: 12px;
+  margin-top: 10px;
+     padding-right: 10px;
+}
+ .hotel-list  .detail-infos .pi-price-sm {
+  font-size: 14px;
+  font-family: "Helvetica neue","Century Gothic";
+  line-height: 1;
+  vertical-align: baseline;
+  color: #ff5741;
+  margin-top: 10px;
+  display: inline-block;
+}
+
+  .hotel-list .detail-infos .pi-price-sm i {
+  font-family: arial;
+  font-style: normal;
+  font-weight: 400;
+  padding-right: 4px;
+}
+
+  .home_screen_left_l_con_over {
+  position: relative;
+  overflow: hidden;
+  width: 227px;
+  height: 114px;
+  padding-left: 10px;
+  padding-top: 12px;
+}
+  .home_screen_left_l_con_over ul {
+  width: 240px;
+}
+  .home_screen_left_l_con_over ul li {
+  float: left;
+  width: 76px;
+  line-height: 26px;
+  overflow: hidden;
+  position: relative;
+  height: 26px;
+}
+  .home_screen_left_l_con_over ul li a {
+  color: #646464;
+  text-decoration: none;
+}
+  /***机票***/
+    #jipiaopic {
+        margin-top: 20px;
+    }
+  #jipiaopic  ul li {
+  float: left;
+  margin-right: 19px;
+}
+  #jipiaopic  .flight-pic li {
+  width: 182px;
+  height: 122px;
+  float: left;
+  overflow: hidden;
+}
+  .infocon a {
+  color: #333;
+}
+  #jipiaopic  .flight-pic li img {
+  width: 100%;
+  height: 100%;
+}
+   #jipiaopic   li.mr0 {
+  margin-right: 0;
+}
+    .flist-other li {
+  width: 161px;
+  height: 48px;
+  background: #f5f5f5;
+  margin-top: 10px;
+  padding: 8px 11px 15px 10px;
+  color: #666;
+}
+    .flist-other li a {
+  display: block;
+}
+    .flist-other li div {
+  margin-top: 10px;
+}
+    .flist-other li div i {
+  font-size: 16px;
+  color: #f63;
+}
+     .flist-other li div span {
+  font-size: 20px;
+  color: #f63;
+}
+     .flist-other li div big {
+  float: none;
+  border: 1px solid #e7d495;
+  border-radius: 2px;
+  background: #fff7dd;
+  padding: 0 4px;
+  vertical-align: text-bottom;
+  margin-left: 7px;
+  font-size: 14px;
+}
+     .flist-other li div em {
+  float: right;
+  font-size: 12px;
+  margin-top: 2px;
+}
+     .ranking_col {
+  padding: 0px 0 30px;
+  margin-left: -20px;
+  height: 800px;
+  overflow: hidden;
+}
+.ranking_box {
+  margin-left: 20px;
+  float: left;
+  display: inline;
+  width: 280px;
+  height: 400px;
+  background-color: #fff;
+  background-position: -340px bottom;
+}
+.ranking_box h3 {
+  font: normal 24px/65px microsoft yahei;
+  margin: 0 20px 15px 20px;
+  color: #000;
+  border-bottom: 1px dashed #ddd;
+}
+.ranking_box {
+  background: url(http://pic.c-ctrip.com/vacation_v2/ticket/side_ticket.png) left bottom no-repeat;
+}
+.ranking_box ol {
+  margin: 0 20px;
+  zoom: 1;
+}
+.ranking_box li {
+  zoom: 1;
+}
+.ranking_box li a {
+  display: block;
+  font-size: 0;
+  margin-bottom: 10px;
+  cursor: pointer;
+  height: 20px;
+    color: #666;
+}
+.ranking_box li .ranking_num {
+  width: 24px;
+  padding-right: 0px;
+  text-align: center;
+  margin-right: 10px;
+  font-size: 14px;
+  background-color: #4A98FF;
+  font-family: tahoma,arial,sans-serif;
+    color: white;
+}
+.ranking_box li a:hover .ranking_num {
+   background-color: #FF7800;
+}
+.ranking_box li a:hover .ranking_area {
+    text-decoration: underline;
+}
+.ranking_box li .ranking_area {
+  font-size: 12px;
+  width: 134px;
+  overflow: hidden;
+  white-space: nowrap;
+  text-overflow: ellipsis;
+}
+.ranking_box li .price_r {
+  font-family: tahoma,arial,sans-serif;
+  width: 64px;
+  text-align: right;
+  font-size: 12px;
+}
+.ranking_box li .base_price {
+  font-size: 18px;
+}
+.ranking_box li span, .ranking_box li em {
+  display: inline-block;
+  line-height: 20px;
+  height: 20px;
+  vertical-align: middle;
+}
+.base_price {
+  color: #ff6701;
+}
+.ranking_box li .base_price dfn {
+  vertical-align: 2px;
+}
+.base_price dfn {
+  font-family: Arial;
+  font-size: 12px;
+    font-style: normal;
+  font-family: Arial !important;
+}
+.pagefoot
+{
+    background: url(../images/foot.jpg) center no-repeat #263949;
+    height: 600px;
+}
+.pagefoot .foot_line
+{
+    height: 7px;
+    background: #fd9536;
+    position: relative;
+    overflow: hidden;
+}
+.pagefoot .line_o
+{
+    height: 7px;
+    background: #ff4839;
+    position: relative;
+    left: -50%;
+    top: 0;
+}
+.pagefoot .line_gw
+{
+    height: 7px;
+    width: 1200px;
+    position: absolute;
+    top: 0;
+    left: 50%;
+    margin-left: -600px;
+    z-index: 1;
+}
+.pagefoot .line_gw .l_g
+{
+    height: 7px;
+    width: 50%;
+    float: left;
+    background: #0fca93;
+}
+.pagefoot .line_gw .l_w
+{
+    height: 7px;
+    width: 50%;
+    float: right;
+    background: #ffdc35;
+}
+.foot-inner
+{
+    width: 1200px;
+    margin: 0 auto;
+    padding-top: 40px;
+    font-size: 13px;
+    margin-bottom: 20px;
+}
+.foot-inner .footlogo
+{
+    width: 200px;
+    float: left;
+    display: inline;
+    position: relative;
+    min-height: 157px;
+}
+.foot-inner a
+{
+    color: white;
+}
+.ml30
+{
+    margin-left: 30px;
+}
+.footlogo .line, .footmap .line
+{
+    border: 1px solid #aaa;
+    height: 157px;
+    overflow: hidden;
+    display: block;
+    position: absolute;
+    right: 0;
+    top: 0;
+}
+.footlogo dl
+{
+    padding: 20px;
+}
+.footlogo dt
+{
+    padding-bottom: 10px;
+}
+.footlogo dd
+{
+    line-height: 1.8em;
+}
+
+.foot_app_icon
+{
+    width: 1200px;
+    margin: 0 auto;
+    padding-top: 80px;
+    margin-bottom: 40px;
+}
+.foot_app_icon li
+{
+    float: left;
+    width: 110px;
+    height: 110px;
+    text-indent: -1000px;
+    overflow: hidden;
+}
+.mr30p
+{
+    margin-right: 30px;
+}
+.foot_app_icon li a
+{
+    display: block;
+    width: 110px;
+    height: 110px;
+}
+.foot_jingdian, .foot_meishi, .foot_gouwu, .foot_zhusu, .foot_jiaotong, .foot_huodong, .foot_gonglue, .foot_siren
+{
+    background: url(http://www.tookinawa.com/all/img/global/foot_icon.png) no-repeat;
+}
+.foot_jingdian
+{
+    background-position: 0 0;
+}
+.foot_meishi
+{
+    background-position: 0 -110px;
+}
+.foot_gouwu
+{
+    background-position: 0 -220px;
+}
+.foot_zhusu
+{
+    background-position: 0 -330px;
+}
+.foot_jiaotong
+{
+    background-position: 0 -440px;
+}
+.foot_huodong
+{
+    background-position: 0 -550px;
+}
+.foot_gonglue
+{
+    background-position: 0 -660px;
+}
+.foot_siren
+{
+    background-position: 0 -770px;
+}
+.footmap
+{
+    width: 401px;
+    float: left;
+    display: inline;
+    position: relative;
+    min-height: 157px;
+}
+.footmap dl
+{
+    float: left;
+    display: inline;
+    margin-left: 65px;
+    line-height: 2em;
+}
+.footmap dt
+{
+    line-height: 2em;
+    color: White;
+}
+.footmap dd
+{
+    font-size: 16px;
+    line-height: 2em;
+}
+.pagefoot .pf-copyright
+{
+    border-top: 1px solid #aab;
+    padding-top: 20px;
+}
+.pagefoot .pf-copyright p
+{
+    font-size: 14px;
+    margin-bottom: 5px;
+    color: White;
+    text-align: center;
+}
+.pf-copyright a
+{
+    color: #069dd5;
+    font-size: 14px;
+}

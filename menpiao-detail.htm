@@ -1,0 +1,700 @@
+﻿<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head runat="server">
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>国内旅游|旅游门票|出游指南–奇比拉旅游</title>
+    <meta name="keywords" content="国内旅游,旅游排行排名,旅游景点" />
+    <meta name="description" content="最佳的国内旅游导向、精彩游记、旅游地图、交通出行、游玩路线、饮食、购物等旅游信息。" />
+    <link href="Css/Basic.css" rel="stylesheet" />
+    <link href="Css/scrollbar/scrollbar.css" rel="stylesheet" type="text/css" />
+    <link href="Css/menpiaodetail.css" rel="stylesheet" type="text/css" />
+    <script src="JavaScript/jquery-1.4.4.min.js"></script>
+    <script src="JavaScript/scrollbar/jquery.mCustomScrollbar.min.js" type="text/javascript"></script>
+    <script src="JavaScript/banner.js" type="text/javascript"></script>
+    <script src="JavaScript/jquery.lazyload.js"></script>
+    <script src="JavaScript/scrollbar/jquery.smint.js" type="text/javascript"></script>
+</head>
+<body>
+    <div class="narrow_page" style="position: relative">
+        <div id="header">
+            <div class="nav-channel clearfix" role="navigation">
+                <div class="clsPanle">
+                    <ul class="nav-warpper">
+                        <li class="currenActived"><a href="#">首页</a> </li>
+                        <li class="actived"><a href="/spotdis.aspx">旅游景点</a> </li>
+                        <li><i class="hot">酒店预订</i> <a href="#">酒店住宿</a> </li>
+                        <li><a href="/menpiao_index.html">景点门票</a> </li>
+                        <li><a href="#">团购</a> </li>
+                        <li><a href="#">电影</a> </li>
+                        <li><a href="#">汽车票</a> </li>
+                        <li><a href="#">火车票</a> </li>
+                        <li><a href="#">飞机票</a> </li>
+                        <li><a href="#">演出票</a> </li>
+                        <li><a href="#">网购优惠券</a> </li>
+                        <li><i class="hot">2014航展门票购买</i> <a href="#">手机游戏</a> </li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+        <div class="menuNav">
+            <div class="clsPanle">
+                <div class="channel">
+                    <div class="cate_hd">
+                        <div class="cateall">
+                            <i></i><span class="at-name">珠海</span> <b></b>
+                        </div>
+                        <div class="changecity-box" id="changecity-box">
+                            <div class="at-city">
+                                <div class="gray-ban">
+                                    推荐城市</div>
+                                <div class="city-hot">
+                                    <a href="javascript:void(0)" cid="3" class="">北京</a><a href="javascript:void(0)"
+                                        href="javascript:void(0)" cityid="295">威海</a><a href="javascript:void(0)" cid="395"
+                                            class="">香港</a>
+                                </div>
+                                <div class="gray-ban">
+                                    全国城市列表</div>
+                                <ul class="city-all">
+                                    <li><b class="ca-l">直辖市</b>
+                                        <div class="ca-r">
+                                            <a href="javascript:void(0)" cid="3">北京</a><a href="javascript:void(0)" cid="27">天津</a><a
+                                                href="javascript:void(0)" cid="25" class="">上海</a><a href="javascript:void(0)" cid="32"
+                                                    class="">重庆</a>
+                                        </div>
+                                    </li>
+                                    <li><a class="ca-l" href="javascript:void(0)" cid="16">江苏</a>
+                                        <div class="ca-r">
+                                            <a href="javascript:void(0)" cityid="221">常州</a><a href="javascript:void(0)" cityid="222">淮安</a><a
+                                                href="javascript:void(0)" cityid="223">连云港</a><a href="javascript:void(0)" cityid="224">南京</a><a
+                                                    href="javascript:void(0)" cityid="225">南通</a><a href="javascript:void(0)" cityid="226">苏州</a><a
+                                                        href="javascript:void(0)" cityid="227">宿迁</a><a href="javascript:void(0)" cityid="228">泰州</a><a
+                                                            href="javascript:void(0)" cityid="229">无锡</a><a href="javascript:void(0)" cityid="230">徐州</a><a
+                                                                href="javascript:void(0)" cityid="231">盐城</a><a href="javascript:void(0)" cityid="232">扬州</a><a
+                                                                    href="javascript:void(0)" cityid="233">镇江</a>
+                                        </div>
+                                    </li>
+                                    <li><a class="ca-l" href="javascript:void(0)" cid="31">浙江</a>
+                                        <div class="ca-r">
+                                            <a href="javascript:void(0)" cityid="383">杭州</a><a href="javascript:void(0)" cityid="384"
+                                                class="">湖州</a><a href="javascript:void(0)" cityid="385">嘉兴</a><a href="javascript:void(0)"
+                                                    cityid="386">金华</a><a href="javascript:void(0)" cityid="387">丽水</a><a href="javascript:void(0)"
+                                                        cityid="388">宁波</a><a href="javascript:void(0)" cityid="389">绍兴</a><a href="javascript:void(0)"
+                                                            cityid="390">台州</a><a href="javascript:void(0)" cityid="391">温州</a><a href="javascript:void(0)"
+                                                                cityid="392">舟山</a><a href="javascript:void(0)" cityid="393">衢州</a>
+                                        </div>
+                                    </li>
+                                    <li><a class="ca-l" href="javascript:void(0)" cid="2">安徽</a>
+                                        <div class="ca-r">
+                                            <a href="javascript:void(0)" cityid="36">安庆</a><a href="javascript:void(0)" cityid="37">蚌埠</a><a
+                                                href="javascript:void(0)" cityid="52">亳州</a><a href="javascript:void(0)" cityid="38">巢湖</a><a
+                                                    href="javascript:void(0)" cityid="49">铜陵</a><a href="javascript:void(0)" cityid="50">芜湖</a><a
+                                                        href="javascript:void(0)" cityid="51">宣城</a>
+                                        </div>
+                                    </li>
+                                    <li><a class="ca-l" href="javascript:void(0)" cid="4">福建</a>
+                                        <div class="ca-r">
+                                            <a href="javascript:void(0)" cityid="54">福州</a><a href="javascript:void(0)" cityid="55">龙岩</a><a
+                                                href="javascript:void(0)" cityid="60">三明</a><a href="javascript:void(0)" cityid="61">厦门</a><a
+                                                    href="javascript:void(0)" cityid="62">漳州</a>
+                                        </div>
+                                    </li>
+                                    <li><a class="ca-l" href="javascript:void(0)" cid="5">甘肃</a>
+                                        <div class="ca-r">
+                                            <a href="javascript:void(0)" cityid="63">白银</a><a href="javascript:void(0)" cityid="64">定西</a><a
+                                                href="javascript:void(0)" cityid="75">武威</a><a href="javascript:void(0)" cityid="76">张掖</a>
+                                        </div>
+                                    </li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="nav_top">
+                    <ul class="nav_top_ul">
+                        <li style="display: none"><a href="#">首页</a> </li>
+                        <li><a href="menpiao_index.html">景点门票</a> </li>
+                        <li><a href="http://lvyou.qibila.com/spotdis.aspx" target="_blank" title="旅游景点">旅游城市</a>
+                        </li>
+                        <li><a href="quan">旅游排行</a> </li>
+                        <li><a href="quan">港澳台签证</a> </li>
+                        <li><a href="quan">旅游资讯</a> </li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+        <div class="clsPanle" >
+            <div class="nvGprs">
+                <span class="gprs"></span>您的位置： <a href="#" title="门票首页" target="_blank">景点门票</a>&nbsp;›&nbsp;
+                <a href="#" title="广东景点" target="_blank">广东景点</a>&nbsp;›&nbsp; <a href="#" title="珠海景点"
+                    target="_blank">珠海景点</a>&nbsp;›&nbsp; <a href="#" title="珠海海洋王国" target="_blank">珠海海洋王国门票</a>
+            </div>
+            <div class="piao-search-cls">
+                <div class="piao-search">
+                    <form method="get" action="" class="search_box" id="searchForm">
+                    <div class="search_keywords" style="position: relative;">
+                        <input type="text" value="珠海" maxlength="100" autocomplete="off" name="keyword" placeholder=""
+                            id="searchValue">
+                        <label class="i_search" for="searchValue">
+                        </label>
+                        <label for="searchValue" style="position: absolute; top: 0px; left: 30px; display: none;
+                            font-size: 14px; color: rgb(136, 136, 136); line-height: 29px;">
+                            请输入景点、主题、城市
+                        </label>
+                    </div>
+                    <input type="submit" hidefocus="true" value="搜索" id="searchBtn" class="search_btn">
+                    <input type="hidden" name="region" id="searchCity">
+                    <input type="hidden" name="from" value="mpl_search_suggest" id="search-from">
+                    <div id="search-city-container">
+                    </div>
+                    <div class="search_suggest_list" id="suggestList" style="display: none;">
+                    </div>
+                    <div class="search_recommend" style="display: none;" id="defaultSuggest">
+                        <p class="recommend_atten">
+                            可直接选择或输入 景点、主题、城市</p>
+                    </div>
+                    </form>
+                </div>
+                <div class="hotsearch-hd">
+                    <a href="#">故宫</a> <a href="#">北京</a> <a href="#">珠海海洋王国</a> <a href="#">珠海渔女</a>
+                    <a href="#">长鹿山庄</a> <a href="#">广州塔</a> <a href="#">八达岭长城</a> <a href="#">珠海长隆马戏</a>
+                    <a href="#">珠海海洋王国</a>
+                </div>
+            </div>
+            <div class="mp-hd">
+                <div class="clongmenpiao_title ">
+                    <div class="clongmenpiao_title_content">
+                        <div class="t_detail_main clearfix">
+                            <!--门票图片-->
+                            <div class="ticketleft">
+                                <!--幻灯片开始-->
+                                <div class="pictureDIV">
+                                    <div id="Div1" class="spec-preview">
+                                        <span class="jqzoom">
+                                            <img width="460px" height="250px" jqimg="http://www.qilabi.com/templates/hangzhan/images/changlong/menpiao/1.jpg"
+                                                src="http://www.qilabi.com/templates/hangzhan/images/changlong/menpiao/1.jpg"></span>
+                                    </div>
+                                    <!--缩图开始-->
+                                    <div class="spec-scroll clearfix">
+                                        <div class="items">
+                                            <ul class="clearfix">
+                                                <li>
+                                                    <img bimg="http://www.qilabi.com/templates/hangzhan/images/changlong/menpiao/1.jpg"
+                                                        src="http://www.qilabi.com/templates/hangzhan/images/changlong/menpiao/1.jpg"
+                                                        onmousemove="preview(this);" alt="珠海长隆海洋王国横琴海"></li>
+                                                <li>
+                                                    <img bimg="http://www.qilabi.com/templates/hangzhan/images/changlong/menpiao/2.jpg"
+                                                        src="http://www.qilabi.com/templates/hangzhan/images/changlong/menpiao/2.jpg"
+                                                        onmousemove="preview(this);" alt="海洋王国烟花表演"></li>
+                                                <li>
+                                                    <img bimg="http://www.qilabi.com/templates/hangzhan/images/changlong/menpiao/3.jpg"
+                                                        src="http://www.qilabi.com/templates/hangzhan/images/changlong/menpiao/3.jpg"
+                                                        onmousemove="preview(this);" alt="海洋王国"></li>
+                                                <li>
+                                                    <img bimg="http://www.qilabi.com/templates/hangzhan/images/changlong/menpiao/4.jpg"
+                                                        src="http://www.qilabi.com/templates/hangzhan/images/changlong/menpiao/4.jpg"
+                                                        onmousemove="preview(this);" alt="亚马逊河"></li>
+                                                <li>
+                                                    <img bimg="http://www.qilabi.com/templates/hangzhan/images/changlong/menpiao/5.jpg"
+                                                        src="http://www.qilabi.com/templates/hangzhan/images/changlong/menpiao/5.jpg"
+                                                        onmousemove="preview(this);" alt="海洋王国亲子"></li>
+                                            </ul>
+                                        </div>
+                                    </div>
+                                    <!--缩图结束-->
+                                </div>
+                                <!--幻灯片结束-->
+                            </div>
+                            <!--/门票图片-->
+                            <div class="deal_content">
+                                <h1>
+                                    珠海长隆海洋王国门票</h1>
+                                <strong>世界上最先进的专业复合型国际马戏场馆世界上最先进的专业复合型国际马戏场馆世界上最先进的专业复合型国际马戏场馆世界上最先进的专业复合型国际马戏场馆</strong>
+                                <ul class="deal-component-expiry clearfix">
+                                    <li><span class="deal-component-expiry-leading f_l">开放时间</span> <span class="deal-component-inline-text-container f_l">
+                                        <span class="deal-component-inline-text-wrapper"><span class="expiry_span">10：:0-21:00
+                                        </span></span></span></li>
+                                    <li><span class="deal-component-expiry-leading f_l">景点地址</span> <span class="deal-component-inline-text-container f_l">
+                                        <span class="deal-component-inline-text-wrapper"><span class="orange">广东省珠海市横琴区富祥湾。
+                                        </span></span></span></li>
+                                    <li><span class="deal-component-expiry-leading f_l">预订规则</span> <span class="deal-component-inline-text-container f_l">
+                                        <span class="deal-component-inline-text-wrapper"><span class="orange">不接受当天预订，请提前一天预订，凭短信验证码换票。
+                                        </span></span></span></li>
+                                    <li><span class="deal-component-expiry-leading f_l">优惠票</span> <span class="deal-component-inline-text-container f_l">
+                                        <span class="deal-component-inline-text-wrapper"><span class="orange">1.0-1.5米以下小童，65岁以上老人。(马戏城没有优惠，入场需购买全票)
+                                        </span></span></span></li>
+                                </ul>
+                                <div class="extra clearfix f_l">
+                                    <dl>
+                                        <dt class="deal-component-expiry-leading">支付方式 </dt>
+                                        <dd>
+                                            <a href="javascript:void(0)" target="_blank" title="信用卡支付" data-spm="d9" class="f_l">
+                                                <i class="card-payment"></i>信用卡支付 </a><a href="javascript:void(0)" target="_blank"
+                                                    title="支付宝支付" data-spm="" class="f_l"><i class="alipay"></i>支付宝支付 </a><a href="javascript:void(0)"
+                                                        target="_blank" title="网银在线" data-spm="d19" class="f_l"><i class="zhuanzhang"></i>
+                                                        网银在线 </a>
+                                        </dd>
+                                    </dl>
+                                    <dl>
+                                        <!-- JiaThis Button BEGIN -->
+                                        <div id="ckepop">
+                                            <span class="jiathis_txt">分享到：</span> <a class="jiathis_button_qzone"></a><a class="jiathis_button_tqq">
+                                            </a><a class="jiathis_button_tsina"></a><a class="jiathis_button_renren"></a><a class="jiathis_button_douban">
+                                            </a><a class="jiathis_button_taobao"></a><a class="jiathis_button_ujian"></a><a class="jiathis_button_fav">
+                                            </a><a class="jiathis_button_copy">复制</a> <a href="http://www.jiathis.com/share/?uid=90225"
+                                                class="jiathis jiathis_txt jiathis_separator jtico jtico_jiathis" target="_blank">
+                                                更多</a> <a class="jiathis_counter_style"></a>
+                                        </div>
+                                        <!-- JiaThis Button END -->
+                                        <script type="text/javascript">                                            var jiathis_config = { data_track_clickback: true };</script>
+                                        <script type="text/javascript" src="http://v2.jiathis.com/code/jia.js?uid=1336353133859589"
+                                            charset="utf-8"></script>
+                                    </dl>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="alpha_bg">
+                    </div>
+                </div>
+            </div>
+            <!--如果有活动提示，则显示-->
+            <div class="mp-tips-wrap">
+                <span class="tips"></span>”六一特惠“：6月1日当天，每名购买海洋王国单一公园成人票的游客可同时携带1名身高1.5米以下儿童免费入园；其他票类不享受该优惠。
+            </div>
+        <!--如果有活动提示，则显示-->
+        
+        <div class="pro-tabs subMenu">
+            <ul class="clearfix  pro-tabs-ul ">
+                <li class="current"><a href="javascript:;" id="s1">景点门票</a></li>
+                <li><a href="javascript:;" id="s2">预订须知</a></li>
+                <li><a href="javascript:;" id="s3">景点介绍</a></li>
+                <!--<li><a href="javascript:;">景点评论</a></li>-->
+                <li><a href="javascript:;" id="s4">景点交通</a></li>
+            </ul>
+        </div>
+        
+     <div class="product_ticket  s1 autosroll">
+         <table class="ticket-table">
+         <thead>
+         <tr>
+             <!-- <td class="td1"></td>-->
+             <td class="td2">
+                 名称
+             </td>
+             <td class="td3">
+                 提前预订时间
+             </td>
+             <td class="td4">
+                 原价
+             </td>
+             <td class="td5">
+                 购买价
+             </td>
+             <td class="td6-1">
+                 优惠
+             </td>
+             <td class="td7">
+                 支付方式
+             </td>
+             <td class="td8">
+             </td>
+         </tr>
+         </thead>
+         <tbody>
+         <tr class="ticket-info t-first" data-id="2815582">
+             <td class="ticket-title-wrapper">
+                 <span>[套票]</span> <a href="javascript:void(0);" class="ticket-title">【六月特惠】长隆海洋王国家庭套票（逢周五）
+                     <i></i></a>
+             </td>
+             <td>
+                 游玩前1天23:30前
+             </td>
+             <td class="del-price">
+                 <dfn style="">¥</dfn> <strong style="">945</strong>
+             </td>
+             <td class="base_price">
+                 <dfn>¥</dfn> <strong>800</strong>
+             </td>
+             <td>
+                 <div class="ticket-title-discount">
+                     <span class="bar-ticket-return"></span><span class="return-price"><em style="font-family: arial;">
+                        ￥</em>3</span> <span class="right-corner"></span>
+                 </div>
+             </td>
+             <td>
+                 在线支付
+             </td>
+             <td>
+                 <a href="javascript:void(0);" class="booking-btn">预订</a>
+             </td>
+         </tr>
+         <!--隐藏tr-->
+         <tr class="ticket-detail">
+             <td colspan="7">
+                 <div class="ticket-item-moreinfo" style="display: none;">
+                     <i class="arrow"></i>
+                     <div class="ticket-item-more-content">
+                         <dl class="clearfix">
+                             <dt>费用说明</dt>
+                             <dd>
+                                 费用包含1)交通：不含旅游车（景点间距离较近，全程步行）。2)用餐：行程内所列餐食（庆丰包子铺：三两包子（9个）、粥或炒肝。）。3)门票：行程中所含的景点首道大门票（故宫、北海公园、乘坐黄包车、恭王府）。4)导服：中文导游费用（自由活动期间除外）
+                             </dd>
+                         </dl>
+                         <dl class="clearfix">
+                             <dt>费用包含</dt>
+                             <dd>
+                                 此家庭套票含海洋王国成人票两张、儿童长者票一张。此套票可允许免费携带一名身高1米以下儿童同时入园。<br>
+                                 儿童长者票适用人群：身高1.5米以下儿童或者65岁以上长者（需出示有效证件）使用。<br>
+                             </dd>
+                         </dl>
+                         <dl class="clearfix">
+                             <dt>兑换方式</dt>
+                             <dd>
+                                 凭携程数字验证码至珠海长隆海洋王国景区门口的取票机上验证换票。如在出发前当天仍未收到短信，请速致电携程客服。若您取票过程中遇到问题请及时咨询景区工作人员。<br>
+                             </dd>
+                         </dl>
+                         <dl class="clearfix">
+                             <dt>退改规则</dt>
+                             <dd>
+                                 1）退票：在使用日期前1天17：30之前申请退订，无需收取损失费；在使用日期前1天17：30之后及使用日期当天17：30之前申请退订，需收取20%损失费；已取票或超过使用日期当天17：30不予退订。<br>
+                                 2）改期：<br>
+                                 A、若未取票，在使用日期前1天17：30之前申请改期，请取消原订单重新预定，无需收取任何手续费；在使用日期前1天17：30之后及使用日期当天17：30之前申请改期，需收取30元/张的手续费，超过使用日期当天17：30不可改期。<br>
+                                 B、若已取票，只可在景区游客中心办理改期（过期票景区一律不受理）。<br>
+                                 C、所有门票只可改期一次，且已取票或出行当天的改期申请均需收取30元/张的手续费，改期后不可退订。（温馨提示：只能改至同等价位的日期使用，修改日期跨度为使用日期之后30天内。）<br>
+                                 3）如需退订/改期，请在以上指定时间内致电携程：10106666*0办理。<br>
+                             </dd>
+                         </dl>
+                     </div>
+                     <span class="btn-close">收起<i></i></span>
+                 </div>
+             </td>
+         </tr>
+         <tr class="ticket-info" data-id="2815582">
+             <td class="ticket-title-wrapper">
+                 <span>[套票]</span> <a href="javascript:void(0);" class="ticket-title">【六月特惠】长隆海洋王国家庭套票（逢周五）
+                     <i></i></a>
+             </td>
+             <td>
+                 游玩前1天23:30前
+             </td>
+             <td class="del-price">
+                 <dfn style="">¥</dfn> <strong style="">945</strong>
+             </td>
+             <td class="base_price">
+                 <dfn>¥</dfn> <strong>800</strong>
+             </td>
+             <td>
+                 <div class="icon-wrapper pop-wrapper">
+                 </div>
+             </td>
+             <td>
+                 在线支付
+             </td>
+             <td>
+                 <a href="javascript:void(0);" class="booking-btn">预订</a>
+             </td>
+         </tr>
+         <!--隐藏tr-->
+         <tr class="ticket-detail">
+             <td colspan="7">
+                 <div class="ticket-item-moreinfo" style="display: none;">
+                     <i class="arrow"></i>
+                     <div class="ticket-item-more-content">
+                         <dl class="clearfix">
+                             <dt>费用说明</dt>
+                             <dd>
+                                 费用包含1)交通：不含旅游车（景点间距离较近，全程步行）。2)用餐：行程内所列餐食（庆丰包子铺：三两包子（9个）、粥或炒肝。）。3)门票：行程中所含的景点首道大门票（故宫、北海公园、乘坐黄包车、恭王府）。4)导服：中文导游费用（自由活动期间除外）
+                             </dd>
+                         </dl>
+                         <dl class="clearfix">
+                             <dt>费用包含</dt>
+                             <dd>
+                                 此家庭套票含海洋王国成人票两张、儿童长者票一张。此套票可允许免费携带一名身高1米以下儿童同时入园。<br>
+                                 儿童长者票适用人群：身高1.5米以下儿童或者65岁以上长者（需出示有效证件）使用。<br>
+                             </dd>
+                         </dl>
+                         <dl class="clearfix">
+                             <dt>兑换方式</dt>
+                             <dd>
+                                 凭携程数字验证码至珠海长隆海洋王国景区门口的取票机上验证换票。如在出发前当天仍未收到短信，请速致电携程客服。若您取票过程中遇到问题请及时咨询景区工作人员。<br>
+                             </dd>
+                         </dl>
+                         <dl class="clearfix">
+                             <dt>退改规则</dt>
+                             <dd>
+                                 1）退票：在使用日期前1天17：30之前申请退订，无需收取损失费；在使用日期前1天17：30之后及使用日期当天17：30之前申请退订，需收取20%损失费；已取票或超过使用日期当天17：30不予退订。<br>
+                                 2）改期：<br>
+                                 A、若未取票，在使用日期前1天17：30之前申请改期，请取消原订单重新预定，无需收取任何手续费；在使用日期前1天17：30之后及使用日期当天17：30之前申请改期，需收取30元/张的手续费，超过使用日期当天17：30不可改期。<br>
+                                 B、若已取票，只可在景区游客中心办理改期（过期票景区一律不受理）。<br>
+                                 C、所有门票只可改期一次，且已取票或出行当天的改期申请均需收取30元/张的手续费，改期后不可退订。（温馨提示：只能改至同等价位的日期使用，修改日期跨度为使用日期之后30天内。）<br>
+                                 3）如需退订/改期，请在以上指定时间内致电携程：10106666*0办理。<br>
+                             </dd>
+                         </dl>
+                     </div>
+                     <span class="btn-close">收起<i></i></span></div>
+             </td>
+         </tr>
+         <tr class="ticket-info" data-id="2815582">
+             <td class="ticket-title-wrapper">
+                 <span>[套票]</span> <a href="javascript:void(0);" class="ticket-title">【六月特惠】长隆海洋王国家庭套票（逢周五）
+                     <i></i></a>
+             </td>
+             <td>
+                 游玩前1天23:30前
+             </td>
+             <td class="del-price">
+                 <dfn style="">¥</dfn> <strong style="">945</strong>
+             </td>
+             <td class="base_price">
+                 <dfn>¥</dfn> <strong>800</strong>
+             </td>
+             <td>
+                 <div class="icon-wrapper pop-wrapper">
+                 </div>
+             </td>
+             <td>
+                 在线支付
+             </td>
+             <td>
+                 <a href="javascript:void(0);" class="booking-btn">预订</a>
+             </td>
+         </tr>
+         <!--隐藏tr-->
+         <tr class="ticket-detail">
+             <td colspan="7">
+                 <div class="ticket-item-moreinfo" style="display: none;">
+                     <i class="arrow"></i>
+                     <div class="ticket-item-more-content">
+                         <dl class="clearfix">
+                             <dt>费用说明</dt>
+                             <dd>
+                                 费用包含1)交通：不含旅游车（景点间距离较近，全程步行）。2)用餐：行程内所列餐食（庆丰包子铺：三两包子（9个）、粥或炒肝。）。3)门票：行程中所含的景点首道大门票（故宫、北海公园、乘坐黄包车、恭王府）。4)导服：中文导游费用（自由活动期间除外）
+                             </dd>
+                         </dl>
+                         <dl class="clearfix">
+                             <dt>费用包含</dt>
+                             <dd>
+                                 此家庭套票含海洋王国成人票两张、儿童长者票一张。此套票可允许免费携带一名身高1米以下儿童同时入园。<br>
+                                 儿童长者票适用人群：身高1.5米以下儿童或者65岁以上长者（需出示有效证件）使用。<br>
+                             </dd>
+                         </dl>
+                         <dl class="clearfix">
+                             <dt>兑换方式</dt>
+                             <dd>
+                                 凭携程数字验证码至珠海长隆海洋王国景区门口的取票机上验证换票。如在出发前当天仍未收到短信，请速致电携程客服。若您取票过程中遇到问题请及时咨询景区工作人员。<br>
+                             </dd>
+                         </dl>
+                         <dl class="clearfix">
+                             <dt>退改规则</dt>
+                             <dd>
+                                 1）退票：在使用日期前1天17：30之前申请退订，无需收取损失费；在使用日期前1天17：30之后及使用日期当天17：30之前申请退订，需收取20%损失费；已取票或超过使用日期当天17：30不予退订。<br>
+                                 2）改期：<br>
+                                 A、若未取票，在使用日期前1天17：30之前申请改期，请取消原订单重新预定，无需收取任何手续费；在使用日期前1天17：30之后及使用日期当天17：30之前申请改期，需收取30元/张的手续费，超过使用日期当天17：30不可改期。<br>
+                                 B、若已取票，只可在景区游客中心办理改期（过期票景区一律不受理）。<br>
+                                 C、所有门票只可改期一次，且已取票或出行当天的改期申请均需收取30元/张的手续费，改期后不可退订。（温馨提示：只能改至同等价位的日期使用，修改日期跨度为使用日期之后30天内。）<br>
+                                 3）如需退订/改期，请在以上指定时间内致电携程：10106666*0办理。<br>
+                             </dd>
+                         </dl>
+                     </div>
+                     <span class="btn-close">收起<i></i></span></div>
+             </td>
+         </tr>
+         </tbody>
+         </table>
+          </div>
+        
+       
+
+        <div class="mp-descript-wrap clearfix">
+         
+        <div class="mp-desc-l">
+            <div class="section s2 autosroll">
+                <div class="box_tit">
+                    <h2 class="tit clearfix">
+                        <em class="icon"></em><em class="txt">预订须知</em>
+                    </h2>
+                </div>
+                <div class="box_cont clearfix">
+                    <div class="box_cont-wrap yuding-tips">
+                        <!--解析json-->
+                        <dl class="clearfix">
+                            <dt>费用说明</dt>
+                            <dd>
+                                费用包含1)交通：不含旅游车（景点间距离较近，全程步行）。2)用餐：行程内所列餐食（庆丰包子铺：三两包子（9个）、粥或炒肝。）。3)门票：行程中所含的景点首道大门票（故宫、北海公园、乘坐黄包车、恭王府）。4)导服：中文导游费用（自由活动期间除外）
+                            </dd>
+                        </dl>
+                        <dl class="clearfix">
+                            <dt>费用包含</dt>
+                            <dd>
+                                此家庭套票含海洋王国成人票两张、儿童长者票一张。此套票可允许免费携带一名身高1米以下儿童同时入园。<br>
+                                儿童长者票适用人群：身高1.5米以下儿童或者65岁以上长者（需出示有效证件）使用。<br>
+                            </dd>
+                        </dl>
+                        <dl class="clearfix">
+                            <dt>兑换方式</dt>
+                            <dd>
+                                凭携程数字验证码至珠海长隆海洋王国景区门口的取票机上验证换票。如在出发前当天仍未收到短信，请速致电携程客服。若您取票过程中遇到问题请及时咨询景区工作人员。<br>
+                            </dd>
+                        </dl>
+                        <dl class="clearfix">
+                            <dt>退改规则</dt>
+                            <dd>
+                                1）退票：在使用日期前1天17：30之前申请退订，无需收取损失费；在使用日期前1天17：30之后及使用日期当天17：30之前申请退订，需收取20%损失费；已取票或超过使用日期当天17：30不予退订。<br>
+                                2）改期：<br>
+                                A、若未取票，在使用日期前1天17：30之前申请改期，请取消原订单重新预定，无需收取任何手续费；在使用日期前1天17：30之后及使用日期当天17：30之前申请改期，需收取30元/张的手续费，超过使用日期当天17：30不可改期。<br>
+                                B、若已取票，只可在景区游客中心办理改期（过期票景区一律不受理）。<br>
+                                C、所有门票只可改期一次，且已取票或出行当天的改期申请均需收取30元/张的手续费，改期后不可退订。（温馨提示：只能改至同等价位的日期使用，修改日期跨度为使用日期之后30天内。）<br>
+                                3）如需退订/改期，请在以上指定时间内致电携程：10106666*0办理。<br>
+                            </dd>
+                        </dl>
+                    </div>
+                </div>
+            </div>
+
+            <div class="section s3 autosroll">
+                <div class="box_tit">
+                    <h2 class="tit clearfix">
+                        <em class="icon"></em><em class="txt">景点介绍</em>
+                    </h2>
+                </div>
+                <div class="box_cont clearfix">
+                    <div class="box_cont-wrap scereny-desc">
+                        <!--解析json-->
+
+                        <p style="TEXT-ALIGN: left">&nbsp;&nbsp;&nbsp; 珠海长隆海洋王国位于珠海横琴长隆国际海洋度假区内，是长隆集团运用积累了20多年的经验，采用世界顶尖公司的设计，吸取全球主题公园的精华，运用高科技和长隆特有的创意，全面整合珍稀的海洋动物、顶级的游乐设备和新奇的大型演艺，全力建设和打造的中国人自主研发、拥有自主知识产权的世界顶级主题公园，将成为世界顶级、规模最大、游乐设施最丰富也是最富于想象力的海洋王国。<br><img alt="鲸鲨馆夜景.jpg" data-src="" src="http://dimg02.c-ctrip.com/images/tg/708/191/412/2b31c2dd5aee41578848528675b37b63_C_422_236.jpg" style="opacity: 1;">&nbsp;<img alt="幻彩闪耀横琴海.jpg" data-src="" src="http://dimg02.c-ctrip.com/images/tg/675/025/851/b640e91ba5dd40e18912ee3db2e7fc82_C_422_236.jpg" style="opacity: 1;">
+                        </p>
+                        <p style="TEXT-ALIGN: left">&nbsp; &nbsp; 在这里，宾客可以搭乘水上过山车穿越极地、欣赏北极熊的憨态，也可以在海底隧道体验鲸鲨的慑人气势；不仅可以全家体验游乐设施和观赏表演，更可通过前所未有的世界最尖端科技和直观手段学习知识和体验大自然。<br><img alt="鲸鲨馆内水族箱7.jpg" data-src="" src="http://dimg02.c-ctrip.com/images/tg/252/960/469/8a8122e9a9a748e4a911ce88b8349665_C_422_236.jpg" style="opacity: 1;">&nbsp;<img alt="鲸鲨.jpg" data-src="" src="http://dimg02.c-ctrip.com/images/tg/906/002/792/f650fdccdb5a44169f56b23c64c20ca8_C_422_236.jpg" style="opacity: 1;">
+                        </p>
+                        <p>&nbsp; &nbsp; 珠海长隆海洋王国独有八项世界之最，集教育、娱乐、休闲于一身，满足不同游客各种最新、最全、最不可思议的追求：全球面积最大——海洋王国建设工程的总占地面积为130多万平方米，远超当今世界最大的海洋主题公园，问鼎世界最大的海洋主题乐园，其内容更是囊括顶级机动游戏、珍稀动物展馆、大型剧场表演、餐饮、购物等多种综合娱乐；世界最大的鲸鲨展馆、世界最大的亚克力玻璃——鲸鲨展馆高达63m，是世界最大的海洋鱼类展览馆，水体2.2万立方，比目前世界上最大、水体为1.5万立方的美国乔治亚水族馆水体还超出近50%，鲸鲨馆内饲养有不同品种的珍奇鱼类多达55000条；鲸鲨展馆内更安装了世界上最大的亚克力玻璃，长39.6米，高8.3米，厚0.65米，通过世界最先进的技术无缝连接，视界壮阔，带来无敌海底奇观；世界最先进的五维特效影院——拥有全球最大3d弧形银幕，长87米，高18米，银幕面积超过1500平方米，影院内设有超过1000个最新科技的四维动感特效座椅，带给观众世界尖端的听觉、视觉、嗅觉、触觉及动感体验的全方位视听感受；亚洲第一个飞行过山车——其轨道全球最长，近1300米，近20层楼高，让您体验到空中自由翱翔的快感；亚洲第一台水上过山车——其轨道长近千米，高达23米，上天入海，尽享无尽乐趣；最全的海洋主题花车巡游路线——超大型花车8辆，演员阵容过百人，主题故事丰富多样，巡游内容包括美人鱼、海龟、章鱼、巨鲸、极地游戏、潜水艇等，大人小孩均能乐享其中，一起载歌载舞；最震撼独特的中心湖表演——囊括水、灯光、投影、激光、烟花等声光元素的综合运用，创造出全球独一无二的令人眼花缭乱、激动人心的壮观演出；全球首例大型游乐设施与珍贵动物展区相结合的独特设计——宾客可以在过山车上跃过全球首座北极熊展区，在感受风驰电掣、动感刺激的同时，近距离观赏北极熊们的可爱雄姿。<br><img alt="超级激流.jpg" data-src="" src="http://dimg02.c-ctrip.com/images/tg/428/930/758/b9253b1860464b54bcb287218c31b030_C_422_236.jpg" style="opacity: 1;">&nbsp;<img alt="鹦鹉过山车夜景.jpg" data-src="" src="http://dimg02.c-ctrip.com/images/tg/043/699/783/cf9fff41a38f45fdbff271b7770d6b5e_C_422_236.jpg" style="opacity: 1;">
+                        </p>
+                        <p>&nbsp; &nbsp; 珠海长隆海洋王国拥有八大主题区域，各分区细致而各具特色的设计，尽善尽美地呈现了世界各地各异的海洋风貌，每个分区都拥有各自一套完整的演出、展览和充满刺激的游乐设施，以此彰显动物和海洋世界的自然神奇。这里的环境和设施将以逼真而生动的方式向游客展示不同动物栖息地的个性和生态特征，使游客易于理解和体验其丰富的趣味性。</p>
+                        <p><img alt="近距离接触白鲸.jpg" data-src="" src="http://dimg02.c-ctrip.com/images/tg/564/910/425/11b100f9da8b4d399cae402e1a1574d6_C_422_236.jpg" style="opacity: 1;">&nbsp;<img alt="鲸鲨馆内水族箱3.jpg" data-src="" src="http://dimg02.c-ctrip.com/images/tg/244/904/678/714d766d2aff48c890302dcfec918739_C_422_236.jpg" style="opacity: 1;">
+                        </p>
+                        <p>&nbsp; &nbsp; 珠海长隆海洋王国八大主题区的每个区域都包含游乐设计、表演和动物展示三大元素，同时拥有领衔世界、称霸亚洲、惊世骇俗的看点：惊险刺激为主的雨林飞翔，以世界顶级娱乐观赏为主的海洋奇观；适合儿童游乐项目为主的以及合家游玩的缤纷世界；以海豚观赏为主的海豚湾；以冰雪景观为主的极地探险；以水为主题的海象山；以表演为主的横琴海；以迎宾、观光、购物休闲为主的海洋大街。八个不同主题带给你八个不同的故事，让游客都置身于海洋世界中，畅游海洋动物带给宾客非一般的各种精彩。<br><img alt="企鹅馆.jpg" data-src="http://dimg02.c-ctrip.com/images/tg/237/251/972/09677a48a2e448ae875078026da3400c_C_422_236.jpg" src="http://pic.c-ctrip.com/ticketonline/place_hold_1.jpg" style="">&nbsp;<img alt="鲸鲨馆内水族箱4.jpg" data-src="http://dimg02.c-ctrip.com/images/tg/601/583/984/a2350218df134dbba6af4f286bf2e024_C_422_236.jpg" src="http://pic.c-ctrip.com/ticketonline/place_hold_1.jpg" style="">
+                        </p>
+                        <p>&nbsp;&nbsp;&nbsp; 走进长隆海洋王国入口处，游客就可以感受到犹如迷宫般缤纷多彩的海洋世界乐趣：绚丽的海草在身边摇曳，神秘的魔鬼鱼从头顶掠过；在巨型章鱼造型的家庭欢乐树旁，和亚洲小水獭一起玩耍；在世界最大的鲸鲨馆中，观看精彩的白鲸鱼表演；乘坐亚洲唯一的水上过山车去看可爱的北极熊；乘坐全球轨道最长的飞行过山车穿越略带神秘和惊悚的热带丛林深处；进入整个海洋王国最精彩的海洋奇观区，超宽“屏幕”的玻璃穹顶让游客仿佛置身璀璨华丽的海底宫殿，这里有德国最新引进的海底互动船，如潜艇般带游客潜行于绚丽的海底世界，各种珍稀海底动物在身边畅游，不可思议的美丽海底画面让宾客为之倾倒。<br><img alt="海洋大街.jpg" data-src="http://dimg02.c-ctrip.com/images/tg/427/782/002/54363df62b094b52b1b1bd773885d859_C_422_236.jpg" src="http://pic.c-ctrip.com/ticketonline/place_hold_1.jpg" style="">&nbsp;<img alt="冰山过山车2.jpg" data-src="http://dimg02.c-ctrip.com/images/tg/617/536/049/6f5f292a1c7d4013b27fbd421a1c03dd_C_422_236.jpg" src="http://pic.c-ctrip.com/ticketonline/place_hold_1.jpg" style="">
+                        </p>
+                        <p>&nbsp;&nbsp;&nbsp; 在这里，您不仅可以与珍稀的海洋动物白鲸、海狮海象、鲸鲨、鳐鱼等亲密互动，与海豚拍照留念，与企鹅打招呼，更可以体验顶尖的游乐设备，欣赏丰富多彩的演出。海洋王国通过主题文化包装及故事演绎，以及大型表演、花车巡游、建筑、雕塑、园林等多种表现形式，为游客创造了不同的全方位体验，打造出世界顶级的、多姿多彩、独一无二的奇幻海洋世界。&nbsp;</p>
+                        <p></p>
+                        <p><img alt="花车巡游2.jpg" data-src="http://dimg02.c-ctrip.com/images/tg/535/237/917/cce119cecd134cd2a20853e20eb3ed65_C_422_236.jpg" src="http://pic.c-ctrip.com/ticketonline/place_hold_1.jpg" style="">&nbsp;<img alt="水上摩托艇特技表演.jpg" data-src="http://dimg02.c-ctrip.com/images/tg/057/451/409/a39a43e7f7804630969af40b92e56e3c_C_422_236.jpg" src="http://pic.c-ctrip.com/ticketonline/place_hold_1.jpg" style="">
+                        </p>
+                        <p><a rel="nofollow" title="★以下演出时间将会根据当天的游客量及天气情况而调整，具体演出时间将根据现场公告为准。" href="http://pages.ctrip.com/tour/ingroup1502/tu/125.JPG" target="_self">横琴海特色汇演时间表</a>
+                        </p>
+
+                    </div>
+                </div>
+            </div>
+
+            <div class="section s4 autosroll">
+                <div class="box_tit">
+                    <h2 class="tit clearfix">
+                        <em class="icon"></em><em class="txt">景点交通</em>
+                    </h2>
+                </div>
+                <div class="box_cont clearfix">
+                    <div class="box_cont-wrap yuding-tips">
+                        <!--解析json-->
+                        <dl class="clearfix">
+                            <dt>费用说明</dt>
+                            <dd>
+                                费用包含1)交通：不含旅游车（景点间距离较近，全程步行）。2)用餐：行程内所列餐食（庆丰包子铺：三两包子（9个）、粥或炒肝。）。3)门票：行程中所含的景点首道大门票（故宫、北海公园、乘坐黄包车、恭王府）。4)导服：中文导游费用（自由活动期间除外）
+                            </dd>
+                        </dl>
+                        <dl class="clearfix">
+                            <dt>费用包含</dt>
+                            <dd>
+                                此家庭套票含海洋王国成人票两张、儿童长者票一张。此套票可允许免费携带一名身高1米以下儿童同时入园。<br>
+                                儿童长者票适用人群：身高1.5米以下儿童或者65岁以上长者（需出示有效证件）使用。<br>
+                            </dd>
+                        </dl>
+                        <dl class="clearfix">
+                            <dt>兑换方式</dt>
+                            <dd>
+                                凭携程数字验证码至珠海长隆海洋王国景区门口的取票机上验证换票。如在出发前当天仍未收到短信，请速致电携程客服。若您取票过程中遇到问题请及时咨询景区工作人员。<br>
+                            </dd>
+                        </dl>
+                        <dl class="clearfix">
+                            <dt>退改规则</dt>
+                            <dd>
+                                1）退票：在使用日期前1天17：30之前申请退订，无需收取损失费；在使用日期前1天17：30之后及使用日期当天17：30之前申请退订，需收取20%损失费；已取票或超过使用日期当天17：30不予退订。<br>
+                                2）改期：<br>
+                                A、若未取票，在使用日期前1天17：30之前申请改期，请取消原订单重新预定，无需收取任何手续费；在使用日期前1天17：30之后及使用日期当天17：30之前申请改期，需收取30元/张的手续费，超过使用日期当天17：30不可改期。<br>
+                                B、若已取票，只可在景区游客中心办理改期（过期票景区一律不受理）。<br>
+                                C、所有门票只可改期一次，且已取票或出行当天的改期申请均需收取30元/张的手续费，改期后不可退订。（温馨提示：只能改至同等价位的日期使用，修改日期跨度为使用日期之后30天内。）<br>
+                                3）如需退订/改期，请在以上指定时间内致电携程：10106666*0办理。<br>
+                            </dd>
+                        </dl>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="mp-desc-r"></div>
+        </div>
+
+        </div>
+    </div>
+    
+    <script type="text/javascript">
+        $(function() {
+            $("img").lazyload({ effect: "fadeIn" });
+
+            //tabs 滚动和切换start
+            fixArr = [];
+            var temp = $('.subMenu').offset();
+            temp = temp == null ? { left: 0, top: 0 } : temp;
+            var ps0 = temp.top;
+            fixArr.push(ps0);
+            $('.autosroll').each(function(index, dom) {
+                var offsetTop = $(this).offset().top;
+                fixArr.push(offsetTop);
+            });
+            //add all scroll height
+            $('.subMenu').smint({
+                scrollSpeed: 1000
+            });
+            //tabs 滚动和切换 end
+
+            $('.cate_hd').bind({
+                "mouseover": function() {
+                    $('.changecity-box').show();
+                },
+                "mouseout": function() {
+                    $('.changecity-box').hide();
+                }
+            });
+            //选择城市Scroll
+            $("#changecity-box").mCustomScrollbar({
+                setHeight: 400,
+                theme: "dark"
+            });
+
+
+            $('.ticket-title-wrapper').each(function(index, dom) {
+                $(this).click(function() {
+//                    var me = $(this).parent('li');
+//                    if (me.hasClass("active")) {
+//                        me.find('.ticket-list-more').animate({ opacity: 0 }, 0.1);
+//                        me.removeClass("active");
+//                    } else {
+//                        me.addClass("active");
+//                        me.find('.ticket-list-more').animate({ opacity: 1 }, 0.1);
+                    //                    }
+                    var netxtr = $(this).parent('.ticket-info').next().find('.ticket-item-moreinfo');
+                    if ($(netxtr).css('display') == 'none') {
+                        //$(netxtr).css('display', "block").animate({ opacity: 1 }, 0.1);
+                        $(netxtr).slideDown(500);
+                    } else {
+                        // $(netxtr).css('display', "none").animate({ opacity: 0 }, 0.1);
+                        $(netxtr).slideUp(500);
+                    }
+                });
+            });
+
+            $(".btn-close").click(function() {
+                $(this).closest(".ticket-item-moreinfo").slideUp(500);
+            });
+        });
+    </script>
+</body>
+</html>

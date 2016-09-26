@@ -1,0 +1,1818 @@
+﻿<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+    <title></title>
+    <link href="../Css/Basic.css" rel="stylesheet" type="text/css" />
+    <link href="../Css/default.css" rel="stylesheet" type="text/css" />
+    <script src="../JavaScript/jquery-1.4.4.min.js" type="text/javascript"></script>
+    <script src="../JavaScript/banner.navslide.js" type="text/javascript"></script>
+    <script>
+        $(function() {
+            //头部下拉
+            $('.title-banner').bind({
+                mouseover: function () { $(this).addClass("open"); },
+                mouseout: function () { $(this).removeClass("open"); }
+            });
+        })
+    </script>
+</head>
+<body>
+    <div class="narrow_page">
+        <div class="topNavWrapper ">
+            <div class="cls-top-nav clsPanle">
+                <div class="f_l"><span style="font-size: 12px">您好。奇比拉旅游网,基于大数据以城市为中心的互联网+旅游服务平台</span></div>
+                <ul class="clearfix f_r topnav_ul">
+                    <li class="title-banner">
+                        <a href="http://lvyou.qibila.com">我的奇比拉<i class="icon iconfont">&#xe6d8;</i> </a>
+                        <div class="head_userlayer" id="scumnav_menu" style="">
+                            <div class="infos">
+                                <p class="face">
+                                    <a href="home.php?mod=space&amp;uid=23" class=" hidefocus"><img src="http://www.shicheng.me/uc_server/avatar.php?uid=23&amp;size=small"></a>
+                                </p>
+                                <p class="name"><a href="home.php?mod=space&amp;uid=23">binggo</a></p>
+                                <p class="txt">  <a href="home.php?mod=spacecp&amp;ac=usergroup" id="A1" class="showmenu">超级版主                  </a><a href="home.php?mod=spacecp&amp;ac=credit&amp;showcredit=1" id="A2" class="showmenu">82积分</a></p>
+                            </div>
+                            <ul class="list clearfix">
+                                <li><a data-bn-ipg="head-userdrop-home" href="home.php?mod=space&amp;uid=23" class="link">我的首页</a></li>
+                                <li><a data-bn-ipg="head-userdrop-thread" href="forum.php?mod=guide&amp;view=my" class="link">我的帖子</a></li>
+                                <li><a data-bn-ipg="head-userdrop-footprint" href="home.php?mod=space&amp;do=favorite&amp;view=me" class="link">我的收藏</a></li>
+                                <li><a data-bn-ipg="head-userdrop-album" href="home.php?mod=space&amp;do=friend" class="link">我的好友</a></li>
+                                <li><a href="forum.php?mod=modcp&amp;fid=46" target="_blank" class="link">石城社区管理</a></li>
+                                <li class="btm"><a href="member.php?mod=logging&amp;action=logout&amp;formhash=1ff03b9c" class="quit" data-bn-ipg="head-userdrop-logout">退出</a><a class="set" href="home.php?mod=spacecp" data-bn-ipg="head-userdrop-setting">账号设置</a></li>
+                            </ul>
+                        </div>
+                    </li>
+                    <li id="navweixin" class="title-banner">
+                        <a href="JavaScript:void(0)">微信<i class="icon iconfont">&#xe6d8;</i></a>
+                        <div class="head-div"></div>
+                        <span></span>
+                    </li>
+                    <li>
+                        <a href="JavaScript:void(0)">服务电话:400 676 0405</a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+
+    <div class="clsPanle">
+        <div class="cls-hd clsPanle">
+            <div class="cls-hd-fl f_l">
+                <h1>
+                    <a href="default.aspx" title="旅游景点,门票票务,旅游景点排行，电影排行,热门景点,电子优惠券,奇比拉网">珠海长隆海洋王国,长隆马戏,广州塔,奇比拉旅游网</a>
+                </h1>
+            </div>
+            <div class="tour-bg"></div>
+            <div class=""></div>
+            <div class="cls-hd-fr f_r">
+                <ul class="lv_baozhang">
+                    <li><i class="icon iconfont">&#xe693;</i>价格保证</li>
+                    <li><i class="icon iconfont">&#xe66b;</i>退订保障</li>
+                    <li><i class="icon iconfont">&#xe677;</i>救援保障</li>
+                    <li><i class="icon iconfont">&#xe688;</i>24时服务</li>
+                </ul>
+            </div>
+        </div>
+    </div>
+
+    <div class="menuNav">
+            <div class="clsPanle">
+                <div class="channel">
+                    <div class="cate_hd">
+                        <div class="cateall">
+                            <i></i><span class="at-name">珠海</span> <b></b>
+                        </div>
+                        <div class="changecity-box mCustomScrollbar _mCS_1 mCS_no_scrollbar" id="changecity-box" style="height: 500px; display: none;">
+                            <div id="mCSB_1" class="mCustomScrollBox mCS-dark mCSB_vertical mCSB_inside" tabindex="0">
+                                <div id="mCSB_1_container" class="mCSB_container mCS_y_hidden mCS_no_scrollbar_y" style="position: relative; top: 0px; left: 0px;" dir="ltr">
+                                    <div class="at-city">
+                                        <div class="gray-ban">
+                                            推荐城市
+                                        </div>
+                                        <div class="city-hot">
+                                            <a href="javascript:void(0)" cid="3" class="">北京</a><a href="javascript:void(0)" cid="25" class="">上海</a><a href="javascript:void(0)" cityid="80" class="">广州</a><a href="javascript:void(0)" cityid="91" class="">深圳</a><a href="javascript:void(0)" cityid="324" class="">成都</a><a href="javascript:void(0)" cityid="226" class="">苏州</a><a href="javascript:void(0)" cityid="383" class="">杭州</a><a href="javascript:void(0)" cid="394" class="">重庆</a><a href="javascript:void(0)" cityid="192" class="">武汉</a><a href="javascript:void(0)" cityid="373">昆明</a><a href="javascript:void(0)" cityid="317">西安</a><a href="javascript:void(0)" cityid="295">威海</a><a href="javascript:void(0)" cid="395" class="">香港</a>
+                                        </div>
+                                        <div class="gray-ban">
+                                            全国城市列表
+                                        </div>
+                                        <ul class="city-all">
+                                            <li>
+                                                <b class="ca-l">直辖市</b>
+                                                <div class="ca-r">
+                                                    <a href="javascript:void(0)" cid="3">北京</a><a href="javascript:void(0)" cid="27">天津</a><a href="javascript:void(0)" cid="25" class="">上海</a><a href="javascript:void(0)" cid="32" class="">重庆</a>
+                                                </div>
+                                            </li>
+                                            <li>
+                                                <a class="ca-l" href="javascript:void(0)" cid="16">江苏</a>
+                                                <div class="ca-r">
+                                                    <a href="javascript:void(0)" cityid="221">常州</a><a href="javascript:void(0)" cityid="222">淮安</a><a href="javascript:void(0)" cityid="223">连云港</a><a href="javascript:void(0)" cityid="224">南京</a><a href="javascript:void(0)" cityid="225">南通</a><a href="javascript:void(0)" cityid="226">苏州</a><a href="javascript:void(0)" cityid="227">宿迁</a><a href="javascript:void(0)" cityid="228">泰州</a><a href="javascript:void(0)" cityid="229">无锡</a><a href="javascript:void(0)" cityid="230">徐州</a><a href="javascript:void(0)" cityid="231">盐城</a><a href="javascript:void(0)" cityid="232">扬州</a><a href="javascript:void(0)" cityid="233">镇江</a>
+                                                </div>
+                                            </li>
+                                            <li>
+                                                <a class="ca-l" href="javascript:void(0)" cid="31">浙江</a>
+                                                <div class="ca-r">
+                                                    <a href="javascript:void(0)" cityid="383">杭州</a><a href="javascript:void(0)" cityid="384" class="">湖州</a><a href="javascript:void(0)" cityid="385">嘉兴</a><a href="javascript:void(0)" cityid="386">金华</a><a href="javascript:void(0)" cityid="387">丽水</a><a href="javascript:void(0)" cityid="388">宁波</a><a href="javascript:void(0)" cityid="389">绍兴</a><a href="javascript:void(0)" cityid="390">台州</a><a href="javascript:void(0)" cityid="391">温州</a><a href="javascript:void(0)" cityid="392">舟山</a><a href="javascript:void(0)" cityid="393">衢州</a>
+                                                </div>
+                                            </li>
+                                            <li>
+                                                <a class="ca-l" href="javascript:void(0)" cid="2">安徽</a>
+                                                <div class="ca-r">
+                                                    <a href="javascript:void(0)" cityid="36">安庆</a><a href="javascript:void(0)" cityid="37">蚌埠</a><a href="javascript:void(0)" cityid="52">亳州</a><a href="javascript:void(0)" cityid="38">巢湖</a><a href="javascript:void(0)" cityid="39">池州</a><a href="javascript:void(0)" cityid="40">滁州</a><a href="javascript:void(0)" cityid="41">阜阳</a><a href="javascript:void(0)" cityid="42">合肥</a><a href="javascript:void(0)" cityid="43">淮北</a><a href="javascript:void(0)" cityid="44">淮南</a><a href="javascript:void(0)" cityid="45">黄山</a><a href="javascript:void(0)" cityid="46">六安</a><a href="javascript:void(0)" cityid="47">马鞍山</a><a href="javascript:void(0)" cityid="48">宿州</a><a href="javascript:void(0)" cityid="49">铜陵</a><a href="javascript:void(0)" cityid="50">芜湖</a><a href="javascript:void(0)" cityid="51">宣城</a>
+                                                </div>
+                                            </li>
+                                            <li>
+                                                <a class="ca-l" href="javascript:void(0)" cid="4">福建</a>
+                                                <div class="ca-r">
+                                                    <a href="javascript:void(0)" cityid="54">福州</a><a href="javascript:void(0)" cityid="55">龙岩</a><a href="javascript:void(0)" cityid="56">南平</a><a href="javascript:void(0)" cityid="57">宁德</a><a href="javascript:void(0)" cityid="58">莆田</a><a href="javascript:void(0)" cityid="59">泉州</a><a href="javascript:void(0)" cityid="60">三明</a><a href="javascript:void(0)" cityid="61">厦门</a><a href="javascript:void(0)" cityid="62">漳州</a>
+                                                </div>
+                                            </li>
+                                            <li>
+                                                <a class="ca-l" href="javascript:void(0)" cid="5">甘肃</a>
+                                                <div class="ca-r">
+                                                    <a href="javascript:void(0)" cityid="63">白银</a><a href="javascript:void(0)" cityid="64">定西</a><a href="javascript:void(0)" cityid="65">甘南</a><a href="javascript:void(0)" cityid="66">嘉峪关</a><a href="javascript:void(0)" cityid="67">金昌</a><a href="javascript:void(0)" cityid="68">酒泉</a><a href="javascript:void(0)" cityid="69">兰州</a><a href="javascript:void(0)" cityid="70">临夏</a><a href="javascript:void(0)" cityid="71">陇南</a><a href="javascript:void(0)" cityid="72">平凉</a><a href="javascript:void(0)" cityid="73">庆阳</a><a href="javascript:void(0)" cityid="74">天水</a><a href="javascript:void(0)" cityid="75">武威</a><a href="javascript:void(0)" cityid="76">张掖</a>
+                                                </div>
+                                            </li>
+                                        </ul>
+                                    </div>
+                                </div>
+                                <div id="mCSB_1_scrollbar_vertical" class="mCSB_scrollTools mCSB_1_scrollbar mCS-dark mCSB_scrollTools_vertical" style="display: none;">
+                                    <div class="mCSB_draggerContainer">
+                                        <div id="mCSB_1_dragger_vertical" class="mCSB_dragger" style="position: absolute; min-height: 30px; top: 0px; display: block; height: 421px; max-height: 490px;" oncontextmenu="return false;">
+                                            <div class="mCSB_dragger_bar" style="line-height: 30px;"></div>
+                                        </div>
+                                        <div class="mCSB_draggerRail"></div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="nav_top">
+                    <ul class="nav_top_ul">
+                        <li style="display: none"><a href="#">首页</a> </li>
+                        <li><a href="menpiao_index.html">景点门票</a> </li>
+                        <li>
+                            <a href="http://lvyou.qibila.com/spotdis.aspx" target="_blank" title="旅游景点">旅游城市</a>
+                        </li>
+                        <li><a href="quan">旅游排行</a> </li>
+                        <li><a href="quan">港澳台签证</a> </li>
+                        <li><a href="quan">旅游资讯</a> </li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+        <!-- 幻灯开始 -->
+        <div class="Slide fl" id="slide">
+            <ul class="slide-cont">
+                <li class="slide-item" style="left: 0px;">
+                    <a href="#" title="珠海长隆海洋王国暑假特惠" target="blank">
+                        <img src="http://images3.ctrip.com/dm/201507/shangrila1920_340.jpg" alt="珠海长隆海洋王国暑假特惠">
+                    </a>
+                    <div class="slide-txt">
+                        <div class="txt_bg">
+                        </div>
+                        <a href="#" title="珠海长隆海洋王国暑假特惠" target="blank">珠海长隆海洋王国暑假特惠</a>
+                    </div>
+                </li>
+                <li class="slide-item" style="left: -306px;">
+                    <a href="http://bbs.benshouji.com/thread-393270-1-1.html" title="中国最大的影视拍摄基地，在大规模的仿古建筑群中体验古代穿越。" target="blank">
+                        <img src="http://images4.c-ctrip.com/target//fd/advertisement/g1/M06/1C/3C/CghzfFWsxEyASWRqAAI1CxogNxQ214.jpg" alt="横店影视城">
+                    </a>
+                    <div class="slide-txt">
+                        <div class="txt_bg">
+                        </div>
+                        <a href="http://bbs.benshouji.com/thread-393270-1-1.html" title="中国最大的影视拍摄基地，在大规模的仿古建筑群中体验古代穿越。" target="blank">横店-中国最大的影视拍摄基地，在大规模的仿古建筑群中体验古代穿越。</a>
+                    </div>
+                </li>
+                <li class="slide-item" style="left: -306px;">
+                    <a href="#" title="再不疯狂就老了！" target="blank">
+                        <img src="http://images3.c-ctrip.com/rk/201506/1920-340-sy.jpg" alt="">
+                    </a>
+                    <div class="slide-txt">
+                        <div class="txt_bg">
+                        </div>
+                        <a href="http://bbs.benshouji.com/thread-393003-1-1.html" title="毕业季" target="blank">
+                            再不疯狂就老了！
+                        </a>
+                    </div>
+                </li>
+            </ul>
+            <div class="slide-nav">
+                <a href="javascript:" class="nownav">1</a><a href="javascript:" class="">2</a><a href="javascript:" class="">3</a>
+            </div>
+            <div class="slide-loading" style="height: 5px; position: absolute; left: 0px; bottom: 0px; z-index: 10; width: 74.8274915750232%; overflow: hidden; background: rgb(255, 73, 57);">
+            </div>
+            <a href="javascript:;" id="next" style="display: none;"></a><a href="javascript:;" id="prev" style="display: none;"></a>
+        </div>
+        <!-- 幻灯结束 -->
+        <!--banner 浮动块S-->
+        <div class=" mod clsPanle">
+            <div class="searchbox searchbox_animate ">
+                <ul id="searchBoxUl" class="s_tab" style="height: 300px;">
+                    <li styletag="vacation" class=" s_tab_current"><i class="vacation"></i><b>门票</b></li>
+                    <li styletag="hotel" class="s_tab_nocurrent"><i class="hotel"></i> <b>酒店</b></li>
+                    <li styletag="flight" class="s_tab_nocurrent"><i class="flight"></i> <b>机票</b></li>
+                </ul>
+                <!--门票start-->
+                <div class="s_content" id="search-piao">
+                    <h4 class="detail-sub-title">门票预订 <span>领券购买更优惠</span></h4>
+                    <h5 class="detail-sub-title">全国景区门票一网打尽，我们不生产门票，只是门票搬运工</h5>
+                    <div class="s_item_input">
+                        <span class="hotel-city">
+                            <label>景点名称：</label>
+                            <span class="en">Where?</span>
+                            <input type="text" name="cityname" class="">
+                            <i class="search-box-input-where"></i>
+                        </span>
+                    </div>
+                    <div class="s_item_input">
+                        <input class="hotel-search-btn" id="j-menpiao-search-btn" type="submit" value="搜索">
+                    </div>
+                    <div class="s-line">
+                        <p class="row">
+                            <strong>热门搜索:</strong> <a title="广州长隆" class="hot" target="_blank" href="http://lvyou.qibila.com/changlongshuishangleyuan">
+                                广州长隆
+                            </a> <a title="深圳欢乐谷" target="_blank" href="http://lvyou.qibila.com/shenzhenhuanlegu">
+                                深圳欢乐谷
+                            </a> <a title="横店" target="_blank" href="http://lvyou.qibila.com/hengdian">横店</a>
+                            <a title="珠海长隆" target="_blank" href="http://lvyou.qibila.com/changlonghaiyangwangguo">
+                                珠海长隆
+                            </a> <a title="世界之窗" target="_blank" href="http://lvyou.qibila.com/shijiezhichuang">
+                                世界之窗
+                            </a> <a title="梦幻水城" target="_blank" href="http://lvyou.qibila.com/menghuanshuicheng">
+                                梦幻水城
+                            </a> <a title="世界之窗" target="_blank" href="http://lvyou.qibila.com/guangzhoudongwuyuan">
+                                广州动物园
+                            </a> <a title="广州塔" target="_blank" href="http://lvyou.qibila.com/guangzhouta">
+                                广州塔
+                            </a>
+                        </p>
+                        <p class="row">
+                            <strong>精选城市:</strong>
+                            <a href="http://piao.ctrip.com/dest/dc-shanghai-2/s-tickets/#ctm_ref=vat_hp_sb_lst">上海</a>
+                            <a href="http://piao.ctrip.com/dest/dc-guangzhou-32/s-tickets/#ctm_ref=vat_hp_sb_lst">广州</a>
+                            <a href="http://piao.ctrip.com/dest/dc-shenzhen-30/s-tickets/#ctm_ref=vat_hp_sb_lst">深圳</a>
+                            <a href="http://piao.ctrip.com/dest/D-beijing-1/s-tickets/">北京</a>
+                            <a href="http://piao.ctrip.com/dest/D-chengdu-104/s-tickets/">成都</a>
+                            <a href="http://piao.ctrip.com/dest/D-hangzhou-14/s-tickets/">杭州</a>
+                            <a href="http://piao.ctrip.com/dest/dc-guangzhou-32/s-tickets/#ctm_ref=vat_hp_sb_lst">广州</a>
+                            <a href="http://piao.ctrip.com/dest/dc-shenzhen-30/s-tickets/#ctm_ref=vat_hp_sb_lst">深圳</a>
+                            <a href="http://piao.ctrip.com/dest/D-beijing-1/s-tickets/">北京</a>
+                            <a href="http://piao.ctrip.com/dest/D-chengdu-104/s-tickets/">成都</a>
+                            <a href="http://piao.ctrip.com/dest/dc-guangzhou-32/s-tickets/#ctm_ref=vat_hp_sb_lst">广州</a>
+                            <a href="http://piao.ctrip.com/dest/dc-shenzhen-30/s-tickets/#ctm_ref=vat_hp_sb_lst">深圳</a>
+                            <a href="http://piao.ctrip.com/dest/D-beijing-1/s-tickets/">北京</a>
+                            <a href="http://piao.ctrip.com/dest/D-chengdu-104/s-tickets/">成都</a>
+                        </p>
+                    </div>
+
+
+                </div>
+                <!--门票end-->
+                <!--酒店-->
+                <div class="s_content" id="search-hotel" style="display: none">
+                    <h4 class="detail-sub-title">酒店预订</h4>
+                    <div class="s_item_input">
+                        <span class="hotel-city">
+                            <label>入住城市：</label>
+                            <span class="en">Where?</span>
+                            <input type="text" id="j-checkin_time" name="cityname" class="">
+                            <i class="search-box-input-where"></i>
+                        </span>
+                    </div>
+                    <div class="s_item_input">
+                        <span class="hotel-checking-in ">
+                            <label>入住时间：</label>
+                            <span class="en">Check in</span>
+                            <input type="text" name="checkin" class="hasDatepicker">
+                            <i class="search-box-input-bg"></i>
+                        </span>
+                        <span class="hotel-checking-out ">
+                            <label>退房时间：</label>
+                            <span class="en">Check out</span>
+                            <input type="text" name="checkout" class="hasDatepicker">
+                            <i class="search-box-input-bg"></i>
+                        </span>
+                    </div>
+                    <div class="s_item_input">
+                        <span class="hotel-city">
+                            <label>酒店名称：</label>
+                            <span class="en">Hotel name</span>
+                            <input type="text" name="hotelname">
+                            <i class="search-box-input-hname"></i>
+                        </span>
+                    </div>
+                    <div class="s_item_btn">
+                        <input class="hotel-search-btn" id="j-hotel-search-btn" clicklog="{&quot;pos&quot;:&quot;detail_hotel_search&quot;}" type="submit" value="搜索">
+                    </div>
+                </div>
+                <!--酒店-->
+                <!--机票-->
+                <div class="s_content" id="search-jipiao" style="display: none">
+                    <form>
+                        <h4 class="detail-sub-title">航班查询</h4>
+                        <h5 class="detail-sub-title">
+                            航程类型<label class="index_label">
+                                <input name="flightway" tabindex="161" autocomplete="off" type="radio" mm="S" value="S" checked="checked">
+                                单程
+                            </label>&nbsp;
+                            <label class="index_label">
+                                <input name="flightway" tabindex="162" autocomplete="off" type="radio" mm="D" value="D">
+                                往返
+                            </label>
+                        </h5>
+                        <div class="jipiao-box">
+                            <div class="s_item_input">
+                                <div class="s_exchange">
+                                    <a href="#">
+                                        换
+                                    </a>
+                                </div>
+                                <span class="hotel-checking-in ">
+                                    <label>出发城市：</label>
+                                    <span class="en">Depart City</span>
+                                    <input type="text" name="departCity" class="hasDatepicker">
+                                    <i class="search-box-input-departcity"></i>
+                                </span>
+                                <span class="hotel-checking-out ">
+                                    <label>出发日期：</label>
+                                    <span class="en">Depart Date</span>
+                                    <input type="text" name="checkout" class="hasDatepicker">
+                                    <i class="search-box-input-bg"></i>
+                                </span>
+                            </div>
+                            <div class="s_item_input">
+                                <span class="hotel-checking-in ">
+                                    <label>到达城市：</label>
+                                    <span class="en">Arrive City</span>
+                                    <input type="text" name="arrivecity" class="hasDatepicker">
+                                    <i class="search-box-input-arrivecity"></i>
+                                </span>
+                                <span class="hotel-checking-out ">
+                                    <label>返回日期：</label>
+                                    <span class="en">Return Date</span>
+                                    <input type="text" name="checkout" class="hasDatepicker">
+                                    <i class="search-box-input-bg"></i>
+                                </span>
+                            </div>
+                        </div>
+                        <div class="s_item_btn">
+                            <input class="hotel-search-btn" id="j-jipiao-search-btn" type="submit" value="搜索">
+                        </div>
+                    </form>
+                </div>
+                <!--机票-->
+            </div>
+
+        </div>
+        <!--banner 浮动块E-->
+        <!--景点S-->
+        <div class="clsPanle cls-scenery-ticket">
+            <div class="common-title">
+                <h2 class="title f_l">
+                    <i class="icon iconfont jiudian-icon">&#xe64e;</i> 景点
+                </h2>
+                <ul class="clearfix f_l common-title-ul bg-ticket" id="cls-scenery-ticket">
+                    <li class="on"><a href="javascript:void(0);">广东</a> <span></span></li>
+                    <li><a href="javascript:void(0);">上海</a> <span></span></li>
+                    <li><a href="javascript:void(0);">北京</a> <span></span></li>
+                    <li><a href="javascript:void(0);">云南</a> <span></span></li>
+                    <li><a href="javascript:void(0);">浙江</a> <span></span></li>
+                    <li><a href="javascript:void(0);">湖南</a> <span></span></li>
+                    <li><a href="javascript:void(0);">自然保护区</a> <span></span></li>
+                    <li><a href="javascript:void(0);">历史建筑</a> <span></span></li>
+                </ul>
+                <a href="#" class="f_r">查看优惠景点门票</a>
+            </div>
+            <div class="clsPanle">
+                <ul class="mainfun">
+                    <li>
+                        <a target="_blank" href="/changlonghaiyangwangguo/" title="长隆海洋王国">
+                            <img alt="全面整合珍稀的海洋动物、顶级的游乐设备和新奇的大型演艺，全力建设和打造的中国人自主研发、拥有自主知识" src="http://webmap1.map.bdimg.com/maps/services/thumbnails?width=525&amp;height=295&amp;quality=100&amp;align=middle,middle&amp;src=http://hiphotos.baidu.com/lvpics/pic/item/34fae6cd7b899e51c461181741a7d933c9950dc1.jpg" class="list_pic img-loaded">
+                            <h3 class="list_title" title="长隆海洋王国">
+                                长隆海洋王国
+                            </h3>
+                            <p class="list_time" title="全面整合珍稀的海洋动物、顶级的游乐设备和新奇的大型演艺，全力建设和打造的中国人自主研发、拥有自主知识">
+                                全面整合珍稀的海洋动物、顶级的游乐设备和新奇的大型演艺，全力建设和打造的中国人自主研发、拥有自主知识
+                            </p>
+                            <p>
+                                <em class="base_price"><dfn>¥</dfn><strong>245</strong></em>起
+                            </p>
+                        </a>
+                    </li>
+                    <li>
+                        <a target="_blank" href="/wailingdingdao/" title="外伶仃岛">
+                            <img alt="外伶仃岛的沙滩很平很美的，石奇水美、优雅恬静，名闻遐迩；岛上冬无寒。" src="http://webmap1.map.bdimg.com/maps/services/thumbnails?width=525&amp;height=295&amp;quality=100&amp;align=middle,middle&amp;src=http://hiphotos.baidu.com/lvpics/pic/item/8c1001e93901213f2baa911454e736d12e2e9559.jpg" class="list_pic img-loaded">
+                            <h3 class="list_title" title="外伶仃岛">
+                                外伶仃岛
+                            </h3>
+                            <p class="list_time" title="外伶仃岛的沙滩很平很美的，石奇水美、优雅恬静，名闻遐迩；岛上冬无寒。">
+                                外伶仃岛的沙滩很平很美的，石奇水美、优雅恬静，名闻遐迩；岛上冬无寒。
+                            </p>
+                            <p>
+                                <em class="base_price"><dfn>¥</dfn><strong>30</strong></em>起
+                            </p>
+                        </a>
+                    </li>
+                    <li>
+                        <a target="_blank" href="/dongaodao/" title="东澳岛">
+                            <img alt="历史遗迹辅以瑰丽自然风光,是珠海市海上旅游的经典岛屿,其南沙湾尤为著名。" src="http://webmap1.map.bdimg.com/maps/services/thumbnails?width=525&amp;height=295&amp;quality=100&amp;align=middle,middle&amp;src=http://hiphotos.baidu.com/lvpics/pic/item/91529822720e0cf3cd985e020b46f21fbf09aadf.jpg" class="list_pic img-loaded">
+                            <h3 class="list_title" title="东澳岛">
+                                东澳岛
+                            </h3>
+                            <p class="list_time" title="历史遗迹辅以瑰丽自然风光,是珠海市海上旅游的经典岛屿,其南沙湾尤为著名。">
+                                历史遗迹辅以瑰丽自然风光,是珠海市海上旅游的经典岛屿,其南沙湾尤为著名。
+                            </p>
+                            <span class="star-box"><span class="small-star"><span class="star-8"></span></span>4.0分</span>
+                        </a>
+                    </li>
+                    <li>
+                        <a target="_blank" href="/hebaodao/" title="荷包岛">
+                            <img alt="是珠海市1 46个海岛中，沙滩最多的海岛。" src="http://webmap1.map.bdimg.com/maps/services/thumbnails?width=525&amp;height=295&amp;quality=100&amp;align=middle,middle&amp;src=http://hiphotos.baidu.com/lvpics/pic/item/00e93901213fb80e6995381e36d12f2eb83894b6.jpg" class="list_pic img-loaded">
+                            <h3 class="list_title" title="荷包岛">
+                                荷包岛
+                            </h3>
+                            <p class="list_time" title="是珠海市1 46个海岛中，沙滩最多的海岛。">
+                                是珠海市1 46个海岛中，沙滩最多的海岛。
+                            </p>
+                            <span class="star-box"><span class="small-star"><span class="star-8"></span></span>4.1分</span>
+                        </a>
+                    </li>
+                    <li>
+                        <a target="_blank" href="/zhuhaiyunv/" title="珠海渔女">
+                            <img alt="风景十几年来依旧的美丽呀，现在人很少，是散心的好地方。吹着海风很舒服。" src="http://webmap1.map.bdimg.com/maps/services/thumbnails?width=525&amp;height=295&amp;quality=100&amp;align=middle,middle&amp;src=http://hiphotos.baidu.com/lvpics/pic/item/18d8bc3eb13533fac045cdfeaad3fd1f40345b6a.jpg" class="list_pic img-loaded">
+                            <h3 class="list_title" title="珠海渔女">
+                                珠海渔女
+                            </h3>
+                            <p class="list_time" title="风景十几年来依旧的美丽呀，现在人很少，是散心的好地方。吹着海风很舒服。">
+                                风景十几年来依旧的美丽呀，现在人很少，是散心的好地方。吹着海风很舒服。
+                            </p>
+                            <span class="star-box"><span class="small-star"><span class="star-8"></span></span>3.9分</span>
+                        </a>
+                    </li>
+                    <li>
+                        <a target="_blank" href="/qinglvlu/" title="情侣路">
+                            <img alt="海风吹得很舒服，大美海景，而且非常的漂亮和浪漫。不过不支持一个人去走。" src="http://webmap1.map.bdimg.com/maps/services/thumbnails?width=525&amp;height=295&amp;quality=100&amp;align=middle,middle&amp;src=http://hiphotos.baidu.com/lvpics/pic/item/0df3d7ca7bcb0a469d436a986b63f6246b60af2a.jpg" class="list_pic img-loaded">
+                            <h3 class="list_title" title="情侣路">
+                                情侣路
+                            </h3>
+                            <p class="list_time" title="海风吹得很舒服，大美海景，而且非常的漂亮和浪漫。不过不支持一个人去走。">
+                                海风吹得很舒服，大美海景，而且非常的漂亮和浪漫。不过不支持一个人去走。
+                            </p>
+                            <span class="star-box"><span class="small-star"><span class="star-8"></span></span>4.2分</span>
+                        </a>
+                    </li>
+                    <li>
+                        <a target="_blank" href="/miaowandao/" title="庙湾岛">
+                            <img alt="" src="http://webmap1.map.bdimg.com/maps/services/thumbnails?width=525&amp;height=295&amp;quality=100&amp;align=middle,middle&amp;src=http://hiphotos.baidu.com/lvpics/pic/item/b999a9014c086e06d4d95e9b00087bf40bd1cbe9.jpg" class="list_pic img-loaded">
+                            <h3 class="list_title" title="庙湾岛">
+                                庙湾岛
+                            </h3>
+                            <p class="list_time" title="">
+                            </p>
+                            <span class="star-box"><span class="small-star"><span class="star-9"></span></span>4.5分</span>
+                        </a>
+                    </li>
+                    <li>
+                        <a target="_blank" href="/yuanmingxinyuan/" title="圆明新园">
+                            <img alt="圆明新园集中再现当年北京圆明园皇家园林的宏伟气势。" src="http://webmap1.map.bdimg.com/maps/services/thumbnails?width=525&amp;height=295&amp;quality=100&amp;align=middle,middle&amp;src=http://hiphotos.baidu.com/lvpics/pic/item/8cb1cb1349540923b69b633c9358d109b2de4985.jpg" class="list_pic img-loaded">
+                            <h3 class="list_title" title="圆明新园">
+                                圆明新园
+                            </h3>
+                            <p class="list_time" title="圆明新园集中再现当年北京圆明园皇家园林的宏伟气势。">
+                                圆明新园集中再现当年北京圆明园皇家园林的宏伟气势。
+                            </p>
+                            <span class="star-box"><span class="small-star"><span class="star-8"></span></span>3.9分</span>
+                        </a>
+                    </li>
+                </ul>
+                <ul class="mainfun" style="display: none">
+                    <li>
+                        <a target="_blank" href="/changlonghaiyangwangguo/" title="长隆海洋王国">
+                            <img alt="全面整合珍稀的海洋动物、顶级的游乐设备和新奇的大型演艺，全力建设和打造的中国人自主研发、拥有自主知识" src="http://webmap1.map.bdimg.com/maps/services/thumbnails?width=525&amp;height=295&amp;quality=100&amp;align=middle,middle&amp;src=http://hiphotos.baidu.com/lvpics/pic/item/34fae6cd7b899e51c461181741a7d933c9950dc1.jpg" class="list_pic img-loaded">
+                            <h3 class="list_title" title="长隆海洋王国">
+                                长隆海洋王国
+                            </h3>
+                            <p class="list_time" title="全面整合珍稀的海洋动物、顶级的游乐设备和新奇的大型演艺，全力建设和打造的中国人自主研发、拥有自主知识">
+                                全面整合珍稀的海洋动物、顶级的游乐设备和新奇的大型演艺，全力建设和打造的中国人自主研发、拥有自主知识
+                            </p>
+                            <p>
+                                <em class="base_price"><dfn>¥</dfn><strong>245</strong></em>起
+                            </p>
+                        </a>
+                    </li>
+                    <li>
+                        <a target="_blank" href="/wailingdingdao/" title="外伶仃岛">
+                            <img alt="外伶仃岛的沙滩很平很美的，石奇水美、优雅恬静，名闻遐迩；岛上冬无寒。" src="http://webmap1.map.bdimg.com/maps/services/thumbnails?width=525&amp;height=295&amp;quality=100&amp;align=middle,middle&amp;src=http://hiphotos.baidu.com/lvpics/pic/item/8c1001e93901213f2baa911454e736d12e2e9559.jpg" class="list_pic img-loaded">
+                            <h3 class="list_title" title="外伶仃岛">
+                                外伶仃岛
+                            </h3>
+                            <p class="list_time" title="外伶仃岛的沙滩很平很美的，石奇水美、优雅恬静，名闻遐迩；岛上冬无寒。">
+                                外伶仃岛的沙滩很平很美的，石奇水美、优雅恬静，名闻遐迩；岛上冬无寒。
+                            </p>
+                            <span class="star-box"><span class="small-star"><span class="star-9"></span></span>4.4分</span>
+                        </a>
+                    </li>
+                    <li>
+                        <a target="_blank" href="/dongaodao/" title="东澳岛">
+                            <img alt="历史遗迹辅以瑰丽自然风光,是珠海市海上旅游的经典岛屿,其南沙湾尤为著名。" src="http://webmap1.map.bdimg.com/maps/services/thumbnails?width=525&amp;height=295&amp;quality=100&amp;align=middle,middle&amp;src=http://hiphotos.baidu.com/lvpics/pic/item/91529822720e0cf3cd985e020b46f21fbf09aadf.jpg" class="list_pic img-loaded">
+                            <h3 class="list_title" title="东澳岛">
+                                东澳岛
+                            </h3>
+                            <p class="list_time" title="历史遗迹辅以瑰丽自然风光,是珠海市海上旅游的经典岛屿,其南沙湾尤为著名。">
+                                历史遗迹辅以瑰丽自然风光,是珠海市海上旅游的经典岛屿,其南沙湾尤为著名。
+                            </p>
+                            <span class="star-box"><span class="small-star"><span class="star-8"></span></span>4.0分</span>
+                        </a>
+                    </li>
+                    <li>
+                        <a target="_blank" href="/hebaodao/" title="荷包岛">
+                            <img alt="是珠海市1 46个海岛中，沙滩最多的海岛。" src="http://webmap1.map.bdimg.com/maps/services/thumbnails?width=525&amp;height=295&amp;quality=100&amp;align=middle,middle&amp;src=http://hiphotos.baidu.com/lvpics/pic/item/00e93901213fb80e6995381e36d12f2eb83894b6.jpg" class="list_pic img-loaded">
+                            <h3 class="list_title" title="荷包岛">
+                                荷包岛
+                            </h3>
+                            <p class="list_time" title="是珠海市1 46个海岛中，沙滩最多的海岛。">
+                                是珠海市1 46个海岛中，沙滩最多的海岛。
+                            </p>
+                            <span class="star-box"><span class="small-star"><span class="star-8"></span></span>4.1分</span>
+                        </a>
+                    </li>
+                    <li>
+                        <a target="_blank" href="/zhuhaiyunv/" title="珠海渔女">
+                            <img alt="风景十几年来依旧的美丽呀，现在人很少，是散心的好地方。吹着海风很舒服。" src="http://webmap1.map.bdimg.com/maps/services/thumbnails?width=525&amp;height=295&amp;quality=100&amp;align=middle,middle&amp;src=http://hiphotos.baidu.com/lvpics/pic/item/18d8bc3eb13533fac045cdfeaad3fd1f40345b6a.jpg" class="list_pic img-loaded">
+                            <h3 class="list_title" title="珠海渔女">
+                                珠海渔女
+                            </h3>
+                            <p class="list_time" title="风景十几年来依旧的美丽呀，现在人很少，是散心的好地方。吹着海风很舒服。">
+                                风景十几年来依旧的美丽呀，现在人很少，是散心的好地方。吹着海风很舒服。
+                            </p>
+                            <span class="star-box"><span class="small-star"><span class="star-8"></span></span>3.9分</span>
+                        </a>
+                    </li>
+                    <li>
+                        <a target="_blank" href="/qinglvlu/" title="情侣路">
+                            <img alt="海风吹得很舒服，大美海景，而且非常的漂亮和浪漫。不过不支持一个人去走。" src="http://webmap1.map.bdimg.com/maps/services/thumbnails?width=525&amp;height=295&amp;quality=100&amp;align=middle,middle&amp;src=http://hiphotos.baidu.com/lvpics/pic/item/0df3d7ca7bcb0a469d436a986b63f6246b60af2a.jpg" class="list_pic img-loaded">
+                            <h3 class="list_title" title="情侣路">
+                                情侣路
+                            </h3>
+                            <p class="list_time" title="海风吹得很舒服，大美海景，而且非常的漂亮和浪漫。不过不支持一个人去走。">
+                                海风吹得很舒服，大美海景，而且非常的漂亮和浪漫。不过不支持一个人去走。
+                            </p>
+                            <span class="star-box"><span class="small-star"><span class="star-8"></span></span>4.2分</span>
+                        </a>
+                    </li>
+                    <li>
+                        <a target="_blank" href="/miaowandao/" title="庙湾岛">
+                            <img alt="" src="http://webmap1.map.bdimg.com/maps/services/thumbnails?width=525&amp;height=295&amp;quality=100&amp;align=middle,middle&amp;src=http://hiphotos.baidu.com/lvpics/pic/item/b999a9014c086e06d4d95e9b00087bf40bd1cbe9.jpg" class="list_pic img-loaded">
+                            <h3 class="list_title" title="庙湾岛">
+                                庙湾岛
+                            </h3>
+                            <p class="list_time" title="">
+                            </p>
+                            <span class="star-box"><span class="small-star"><span class="star-9"></span></span>4.5分</span>
+                        </a>
+                    </li>
+                    <li>
+                        <a target="_blank" href="/yuanmingxinyuan/" title="圆明新园">
+                            <img alt="圆明新园集中再现当年北京圆明园皇家园林的宏伟气势。" src="http://webmap1.map.bdimg.com/maps/services/thumbnails?width=525&amp;height=295&amp;quality=100&amp;align=middle,middle&amp;src=http://hiphotos.baidu.com/lvpics/pic/item/8cb1cb1349540923b69b633c9358d109b2de4985.jpg" class="list_pic img-loaded">
+                            <h3 class="list_title" title="圆明新园">
+                                圆明新园
+                            </h3>
+                            <p class="list_time" title="圆明新园集中再现当年北京圆明园皇家园林的宏伟气势。">
+                                圆明新园集中再现当年北京圆明园皇家园林的宏伟气势。
+                            </p>
+                            <span class="star-box"><span class="small-star"><span class="star-8"></span></span>3.9分</span>
+                        </a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+        <!--景点E-->
+
+        <div class="clsPanle cls-scenery-ticket">
+            <div class="common-title">
+                <h2 class="title f_l">
+                    <i class="icon iconfont jiudian-icon">&#xe697;</i> 酒店
+                </h2>
+                <ul class="clearfix f_l common-title-ul bg-ticket" id="cls-hotel-list">
+                    <li class="on"><a href="javascript:void(0);">广东</a> <span></span></li>
+                    <li><a href="javascript:void(0);">上海</a> <span></span></li>
+                    <li><a href="javascript:void(0);">北京</a> <span></span></li>
+                    <li><a href="javascript:void(0);">云南</a> <span></span></li>
+                    <li><a href="javascript:void(0);">浙江</a> <span></span></li>
+                    <li><a href="javascript:void(0);">湖南</a> <span></span></li>
+                    <li><a href="javascript:void(0);">西安</a> <span></span></li>
+                    <li><a href="javascript:void(0);">南京</a> <span></span></li>
+                    <li><a href="javascript:void(0);">深圳</a> <span></span></li>
+                    <li><a href="javascript:void(0);">三亚</a> <span></span></li>
+                </ul>
+
+            </div>
+            <div class="clsPanle">
+                <div class="f_l hotel-warp">
+                    <img src="http://img61.ddimg.cn/upload_img/00504/1/qixi-lc-zcdt.jpg" alt="特价酒店预订" style="display: block;">
+                    <div class="home_screen_left_l_con_over" >
+                        
+                        <ul class="clearfix">
+                            <li>
+                                <a target="_blank" rel="nofollow" href="http://tuan.qunar.com/?in_track=home_tuan_content&amp;tag=leixing_jingjixing#PAGE/L2JzbmVzL3R1YW5XZWIvbGlzdA__/category/aG90ZWw_/city/54*g5rW3/globalCity/emh1aGFp/type/57uP5rWO5Z6L" title="经济型">经济型</a>
+                            </li>
+                            <li>
+                                <a target="_blank" rel="nofollow" href="http://tuan.qunar.com/?in_track=home_tuan_content&amp;tag=leixing_shushixing#PAGE/L2JzbmVzL3R1YW5XZWIvbGlzdA__/category/aG90ZWw_/city/54*g5rW3/globalCity/emh1aGFp/type/6IiS6YCC5Z6L" title="舒适型">舒适型</a>
+                            </li>
+                            <li>
+                                <a target="_blank" rel="nofollow" href="http://tuan.qunar.com/?in_track=home_tuan_content&amp;tag=leixing_gaodanghaohua#PAGE/L2JzbmVzL3R1YW5XZWIvbGlzdA__/category/aG90ZWw_/city/54*g5rW3/globalCity/emh1aGFp/type/6auY5qGj6LGq5Y2O" title="高档豪华">高档豪华</a>
+                            </li>
+                            <li>
+                                <a target="_blank" rel="nofollow" href="http://tuan.qunar.com/?in_track=home_tuan_content&amp;tag=leixing_liansuopinpai#PAGE/L2JzbmVzL3R1YW5XZWIvbGlzdA__/category/aG90ZWw_/city/54*g5rW3/globalCity/emh1aGFp/type/6L*e6ZSB5ZOB54mM" title="连锁品牌">连锁品牌</a>
+                            </li>
+                            <li>
+                                <a target="_blank" rel="nofollow" href="http://tuan.qunar.com/?in_track=home_tuan_content&amp;tag=leixing_dujiajiudian#PAGE/L2JzbmVzL3R1YW5XZWIvbGlzdA__/category/aG90ZWw_/city/54*g5rW3/globalCity/emh1aGFp/type/5bqm5YGH6YWS5bqX" title="度假酒店">度假酒店</a>
+                            </li>
+                            <li>
+                                <a target="_blank" rel="nofollow" href="http://tuan.qunar.com/?in_track=home_tuan_content&amp;tag=leixing_gongyuxingjiudian#PAGE/L2JzbmVzL3R1YW5XZWIvbGlzdA__/category/aG90ZWw_/city/54*g5rW3/globalCity/emh1aGFp/type/5YWs5a*T5Z6L6YWS5bqX" title="公寓型酒店">公寓型酒店</a>
+                            </li>
+                            <li>
+                                <a target="_blank" rel="nofollow" href="http://tuan.qunar.com/?in_track=home_tuan_content&amp;tag=leixing_qingnianlvshe#PAGE/L2JzbmVzL3R1YW5XZWIvbGlzdA__/category/aG90ZWw_/city/54*g5rW3/globalCity/emh1aGFp/type/6Z2S5bm05peF56S*" title="青年旅社">青年旅社</a>
+                            </li>
+                            <li>
+                                <a target="_blank" rel="nofollow" href="http://tuan.qunar.com/?in_track=home_tuan_content&amp;tag=leixing_kezhan#PAGE/L2JzbmVzL3R1YW5XZWIvbGlzdA__/category/aG90ZWw_/city/54*g5rW3/globalCity/emh1aGFp/type/5a6i5qCI" title="客栈">客栈</a>
+                            </li>
+                            <li>
+                                <a target="_blank" rel="nofollow" href="http://tuan.qunar.com/?in_track=home_tuan_content&amp;tag=leixing_zhongdianfang#PAGE/L2JzbmVzL3R1YW5XZWIvbGlzdA__/category/aG90ZWw_/city/54*g5rW3/globalCity/emh1aGFp/type/6ZKf54K55oi-" title="钟点房">钟点房</a>
+                            </li>
+                            <li><a href="#" rel="nofollow" >全部食品&gt;</a></li>
+                        </ul>
+                    </div>
+                </div>
+                <div class="f_l hotel-list" id="hotel-list">
+                    <ul class="clearfix hotellist" city="上海">
+                         <li class="clearfix hover-move J_HotelItem">
+                             <a href="//kezhan.trip.taobao.com/hotel_detail2.htm?spm=181.7091613.a1z60.202.W9iRlJ&amp;shid=10048620&amp;checkIn=2015-08-18&amp;checkOut=2015-08-19" target="_blank" rel="nofollow">
+                                 <img class="detail-img lazy-img" src="//img.alicdn.com/bao/uploaded/i3/TB1_RpyIFXXXXcjXVXXWPyp8pXX_023218.jpg" width="140" height="88" style="opacity: 1;">
+                                 <div class="detail-infos">
+                                     <div class="detail-title" title="上海中星君亭酒店">上海中星君亭酒店</div>
+                                     <div class="detail-level">酒店等级：<span>高档型</span></div>
+                                     <div class="detail-price-info"> <span class="detail-seller">月销298间</span> <span class="pi-price pi-price-sm"><i>¥</i>1128</span> </div>
+                                 </div>
+                             </a>
+                        </li>
+                        <li class="clearfix hover-move J_HotelItem">
+                            <a href="//kezhan.trip.taobao.com/hotel_detail2.htm?spm=181.7091613.a1z60.203.W9iRlJ&amp;shid=10075940&amp;checkIn=2015-08-18&amp;checkOut=2015-08-19" target="_blank" rel="nofollow">
+                                <img class="detail-img lazy-img" src="//img.alicdn.com/bao/uploaded/i2/TB1z5WBGVXXXXX5aXXXrNqUFpXX_120847.jpg" width="140" height="88" style="opacity: 1;">
+                                <div class="detail-infos">
+                                    <div class="detail-title" title="莫泰-上海外滩南京东路步行街店">莫泰-上海外滩南京东路步行街店</div>
+                                    <div class="detail-level">酒店等级：<span>经济连锁</span></div>
+                                    <div class="detail-price-info"> <span class="detail-seller">月销1553间</span> <span class="pi-price pi-price-sm"><i>¥</i>254</span> </div>
+                                </div>
+                            </a>
+                        </li> 
+                        <li class="clearfix hover-move J_HotelItem"> <a href="//kezhan.trip.taobao.com/hotel_detail2.htm?spm=181.7091613.a1z60.204.W9iRlJ&amp;shid=10052105&amp;checkIn=2015-08-18&amp;checkOut=2015-08-19" target="_blank" rel="nofollow">
+    <img class="detail-img lazy-img" src="//img.alicdn.com/bao/uploaded/i3/TB13hIkGVXXXXcZXpXXjhKYFFXX_093819.jpg" width="140" height="88" style="opacity: 1;">
+    <div class="detail-infos">
+        <div class="detail-title" title="如家上海外滩城隍庙店">如家上海外滩城隍庙店</div>
+        <div class="detail-level">酒店等级：<span>经济连锁</span></div>
+        <div class="detail-price-info"> <span class="detail-seller">月销1087间</span> <span class="pi-price pi-price-sm"><i>¥</i>280</span> </div>
+    </div>
+</a> </li> <li class="clearfix hover-move J_HotelItem"> <a href="//kezhan.trip.taobao.com/hotel_detail2.htm?spm=181.7091613.a1z60.205.W9iRlJ&amp;shid=50013130&amp;checkIn=2015-08-18&amp;checkOut=2015-08-19" target="_blank" rel="nofollow">
+    <img class="detail-img lazy-img" src="//img.alicdn.com/bao/uploaded/i5/TB1HetQIFXXXXbrXpXXEW.28XXX_022205.jpg" width="140" height="88" style="opacity: 1;">
+    <div class="detail-infos">
+        <div class="detail-title" title="上海柏阳君亭酒店">上海柏阳君亭酒店</div>
+        <div class="detail-level">酒店等级：<span>高档型</span></div>
+        <div class="detail-price-info"> <span class="detail-seller">月销1011间</span> <span class="pi-price pi-price-sm"><i>¥</i>428</span> </div>
+    </div>
+</a> </li> <li class="clearfix hover-move J_HotelItem"> <a href="//kezhan.trip.taobao.com/hotel_detail2.htm?spm=181.7091613.a1z60.206.W9iRlJ&amp;shid=10050812&amp;checkIn=2015-08-18&amp;checkOut=2015-08-19" target="_blank" rel="nofollow">
+    <img class="detail-img lazy-img" src="//img.alicdn.com/bao/uploaded/i6/TB1DNaBGVXXXXavaXXXJqxeFpXX_120015.jpg" width="140" height="88" style="opacity: 1;">
+    <div class="detail-infos">
+        <div class="detail-title" title="上海威斯汀大饭店">上海威斯汀大饭店</div>
+        <div class="detail-level">酒店等级：<span>五星级</span></div>
+        <div class="detail-price-info"> <span class="detail-seller">月销271间</span> <span class="pi-price pi-price-sm"><i>¥</i>920</span> </div>
+    </div>
+</a> </li> <li class="clearfix hover-move J_HotelItem"> <a href="//kezhan.trip.taobao.com/hotel_detail2.htm?spm=181.7091613.a1z60.207.W9iRlJ&amp;shid=10048769&amp;checkIn=2015-08-18&amp;checkOut=2015-08-19" target="_blank" rel="nofollow">
+    <img class="detail-img lazy-img" src="//img.alicdn.com/bao/uploaded/i1/TB1OdMiGVXXXXXyXVXXag8GFFXX_093158.jpg" width="140" height="88" style="opacity: 1;">
+    <div class="detail-infos">
+        <div class="detail-title" title="上海徐汇和颐酒店">上海徐汇和颐酒店</div>
+        <div class="detail-level">酒店等级：<span>高档型</span></div>
+        <div class="detail-price-info"> <span class="detail-seller">月销587间</span> <span class="pi-price pi-price-sm"><i>¥</i>350</span> </div>
+    </div>
+</a> </li>
+                        <li class="clearfix hover-move J_HotelItem">
+                            <a href="//kezhan.trip.taobao.com/hotel_detail2.htm?spm=181.7091613.a1z60.202.W9iRlJ&amp;shid=10048620&amp;checkIn=2015-08-18&amp;checkOut=2015-08-19" target="_blank" rel="nofollow">
+                                <img class="detail-img lazy-img" src="//img.alicdn.com/bao/uploaded/i3/TB1_RpyIFXXXXcjXVXXWPyp8pXX_023218.jpg" width="140" height="88" style="opacity: 1;">
+                                <div class="detail-infos">
+                                    <div class="detail-title" title="上海中星君亭酒店">上海中星君亭酒店</div>
+                                    <div class="detail-level">酒店等级：<span>高档型</span></div>
+                                    <div class="detail-price-info"> <span class="detail-seller">月销298间</span> <span class="pi-price pi-price-sm"><i>¥</i>1128</span> </div>
+                                </div>
+                            </a>
+                        </li>
+                        <li class="clearfix hover-move J_HotelItem">
+                            <a href="//kezhan.trip.taobao.com/hotel_detail2.htm?spm=181.7091613.a1z60.203.W9iRlJ&amp;shid=10075940&amp;checkIn=2015-08-18&amp;checkOut=2015-08-19" target="_blank" rel="nofollow">
+                                <img class="detail-img lazy-img" src="//img.alicdn.com/bao/uploaded/i2/TB1z5WBGVXXXXX5aXXXrNqUFpXX_120847.jpg" width="140" height="88" style="opacity: 1;">
+                                <div class="detail-infos">
+                                    <div class="detail-title" title="莫泰-上海外滩南京东路步行街店">莫泰-上海外滩南京东路步行街店</div>
+                                    <div class="detail-level">酒店等级：<span>经济连锁</span></div>
+                                    <div class="detail-price-info"> <span class="detail-seller">月销1553间</span> <span class="pi-price pi-price-sm"><i>¥</i>254</span> </div>
+                                </div>
+                            </a>
+                        </li>
+                        <li class="clearfix hover-move J_HotelItem">
+                            <a href="//kezhan.trip.taobao.com/hotel_detail2.htm?spm=181.7091613.a1z60.202.W9iRlJ&amp;shid=10048620&amp;checkIn=2015-08-18&amp;checkOut=2015-08-19" target="_blank" rel="nofollow">
+                                <img class="detail-img lazy-img" src="//img.alicdn.com/bao/uploaded/i3/TB1_RpyIFXXXXcjXVXXWPyp8pXX_023218.jpg" width="140" height="88" style="opacity: 1;">
+                                <div class="detail-infos">
+                                    <div class="detail-title" title="上海中星君亭酒店">上海中星君亭酒店</div>
+                                    <div class="detail-level">酒店等级：<span>高档型</span></div>
+                                    <div class="detail-price-info"> <span class="detail-seller">月销298间</span> <span class="pi-price pi-price-sm"><i>¥</i>1128</span> </div>
+                                </div>
+                            </a>
+                        </li>
+                        <li class="clearfix hover-move J_HotelItem">
+                            <a href="//kezhan.trip.taobao.com/hotel_detail2.htm?spm=181.7091613.a1z60.203.W9iRlJ&amp;shid=10075940&amp;checkIn=2015-08-18&amp;checkOut=2015-08-19" target="_blank" rel="nofollow">
+                                <img class="detail-img lazy-img" src="//img.alicdn.com/bao/uploaded/i2/TB1z5WBGVXXXXX5aXXXrNqUFpXX_120847.jpg" width="140" height="88" style="opacity: 1;">
+                                <div class="detail-infos">
+                                    <div class="detail-title" title="莫泰-上海外滩南京东路步行街店">莫泰-上海外滩南京东路步行街店</div>
+                                    <div class="detail-level">酒店等级：<span>经济连锁</span></div>
+                                    <div class="detail-price-info"> <span class="detail-seller">月销1553间</span> <span class="pi-price pi-price-sm"><i>¥</i>254</span> </div>
+                                </div>
+                            </a>
+                        </li> 
+                    </ul>
+                   
+                </div>
+                <ul class="brand_list clearfix">
+                    <li><a href="http://www.ihg.com/hotels/cn/zh/reservation" target="_blank" title="洲际酒店集团" rel="nofollow"><span><img src="http://ihg.scene7.com/is/image/ihg/uhf_ihg_logo@2x?fmt=png-alpha" alt="洲际酒店集团" style="display: inline;"></span></a></li>
+                    <li><a href="http://www.starwoodhotels.com/" target="_blank" title="喜达屋酒店集团" rel="nofollow"><span><img src="Images/HotelLogo/喜达屋.png" alt="喜达屋酒店集团" style="display: inline;"></span></a></li>
+                    <li><a href="http://www.marriott.com.cn/default.mi" target="_blank" title="万豪酒店集团" dd_name="万豪酒店集团" rel="nofollow"><span><img src="Images/HotelLogo/万豪.png" alt="万豪酒店集团" style="display: inline;"></span></a></li>
+                    <li><a href="http://www.hyatt.com/hyatt/index.jsp" target="_blank" title="凯悦酒店集团" dd_name="凯悦酒店集团" rel="nofollow"><span><img src="Images/HotelLogo/凯悦.png" alt="凯悦酒店集团" style="display: inline;"></span></a></li>
+                    <li><a href="http://www.homeinns.com/" target="_blank" title="如家酒店集团" dd_name="如家酒店集团" rel="nofollow"><span><img src="http://www.homeinns.com/Content/image/public_blue/logo.png" alt="如家酒店集团" style="display: inline;"></span></a></li>
+                    <li><a href="http://www.huazhu.com/" target="_blank" title="华住酒店集团" dd_name="华住酒店集团" rel="nofollow"><span><img src="Images/HotelLogo/华住.png" alt="华住酒店集团" style="display: inline;"></span></a></li>
+                    <li><a href="http://www.plateno.com/" target="_blank" title="7天" dd_name="铂涛集团" rel="nofollow"><span><img src="https://ss0.bdstatic.com/-0U0bnSm1A5BphGlnYG/tam-ogel/32b37b311364b3967230fa058793e504_121_121.jpg" alt="铂涛集团" style="display: inline;"></span></a></li>
+                    <li><a href="http://www.jinjianginns.com/Default.html" target="_blank" title="锦江之星" rel="nofollow" dd_name="锦江之星"><span><img src="https://ss0.bdstatic.com/-0U0bnSm1A5BphGlnYG/tam-ogel/5b89b87af661441b6b197fc1ade30edd_121_121.jpg" alt="锦江之星" style="display: inline;"></span></a></li>
+                    <li><a href="http://www.gchhotels.com/index.asp" target="_blank" title="大中华酒店有限集团" rel="nofollow" dd_name="大中华酒店有限集团"><span><img src="Images/HotelLogo/大中华.png" alt="大中华酒店有限集团" style="display: inline;"></span></a></li>
+                    <li><a href="http://www.shangri-la.com/cn/" target="_blank" title="香格里拉酒店集团" rel="nofollow" dd_name="香格里拉酒店集团"><span><img src="Images/HotelLogo/香格里拉.png" alt="香格里拉酒店集团" style="display: inline;"></span></a></li>
+                    <li><a href="http://www.hilton.com.cn/zh-cn/" target="_blank" title="希尔顿酒店" rel="nofollow" dd_name="希尔顿酒店"><span><img src="Images/HotelLogo/希尔顿.png" alt="希尔顿酒店" style="display: inline;"></span></a></li>
+                    <li><a href="http://www.ascottchina.com/" target="_blank" title="雅思阁中国" rel="nofollow" dd_name="雅思阁中国"><span><img src="http://www.ascottchina.com/images/logo.jpg" alt="雅思阁中国" style="display: inline;"></span></a></li>
+                    <li><a href="http://www.998.com/shtml/99/zh/index.html" target="_blank" title="格林豪泰" rel="nofollow" dd_name="格林豪泰"><span><img src="Images/HotelLogo/格林豪泰.png" alt="格林豪泰" style="display: inline;"></span></a></li>
+                    <li><a href="http://www.podinns.com/" target="_blank" title="布丁连锁酒店" rel="nofollow" dd_name="布丁连锁酒店"><span><img src="https://ss1.bdstatic.com/-0U0bXSm1A5BphGlnYG/tam-ogel/757855b85285cf2b045eb0e67ac78244_121_121.png" alt="布丁连锁酒店" style="display: inline;"></span></a></li>
+                    <li><a href="http://www.super8.com.cn/" target="_blank" title="速8酒店" rel="nofollow" dd_name="速8酒店"><span><img src="Images/HotelLogo/速8.png" alt="速8酒店" style="display: inline;"></span></a></li>
+                    <li><a href="http://www.wyn88.com/" target="_blank" title="维也纳酒店" rel="nofollow" dd_name="维也纳酒店"><span><img src="Images/HotelLogo/维也纳.png" alt="维也纳酒店" style="display: inline;"></span></a></li>
+                    <li><a href="http://www.fxhotels.com/" target="_blank" title="富驿酒店集团" rel="nofollow" dd_name="富驿酒店集团"><span><img src="http://www.fxhotels.com/images/yudinglogo.png" alt="富驿酒店集团" style="display: inline; background-color:black;"></span></a></li>
+                    <li><a href="http://www.hotelsjianguo.com/index.html" target="_blank" title="首旅建国" dd_name="首旅建国" rel="nofollow"><span><img src="Images/HotelLogo/首旅建国.png" alt="首旅建国" style="display: inline;"></span></a></li>
+                </ul>
+            </div>
+        </div>
+
+
+    <div class="clsPanle cls-scenery-ticket">
+        <div class="common-title">
+            <h2 class="title f_l">
+                <i class="icon iconfont jiudian-icon">&#xe6b7;</i> 机票
+            </h2>
+            <ul class="clearfix f_l common-title-ul bg-ticket" id="cls-scenery-ticket">
+                <li class="on"><a href="javascript:void(0);">广东</a> <span></span></li>
+                <li><a href="javascript:void(0);">上海</a> <span></span></li>
+                <li><a href="javascript:void(0);">北京</a> <span></span></li>
+                <li><a href="javascript:void(0);">云南</a> <span></span></li>
+                <li><a href="javascript:void(0);">浙江</a> <span></span></li>
+                <li><a href="javascript:void(0);">湖南</a> <span></span></li>
+                <li><a href="javascript:void(0);">西安</a> <span></span></li>
+                <li><a href="javascript:void(0);">南京</a> <span></span></li>
+                <li><a href="javascript:void(0);">深圳</a> <span></span></li>
+                <li><a href="javascript:void(0);">三亚</a> <span></span></li>
+            </ul>
+        </div>
+        <div class="clsPanle">
+            <div id="jipiaopic">
+                <div class="udiyblock" type="CommonSource">
+                    <ul class="flight-pic clearfix">
+                        <li>
+                            <a href="http://www.ly.com/FlightPolyIndex-80-321.html?refid=15210849" target="_blank" onclick="_tcTraObj._tcTrackEvent('pic15353flight', 'Pcnavigation', 'CN首页', '30');"><img src="http://img1.40017.cn/cn/c/home/2015/2015420113023_01.jpg" alt="" title="广州-上海" style="background: url(http://img1.40017.cn/cn/comm/images/cn/public/transparent_loading_v2.gif?v=20140417) 50% 50% no-repeat scroll rgb(255, 255, 255);" data-original-background="url(http://img1.40017.cn/cn/comm/images/cn/public/transparent_loading_v2.gif?v=20140417) 50% 50% no-repeat scroll rgb(255, 255, 255)"></a>
+                        </li>
+                        <li>
+                            <a href="http://www.ly.com/FlightPolyIndex-321-80.html?refid=15210849" target="_blank" onclick="_tcTraObj._tcTrackEvent('pic25353flight', 'Pcnavigation', 'CN首页', '30');"><img src="http://img1.40017.cn/cn/c/home/2015/2015420113023_02.jpg" alt="" title="上海-广州" style="background: url(http://img1.40017.cn/cn/comm/images/cn/public/transparent_loading_v2.gif?v=20140417) 50% 50% no-repeat scroll rgb(255, 255, 255);" data-original-background="url(http://img1.40017.cn/cn/comm/images/cn/public/transparent_loading_v2.gif?v=20140417) 50% 50% no-repeat scroll rgb(255, 255, 255)"></a>
+                        </li>
+                        <li>
+                            <a href="http://www.ly.com/FlightPolyIndex-383-80.html?refid=15210849" target="_blank" onclick="_tcTraObj._tcTrackEvent('pic35353flight', 'Pcnavigation', 'CN首页', '30');"><img src="http://img1.40017.cn/cn/c/home/2015/2015420113023_03.jpg" alt="" title="杭州-广州" style="background: url(http://img1.40017.cn/cn/comm/images/cn/public/transparent_loading_v2.gif?v=20140417) 50% 50% no-repeat scroll rgb(255, 255, 255);" data-original-background="url(http://img1.40017.cn/cn/comm/images/cn/public/transparent_loading_v2.gif?v=20140417) 50% 50% no-repeat scroll rgb(255, 255, 255)"></a>
+                        </li>
+                        <li>
+                            <a href="http://www.ly.com/FlightPolyIndex-80-199.html?refid=15210849" target="_blank" onclick="_tcTraObj._tcTrackEvent('pic45353flight', 'Pcnavigation', 'CN首页', '30');"><img src="http://img1.40017.cn/cn/c/home/2015/2015420113023_04.jpg" alt="" title="广州-长沙" style="background: url(http://img1.40017.cn/cn/comm/images/cn/public/transparent_loading_v2.gif?v=20140417) 50% 50% no-repeat scroll rgb(255, 255, 255);" data-original-background="url(http://img1.40017.cn/cn/comm/images/cn/public/transparent_loading_v2.gif?v=20140417) 50% 50% no-repeat scroll rgb(255, 255, 255)"></a>
+                        </li>
+                        <li>
+                            <a href="http://www.ly.com/FlightPolyIndex-53-324.html?refid=15210849" target="_blank" onclick="_tcTraObj._tcTrackEvent('pic55353flight', 'Pcnavigation', 'CN首页', '30');"><img src="http://img1.40017.cn/cn/c/home/2015/2015420113023_05.jpg" alt="" title="北京-成都" style="background: url(http://img1.40017.cn/cn/comm/images/cn/public/transparent_loading_v2.gif?v=20140417) 50% 50% no-repeat scroll rgb(255, 255, 255);" data-original-background="url(http://img1.40017.cn/cn/comm/images/cn/public/transparent_loading_v2.gif?v=20140417) 50% 50% no-repeat scroll rgb(255, 255, 255)"></a>
+                        </li>
+                        <li class="mr0">
+                            <a href="http://www.ly.com/FlightPolyIndex-321-91.html?refid=15210849" target="_blank" onclick="_tcTraObj._tcTrackEvent('pic65353flight', 'Pcnavigation', 'CN首页', '30');"><img src="http://img1.40017.cn/cn/c/home/2015/2015420113023_06.jpg" alt="" title="上海-深圳" style="background: url(http://img1.40017.cn/cn/comm/images/cn/public/transparent_loading_v2.gif?v=20140417) 50% 50% no-repeat scroll rgb(255, 255, 255);" data-original-background="url(http://img1.40017.cn/cn/comm/images/cn/public/transparent_loading_v2.gif?v=20140417) 50% 50% no-repeat scroll rgb(255, 255, 255)"></a>
+                        </li>
+                    </ul>
+                    <div class="udiyblock">
+                        <ul class="flist-other clearfix">
+                            <li onclick="">
+                                <a href="http://www.ly.com/flight/flight-book1.aspx?para=0*PEK*CTU*2015-08-24****all*all&amp;key=907BB0484DD26C987956A22518981BEC&amp;TCAlianceCode=&amp;filterlist=&refid=15210849" target="_blank" rel="nofollow">
+                                    <span>北京 &nbsp;→&nbsp;成都</span>
+                                    <div><i>¥</i><span>680</span><big>5折</big><em>08月24日</em>
+                                    </div>
+                                </a>
+                            </li>
+                            <li onclick="_tcTraObj._tcTrackEvent('line25353flight', 'Pcnavigation', 'CN首页', '30');">
+                                <a href="http://www.ly.com/flight/flight-book1.aspx?para=0*PEK*SHA*2015-09-05****all*all&amp;key=22C865F86ADCF7D4CC82F7C5AD38D28A&amp;TCAlianceCode=&amp;filterlist=&refid=15210849" target="_blank" rel="nofollow">
+                                    <span>北京 &nbsp;→&nbsp;上海</span>
+                                    <div><i>¥</i><span>212</span><big>1.9折</big><em>09月05日</em>
+                                    </div>
+                                </a>
+                            </li>
+                            <li onclick="_tcTraObj._tcTrackEvent('line35353flight', 'Pcnavigation', 'CN首页', '30');">
+                                <a href="http://www.ly.com/flight/flight-book1.aspx?para=0*PEK*SZX*2015-08-29****all*all&amp;key=2C4663511E8A2618E91FC4FDAC283936&amp;TCAlianceCode=&amp;filterlist=&refid=15210849" target="_blank" rel="nofollow">
+                                    <span>北京 &nbsp;→&nbsp;深圳</span>
+                                    <div><i>¥</i><span>540</span><big>4折</big><em>08月29日</em>
+                                    </div>
+                                </a>
+                            </li>
+                            <li onclick="_tcTraObj._tcTrackEvent('line45353flight', 'Pcnavigation', 'CN首页', '30');">
+                                <a href="http://www.ly.com/flight/flight-book1.aspx?para=0*PEK*CAN*2015-09-01****all*all&amp;key=28E07C14B356C7AB073A6BDE78C39709&amp;TCAlianceCode=&amp;filterlist=&refid=15210849" target="_blank" rel="nofollow">
+                                    <span>北京 &nbsp;→&nbsp;广州</span>
+                                    <div><i>¥</i><span>510</span><big>3.9折</big><em>09月01日</em>
+                                    </div>
+                                </a>
+                            </li>
+                            <li onclick="_tcTraObj._tcTrackEvent('line55353flight', 'Pcnavigation', 'CN首页', '30');">
+                                <a href="http://www.ly.com/flight/flight-book1.aspx?para=0*PEK*HGH*2015-08-25****all*all&amp;key=9E8B857D3F1C072E5C71DCC7697E21D3&amp;TCAlianceCode=&amp;filterlist=&refid=15210849" target="_blank" rel="nofollow">
+                                    <span>北京 &nbsp;→&nbsp;杭州</span>
+                                    <div><i>¥</i><span>340</span><big>2.1折</big><em>08月25日</em>
+                                    </div>
+                                </a>
+                            </li>
+                            <li class="mr0" onclick="_tcTraObj._tcTrackEvent('line65353flight', 'Pcnavigation', 'CN首页', '30');">
+                                <a href="http://www.ly.com/flight/flight-book1.aspx?para=0*PEK*CKG*2015-08-26****all*all&amp;key=345130F351E89DF70B1CEA6FE5D95616&amp;TCAlianceCode=&amp;filterlist=&refid=15210849" target="_blank" rel="nofollow">
+                                    <span>北京 &nbsp;→&nbsp;重庆</span>
+                                    <div><i>¥</i><span>795</span><big>5.9折</big><em>08月26日</em>
+                                    </div>
+                                </a>
+                            </li>
+                            <li onclick="_tcTraObj._tcTrackEvent('line75353flight', 'Pcnavigation', 'CN首页', '30');">
+                                <a href="http://www.ly.com/flight/flight-book1.aspx?para=0*PEK*KMG*2015-09-05****all*all&amp;key=0AC8C1111964610DC4E81A046D554F11&amp;TCAlianceCode=&amp;filterlist=&refid=15210849" target="_blank" rel="nofollow">
+                                    <span>北京 &nbsp;→&nbsp;昆明</span>
+                                    <div><i>¥</i><span>810</span><big>4.5折</big><em>09月05日</em>
+                                    </div>
+                                </a>
+                            </li>
+                            <li onclick="_tcTraObj._tcTrackEvent('line85353flight', 'Pcnavigation', 'CN首页', '30');">
+                                <a href="http://www.ly.com/flight/flight-book1.aspx?para=0*PEK*XMN*2015-09-06****all*all&amp;key=A5463AFCF4B45B124B8812C4C2D08D7B&amp;TCAlianceCode=&amp;filterlist=&refid=15210849" target="_blank" rel="nofollow">
+                                    <span>北京 &nbsp;→&nbsp;厦门</span>
+                                    <div><i>¥</i><span>637</span><big>3.8折</big><em>09月06日</em>
+                                    </div>
+                                </a>
+                            </li>
+                            <li onclick="_tcTraObj._tcTrackEvent('line95353flight', 'Pcnavigation', 'CN首页', '30');">
+                                <a href="http://www.ly.com/flight/flight-book1.aspx?para=0*PEK*FOC*2015-09-07****all*all&amp;key=2D9CF14F0E59D0D66D4422E0FB42A839&amp;TCAlianceCode=&amp;filterlist=&refid=15210849" target="_blank" rel="nofollow">
+                                    <span>北京 &nbsp;→&nbsp;福州</span>
+                                    <div><i>¥</i><span>432</span><big>2.7折</big><em>09月07日</em>
+                                    </div>
+                                </a>
+                            </li>
+                            <li onclick="_tcTraObj._tcTrackEvent('line105353flight', 'Pcnavigation', 'CN首页', '30');">
+                                <a href="http://www.ly.com/flight/flight-book1.aspx?para=0*PEK*CSX*2015-09-04****all*all&amp;key=583224CFD54CCAD2927952714EA0886B&amp;TCAlianceCode=&amp;filterlist=&refid=15210849" target="_blank" rel="nofollow">
+                                    <span>北京 &nbsp;→&nbsp;长沙</span>
+                                    <div><i>¥</i><span>448</span><big>4折</big><em>09月04日</em>
+                                    </div>
+                                </a>
+                            </li>
+                            <li onclick="_tcTraObj._tcTrackEvent('line115353flight', 'Pcnavigation', 'CN首页', '30');">
+                                <a href="http://www.ly.com/flight/flight-book1.aspx?para=0*PEK*XIY*2015-08-31****all*all&amp;key=9E17DA97E685EF59EC4462DCCD91BF4C&amp;TCAlianceCode=&amp;filterlist=&refid=15210849" target="_blank" rel="nofollow">
+                                    <span>北京 &nbsp;→&nbsp;西安</span>
+                                    <div><i>¥</i><span>300</span><big>1.9折</big><em>08月31日</em>
+                                    </div>
+                                </a>
+                            </li>
+                            <li class="mr0" onclick="_tcTraObj._tcTrackEvent('line125353flight', 'Pcnavigation', 'CN首页', '30');">
+                                <a href="http://www.ly.com/flight/flight-book1.aspx?para=0*PEK*DLC*2015-08-19****all*all&amp;key=364C63EA92EDD70439DBF796AD6423BC&amp;TCAlianceCode=&amp;filterlist=&refid=15210849" target="_blank" rel="nofollow">
+                                    <span>北京 &nbsp;→&nbsp;大连</span>
+                                    <div><i>¥</i><span>260</span><big>5折</big><em>08月19日</em>
+                                    </div>
+                                </a>
+                            </li>
+                            <li onclick="_tcTraObj._tcTrackEvent('line135353flight', 'Pcnavigation', 'CN首页', '30');">
+                                <a href="http://www.ly.com/flight/flight-book1.aspx?para=0*PEK*HAK*2015-09-06****all*all&amp;key=3B926B4874ABA6259D5407967B12569C&amp;TCAlianceCode=&amp;filterlist=&refid=15210849" target="_blank" rel="nofollow">
+                                    <span>北京 &nbsp;→&nbsp;海口</span>
+                                    <div><i>¥</i><span>650</span><big>4折</big><em>09月06日</em>
+                                    </div>
+                                </a>
+                            </li>
+                            <li onclick="_tcTraObj._tcTrackEvent('line145353flight', 'Pcnavigation', 'CN首页', '30');">
+                                <a href="http://www.ly.com/flight/flight-book1.aspx?para=0*PEK*NNG*2015-09-05****all*all&amp;key=0E4F37979A4204181C6E9B666B9E7FB1&amp;TCAlianceCode=&amp;filterlist=&refid=15210849" target="_blank" rel="nofollow">
+                                    <span>北京 &nbsp;→&nbsp;南宁</span>
+                                    <div><i>¥</i><span>650</span><big>3折</big><em>09月05日</em>
+                                    </div>
+                                </a>
+                            </li>
+                            <li onclick="_tcTraObj._tcTrackEvent('line155353flight', 'Pcnavigation', 'CN首页', '30');">
+                                <a href="http://www.ly.com/flight/flight-book1.aspx?para=0*PEK*NGB*2015-09-05****all*all&amp;key=0A24C00A8D3D9E269E7CDE9BD4EF3705&amp;TCAlianceCode=&amp;filterlist=&refid=15210849" target="_blank" rel="nofollow">
+                                    <span>北京 &nbsp;→&nbsp;宁波</span>
+                                    <div><i>¥</i><span>415</span><big>3.9折</big><em>09月05日</em>
+                                    </div>
+                                </a>
+                            </li>
+                            <li onclick="_tcTraObj._tcTrackEvent('line165353flight', 'Pcnavigation', 'CN首页', '30');">
+                                <a href="http://www.ly.com/flight/flight-book1.aspx?para=0*PEK*WUH*2015-08-24****all*all&amp;key=8341775897AE3997F0E67B36961E5239&amp;TCAlianceCode=&amp;filterlist=&refid=15210849" target="_blank" rel="nofollow">
+                                    <span>北京 &nbsp;→&nbsp;武汉</span>
+                                    <div><i>¥</i><span>480</span><big>2.9折</big><em>08月24日</em>
+                                    </div>
+                                </a>
+                            </li>
+                            <li onclick="_tcTraObj._tcTrackEvent('line175353flight', 'Pcnavigation', 'CN首页', '30');">
+                                <a href="http://www.ly.com/flight/flight-book1.aspx?para=0*PEK*HRB*2015-09-13****all*all&amp;key=DD632031044BD0CD9B8BCCBAA0979146&amp;TCAlianceCode=&amp;filterlist=&refid=15210849" target="_blank" rel="nofollow">
+                                    <span>北京 &nbsp;→&nbsp;哈尔滨</span>
+                                    <div><i>¥</i><span>478</span><big>5折</big><em>09月13日</em>
+                                    </div>
+                                </a>
+                            </li>
+                            <li class="mr0" onclick="_tcTraObj._tcTrackEvent('line185353flight', 'Pcnavigation', 'CN首页', '30');">
+                                <a href="http://www.ly.com/flight/flight-book1.aspx?para=0*PEK*URC*2015-09-05****all*all&amp;key=8C5A49589B2A15553D2216ED6B3CA257&amp;TCAlianceCode=&amp;filterlist=&refid=15210849" target="_blank" rel="nofollow">
+                                    <span>北京 &nbsp;→&nbsp;乌鲁木齐</span>
+                                    <div><i>¥</i><span>992</span><big>3.8折</big><em>09月05日</em>
+                                    </div>
+                                </a>
+                            </li>
+                        </ul>
+
+                    </div>
+                </div>
+            </div>
+
+        </div>
+    </div>
+
+        <div class="clsPanle cls-scenery-ticket">
+            <div class="common-title">
+                <h2 class="title f_l">
+                    <span class="icon-make-group">
+
+                    </span> 榜单
+                </h2>
+                
+            </div>
+            <div class="clsPanle ranking_col part">
+                <div class="ranking_box">
+                    <h3>
+                        最佳国内地标
+                    </h3>
+                    <ol>
+                        <li>
+                            <a target="_blank" href="http://lvyou.qibila.com/gugong">
+                                <em class="ranking_num num_hot">
+                                    1
+                                </em> <span class="ranking_area" title="故宫">故宫</span> <span class="price_r"><span class="base_price"><dfn>¥</dfn>16</span>起</span>
+                            </a>
+                        </li>
+                        <li>
+                            <a target="_blank" href="http://lvyou.qibila.com/badalingchangcheng">
+                                <em class="ranking_num num_hot">
+                                    2
+                                </em> <span class="ranking_area" title="八达岭长城">八达岭长城</span> <span class="price_r"><span class="base_price"><dfn>¥</dfn>38</span>起</span>
+                            </a>
+                        </li>
+                        <li>
+                            <a target="_blank" href="http://lvyou.qibila.com/dongfangmingzhu">
+                                <em class="ranking_num num_hot">
+                                    3
+                                </em> <span class="ranking_area" title="东方明珠">东方明珠</span> <span class="price_r"><span class="base_price"><dfn>¥</dfn>80</span>起</span>
+                            </a>
+                        </li>
+                        <li>
+                            <a target="_blank" href="http://lvyou.qibila.com/qinshihuangbingmayong">
+                                <em class="ranking_num num_hot">
+                                    4
+                                </em> <span class="ranking_area" title="秦始皇兵马俑">秦始皇兵马俑</span> <span class="price_r">
+                                    <span class="base_price"><dfn>¥</dfn>29</span>起
+                                </span>
+                            </a>
+                        </li>
+                        <li>
+                            <a target="_blank" href="http://lvyou.qibila.com/huanqiujinrongzhongxin">
+                                <em class="ranking_num num_hot">5</em> <span class="ranking_area" title="上海环球金融中心">上海环球金融中心</span>
+                                <span class="price_r"><span class="base_price"><dfn>¥</dfn>75</span>起</span>
+                            </a>
+                        </li>
+                        <li>
+                            <a target="_blank" href="http://lvyou.qibila.com/guangzhouta">
+                                <em class="ranking_num num_hot">
+                                    6
+                                </em> <span class="ranking_area" title="广州塔">广州塔</span> <span class="price_r"><span class="base_price"><dfn>¥</dfn>75</span>起</span>
+                            </a>
+                        </li>
+                        <li>
+                            <a target="_blank" href="http://lvyou.qibila.com/yuanmingyuan">
+                                <em class="ranking_num num_hot">
+                                    7
+                                </em> <span class="ranking_area" title="圆明园">圆明园</span> <span class="price_r"><span class="base_price"><dfn>¥</dfn>23</span>起</span>
+                            </a>
+                        </li>
+                        <li>
+                            <a target="_blank" href="http://lvyou.qibila.com/niaochao">
+                                <em class="ranking_num num_hot">
+                                    8
+                                </em> <span class="ranking_area" title="鸟巢（国家体育场）">鸟巢（国家体育场）</span> <span class="price_r">
+                                    <span class="base_price"><dfn>¥</dfn>48</span>起
+                                </span>
+                            </a>
+                        </li>
+                        <li>
+                            <a target="_blank" href="http://lvyou.qibila.com/gulangyu">
+                                <em class="ranking_num num_hot">
+                                    9
+                                </em> <span class="ranking_area" title="鼓浪屿">鼓浪屿</span> <span class="price_r"><span class="base_price"><dfn>¥</dfn>18</span>起</span>
+                            </a>
+                        </li>
+                        <li>
+                            <a target="_blank" href="http://lvyou.qibila.com/shanghaishateguan">
+                                <em class="ranking_num num_hot">
+                                    10
+                                </em> <span class="ranking_area" title="上海月亮船（原世博会沙特馆）">上海月亮船（原世博会沙特馆）</span>
+                                <span class="price_r"><span class="base_price"><dfn>¥</dfn>41</span>起</span>
+                            </a>
+                        </li>
+                    </ol>
+                </div>
+                <!--最佳国内地标-->
+                <div class="ranking_box">
+                    <h3>
+                        最佳国内乐园
+                    </h3>
+                    <ol>
+                        <li>
+                            <a target="_blank" href="http://lvyou.qibila.com/changlonghuanleshijie">
+                                <em class="ranking_num num_hot">
+                                    1
+                                </em> <span class="ranking_area" title="长隆旅游度假区">长隆旅游度假区</span> <span class="price_r">
+                                    <span class="base_price"><dfn>¥</dfn>45</span>起
+                                </span>
+                            </a>
+                        </li>
+                        <li>
+                            <a target="_blank" href="http://lvyou.qibila.com/dongbuhuaqiaocheng">
+                                <em class="ranking_num num_hot">
+                                    2
+                                </em> <span class="ranking_area" title="东部华侨城">东部华侨城</span> <span class="price_r"><span class="base_price"><dfn>¥</dfn>65</span>起</span>
+                            </a>
+                        </li>
+                        <li>
+                            <a target="_blank" href="http://lvyou.qibila.com/shanghaihuanlegu">
+                                <em class="ranking_num num_hot">
+                                    3
+                                </em> <span class="ranking_area" title="欢乐谷">欢乐谷</span> <span class="price_r"><span class="base_price"><dfn>¥</dfn>59</span>起</span>
+                            </a>
+                        </li>
+                        <li>
+                            <a target="_blank" href="http://lvyou.qibila.com/zhonghuakonglongyuan">
+                                <em class="ranking_num num_hot">
+                                    4
+                                </em> <span class="ranking_area" title="中华恐龙园">中华恐龙园</span> <span class="price_r"><span class="base_price"><dfn>¥</dfn>40</span>起</span>
+                            </a>
+                        </li>
+                        <li>
+                            <a target="_blank" href="http://lvyou.qibila.com/huanqiudongmanxixigu">
+                                <em class="ranking_num num_hot">
+                                    5
+                                </em> <span class="ranking_area" title="嬉戏谷">嬉戏谷</span> <span class="price_r"><span class="base_price"><dfn>¥</dfn>130</span>起</span>
+                            </a>
+                        </li>
+                        <li>
+                            <a target="_blank" href="http://lvyou.qibila.com/zhongguohengdianyingshicheng">
+                                <em class="ranking_num num_hot">6</em> <span class="ranking_area" title="横店影视城">横店影视城</span>
+                                <span class="price_r"><span class="base_price"><dfn>¥</dfn>40</span>起</span>
+                            </a>
+                        </li>
+                        <li>
+                            <a target="_blank" href="http://lvyou.qibila.com/dayanghaidishijie">
+                                <em class="ranking_num num_hot">
+                                    7
+                                </em> <span class="ranking_area" title="长风海洋世界">长风海洋世界</span> <span class="price_r">
+                                    <span class="base_price"><dfn>¥</dfn>55</span>起
+                                </span>
+                            </a>
+                        </li>
+                        <li>
+                            <a target="_blank" href="http://lvyou.qibila.com/songcheng">
+                                <em class="ranking_num num_hot">
+                                    8
+                                </em> <span class="ranking_area" title="宋城">宋城</span> <span class="price_r"><span class="base_price"><dfn>¥</dfn>78</span>起</span>
+                            </a>
+                        </li>
+                        <li>
+                            <a target="_blank" href="http://lvyou.qibila.com/jidihaiyanggongyuan">
+                                <em class="ranking_num num_hot">
+                                    9
+                                </em> <span class="ranking_area" title="极地海洋公园">极地海洋公园</span> <span class="price_r">
+                                    <span class="base_price"><dfn>¥</dfn>205</span>起
+                                </span>
+                            </a>
+                        </li>
+                        <li>
+                            <a target="_blank" href="http://lvyou.qibila.com/shijiezhichuang">
+                                <em class="ranking_num num_hot">
+                                    10
+                                </em> <span class="ranking_area" title="世界之窗">世界之窗</span> <span class="price_r"><span class="base_price"><dfn>¥</dfn>36</span>起</span>
+                            </a>
+                        </li>
+                    </ol>
+                </div>
+                <!--最佳国内乐园-->
+                <div class="ranking_box">
+                    <h3>
+                        最佳国内古镇
+                    </h3>
+                    <ol>
+                        <li>
+                            <a target="_blank" href="http://lvyou.qibila.com/xitang/">
+                                <em class="ranking_num num_hot">
+                                    1
+                                </em> <span class="ranking_area" title="西塘风景区">西塘风景区</span> <span class="price_r"><span class="base_price"><dfn>¥</dfn>50</span>起</span>
+                            </a>
+                        </li>
+                        <li>
+                            <a target="_blank" href="http://lvyou.qibila.com/zhouzhuang">
+                                <em class="ranking_num num_hot">
+                                    2
+                                </em> <span class="ranking_area" title="周庄">周庄</span> <span class="price_r"><span class="base_price"><dfn>¥</dfn>48</span>起</span>
+                            </a>
+                        </li>
+                        <li>
+                            <a target="_blank" href="http://lvyou.qibila.com/wuzhen">
+                                <em class="ranking_num num_hot">
+                                    3
+                                </em> <span class="ranking_area" title="乌镇">乌镇</span> <span class="price_r"><span class="base_price"><dfn>¥</dfn>100</span>起</span>
+                            </a>
+                        </li>
+                        <li>
+                            <a target="_blank" href="http://lvyou.qibila.com/tongli/">
+                                <em class="ranking_num num_hot">
+                                    4
+                                </em> <span class="ranking_area" title="同里古镇">同里古镇</span> <span class="price_r"><span class="base_price"><dfn>¥</dfn>45</span>起</span>
+                            </a>
+                        </li>
+                        <li>
+                            <a target="_blank" href="http://lvyou.qibila.com/zhujiajiao/">
+                                <em class="ranking_num num_hot">
+                                    5
+                                </em> <span class="ranking_area" title="朱家角古镇景区">朱家角古镇景区</span> <span class="price_r">
+                                    <span class="base_price"><dfn>¥</dfn>48</span>起
+                                </span>
+                            </a>
+                        </li>
+                        <li>
+                            <a target="_blank" href="http://lvyou.qibila.com/luxunguli">
+                                <em class="ranking_num num_hot">
+                                    6
+                                </em> <span class="ranking_area" title="鲁迅故里景区">鲁迅故里景区</span> <span class="price_r">
+                                    <span class="base_price"><dfn>¥</dfn>60</span>起
+                                </span>
+                            </a>
+                        </li>
+                        <li>
+                            <a target="_blank" href="http://lvyou.qibila.com/hongcun">
+                                <em class="ranking_num num_hot">
+                                    7
+                                </em> <span class="ranking_area" title="宏村景区">宏村景区</span> <span class="price_r"><span class="base_price"><dfn>¥</dfn>52</span>起</span>
+                            </a>
+                        </li>
+                        <li>
+                            <a target="_blank" href="http://lvyou.qibila.com/taierzhuanggucheng">
+                                <em class="ranking_num num_hot">
+                                    8
+                                </em> <span class="ranking_area" title="台儿庄古城">台儿庄古城</span> <span class="price_r"><span class="base_price"><dfn>¥</dfn>5</span>起</span>
+                            </a>
+                        </li>
+                        <li>
+                            <a target="_blank" href="http://lvyou.qibila.com/nanxun">
+                                <em class="ranking_num num_hot">
+                                    9
+                                </em> <span class="ranking_area" title="南浔古镇">南浔古镇</span> <span class="price_r"><span class="base_price"><dfn>¥</dfn>40</span>起</span>
+                            </a>
+                        </li>
+                        <li>
+                            <a target="_blank" href="http://lvyou.qibila.com/dangkouguzhen">
+                                <em class="ranking_num num_hot">
+                                    10
+                                </em> <span class="ranking_area" title="荡口古镇">荡口古镇</span> <span class="price_r"><span class="base_price"><dfn>¥</dfn>40</span>起</span>
+                            </a>
+                        </li>
+                    </ol>
+                </div>
+                <!--最佳国内古镇-->
+                <div class="ranking_box">
+                    <h3>
+                        最佳国内温泉
+                    </h3>
+                    <ol>
+                        <li>
+                            <a target="_blank" href="http://lvyou.qibila.com/riyueguwenquan">
+                                <em class="ranking_num num_hot">
+                                    1
+                                </em> <span class="ranking_area" title="日月谷温泉">日月谷温泉</span> <span class="price_r"><span class="base_price"><dfn>¥</dfn>168</span>起</span>
+                            </a>
+                        </li>
+                        <li>
+                            <a target="_blank" href="http://lvyou.qibila.com/hantiandujiacun">
+                                <em class="ranking_num num_hot">
+                                    2
+                                </em> <span class="ranking_area" title="涵田度假村温泉">涵田度假村温泉</span> <span class="price_r">
+                                    <span class="base_price"><dfn>¥</dfn>1</span>起
+                                </span>
+                            </a>
+                        </li>
+                        <li>
+                            <a target="_blank" href="http://lvyou.qibila.com/yunheyuanwenquan">
+                                <em class="ranking_num num_hot">
+                                    3
+                                </em> <span class="ranking_area" title="运河苑温泉">运河苑温泉</span> <span class="price_r"><span class="base_price"><dfn>¥</dfn>138</span>起</span>
+                            </a>
+                        </li>
+                        <li>
+                            <a target="_blank" href="http://lvyou.qibila.com/tianmuyushuiwenquan">
+                                <em class="ranking_num num_hot">
+                                    4
+                                </em> <span class="ranking_area" title="天目御水温泉">天目御水温泉</span> <span class="price_r">
+                                    <span class="base_price"><dfn>¥</dfn>80</span>起
+                                </span>
+                            </a>
+                        </li>
+                        <li>
+                            <a target="_blank" href="http://lvyou.qibila.com/zhujiangnantianwenquan">
+                                <em class="ranking_num num_hot">5</em> <span class="ranking_area" title="珠江南田温泉">珠江南田温泉</span>
+                                <span class="price_r"><span class="base_price"><dfn>¥</dfn>49</span>起</span>
+                            </a>
+                        </li>
+                        <li>
+                            <a target="_blank" href="http://lvyou.qibila.com/shunjingwenquan">
+                                <em class="ranking_num num_hot">
+                                    6
+                                </em> <span class="ranking_area" title="顺景温泉">顺景温泉</span> <span class="price_r"><span class="base_price"><dfn>¥</dfn>128</span>起</span>
+                            </a>
+                        </li>
+                        <li>
+                            <a target="_blank" href="http://lvyou.qibila.com/yishangwenquan">
+                                <em class="ranking_num num_hot">
+                                    7
+                                </em> <span class="ranking_area" title="颐尚温泉">颐尚温泉</span> <span class="price_r"><span class="base_price"><dfn>¥</dfn>138</span>起</span>
+                            </a>
+                        </li>
+                        <li>
+                            <a target="_blank" href="http://lvyou.qibila.com/konglongguwenquan">
+                                <em class="ranking_num num_hot">
+                                    8
+                                </em> <span class="ranking_area" title="恐龙谷温泉">恐龙谷温泉</span> <span class="price_r"><span class="base_price"><dfn>¥</dfn>1</span>起</span>
+                            </a>
+                        </li>
+                        <li>
+                            <a target="_blank" href="http://lvyou.qibila.com/haiquanwanwenquan">
+                                <em class="ranking_num num_hot">
+                                    9
+                                </em> <span class="ranking_area" title="珠海海泉湾海洋温泉">珠海海泉湾海洋温泉</span> <span class="price_r">
+                                    <span class="base_price"><dfn>¥</dfn>55</span>起
+                                </span>
+                            </a>
+                        </li>
+                        <li>
+                            <a target="_blank" href="http://lvyou.qibila.com/huangshanzuiwenquan">
+                                <em class="ranking_num num_hot">
+                                    10
+                                </em> <span class="ranking_area" title="黄山醉温泉">黄山醉温泉</span> <span class="price_r">
+                                    <span class="base_price"><dfn>¥</dfn>80</span>起
+                                </span>
+                            </a>
+                        </li>
+                    </ol>
+                </div>
+                <!--最佳国内温泉-->
+                <div class="ranking_box">
+                    <h3>
+                        最佳国内名山
+                    </h3>
+                    <ol>
+                        <li>
+                            <a target="_blank" href="http://lvyou.qibila.com/taishan">
+                                <em class="ranking_num num_hot">
+                                    1
+                                </em> <span class="ranking_area" title="泰山">泰山</span> <span class="price_r"><span class="base_price"><dfn>¥</dfn>62</span>起</span>
+                            </a>
+                        </li>
+                        <li>
+                            <a target="_blank" href="http://lvyou.qibila.com/huangshan">
+                                <em class="ranking_num num_hot">
+                                    2
+                                </em> <span class="ranking_area" title="黄山">黄山</span> <span class="price_r"><span class="base_price"><dfn>¥</dfn>40</span>起</span>
+                            </a>
+                        </li>
+                        <li>
+                            <a target="_blank" href="http://lvyou.qibila.com/lushan">
+                                <em class="ranking_num num_hot">
+                                    3
+                                </em> <span class="ranking_area" title="庐山">庐山</span> <span class="price_r"><span class="base_price"><dfn>¥</dfn>75</span>起</span>
+                            </a>
+                        </li>
+                        <li>
+                            <a target="_blank" href="http://lvyou.qibila.com/huashan">
+                                <em class="ranking_num num_hot">
+                                    4
+                                </em> <span class="ranking_area" title="华山">华山</span> <span class="price_r"><span class="base_price"><dfn>¥</dfn>40</span>起</span>
+                            </a>
+                        </li>
+                        <li>
+                            <a target="_blank" href="http://lvyou.qibila.com/wutaishan">
+                                <em class="ranking_num num_hot">
+                                    5
+                                </em> <span class="ranking_area" title="五台山">五台山</span> <span class="price_r"><span class="base_price"><dfn>¥</dfn>130</span>起</span>
+                            </a>
+                        </li>
+                        <li>
+                            <a target="_blank" href="http://lvyou.qibila.com/emeishan">
+                                <em class="ranking_num num_hot">
+                                    6
+                                </em> <span class="ranking_area" title="峨眉山">峨眉山</span> <span class="price_r"><span class="base_price"><dfn>¥</dfn>70</span>起</span>
+                            </a>
+                        </li>
+                        <li>
+                            <a target="_blank" href="http://lvyou.qibila.com/wuyishan">
+                                <em class="ranking_num num_hot">
+                                    7
+                                </em> <span class="ranking_area" title="武夷山">武夷山</span> <span class="price_r"><span class="base_price"><dfn>¥</dfn>188</span>起</span>
+                            </a>
+                        </li>
+                        <li>
+                            <a target="_blank" href="http://lvyou.qibila.com/wudangshan">
+                                <em class="ranking_num num_hot">
+                                    8
+                                </em> <span class="ranking_area" title="武当山">武当山</span> <span class="price_r"><span class="base_price"><dfn>¥</dfn>123</span>起</span>
+                            </a>
+                        </li>
+                        <li>
+                            <a target="_blank" href="http://lvyou.qibila.com/changbaishan">
+                                <em class="ranking_num num_hot">
+                                    9
+                                </em> <span class="ranking_area" title="长白山">长白山</span> <span class="price_r"><span class="base_price"><dfn>¥</dfn>63</span>起</span>
+                            </a>
+                        </li>
+                        <li>
+                            <a target="_blank" href="http://lvyou.qibila.com/putuoshan">
+                                <em class="ranking_num num_hot">
+                                    10
+                                </em> <span class="ranking_area" title="普陀山">普陀山</span> <span class="price_r"><span class="base_price"><dfn>¥</dfn>60</span>起</span>
+                            </a>
+                        </li>
+                    </ol>
+                </div>
+                <!--最佳国内名山-->
+                <div class="ranking_box">
+                    <h3>
+                        最佳国内氧吧
+                    </h3>
+                    <ol>
+                        <li>
+                            <a target="_blank" href="http://lvyou.qibila.com/yanuoda">
+                                <em class="ranking_num num_hot">
+                                    1
+                                </em> <span class="ranking_area" title="海南呀诺达雨林">海南呀诺达雨林</span> <span class="price_r">
+                                    <span class="base_price"><dfn>¥</dfn>148</span>起
+                                </span>
+                            </a>
+                        </li>
+                        <li>
+                            <a target="_blank" href="http://lvyou.qibila.com/qiandaohu">
+                                <em class="ranking_num num_hot">
+                                    2
+                                </em> <span class="ranking_area" title="千岛湖">千岛湖</span> <span class="price_r"><span class="base_price"><dfn>¥</dfn>120</span>起</span>
+                            </a>
+                        </li>
+                        <li>
+                            <a target="_blank" href="http://lvyou.qibila.com/changbaishan">
+                                <em class="ranking_num num_hot">
+                                    3
+                                </em> <span class="ranking_area" title="吉林长白山">吉林长白山</span> <span class="price_r"><span class="base_price"><dfn>¥</dfn>63</span>起</span>
+                            </a>
+                        </li>
+                        <li>
+                            <a target="_blank" href="http://lvyou.qibila.com/daxinganling">
+                                <em class="ranking_num num_hot">
+                                    4
+                                </em> <span class="ranking_area" title="黑龙江大兴安岭林区">黑龙江大兴安岭林区</span> <span class="price_r">
+                                    <span class="base_price"><dfn>¥</dfn>40</span>起
+                                </span>
+                            </a>
+                        </li>
+                        <li>
+                            <a target="_blank" href="http://lvyou.qibila.com/shunanzhuhai">
+                                <em class="ranking_num num_hot">
+                                    5
+                                </em> <span class="ranking_area" title="蜀南竹海">蜀南竹海</span> <span class="price_r"><span class="base_price"><dfn>¥</dfn>30</span>起</span>
+                            </a>
+                        </li>
+                        <li>
+                            <a target="_blank" href="http://lvyou.qibila.com/jiuzhaigou">
+                                <em class="ranking_num num_hot">
+                                    6
+                                </em> <span class="ranking_area" title="九寨沟">九寨沟</span> <span class="price_r"><span class="base_price"><dfn>¥</dfn>70</span>起</span>
+                            </a>
+                        </li>
+                        <li>
+                            <a target="_blank" href="http://lvyou.qibila.com/redaiyulin">
+                                <em class="ranking_num num_hot">
+                                    7
+                                </em> <span class="ranking_area" title="云南西双版纳热带雨林">云南西双版纳热带雨林</span> <span class="price_r">
+                                    <span class="base_price"><dfn>¥</dfn>60</span>起
+                                </span>
+                            </a>
+                        </li>
+                        <li>
+                            <a target="_blank" href="http://lvyou.qibila.com/zhangjiajieguojiasenlingongyuan">
+                                <em class="ranking_num num_hot">8</em> <span class="ranking_area" title="张家界国家森林公园">
+                                    张家界国家森林公园
+                                </span> <span class="price_r"><span class="base_price"><dfn>¥</dfn>238</span>起</span>
+                            </a>
+                        </li>
+                        <li>
+                            <a target="_blank" href="http://lvyou.qibila.com/emeishan">
+                                <em class="ranking_num num_hot">
+                                    9
+                                </em> <span class="ranking_area" title="四川峨眉山">四川峨眉山</span> <span class="price_r"><span class="base_price"><dfn>¥</dfn>40</span>起</span>
+                            </a>
+                        </li>
+                        <li>
+                            <a target="_blank" href="http://lvyou.qibila.com/gangxiang">
+                                <em class="ranking_num num_hot">
+                                    10
+                                </em> <span class="ranking_area" title="西藏林芝岗乡云杉林">西藏林芝岗乡云杉林</span> <span class="price_r">
+                                    <span class="base_price"><dfn>¥</dfn>60</span>起
+                                </span>
+                            </a>
+                        </li>
+                    </ol>
+                </div>
+                <!--最佳国内氧吧-->
+                <div class="ranking_box">
+                    <h3>
+                        最佳国内溶洞
+                    </h3>
+                    <ol>
+                        <li>
+                            <a target="_blank" href="http://lvyou.qibila.com/zhijindong">
+                                <em class="ranking_num num_hot">
+                                    1
+                                </em> <span class="ranking_area" title="织金洞">织金洞</span> <span class="price_r"><span class="base_price"><dfn>¥</dfn>60</span>起</span>
+                            </a>
+                        </li>
+                        <li>
+                            <a target="_blank" href="http://lvyou.qibila.com/huanglongdong">
+                                <em class="ranking_num num_hot">
+                                    2
+                                </em> <span class="ranking_area" title="黄龙洞">黄龙洞</span> <span class="price_r"><span class="base_price"><dfn>¥</dfn>95</span>起</span>
+                            </a>
+                        </li>
+                        <li>
+                            <a target="_blank" href="http://lvyou.qibila.com/tenglongdong">
+                                <em class="ranking_num num_hot">
+                                    3
+                                </em> <span class="ranking_area" title="腾龙洞">腾龙洞</span> <span class="price_r"><span class="base_price"><dfn>¥</dfn>90</span>起</span>
+                            </a>
+                        </li>
+                        <li>
+                            <a target="_blank" href="http://lvyou.qibila.com/benxishuidong">
+                                <em class="ranking_num num_hot">
+                                    4
+                                </em> <span class="ranking_area" title="本溪水洞">本溪水洞</span> <span class="price_r"><span class="base_price"><dfn>¥</dfn>145</span>起</span>
+                            </a>
+                        </li>
+                        <li>
+                            <a target="_blank" href="http://lvyou.qibila.com/furongdong">
+                                <em class="ranking_num num_hot">
+                                    5
+                                </em> <span class="ranking_area" title="芙蓉洞">芙蓉洞</span> <span class="price_r"><span class="base_price"><dfn>¥</dfn>108</span>起</span>
+                            </a>
+                        </li>
+                        <li>
+                            <a target="_blank" href="http://lvyou.qibila.com/longgong">
+                                <em class="ranking_num num_hot">
+                                    6
+                                </em> <span class="ranking_area" title="安顺龙宫">安顺龙宫</span> <span class="price_r"><span class="base_price"><dfn>¥</dfn>75</span>起</span>
+                            </a>
+                        </li>
+                        <li>
+                            <a target="_blank" href="http://lvyou.qibila.com/yaolinxianjing">
+                                <em class="ranking_num num_hot">
+                                    7
+                                </em> <span class="ranking_area" title="瑶琳仙境">瑶琳仙境</span> <span class="price_r"><span class="base_price"><dfn>¥</dfn>110</span>起</span>
+                            </a>
+                        </li>
+                        <li>
+                            <a target="_blank" href="http://lvyou.qibila.com/shihuadong">
+                                <em class="ranking_num num_hot">
+                                    8
+                                </em> <span class="ranking_area" title="石花洞">石花洞</span> <span class="price_r"><span class="base_price"><dfn>¥</dfn>65</span>起</span>
+                            </a>
+                        </li>
+                        <li>
+                            <a target="_blank" href="http://lvyou.qibila.com/yinziyan">
+                                <em class="ranking_num num_hot">
+                                    9
+                                </em> <span class="ranking_area" title="银子岩">银子岩</span> <span class="price_r"><span class="base_price"><dfn>¥</dfn>55</span>起</span>
+                            </a>
+                        </li>
+                        <li>
+                            <a target="_blank" href="http://lvyou.qibila.com/lianzhoudixiahe">
+                                <em class="ranking_num num_hot">
+                                    10
+                                </em> <span class="ranking_area" title="连州地下河">连州地下河</span> <span class="price_r">
+                                    <span class="base_price"><dfn>¥</dfn>15</span>起
+                                </span>
+                            </a>
+                        </li>
+                    </ol>
+                </div>
+                <!--最佳国内溶洞-->
+                <div class="ranking_box">
+                    <h3>
+                        最佳国内海岛
+                    </h3>
+                    <ol>
+                        <li>
+                            <a target="_blank" href="http://lvyou.qibila.com/xishaqundao">
+                                <em class="ranking_num num_hot">
+                                    1
+                                </em> <span class="ranking_area" title="西沙群岛">西沙群岛</span> <span class="price_r"><span class="base_price"><dfn>¥</dfn>60</span>起</span>
+                            </a>
+                        </li>
+                        <li>
+                            <a target="_blank" href="http://lvyou.qibila.com/gulangyu">
+                                <em class="ranking_num num_hot">
+                                    2
+                                </em> <span class="ranking_area" title="鼓浪屿">鼓浪屿</span> <span class="price_r"><span class="base_price"><dfn>¥</dfn>78</span>起</span>
+                            </a>
+                        </li>
+                        <li>
+                            <a target="_blank" href="http://lvyou.qibila.com/weizhoudao">
+                                <em class="ranking_num num_hot">
+                                    3
+                                </em> <span class="ranking_area" title="涠洲岛">涠洲岛</span> <span class="price_r"><span class="base_price"><dfn>¥</dfn>90</span>起</span>
+                            </a>
+                        </li>
+                        <li>
+                            <a target="_blank" href="http://lvyou.qibila.com/meizhoudao">
+                                <em class="ranking_num num_hot">
+                                    4
+                                </em> <span class="ranking_area" title="湄洲岛">湄洲岛</span> <span class="price_r"><span class="base_price"><dfn>¥</dfn>138</span>起</span>
+                            </a>
+                        </li>
+                        <li>
+                            <a target="_blank" href="http://lvyou.qibila.com/penghu">
+                                <em class="ranking_num num_hot">
+                                    5
+                                </em> <span class="ranking_area" title="澎湖列岛">澎湖列岛</span> <span class="price_r"><span class="base_price"><dfn>¥</dfn>108</span>起</span>
+                            </a>
+                        </li>
+                        <li>
+                            <a target="_blank" href="http://lvyou.qibila.com/putuoshan">
+                                <em class="ranking_num num_hot">
+                                    6
+                                </em> <span class="ranking_area" title="普陀山岛">普陀山岛</span> <span class="price_r"><span class="base_price"><dfn>¥</dfn>148</span>起</span>
+                            </a>
+                        </li>
+                        <li>
+                            <a target="_blank" href="http://lvyou.qibila.com/changdao">
+                                <em class="ranking_num num_hot">
+                                    7
+                                </em> <span class="ranking_area" title="长岛">长岛</span> <span class="price_r"><span class="base_price"><dfn>¥</dfn>102</span>起</span>
+                            </a>
+                        </li>
+                        <li>
+                            <a target="_blank" href="http://lvyou.qibila.com/hailingdao">
+                                <em class="ranking_num num_hot">
+                                    8
+                                </em> <span class="ranking_area" title="海陵岛">海陵岛</span> <span class="price_r"><span class="base_price"><dfn>¥</dfn>26</span>起</span>
+                            </a>
+                        </li>
+                        <li>
+                            <a target="_blank" href="http://lvyou.qibila.com/shengsi">
+                                <em class="ranking_num num_hot">
+                                    9
+                                </em> <span class="ranking_area" title="嵊泗列岛">嵊泗列岛</span> <span class="price_r"><span class="base_price"><dfn>¥</dfn>90</span>起</span>
+                            </a>
+                        </li>
+                        <li>
+                            <a target="_blank" href="http://lvyou.qibila.com/wuzhizhoudao">
+                                <em class="ranking_num num_hot">
+                                    10
+                                </em> <span class="ranking_area" title="蜈支洲岛">蜈支洲岛</span> <span class="price_r"><span class="base_price"><dfn>¥</dfn>78</span>起</span>
+                            </a>
+                        </li>
+                    </ol>
+                </div>
+                <!--最佳国内海岛-->
+            </div>
+
+            </div>
+
+
+    <!--底部-->
+        <div class="pagefoot">
+            <div class="foot_line">
+                <div class="line_o">
+                </div>
+                <div class="line_gw">
+                    <div class="l_g">
+                    </div>
+                    <div class="l_w">
+                    </div>
+                </div>
+            </div>
+            <div class="clsPanle">
+                <ul class="clearfix foot_app_icon">
+                    <li class="mr30p"><a href="/jingdian" class="foot_jingdian">旅游景点</a></li>
+                    <li class="mr30p"><a href="#" class="foot_zhusu">酒店住宿，特价酒店</a></li>
+                    <li class="mr30p"><a href="#" class="foot_meishi"></a></li>
+                    <li class="mr30p"><a href="#" class="foot_gouwu"></a></li>
+                    <li class="mr30p"><a href="#" class="foot_jiaotong"></a></li>
+                    <li class="mr30p"><a href="#" class="foot_huodong"></a></li>
+                    <li class="mr30p"><a href="#" class="foot_gonglue"></a></li>
+                    <li><a href="#" class="foot_siren"></a></li>
+                </ul>
+                <div class="foot-inner clearfix">
+                    <div class="footlogo">
+                        <dl>
+                            <dt><a href="http://lvyou.qibila.com" title="奇比拉旅游">奇比拉旅游</a> </dt>
+                            <dd class="clearfix">
+                                <a href="#">加入我们</a> <a href="#" class="ml30">联系我们</a>
+                            </dd>
+                            <dd class="clearfix">
+                                <a href="#">服务说明</a><a href="#" class="ml30">用户协议</a>
+                            </dd>
+                            <dd class="clearfix">
+                                <a href="#">知识产权</a><a href="#" class="ml30">免责声明</a>
+                            </dd>
+                            <dd class="clearfix">
+                                <a href="#">关于我们</a><a href="#" class="ml30">投诉建议</a>
+                            </dd>
+                        </dl>
+                        <i class="line"></i>
+                    </div>
+                    <div class="footmap">
+                        <dl style="width: 42px;">
+                            <dt>栏目</dt>
+                            <dd>
+                                <a href="http://www.qibila.com">首页</a>
+                            </dd>
+                            <dd>
+                                <a href="http://lvyou.qibila.com/menpiao.html">门票</a>
+                            </dd>
+                            <dd>
+                                <a href="http://lvyou.qibila.com/spotdis.html">景点</a>
+                            </dd>
+                            <dd>
+                                <a href="http://lvyou.qibila.com">资讯</a>
+                            </dd>
+                        </dl>
+                        <dl style="width: 185px;">
+                            <dt>推荐</dt>
+                            <dd>
+                                <a href="#">旅游热榜</a><a href="#" class="ml30">国内景点</a>
+                            </dd>
+                            <dd>
+                                <a href="#">热门门票</a><a href="#" class="ml30">周边游</a>
+                            </dd>
+                            <dd>
+                                <a href="#">当季推荐</a><a href="http://lvyou.qibila.com/spotdis.html" class="ml30">游玩主题</a>
+                            </dd>
+                            <dd>
+                                <a href="#">旅游资讯</a><a href="#" class="ml30">景区资讯</a>
+                            </dd>
+                        </dl>
+                        <i class="line"></i>
+                    </div>
+                    <div class="footmap" style="width: 335px">
+                        <dl style="width: 80px;">
+                            <dt>加盟合作</dt>
+                            <dd>
+                                <a href="#">分销联盟</a>
+                            </dd>
+                            <dd>
+                                <a href="#">广告合作</a>
+                            </dd>
+                            <dd>
+                                <a href="#">代理合作</a>
+                            </dd>
+                            <dd>
+                                <a href="#">友情链接</a>
+                            </dd>
+                        </dl>
+                        <dl style="width: 125px;">
+                            <dt>预定帮助</dt>
+                            <dd>
+                                <a href="#">订票流程</a>
+                            </dd>
+                            <dd>
+                                <a href="#">如何购票</a>
+                            </dd>
+                            <dd>
+                                <a href="#">支付方式</a>
+                            </dd>
+                            <dd>
+                                <a href="#">退票方式</a>
+                            </dd>
+                        </dl>
+                        <i class="line"></i>
+                    </div>
+                </div>
+                <div class="pf-copyright">
+                    <p>
+                        © Copyright2003-2014 www.qibila.com All Rights Reserved.
+                    </p>
+                    <p>
+                        奇比拉旅游 http://lvyou.qibila.com版权所有.
+                        <script type="text/javascript">                            var cnzz_protocol = (("https:" == document.location.protocol) ? " https://" : " http://"); document.write(unescape("%3Cspan id='cnzz_stat_icon_1255465492'%3E%3C/span%3E%3Cscript src='" + cnzz_protocol + "s95.cnzz.com/stat.php%3Fid%3D1255465492' type='text/javascript'%3E%3C/script%3E"));</script>
+                    </p>
+                    <p>
+                        友情链接 <a href="http://www.soyotu.com" target="_blank">手机游戏</a> <a href="http://www.qilabi.com"
+                                                                                         target="_blank">珠海航展</a>
+                    </p>
+                    <p>
+                        ICP备案证书号：粤ICP备14066312号-1 <a href="#" target="_blank">xml</a> <a href="#" target="_blank">
+                            sitemap
+                        </a>
+                    </p>
+                </div>
+            </div>
+        </div>
+
+    </div>
+    
+    <script>
+        $(function () {
+            $("#searchBoxUl li").each(function (index, dom) {
+                $(this).click(function () {
+
+                    $(this).removeClass("s_tab_nocurrent").addClass("s_tab_current").siblings().each(function () {
+                        $(this).removeClass("s_tab_current").addClass("s_tab_nocurrent");
+                    });
+                    $(".s_content").hide();
+                    $('.s_content').eq(index).css('display', "block");
+                });
+
+
+            });
+
+            $('#cls-scenery-ticket li').each(function (a, b) {
+                $(this).bind("click", function () {
+                    $(this).addClass("on").siblings().each(function () {
+                        $(this).removeClass("on");
+                    });
+                    $('.mainfun').eq(a).css('display', "block").siblings().each(function () {
+                        $(this).css('display', "none");
+                    });
+                });
+            }); 
+
+            $('#cls-hotel-list li').each(function (a, b) {
+                $(this).bind("click", function () {
+                    oliw = $('.hotellist').outerWidth(); //每次移动的宽度  
+                    mv(parseInt(a));
+                    $(this).addClass("on").siblings().each(function () {
+                        $(this).removeClass("on");
+                    });
+                    $('.hotellist').eq(a).css('display', "block").siblings().each(function () {
+                        $(this).css('display', "none");
+                    });
+                });
+            });
+
+
+
+        });
+
+        /*** cur-theme move***/
+        var extime;
+        var dnow = 0;
+        var oliw = $('.hotellist').outerWidth(); //每次移动的宽度  
+        var oli = $('.hotellist'); //所有itemlist列表
+        var o = document.getElementById("hotel-list");
+        var olf = 0;
+        var lastIndex = 0;
+        function mv(itemIndex) {
+            dnow = itemIndex; //当前位置   
+            clearInterval(extime);
+            extime = setInterval(bc, 30);
+            lastIndex = itemIndex;
+        }
+        function bc() {
+            var ns = ((dnow * oliw + olf) - o["scrollLeft"]) /*+ ((dnow + 1) * 10)*/;
+            var v = ns > 0 ? Math.ceil(ns / 10) : Math.floor(ns / 10);
+            o["scrollLeft"] += v;
+            if (v == 0) {
+                clearInterval(extime);
+                v = null;
+            }
+        }
+
+        /*** cur-theme move End***/
+
+    </script>
+ 
+</body>
+</html>
+

@@ -1,0 +1,114 @@
+﻿
+<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+    <title>500-奇比拉旅游</title>
+    <meta content="text/html; charset=UTF-8" http-equiv="Content-Type">
+    <style>
+        body, div, p {
+            padding: 0;
+            margin: 0;
+        }
+
+        img {
+            display: block;
+        }
+
+        body {
+            background: #20242F;
+            font-family: Verdana, Tahoma;
+            overflow: hidden;
+            width: 100%;
+            height: 100%;
+        }
+
+        html, body {
+            width: 100%;
+            height: 100%;
+        }
+
+        .logo {
+            position: absolute;
+            width: 212px;
+            height: 34px;
+            left: 97px;
+            top: 54px;
+            z-index: 5;
+        }
+
+            .logo img {
+                width: 212px;
+                height: 34px;
+            }
+
+        .center {
+            width: 100%;
+            height: 1052px;
+            position: absolute;
+            top: 50%;
+            margin-top: -526px;
+        }
+
+            .center img {
+                height: 100%;
+                margin: 0 auto;
+            }
+
+        .btn-toindex {
+            width: 275px;
+            height: 66px;
+            position: absolute;
+            top: 83%;
+            left: 50%;
+            margin-left: -137px;
+        }
+
+            .btn-toindex img {
+                width: 275px;
+                height: 66px;
+            }
+
+        .text {
+            position: absolute;
+            width: 100%;
+            text-align: center;
+            font-size: 24px;
+            color: #8B9AB9;
+            left: 0;
+            top: 73%;
+        }
+    </style>
+</head>
+<body>
+    <!-- <a href="http://lvyou.qibila.com" class="logo">
+         <img src="http://image01.qilabi.com/icon/404/404_bg.png" alt="">
+     </a>-->
+    <div class="center">
+        <img src="http://image01.qilabi.com/icon/404/500_bg.png" alt="">
+    </div>
+    <p id="i18nextText" class="text">对不起，你访问的网站出错了</p>
+    <a href="http://lvyou.qibila.com" class="btn-toindex">
+        <img id="i18nextImg" src="http://image01.qilabi.com/icon/404/404_chs.png" alt="">
+    </a>
+</body>
+<script>
+    var i18nextImg = document.getElementById('i18nextImg');
+    var i18nextText = document.getElementById('i18nextText');
+    var cookies = document.cookie;
+    var i18next = '';// zh-CN
+    var arr, reg = new RegExp("(^| )i18next=([^;]*)(;|$)");
+    if (arr = document.cookie.match(reg)) {
+        i18next = unescape(arr[2]);
+    } else {
+        i18next = null;
+    }
+    console.log(i18next);
+    if (i18next == 'zh-CN' || i18next == null) {
+        i18nextImg.setAttribute('src', 'http://image01.qilabi.com/icon/404/404_chs.png');
+        i18nextText.innerHTML = '页面貌似…出错了…';
+    } else {
+        i18nextImg.setAttribute('src', 'http://image01.qilabi.com/icon/404/404_en.png');
+        i18nextText.innerHTML = 'Page not found…';
+    }
+</script>
+</html>

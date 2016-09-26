@@ -1,0 +1,1618 @@
+﻿
+* {
+    margin: 0px;
+    padding: 0px;
+}
+
+html, body, div, span, applet, object, iframe, h1, h2, h3, h4, h5, h6, p, blockquote, pre, a, abbr, acronym, address, big, cite, code, del, dfn, em, font, img, ins, kbd, q, s, samp, small, strike, strong, sub, sup, tt, var, b, u, i, center, dl, dt, dd, ol, ul, li, fieldset, form, label, legend, table, caption, tbody, tfoot, thead, tr, th, td {
+    margin: 0;
+    padding: 0;
+    border: 0;
+    outline: 0;
+}
+
+body, textarea, select, input, button {
+    font-family: 'Microsoft YaHei UI','Microsoft YaHei',DengXian,SimSun,'Segoe UI',Tahoma,Helvetica,sans-serif;
+}
+
+body {
+    margin: 0;
+    font-size: 14px;
+    line-height: 20px;
+    color: #333;
+}
+
+a {
+    text-decoration: none;
+}
+
+    a:hover {
+        color: #4084C3;
+    }
+
+ul, li {
+    list-style: none;
+}
+
+em, u {
+    font-style: normal;
+    text-decoration: none;
+}
+
+.f_l {
+    float: left;
+}
+
+.f_r {
+    float: right;
+}
+
+.blank10 {
+    clear: both;
+    height: 10px;
+    overflow: hidden;
+    visibility: visible;
+}
+
+.blank1 {
+    clear: both;
+    overflow: hidden;
+    visibility: visible;
+    height: 1px;
+}
+
+.blank0 {
+    clear: both;
+    overflow: hidden;
+    visibility: visible;
+}
+
+.blank15 {
+    height: 15px;
+    clear: both;
+    overflow: hidden;
+    visibility: visible;
+}
+
+.line20 {
+    clear: both;
+    font-size: 0px;
+    height: 20px;
+    overflow: hidden;
+}
+
+.padding_right20 {
+    padding-right: 20px;
+}
+
+.clearfix {
+    zoom: 1;
+}
+
+.narrow_page .clsPanle {
+    width: 1200px;
+}
+
+.clsPanle {
+    margin: 0 auto;
+    width: 990px;
+    height: 100%;
+}
+
+    .clearfix:after, .boxwrap:after, .clsPanle:after {
+        content: '\20';
+        display: block;
+        clear: both;
+        height: 0;
+        overflow: hidden;
+        visibility: hidden;
+    }
+
+/*导航*/
+.nav-channel {
+    background: #fff;
+    border-bottom: #ededed 1px solid;
+    font: 16px/45px "microsoft yahei";
+    position: relative;
+    height: 45px;
+    z-index: 1;
+}
+
+.nav-warpper {
+    margin-left: -26px;
+    position: relative;
+}
+
+    .nav-warpper li i.hot {
+        background: url(../images/ico-nav-channel.png) no-repeat;
+    }
+
+    .nav-warpper li {
+        float: left;
+        padding: 0px 15px;
+        margin: 14.5px 0;
+        padding: 0 15px;
+        height: 16px;
+        border-right: #999 1px solid;
+        border-right: rgba(0,0,0,.1) 1px solid;
+        position: relative;
+    }
+
+        .nav-warpper li i {
+            width: 16px;
+            height: 16px;
+            font: normal 12px/16px 'microsoft yahei';
+            color: #fff;
+            border-radius: 2px;
+            text-align: center;
+            display: block;
+            position: absolute;
+            top: -13px;
+            right: 5px;
+            overflow: hidden;
+            text-indent: -9999px;
+        }
+
+            .nav-warpper li i.hot {
+                background-position: 0 -48px;
+            }
+
+        .nav-warpper li a {
+            font-size: 14px;
+            overflow: visible;
+            display: block;
+            color: #333;
+            cursor: pointer;
+            padding: 0px 10px;
+            margin-top: -14.5px;
+            position: relative;
+        }
+
+        .nav-warpper li.currenActived a, .nav-warpper li.currenActived a:hover {
+            color: #0091d9;
+        }
+
+        .nav-warpper li.actived a, .nav-warpper li.actived a:hover {
+            color: #cc0000;
+        }
+
+        .nav-warpper li a:hover {
+            color: #999;
+        }
+
+#navpositon .dest-header {
+    height: auto;
+}
+
+#navpositon .sitemap {
+    height: 30px;
+    float: left;
+    width: 50%;
+}
+
+    #navpositon .sitemap a {
+        line-height: 30px;
+        color: #666;
+        cursor: pointer;
+        padding: 0px 15px;
+        height: 30px;
+        display: block;
+        float: left;
+    }
+
+        #navpositon .sitemap a.first {
+            padding: 0px 0px;
+        }
+
+    #navpositon .sitemap i {
+        float: left;
+        height: 30px;
+        display: block;
+        line-height: 30px;
+        font-style:normal;
+        padding: 0px 5px;
+    }
+
+    #navpositon .sitemap a:hover {
+        color: #ff8300;
+    }
+
+    #navpositon .sitemap a.actived:hover {
+        color: #555;
+        cursor: pointer;
+        background-color: #fff;
+        border-bottom: 1px solid #ddd;
+        border-radius: 4px 4px 0 0;
+        border: 1px solid #ddd;
+        border-bottom-color: #fff;
+        padding: 0px 30px;
+        color: #ff8300;
+    }
+
+.sm-box {
+    margin-bottom: 5px;
+    line-height: 22px;
+    border-width: 0px 1px 1px 1px;
+    border-color: #ddd;
+    border-style: solid;
+    background-color: #F4F9FE;
+    padding: 10px;
+    border-radius: 0 0 4px 4px;
+}
+
+.dest-usermark {
+    position: relative;
+    overflow: hidden;
+    width: 237.5px;
+    float: right;
+    margin-top: 23px;
+}
+
+    .dest-usermark .dest-usermark-wrapper {
+        position: relative;
+        width: 120%;
+        height: 70px;
+        padding-top: 2px;
+        margin-left: -61px;
+    }
+
+.narrow_page .dest-name {
+    width: 736px;
+}
+
+.dest-name {
+    width: 516px;
+    float: left;
+    margin-bottom: 15px;
+    overflow: hidden;
+}
+
+    .dest-name .main-name {
+        color: #111;
+        font-size: 30px;
+        line-height: 32px;
+        display: block;
+        margin-top: 15px;
+        font-weight: normal; 
+    }
+
+    .dest-name .deputy-name {
+        font-size: 20px;
+        color: #666;
+        display: block;
+        float: left;
+        height: 30px;
+    }
+
+.narrow_page .dest-name .scener-keywords {
+    font-size: 18px;
+}
+
+.dest-name .scener-keywords {
+    font-size: 16px;
+    color: #666;
+    display: block;
+    float: left;
+    height: 30px;
+    padding-left: 30px;
+    font-weight: normal;
+}
+
+.J_dest-weather {
+    width: 225px;
+    float: left;
+    height: 80px;
+    /*border-right: 1px solid #efefef;*/
+    margin-top: 0;
+}
+
+.narrow_page .dest-nav {
+    background-color: #4b565c;
+    background-color: rgba(75,86,92,.95);
+    font-size: 16px;
+    width: 1180px;
+    height: 44px;
+    padding-left: 20px;
+    position: relative;
+    clear: both;
+    position: relative;
+    z-index: 1;
+}
+
+.dest-nav {
+    background-color: #4b565c;
+    background-color: rgba(75,86,92,.95);
+    font-size: 16px;
+    width: 970px;
+    height: 44px;
+    padding-left: 20px;
+    position: relative;
+    clear: both;
+    position: relative;
+    z-index: 1;
+}
+
+    .dest-nav .dest-nav-wrapper {
+        float: left;
+        height: 16px;
+        margin: 14px 0;
+        padding: 0 10px;
+        position: relative;
+        border-right: #999 1px solid;
+    }
+
+        .dest-nav .dest-nav-wrapper .dest-nav-list-wrapper {
+            margin-top: -14px;
+        }
+
+            .dest-nav .dest-nav-wrapper .dest-nav-list-wrapper a {
+                display: inline-block;
+                line-height: 44px;
+                color: #fff;
+                font-size: 14px;
+                padding: 0 15px;
+                text-decoration: none;
+                cursor: pointer;
+                float: left;
+                position: relative;
+            }
+
+                .dest-nav .dest-nav-wrapper .dest-nav-list-wrapper a.currenActived, .dest-nav .dest-nav-wrapper .dest-nav-list-wrapper a:hover {
+                    line-height: 41px;
+                    border-bottom: 3px solid #ff8300 !important;
+                }
+
+.dest-btn {
+    display: inline-block;
+    float: right;
+    width: 45px;
+    height: 45px;
+    margin-left: 30.5px;
+    position: relative;
+}
+
+    .dest-btn em {
+        font: 400 12px/1.5 'microsoft yahei';
+        position: absolute;
+        display: inline-block;
+        width: 150px;
+        top: 100%;
+        margin: -1px 0 0 -3px;
+        left: 0;
+        white-space: nowrap;
+        color: #333;
+        z-index: 3;
+        cursor: pointer;
+        height: auto;
+        background: 0 0;
+        padding: 0;
+        -webkit-transition: all .2s ease;
+        -moz-transition: all .2s ease;
+        -ms-transition: all .2s ease;
+        -o-transition: all .2s ease;
+        transition: all .2s ease;
+    }
+/*Nav end*/
+.main-score .star-new {
+    margin-top: 4px;
+    float: left;
+    margin-right: 2px;
+}
+
+.star-new {
+    background: url(../images/star-2x.png) no-repeat;
+    background-size: 100% auto;
+    width: 100px;
+    height: 16px;
+    display: inline-block;
+    position: relative;
+}
+.small-star {
+  width: 75px;
+  height: 12px;
+  background: url(../images/star-2x.png) no-repeat;
+  background-size: 100% auto;
+  display: inline-block;
+  position: relative;
+}
+.small-star span {
+  height: 12px;
+  background: url(../images/star-2x.png) no-repeat;
+  background-size: 75px 24px;
+  background-position: 0 -13px;
+   position: absolute;
+}
+    .star-new span {
+        position: absolute;
+        height: 16px;
+        background: url(../images/star-2x.png) no-repeat;
+        background-size: 100px auto;
+        background-position: 0 -17px;
+    }
+    
+    .star-new .star-1{width:8px}
+    .star-new .star-2{width:16px}
+    .star-new .star-3{width:29px}
+    .star-new .star-4{width:37px}
+    .star-new .star-5{width:50px}
+    .star-new .star-6{width:60px}
+    .star-new .star-7{width:71px}
+    .star-new .star-8{width:80px}
+    .star-new .star-9{width:92px}
+    .star-new .star-10{width:100px}
+
+    .small-star .star-1{width:6px}
+    .small-star .star-2{width:13px}
+    .small-star .star-3{width:22px}
+    .small-star .star-4{width:30px}
+    .small-star .star-5{width:37px}
+    .small-star .star-6{width:46px}
+    .small-star .star-7{width:53px}
+    .small-star .star-8{width:62px}
+    .small-star .star-9{width:69px}
+    .small-star .star-10{width:75px}
+
+/*btn*/
+.btn {
+    display: inline-block;
+    padding: 6px 12px;
+    margin-bottom: 0;
+    font-size: 14px;
+    font-weight: 400;
+    line-height: 1.42857143;
+    text-align: center;
+    white-space: nowrap;
+    vertical-align: middle;
+    -ms-touch-action: manipulation;
+    touch-action: manipulation;
+    cursor: pointer;
+    -webkit-user-select: none;
+    -moz-user-select: none;
+    -ms-user-select: none;
+    user-select: none;
+    background-image: none;
+    border: 1px solid transparent;
+    border-radius: 4px;
+}
+
+.btn-info {
+    color: #fff;
+    background-color: #5bc0de;
+    border-color: #46b8da;
+}
+
+.btn-hotticket-buy {
+    color: #fff;
+    background-color: #ff9c00;
+    cursor: pointer;
+    color: white;
+    display: inline;
+    padding: 1px 7px;
+    font-size: 12px;
+}
+.btn-hotticket-buy:hover {
+    color: #fff;
+  
+   
+}
+
+.btn-sort {
+    color: #fff;
+    background-color: #8cc4ec;
+    cursor: pointer;
+    color: white;
+    display: inline;
+    padding: 1px 7px;
+    font-size: 12px;
+}
+
+.margin-left-15 {
+    margin-left: 15px;
+}
+
+.link-hot {
+    color: red;
+}
+
+.pager-box { text-align:center; padding:30px 0; width:100%;*zoom:1;}
+
+.pager-box  a{ display:inline-block; height:37px; line-height:37px; border-width:1px; border-style:solid; -moz-border-radius:2px; -webkit-border-radius:2px; border-radius:2px; font-size:14px; padding:0 14px;}
+.pager-box .selected a{ border:none; padding:1px 15px;}
+.pager-box  a:hover{ text-decoration:none;}
+.pager-box  a,.pager-box  span{ display:inline-block; height:37px; line-height:37px; border-width:1px; border-style:solid; -moz-border-radius:2px; -webkit-border-radius:2px; border-radius:2px; font-size:14px; padding:0 14px;}
+.pager-box  a,.pager-box  span{margin: 0px 4px; border-color:#c1c1c1; color:#666; background-color:#f1f1f1; background-image:-moz-linear-gradient(top, #fff 10%, #f0f0f0); background-image:-webkit-linear-gradient(top, #fff 10%, #f0f0f0); background-image:-ms-linear-gradient(top, #fff 10%, #f0f0f0); background-image:-o-linear-gradient(top, #fff 10%, #f0f0f0); background-image:linear-gradient(top, #fff 10%, #f0f0f0);}
+.pager-box .selected a, .pager-box  a:hover,.pager-box .selected span, .pager-box  span:hover, .pager-box span.current{color:#fff; background-color:#5a5a5a; background-image:-moz-linear-gradient(top, #717171, #535353); background-image:-webkit-linear-gradient(top, #717171, #535353); background-image:-ms-linear-gradient(top, #717171, #535353); background-image:-o-linear-gradient(top, #717171, #535353); background-image:linear-gradient(top, #717171, #535353);}
+
+.footgray {
+width: 100%;
+padding: 30px 0;
+background: #666;
+margin: 30px 0 15ox 0px;
+
+}
+.footgray .footinner {
+width: 1200px;
+margin: 0 auto;
+}
+.footgray .footinner dl {
+width: 175px;
+overflow: hidden;
+float: left;
+padding-right: 20px;
+}
+.footgray .footinner dt {
+color: #fff;
+padding-bottom: 24px;
+font-size: 18px;
+}
+.footgray .footinner dd {
+line-height: 24px;
+font-size: 14px;
+color: #fff;
+}
+.footgray .footinner a {
+color: #fff;
+font-size: 14px;
+}
+.copyright {
+  margin-top: 20px;
+  padding-bottom: 20px;
+  background-color: #f7f7f7;
+  text-align: center;
+  overflow: hidden;
+  clear: both;
+}
+.line-keyword_1 {
+    background-color: #ff7800;
+}
+.line-keyword_2 {
+    background-color: #2b89ea;
+}
+.line-keyword_3 {
+    background-color: #7abb15;
+}
+h1, h2, h3, h4, h5, h6 {
+  font-size: 100%;
+  font-weight: normal;
+}
+/*菜单导航*/
+.menuNav {
+    height: 55px;
+    border-top: 1px solid #135DBC;
+    background: #0096ff;
+    color: white;
+    display: block;
+}
+.menuNav .clsPanle {
+     background: #0096ff url(http://image01.qilabi.com/icon/menu_bg.jpg) right 0 no-repeat;
+}
+.channel {
+    position: relative;
+    z-index: 600;
+    margin-top: -1px;
+    float: left;
+    width: 208px;
+    height: 55px;
+    background-color: #4593FD;
+    box-shadow: 2px -1px 3px rgba(55,55,55,.5);
+}
+.cate_hd {
+    height: 55px;
+    border-bottom: 1px solid #4A98FF;
+    font: 400 16px/38px "微软雅黑E\8F6F\96C5\9ED1",Arial;
+    zoom: 1;
+    border-color: #3586F2;
+    position: relative;
+    cursor: pointer;
+}
+.cate_hd .cur {
+    display: block;
+}
+
+.cateall {
+    float: left;
+    font: 400 16px/38px "微软雅黑E\8F6F\96C5\9ED1",Arial;
+    line-height: 55px;
+    position: relative;
+    width: 100%;
+}
+
+    .cateall i {
+        background: url(http://image01.qilabi.com/icon/maptop_48.png) no-repeat;
+        display: inline-block;
+        width: 48px;
+        height: 48px;
+        margin: 3px 10px;
+        float: left;
+    }
+
+    .cateall .at-name {
+        float: left;
+        display: inline-block;
+        width: 100px;
+        height: 46px;
+        line-height: 46px;
+        overflow: hidden;
+        white-space: nowrap;
+        text-overflow: ellipsis;
+        font: 20px/50px "microsoft yahei",tahoma,arial,sans-serif;
+    }
+
+    .cateall b {
+        display: inline-block;
+        width: 24px;
+        height: 24px;
+        background: url(http://image01.qilabi.com/icon/xiala.png) no-repeat;
+        float: left;
+        margin-top: 14px;
+        margin-left: 5px;
+    }
+
+.changecity-box {
+  position: absolute;
+  top: 56px;
+  left: 0;
+  transition: all ease-out .2s;
+  width: 420px;
+  overflow: hidden;
+  background: #fff;
+  z-index: 10;
+  background-color: #fff;
+  border-radius: 3px;
+    display: none;
+}
+.at-city {
+  float: left;
+  margin: 15px 10px 10px 15px;
+  width: 420px;
+  overflow: hidden;
+    height: auto;
+    display: block;
+}
+.gray-ban {
+  line-height: 22px;
+  color: #999;
+  font: normal normal normal 14px/20px "Microsoft YaHei";
+    border-bottom: 1px solid #f3f3f3;
+  padding-bottom: 10px;
+}
+.city-hot {
+  padding: 10px;
+  width: 385px;
+  overflow: hidden;
+}
+
+.city-all li {
+  width: 385px;
+  overflow: hidden;
+  color: #999;
+  transition: all ease .2s;
+  padding: 6px 0;
+  
+}
+.city-all li .ca-l {
+  float: left;
+  font-weight: bold;
+  width: 40px;
+  text-align: right;
+  margin-right: 10px;
+  margin-bottom: 0;
+  padding: 0 5px 0 0;
+  font: normal normal normal 14px/20px "Microsoft YaHei";
+  color: #333;
+}
+.city-all li b.ca-l {
+    color: #999;
+}
+
+.changecity-box  a {
+  float: left;
+  color: #333;
+  margin-right: 17px;
+  margin-bottom: 5px;
+  line-height: 20px;
+  padding: 0 5px;
+  white-space: nowrap;
+  transition: all ease .2s;
+ font: normal normal normal 14px/20px "Microsoft YaHei";
+}
+.city-all li a.ca-l {
+    color: #333;
+    font-weight: bold;
+}
+.ca-r {
+  float: left;
+  width: 330px;
+  overflow: hidden;
+  white-space: nowrap;
+}
+.nav_top {
+    float: left;   
+    font: 400 18px/38px "微软雅黑E\8F6F\96C5\9ED1",Arial;
+}
+
+.nav_top_ul {
+    zoom: 1;
+    float: left;
+}
+
+    .nav_top_ul li {
+        float: left;
+        height: 55px;
+        display: inline;
+        position: relative;
+    }
+.nav_top_ul li.current {
+   background-color: #3586F2;
+}
+        .nav_top_ul li i {
+            height: 11px;
+            overflow: hidden;
+            position: absolute;
+            text-indent: -9999px;
+            left: 110px;
+            top: -8px;
+            width: 21px;
+            display: inline-block;
+        }
+
+            .nav_top_ul li i.hot {
+                background: url(http://www.qibila.com/images/quan/bg3.png) -173px 0;
+            }
+
+        .nav_top_ul li a {
+            float: left;
+            display: inline;
+            padding: 0 28px;
+            height: 55px;
+            font: 16px/50px "microsoft yahei",tahoma,arial,sans-serif;
+            text-decoration: none;
+            color: #fff;
+            text-align: center;
+        }
+    .nav_top_ul .on a {
+        position: relative;
+        z-index: 1;
+        margin-top: -2px;
+        float: left;
+        height: 38px;
+        line-height: 36px;
+        border-top: 2px solid rgb(240,240,240);
+        background-color: white;
+        color: #017DFF;
+    }
+
+    .nav_top_ul li a:hover {
+        background-color: #1275fc;
+        color: white;
+        text-decoration: none;
+    }
+
+/****导航****/
+.nvGprs {
+      color: #555;
+  line-height: 25px;
+  height: 25px;
+  font-size: 12px;
+  width: 100%;
+  text-align: left;
+  margin-top: 10px;
+  margin-bottom: 10px;
+}
+.gprs {
+  height: 21px;
+  width: 16px;
+  background: url(http://image01.qilabi.com/icon/map_nav.png) no-repeat 5px 4px;
+  display: inline-block;
+  float: left;
+  padding-right: 10px;
+}
+.nvGprs a {
+    color: #333;
+}
+.color999 {
+    color: #999;
+}
+.fixed {
+  position: fixed !important;
+  top: 0;
+  z-index: 2000;
+}
+.orange {
+  color: #f76120;
+}
+table {
+  border-collapse: collapse;
+  table-layout: fixed;
+  width: 100%;
+}
+.ellipsis {
+  overflow: hidden;
+  white-space: nowrap;
+  -o-text-overflow: ellipsis;
+  text-overflow: ellipsis;
+}
+i
+{ 
+  font-style: normal;
+}
+.public_ft_list {
+    height: 50px;
+    padding: 9px 0;
+    border: 1px solid #eee;
+    background: #fbfbfb;
+    font-size: 12px;
+    position: relative;
+    overflow: hidden;
+    zoom: 1;
+}
+
+    .public_ft_list li {
+        width: 25%;
+        float: left;
+        margin-left: -2px;
+        height: 40px;
+        padding: 5px 0;
+        position: relative;
+        color: #999;
+        font-size: 12px;
+        line-height: 16px;
+        border-left: #eee solid 1px;
+        overflow: hidden;
+        white-space: nowrap;
+    }
+
+        .public_ft_list li .ft_ioc1 {
+            background-position: 0px 0;
+        }
+
+        .public_ft_list li .ft_ioc2 {
+            background-position: -50px 0;
+        }
+
+        .public_ft_list li .ft_ioc3 {
+            background-position: -100px 0;
+        }
+
+        .public_ft_list li .ft_ioc4 {
+            background-position: -150px 0;
+        }
+
+        .public_ft_list li i {
+            float: left;
+            width: 40px;
+            height: 40px;
+            margin: 0 10px 0 20px;
+        }
+
+        .honour_wrap a, .public_ft_list li i {
+            background: url(http://image01.qilabi.com/icon/bottom-icon.png) no-repeat;
+        }
+
+    .public_ft_list strong {
+        display: block;
+        line-height: 20px;
+        margin-bottom: 4px;
+        font-family: "Microsoft Yahei";
+        font-size: 18px;
+        font-weight: normal;
+    }
+
+.foot_tips {
+    margin-bottom: 50px !important;
+}
+
+.honour_wrap {
+    display: inline-block;
+    padding-top: 10px;
+    text-align: left;
+}
+
+    .honour_wrap a {
+        float: left;
+        margin: 0 5px;
+        width: 88px;
+        height: 32px;
+        border: 1px solid #d1d1d1;
+        border-radius: 2px;
+        font: 12px/32px Simsun;
+        color: #666;
+        overflow: hidden;
+        background-color: #fff;
+        background-repeat: no-repeat;
+        background-position: 0 0;
+        text-indent: -99em;
+        white-space: normal;
+    }
+
+    .honour_wrap .honour1 {
+        background-position: -129px -45px;
+        text-indent: 36px;
+    }
+
+    .honour_wrap .honour2 {
+        background-position: -131px -81px;
+        text-indent: 36px;
+    }
+
+    .honour_wrap .honour3 {
+        background-position: -41px -45px;
+    }
+
+    .honour_wrap .honour4 {
+         background-position: -132px -114px;
+         text-indent: 0;
+          padding: 2px 0 2px 37px;
+          width: 51px;
+          height: 28px;
+          line-height: 1.2;
+    }
+
+    .honour_wrap .honour5 {
+        background-position: -41px -80px;
+    }
+
+    .honour_wrap .honour6 {
+       background-position: -42px -113px;
+    }
+
+    .honour_wrap .honour8 {
+      background-position: -133px -147px;
+      text-indent: 36px;
+    }
+ 
+
+    
+.J_dest-weather {
+    display: block;
+    color: #999;
+}
+
+.weather-icon {
+    display: block;
+    width: 75px;
+    float: left;
+    height: 100%;
+    position: relative;
+    margin-right: 10px;
+}
+
+.clsweather {
+    display: block;
+    width: 100%;
+    height: 100%;
+    color: #999;
+}
+
+    .clsweather .weather-icon .iconfont {
+        font-size: 70px;
+        color: #fad339;
+        position: absolute;
+        top: -12px;
+        line-height: 90px;
+        height: 90px;
+        font-weight: 300;
+    }
+
+    .clsweather .weather-temp {
+        display: block;
+        font-size: 30px;
+        color: #999;
+        height: 36px;
+    }
+
+.weather-temp .temp-icon {
+    width: 10px;
+    height: 10px;
+    background: url(http://image01.qilabi.com/icon/tmp-icon_f6ea488.png) no-repeat;
+    background-size: 100%;
+    display: inline-block;
+    margin-bottom: 16px;
+}
+
+.weather-temp .weather-du {
+    font-size: 22px;
+}
+
+.weather-temp .temp-section {
+    font-size: 12px;
+    margin-left: 4px;
+}
+
+.weather-text {
+    color: #999;
+    font-size: 12px;
+}
+
+.websit-text {
+    display: block;
+    width: 137px;
+    float: left;
+    text-align: left;
+    color: #999;
+    line-height: 12px;
+    background: url(http://image01.qilabi.com/icon/bg-x2-black_0c02488.png) no-repeat;
+    background-size: 80px 12px;
+    height: 12px;
+    margin-top: 5px;
+    background: url(http://image01.qilabi.com/icon/bg-x1-black_f473e0b.png) no-repeat\9;
+    *background: url(http://image01.qilabi.com/icon/bg-x1-black_f473e0b.png) no-repeat !important; /*IE7 识别*/
+}
+
+.dest-btn .icon {
+    font-size: 30px;
+    line-height: 45px;
+    margin: 10px 0;
+    color: #333;
+    -webkit-transition: font-size 0.25s ease-out 0s;
+    -moz-transition: font-size 0.25s ease-out 0s;
+    transition: font-size 0.25s ease-out 0s;
+}
+
+    .dest-btn .icon:hover {
+        font-size: 35px;
+    }
+
+.dest-btn .green {
+    color: #52ccae;
+}
+
+.dest-btn .red {
+    color: #f381c2;
+}
+
+.topNavWrapper {
+    background: #fafafa;
+    border-bottom: 1px solid #f1f1f1;
+    position: relative;
+    z-index: 9999;
+    font-size: 12px;
+    color: #999;
+}
+
+.cls-top-nav {
+    height: 28px;
+    line-height: 28px;
+}
+.cls-hd-fr {
+      position: absolute;
+  right: 0;
+  top: 0;
+  _width: 465px;
+  font-family: 'Microsoft yahei';
+}
+    .cls-top-nav a, .cls-top-nav a:hover {
+        color: #666;
+    }
+
+.topnav_ul li {
+    float: left;
+    border-style: solid;
+    border-width: 0 1px;
+    position: relative;
+    border-color: transparent;
+}
+
+    .topnav_ul li > a {
+        display: block;
+        padding: 0 9px;
+        position: relative;
+        z-index: 2;
+    }
+
+    .topnav_ul li.open {
+        border-color: #fff;
+    }
+
+        .topnav_ul li.open > a {
+            background: #fff;
+            border-bottom: 1px solid #fff;
+            box-shadow: 0 0 16px 0 #ccc;
+        }
+
+    .topnav_ul li div.head-div {
+        position: absolute;
+        top: 28px;
+        height: 0;
+        right: -1px;
+        overflow: hidden;
+        -moz-transition: .2s height ease-in-out;
+        -webkit-transition: .2s height ease-in-out;
+        -o-transition: .2s height ease-in-out;
+        transition: .2s height ease-in-out;
+        box-shadow: 0 0 16px 0 #ccc;
+        z-index: 3;
+        border: 1px solid #ddd;
+        background-color: white;
+    }
+
+    .topnav_ul li div.head-div {
+        right: 0;
+    }
+
+      
+
+        .topnav_ul li div.head-div i {
+            display: block;
+            border-bottom: 1px solid #ddd;
+            margin: 5px 10px;
+        }
+
+     
+
+#scumnav_menu {
+  position: absolute;
+  z-index: 999;
+  right: -70px;
+  top: 28px;
+  float: left;
+  width: 240px;
+  left: 0px !important;
+}
+#scumnav_menu .arrow {
+  position: absolute;
+  right: 140px;
+  top: -6px;
+  width: 0;
+  height: 0;
+  overflow: hidden;
+  border: 6px solid transparent;
+  border-bottom-color: #5fa678;
+  border-top-width: 0;
+}
+#scumnav_menu .infos {
+  width: 158px;
+  overflow: hidden;
+  padding: 10px 10px 10px 72px;
+  background:#0096ff;
+}
+#scumnav_menu .infos .face {
+  float: left;
+  margin-left: -62px;
+  border: 2px solid #fff;
+  border-radius: 50%;
+  overflow: hidden;
+}
+
+ #scumnav_menu .infos .face img {
+  display: block;
+  border-radius: 50%;
+}
+#scumnav_menu .infos a {
+  color: #fff;
+}
+.hidefocus {
+  outline: none;
+}
+#scumnav_menu .infos .name {
+  font-size: 14px;
+  line-height: 28px;
+}
+#scumnav_menu .infos a {
+  color: #fff;
+}
+#scumnav_menu .infos .txt {
+  padding: 3px 0 0;
+  border: 0;
+  background: none;
+  height: 21px;
+}
+#scumnav_menu .infos .txt a {
+  margin-right: 20px;
+}
+.showmenu {
+  padding-right: 16px;
+  cursor: pointer;
+  white-space: nowrap;
+}
+.head_userlayer .list {
+  border: 1px solid #c0c0c0;
+  border-top: none;
+  background: #fff;
+}
+.head_userlayer .list li:first-child {
+  border-top: none;
+}
+.head_userlayer .list li {
+  position: relative;
+  height: 34px;
+  border-top: 1px solid #d7d7d7;
+  line-height: 34px;
+    float: none;
+}
+.head_userlayer .list .link {
+  display: block;
+  width: 218px;
+  padding: 0 10px;
+  font-size: 14px;
+  color: #323232;
+}
+.head_userlayer .list .btm {
+  padding: 0 10px;
+  background: #f5f5f5;
+    float: none;
+}
+.head_userlayer .list .quit {
+  color: #323232;
+}
+    .head_userlayer .list .set {
+        position: absolute;
+        top: 8px;
+        right: 10px;
+        display: block;
+        height: 16px;
+        line-height: 16px;
+        padding-right: 16px;
+    }
+
+ .head_userlayer .list .link:hover{background:#e0f1df;text-decoration:none}
+
+  #scumnav_menu {
+      display: none;
+}
+.open #scumnav_menu {
+    height: auto;
+    display: block;
+}
+
+
+#navweixin div.head-div,.cls-hd-fl {
+    background: url(http://7xlek5.com2.z0.glb.qiniucdn.com/siteicon/top_bg.png) no-repeat;
+}
+#navweixin div.head-div {
+    width: 316px;
+    border-color: transparent;
+}
+
+
+
+#navweixin.open div {
+    height: 154px;
+}
+
+#navweixin.open > span {
+    content: '';
+    position: absolute;
+    top: 22px;
+    left: 0;
+    height: 10px;
+    width: 100%;
+    background: #fff;
+    z-index: 31;
+    display: block;
+}
+
+
+#navuser div {
+    width: 110px;
+    border-color: transparent;
+}
+
+
+
+#navuser.open div {
+    height: 45px;
+}
+
+#navuser.open > span {
+    content: '';
+    position: absolute;
+    top: 22px;
+    left: 0;
+    height: 10px;
+    width: 100%;
+    background: #fff;
+    z-index: 31;
+    display: block;
+}
+
+.cls-hd {
+      position: relative;
+  z-index: 26;
+  height: 59px;
+  margin: 0 auto;
+}
+.tour-bg {
+  position: absolute;
+  width: 100%;
+  height: 59px;
+  top: 0;
+  margin-left: 15px;
+  background: url(http://7xlek5.com2.z0.glb.qiniucdn.com/siteicon/pic_doodle_may.jpg) 0 0 no-repeat;
+}
+.cls-hd-fl {
+  float: left;
+  width: 189px;
+  height: 56px;
+  margin-top: 2px;
+  margin-bottom: 2px;
+  overflow: hidden;
+  background-position:  -168px -168px;
+
+    position: relative;
+  z-index: 10;
+}
+.lv_baozhang {
+      float: right;
+  margin-top: 7px;
+}
+.lv_baozhang li {
+  float: left;
+  width: 68px;
+  text-align: center;
+  color: #999;
+    font-size: 12px;
+}
+.lv_baozhang i {
+  display: block;
+  margin: 0 auto;
+  width: 30px;
+  height: 30px;
+    line-height: 30px;
+    font-size: 26px;
+    color: #ff9915;
+}
+
+    .cls-hd-fl h1 a {
+        position: absolute !important;
+        clip: rect(1px 1px 1px 1px);
+        clip: rect(1px,1px,1px,1px);
+        padding: 0 !important;
+        border: 0 !important;
+        height: 1px !important;
+        line-height: 0 !important;
+        width: 1px !important;
+        overflow: hidden;
+    }
+
+
+    
+/*fonticon*/
+@font-face {
+    font-family: "iconfont";
+    src: url('iconfont/iconfont.eot'); /* IE9*/
+    src: url('iconfont/iconfont.eot?#iefix') format('embedded-opentype'), /* IE6-IE8 */
+    url('iconfont/iconfont.woff') format('woff'), /* chrome、firefox */
+    url('iconfont/iconfont.ttf') format('truetype'), /* chrome、firefox、opera、Safari, Android, iOS 4.2+*/
+    url('iconfont/iconfont.svg#iconfont') format('svg'); /* iOS 4.1- */
+}
+
+.iconfont {
+  font-family:"iconfont" !important;
+  font-size:16px;
+  font-style:normal;
+  -webkit-font-smoothing: antialiased;
+  -webkit-text-stroke-width: 0.2px;
+  -moz-osx-font-smoothing: grayscale;
+}
+.jiudian-icon {
+    color: #4A98FF;
+    font-size: 35px;
+}
+.icon-nvren:before { content: "\e600"; }
+.icon-wanju:before { content: "\e601"; }
+.icon-tielu:before { content: "\e602"; }
+.icon-daba:before { content: "\e603"; }
+.icon-qing:before { content: "\e604"; }
+.icon-yun:before { content: "\e605"; }
+.icon-lieri:before { content: "\e606"; }
+.icon-yujiaxue:before { content: "\e607"; }
+.icon-daxue:before { content: "\e608"; }
+.icon-xiaoxue:before { content: "\e609"; }
+.icon-wifi:before { content: "\e60a"; }
+.icon-baidu:before { content: "\e60b"; }
+.icon-anzhuo:before { content: "\e60c"; }
+.icon-pingban:before { content: "\e60d"; }
+.icon-shijian:before { content: "\e60e"; }
+.icon-zizhucan:before { content: "\e60f"; }
+.icon-lunchuan:before { content: "\e610"; }
+.icon-24xiaoshirexian:before { content: "\e611"; }
+.icon-dianying:before { content: "\e612"; }
+.icon-dianying1:before { content: "\e613"; }
+.icon-xiangxiajiantou:before { content: "\e6d6"; }
+.icon-xiangshang:before { content: "\e614"; }
+.icon-xiangshang1:before { content: "\e615"; }
+.icon-jiaohuan:before { content: "\e6d7"; }
+.icon-chevron-up:before { content: "\e616"; }
+.icon-chevron-down:before { content: "\e6d8"; }
+.icon-chevron-down:after { content: "\e616"; }
+.icon-anzhuo1:before { content: "\e617"; }
+.icon-chakan:before { content: "\e618"; }
+.icon-baozhang:before { content: "\e619"; }
+.icon-shouhoufuwu:before { content: "\e61a"; }
+.icon-dingwei:before { content: "\e61b"; }
+.icon-gongjufuwu:before { content: "\e61c"; }
+.icon-weixin:before { content: "\e61d"; }
+.icon-weibo:before { content: "\e61e"; }
+.icon-youxiang:before { content: "\e61f"; }
+.icon-dingdan:before { content: "\e620"; }
+.icon-hongbao:before { content: "\e621"; }
+.icon-qq:before { content: "\e622"; }
+.icon-anzhuo2:before { content: "\e623"; }
+.icon-dhuoche:before { content: "\e624"; }
+.icon-tingchewei:before { content: "\e625"; }
+.icon-dayu:before { content: "\e626"; }
+.icon-leidian:before { content: "\e627"; }
+.icon-qing1:before { content: "\e628"; }
+.icon-xiaoyu:before { content: "\e629"; }
+.icon-xue:before { content: "\e62a"; }
+.icon-jianshen:before { content: "\e62b"; }
+.icon-chakan1:before { content: "\e62c"; }
+.icon-dianhua:before { content: "\e62d"; }
+.icon-youhuiquan:before { content: "\e62e"; }
+.icon-iconhui:before { content: "\e62f"; }
+.icon-baozhang1:before { content: "\e630"; }
+.icon-xiangxiajiantouarrowdown:before { content: "\e631"; }
+.icon-jingdian:before { content: "\e632"; }
+.icon-jiudian:before { content: "\e633"; }
+.icon-dianhua1:before { content: "\e634"; }
+.icon-chakan2:before { content: "\e635"; }
+.icon-ttpodicon:before { content: "\e636"; }
+.icon-chakantongzhi:before { content: "\e637"; }
+.icon-jingdian1:before { content: "\e638"; }
+.icon-huoche:before { content: "\e639"; }
+.icon-lunchuan1:before { content: "\e63a"; }
+.icon-qq1:before { content: "\e63b"; }
+.icon-ditu:before { content: "\e63c"; }
+.icon-jiage:before { content: "\e63d"; }
+.icon-huochepiao:before { content: "\e63e"; }
+.icon-jiudian1:before { content: "\e63f"; }
+.icon-caifutong:before { content: "\e640"; }
+.icon-jiudian2:before { content: "\e641"; }
+.icon-tingchexinxi:before { content: "\e642"; }
+.icon-anzhuo3:before { content: "\e643"; }
+.icon-llreservetag:before { content: "\e644"; }
+.icon-35fuwufeiji:before { content: "\e645"; }
+.icon-jingdian2:before { content: "\e646"; }
+.icon-yingyong:before { content: "\e647"; }
+.icon-weibo1:before { content: "\e648"; }
+.icon-weibiaoti2:before { content: "\e649"; }
+.icon-jiesuan:before { content: "\e64a"; }
+.icon-iconsqyd:before { content: "\e64b"; }
+.icon-icontjydxx:before { content: "\e64c"; }
+.icon-ysxiangxiajiantou:before { content: "\e6d9"; }
+.icon-xiangxia:before { content: "\e6da"; }
+.icon-ditu1:before { content: "\e64d"; }
+.icon-jingdianmenpiao:before { content: "\e64e"; }
+.icon-jiantou:before { content: "\e6db"; }
+.icon-1212tuiguang08:before { content: "\e64f"; }
+.icon-feiji1:before { content: "\e650"; }
+.icon-rili:before { content: "\e651"; }
+.icon-xiangshang2:before { content: "\e6d3"; }
+.icon-weibo2:before { content: "\e652"; }
+.icon-shouji:before { content: "\e653"; }
+.icon-fenggeertong:before { content: "\e654"; }
+.icon-weixin1:before { content: "\e655"; }
+.icon-shouji1:before { content: "\e656"; }
+.icon-zhoubianyou:before { content: "\e657"; }
+.icon-baozhang2:before { content: "\e658"; }
+.icon-pingbandiannao:before { content: "\e659"; }
+.icon-dingwei1:before { content: "\e65a"; }
+.icon-wifi1:before { content: "\e65b"; }
+.icon-anquanbaozhang:before { content: "\e65c"; }
+.icon-jianshenfang:before { content: "\e65d"; }
+.icon-ertongyouhui:before { content: "\e65e"; }
+.icon-ren:before { content: "\e65f"; }
+.icon-xiangxiajiantou1:before { content: "\e660"; }
+.icon-tianqi:before { content: "\e661"; }
+.icon-13lunchuan:before { content: "\e662"; }
+.icon-daba1:before { content: "\e663"; }
+.icon-jingdian3:before { content: "\e664"; }
+.icon-nanren:before { content: "\e665"; }
+.icon-nvren1:before { content: "\e666"; }
+.icon-1:before { content: "\e667"; }
+.icon-2:before { content: "\e668"; }
+.icon-jingdian2:before { content: "\e669"; }
+.icon-gouwu:before { content: "\e66a"; }
+.icon-tuikuan:before { content: "\e66b"; }
+.icon-weibiaoti107:before { content: "\e66c"; }
+.icon-tiyujianshen:before { content: "\e66d"; }
+.icon-weibo3:before { content: "\e66e"; }
+.icon-daba2:before { content: "\e66f"; }
+.icon-icon:before { content: "\e6dc"; }
+.icon-leizhenyuthundershower:before { content: "\e670"; }
+.icon-weixin2:before { content: "\e671"; }
+.icon-weibo4:before { content: "\e672"; }
+.icon-dingdan1:before { content: "\e673"; }
+.icon-ditu2:before { content: "\e674"; }
+.icon-shijian1:before { content: "\e675"; }
+.icon-tianqichaxun:before { content: "\e676"; }
+.icon-baozhang3:before { content: "\e677"; }
+.icon-zhifubao:before { content: "\e678"; }
+.icon-jiudian3:before { content: "\e679"; }
+.icon-gouwu1:before { content: "\e67a"; }
+.icon-tuikuan1:before { content: "\e67b"; }
+.icon-tuikuan2:before { content: "\e67c"; }
+.icon-zhifubao1:before { content: "\e67d"; }
+.icon-alipay:before { content: "\e67e"; }
+.icon-huoche1:before { content: "\e67f"; }
+.icon-jiage1:before { content: "\e680"; }
+.icon-ertongmuying:before { content: "\e681"; }
+.icon-yinliao:before { content: "\e6dd"; }
+.icon-chakan3:before { content: "\e682"; }
+.icon-leizhenyu:before { content: "\e683"; }
+.icon-zhenyubaitian:before { content: "\e684"; }
+.icon-fuwu:before { content: "\e685"; }
+.icon-zhenyu:before { content: "\e686"; }
+.icon-tongxunlu:before { content: "\e687"; }
+.icon-24xiaoshidianhua:before { content: "\e688"; }
+.icon-jiudian4:before { content: "\e689"; }
+.icon-canpinhuigerenzhongxindaifukuan:before { content: "\e68a"; }
+.icon-xiangshang3:before { content: "\e68b"; }
+.icon-zhoubian:before { content: "\e68c"; }
+.icon-hongbao1:before { content: "\e68d"; }
+.icon-ditu3:before { content: "\e68e"; }
+.icon-diancan:before { content: "\e68f"; }
+.icon-ren1:before { content: "\e690"; }
+.icon-daba3:before { content: "\e691"; }
+.icon-lunchuan2:before { content: "\e692"; }
+.icon-jiage2:before { content: "\e693"; }
+.icon-tuikuan3:before { content: "\e694"; }
+.icon-lunchuan3:before { content: "\e695"; }
+.icon-weibiaoti2youxiang:before { content: "\e696"; }
+.icon-jiudian5:before { content: "\e697"; }
+.icon-dianying2:before { content: "\e698"; }
+.icon-jingdian4:before { content: "\e699"; }
+.icon-youhui:before { content: "\e69a"; }
+.icon-jiudian6:before { content: "\e69b"; }
+.icon-shouji2:before { content: "\e69c"; }
+.icon-jiagepaixu:before { content: "\e69d"; }
+.icon-jiudian7:before { content: "\e69e"; }
+.icon-24xiaoshi:before { content: "\e69f"; }
+.icon-24xiaoshi1:before { content: "\e6a0"; }
+.icon-refund:before { content: "\e6a1"; }
+.icon-18:before { content: "\e6de"; }
+.icon-kuaijiezhifu:before { content: "\e6a2"; }
+.icon-jiage3:before { content: "\e6a3"; }
+.icon-canshi:before { content: "\e6a4"; }
+.icon-24xiaoshidianhua1:before { content: "\e6a5"; }
+.icon-24xiaoshidianhua2:before { content: "\e6a6"; }
+.icon-weibo5:before { content: "\e6a7"; }
+.icon-daba4:before { content: "\e6a8"; }
+.icon-huoche2:before { content: "\e6a9"; }
+.icon-jiaoxingfuwu:before { content: "\e6aa"; }
+.icon-lunchuan4:before { content: "\e6ab"; }
+.icon-qq2:before { content: "\e6ac"; }
+.icon-yingyong1:before { content: "\e6ad"; }
+.icon-dianying3:before { content: "\e6ae"; }
+.icon-jiantou1:before { content: "\e6df"; }
+.icon-tingchechang:before { content: "\e6af"; }
+.icon-dingwei2:before { content: "\e6b0"; }
+.icon-tingchechang1:before { content: "\e6b1"; }
+.icon-zhoubian1:before { content: "\e6b2"; }
+.icon-zhoubian2:before { content: "\e6b3"; }
+.icon-youhui1:before { content: "\e6b4"; }
+.icon-chakanxiangqing:before { content: "\e6b5"; }
+.icon-youhuitaozhuang:before { content: "\e6b6"; }
+.icon-icon1:before { content: "\e6b7"; }
+.icon-youxiang1:before { content: "\e6b8"; }
+.icon-unbenannt1:before { content: "\e6b9"; }
+.icon-yingyong2:before { content: "\e6ba"; }
+.icon-ios:before { content: "\e6bb"; }
+.icon-xiangxiajiantou2:before { content: "\e6bc"; }
+.icon-qq3:before { content: "\e6bd"; }
+.icon-10leizhenyu:before { content: "\e6be"; }
+.icon-baidu1:before { content: "\e6bf"; }
+.icon-youhuiquan1:before { content: "\e6c0"; }
+.icon-hongbao2:before { content: "\e6c1"; }
+.icon-shouji3:before { content: "\e6c2"; }
+.icon-xiangshang4:before { content: "\e6d4"; }
+.icon-home:before { content: "\e6c3"; }
+.icon-feixingmoshi:before { content: "\e6c4"; }
+.icon-xiangshang5:before { content: "\e6d5"; }
+.icon-ios1:before { content: "\e6c5"; }
+.icon-wifi2:before { content: "\e6c6"; }
+.icon-caifutong1:before { content: "\e6c7"; }
+.icon-zhifubao2:before { content: "\e6c8"; }
+.icon-zhifubao3:before { content: "\e6c9"; }
+.icon-jiantouxiangxia:before { content: "\e6ca"; }
+.icon-ananzuiconv265:before { content: "\e6cb"; }
+.icon-weixinzhifu:before { content: "\e6cc"; }
+.icon-feiji:before { content: "\e6cd"; }
+.icon-jingdian5:before { content: "\e6ce"; }
+.icon-can:before { content: "\e6cf"; }
+.icon-xiangxia1:before { content: "\e6d0"; }
+.icon-xiangshang6:before { content: "\e6d1"; }
+.icon-diancan1:before { content: "\e6d2"; }
+
+/*fonticon*/

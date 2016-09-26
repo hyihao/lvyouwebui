@@ -1,0 +1,592 @@
+﻿.piao-search-cls
+{
+    margin: 20px 0 30px;
+    height: 65px;
+    border: 1px solid #ededed;
+}
+.piao-search
+{
+    width: 600px;
+    float: left;
+    margin-right: 40px;
+}
+.hotsearch-hd
+{
+    float: left;
+    height: 57px;
+    width: 500px;
+    padding-top: 8px;
+}
+.hotsearch-hd a
+{
+    height: 26px;
+    line-height: 26px;
+    padding-left: 18px;
+    color: #0099ff;
+}
+.menpiao-search-left
+{
+    width: 875px;
+}
+.mpsearch-list
+{
+    width: 100%;
+    float: left;
+    padding-bottom: 20px;
+}
+.mpsearch-item
+{
+    border-bottom: 1px dotted #d9d9d9;
+    float: left;
+    padding-bottom: 15px;
+    margin-top: 15px;
+    position: relative;
+    width: 100%;
+}
+.search-mp
+{
+    height: 67px;
+}
+.search_box
+{
+    position: relative;
+    z-index: 8;
+    width: 874px;
+}
+.search_keywords
+{
+    width: 425px;
+    height: 66px;
+    float: left;
+    background: #fff;
+}
+.search_keywords input
+{
+    position: absolute;
+    top: 0;
+    left: 0;
+    z-index: 2;
+    width: 338px;
+    height: 60px;
+    _height: 60px;
+    padding: 4px 3px 0px 82px;
+    border: 1px solid #ececec;
+    font-size: 26px;
+    line-height: 60px;
+    color: #555;
+    background: 0;
+    font-family: 'Microsoft Yahei';
+}
+
+.search_keywords .i_search
+{
+    position: absolute;
+    top: 11px;
+    left: 15px;
+    display: inline-block;
+    width: 45px;
+    height: 45px;
+    background-image: url(http://simg1.qunarzz.com/piao/images/index_v4/sprite.png);
+    background-repeat: no-repeat;
+    background-position: 0 0;
+}
+.search_btn
+{
+    width: 175px;
+    height: 66px;
+    background: url(http://simg1.qunarzz.com/piao/images/index_v4/sprite1.png) 0 -50px;
+    outline: 0;
+    cursor: pointer;
+    border: 0;
+    float: left;
+    text-indent: 1000px;
+}
+.search_btn:hover
+{
+    width: 175px;
+    height: 66px;
+    background: url(http://simg1.qunarzz.com/piao/images/index_v4/sprite1.png) 0 -123px;
+    outline: 0;
+    cursor: pointer;
+    border: 0;
+}
+
+/****门票detail****/
+.mp-hd
+{
+    position: relative;
+    min-height: 310px;
+    padding: 20px;
+    border: 1px solid #f3f2e4;
+    background-color: #fff;
+    border-radius: 4px;
+}
+.clongmenpiao_title
+{
+    position: absolute;
+    width: 100%;
+    border-radius: 4px;
+    overflow: hidden;
+    height: 320px;
+}
+.ticketleft
+{
+    float: left;
+    margin-right: 30px;
+}
+.spec-scroll
+{
+    clear: both;
+    margin: 7px 0px;
+}
+.spec-scroll .items
+{
+    float: left;
+    position: relative;
+    width: 458px;
+    height: 56px;
+    overflow: hidden;
+}
+.spec-scroll .items ul
+{
+    margin: 0;
+    padding: 0;
+    list-style: none;
+    position: absolute;
+    width: 999999px;
+    height: 56px;
+    margin-left: -8px;
+}
+.spec-scroll .items ul li
+{
+    float: left;
+    width: 85px;
+    text-align: center;
+    margin-left: 8px;
+    cursor: pointer;
+}
+.spec-scroll .items ul li img
+{
+    border: 1px solid #CCC;
+    padding: 2px;
+    width: 80px;
+    height: 49px;
+}
+.spec-scroll .items ul li img:hover
+{
+    border: 2px solid #FF6600;
+    padding: 1px;
+}
+
+.spec-scroll .items ul .first-img
+{
+    margin-left: 0px;
+}
+.deal_content
+{
+    float: left;
+    width: 560px;
+    margin-left: 10px;
+}
+.deal_content h1
+{
+    font-size: 30px;
+    line-height: 30px;
+    padding-bottom: 20px;
+    color: #333;
+}
+.deal-component-expiry
+{
+    margin-top: 10px;
+    padding-top: 5px;
+    padding-bottom: 5px;
+    border-top: 1px solid #eee;
+    clear: both;
+}
+
+.deal-component-expiry li
+{
+    zoom: 1;
+    overflow: hidden;
+    padding: 5px 0;
+    font-size: 12px;
+    height: 30px;
+}
+.deal-component-expiry-leading
+{
+    line-height: 30px;
+    vertical-align: top;
+    width: 70px;
+    display: inline-block;
+    font-weight: bold;
+}
+.deal-component-inline-text-container
+{
+    line-height: 18px;
+    margin-top: 6px;
+    width: 419px;
+    display: inline-block;
+}
+.deal_content .extra
+{
+    padding-top: 15px;
+    margin-top: 10px;
+    font-size: 14px;
+}
+.deal_content .extra dl dt, .deal_content .extra dl dd a
+{
+    font-size: 14px;
+}
+.deal_content .extra dl dt
+{
+    padding-right: 15px;
+}
+.deal-component-inline-text-wrapper
+{
+    vertical-align: bottom;
+    line-height: 18px;
+    padding-right: 10px;
+    text-overflow: ellipsis;
+    overflow: hidden;
+}
+.extra 
+{
+    padding-top:5px;
+    width:100%;
+    border-top:1px solid #eee;
+}
+
+.extra dl dt {
+display: inline;
+float: left;
+width: 60px;
+height: 22px;
+line-height: 22px;
+color: #6c6c6c;
+}
+.extra dl dd {
+overflow: hidden;
+}
+.extra dl dd a {
+display: inline;
+float: left;
+margin-bottom: 15px;
+width: 95px;
+height: 22px;
+line-height: 22px;
+color: #6c6c6c;
+text-decoration: none;
+
+}
+.extra dl dd a i {
+display: inline;
+float: left;
+margin: 4px 7px 0 0;
+width: 16px;
+height: 16px;
+}
+.extra dl dd a i
+{
+    background: url(http://gtms04.alicdn.com/tps/i4/TB1uNNiGXXXXXbCXXXXoj7wNVXX-400-340.png) no-repeat;
+    background-image: -webkit-image-set(url(http://gtms04.alicdn.com/tps/i4/TB1uNNiGXXXXXbCXXXXoj7wNVXX-400-340.png) 1x,url(http://gtms03.alicdn.com/tps/i3/TB1khVaGXXXXXaxXFXXVpeZ_VXX-800-680.png) 2x);
+}
+.extra dl dd a .alipay {
+background-position: -260px -20px;
+}
+.extra dl dd a .card-payment {
+background-position: -200px -20px;
+}
+.extra dl dd a .zhuanzhang {
+background-position: -280px -20px;
+}
+.deal_content strong {
+    color: #999;
+    font-weight: normal;
+}
+.mp-tips-wrap {
+    color: #f00;
+  background-color: #fff5f3;
+  border: 1px solid #fdafa9;
+  margin-top: 8px;
+  height: 35px;
+  line-height: 35px;
+  padding-left: 20px;
+   margin-bottom: 10px;
+}
+.mp-tips-wrap  .tips {
+      height: 24px;
+  width: 24px;
+  background: url(http://image01.qilabi.com/icon/tips.png) no-repeat;
+  display: inline-block;
+  float: left;
+  padding-right: 10px;
+    margin-top: 7px;
+}
+
+.pro-tabs{
+    height: 49px;
+    z-index: 2000;
+    position: relative;
+}
+.pro-tabs-ul {
+  width: 1200px;
+  height: 48px;
+  border-bottom: 1px solid #d5d5d5;
+  background: #f5f8fa;
+}
+.pro-tabs ul li  {
+  float: left;
+  width: 138px;
+  height: 47px;
+  line-height: 47px;
+  margin-right: -1px;
+  text-align: center;
+  font-size: 18px;
+  border: 1px solid #dfdfdf;
+  background: #fff;
+  cursor: pointer;
+}
+.pro-tabs ul li.current  {
+  height: 45px;
+  font-weight: 700;
+  border-top: 3px solid #41a5fa;
+  border-bottom-color: #fff;
+}
+
+.pro-tabs ul li a
+{
+  display: block;
+  width: 138px;
+  height: 47px;
+  color: #333;
+  text-decoration: none;
+}
+.ticket-table .td {
+    font-size: 14px;
+      padding: 10px 0;
+  vertical-align: middle;
+}
+.ticket-table .ticket-detail td {
+  padding: 0;
+}
+.ticket-table thead td {
+  padding: 8px 0;
+  color: #999;
+  background-color: #f3f3f3;
+  border-bottom: 1px solid #dfdfdf;
+  
+}
+table {
+  border-collapse: collapse;
+  table-layout: fixed;
+  width: 100%;
+}
+.product_ticket {
+    margin-top:71px;
+}
+.ticket-table {
+      border: 1px solid #d5d5d5;
+}
+.ticket-table .td1{width:80px}.ticket-table .td2{ width: 468px;text-align: center;}.ticket-table .td3{width:140px}.ticket-table .td4{width:60px}.ticket-table .td5,.ticket-table .td6-1{width:70px}.ticket-table .td6-2{width:140px}.ticket-table .td6-3{width:210px}.ticket-table .td7{width:60px}.ticket-table .td8{width:90px}
+.product_ticket td.ticket-type, .ticket-table tr.t-first td {
+  border-top: 1px solid #dfdfdf;
+}
+.product_ticket .ticket-title-wrapper {
+  padding: 10px 35px;
+}
+.product_ticket .ticket-title-wrapper a {
+    color: #333;
+}
+.product_ticket  .ticket-title i {
+  margin-left: 3px;
+  background-position: -2px -11px;
+}
+.btn-close i, .product_ticket .ticket-title.on i {
+  margin-left: 3px;
+  background-position: -15px -11px;
+}
+.product_ticket  .ticket-title i, .ticket-item-moreinfo i.arrow, .time i ,.btn-close i{
+  display: inline-block;
+  width: 10px;
+  height: 16px;
+  background-image: url(http://pic.c-ctrip.com/ticketonline/ticket-detail.png?v=3);
+  background-repeat: no-repeat;
+}
+ .product_ticket tr.ticket-info td {
+  border-top: 1px dotted #dadada;
+}
+.ticket-item-moreinfo {
+     position: relative;
+     margin: 1px 15px 15px;
+     background-color: #f0fbff;
+     border: 1px solid #badeeb;
+}
+.ticket-item-moreinfo i.arrow {
+  position: absolute;
+  top: -11px;
+  left: 70px;
+  display: block;
+  width: 22px;
+  height: 11px;
+  background-position: 0 0;
+}
+.ticket-detail-content {
+  padding: 15px 10px 10px 20px;
+  color: #666;
+}
+.ticket-item-more-content{
+  padding: 15px 10px 10px 20px;
+  color: #666;
+}
+.ticket-item-more-content  dl {
+  clear: both;
+  font: 400 12px/20px 'microsoft yahei';
+  color: #666;
+  line-height: 20px;
+  padding: 4px 0;
+  border: 0;
+}
+.ticket-item-more-content dl dt {
+  color: #333;
+  font-weight: 700;
+  float: left;
+  width: 5em;
+}
+.ticket-item-more-content dl dd {
+  float: left;
+  width: 590px;
+  word-break: break-all;
+}
+.ticket-table tr.ticket-info:hover{ background-color: #eaf9ff;}
+.ticket-detail .btn-close {
+  display: block;
+  background: #e8f9ff;
+  color: #666;
+  text-align: center;
+  font: 400 12px/40px 'microsoft yahei';
+  cursor: pointer;
+}
+.product_ticket  .del-price {
+  color: #999;
+  text-decoration: line-through;
+}
+dfn {
+  font-family: Arial!important;
+    font-style: normal;
+      font-weight: 700;
+}
+.product_ticket   .del-price strong {
+  font-weight: 400;
+}
+.base_price {
+  color: #F60;
+}
+.base_price strong {
+  font-weight: bold;
+}
+.base_price dfn {
+    font-size: 14px;
+}
+.ticket-title-discount {
+    position: relative;
+}
+.right-corner {
+    background: url(../images/ticket-icon.png);
+    background-position: 0 -56px;
+    width: 6px;
+    height: 18px;
+    float: left;
+}
+.bar-ticket-save-wrap { margin-top: 15px; float: left; height: 18px; margin: 18px 5px 0 10px; width: 60px; }
+.bar-ticket-save,.bar-ticket-return { background: url(../images/ticket-icon.png); background-position: 0 -98px; width: 18px; height: 18px; float: left; }
+.save-price,.return-price { background: url(../images/ticket-icon.png); background-position: 0 -78px; height: 18px; font: 12px sinsum; line-height: 18px; float: left; color: #fda702; }
+.bar-ticket-return {background-position: -47px -98px; }
+.booking-btn {
+  display: inline-block;
+  width: 54px;
+  height: 22px;
+  line-height: 20px;
+  text-align: center;
+  background-color: #FDAF00;
+  color: white;
+  box-shadow: 0 1px 1px #ccc;
+  border-radius: 2px;
+}
+.booking-btn:hover
+{
+	background-color: #FF971C;
+	text-decoration: none;
+	color: white;
+}
+.mp-descript-wrap {
+      margin: 15px 0;
+}
+.mp-desc-l {
+    position: relative;
+    float: left;
+    width: 875px;
+    border: 1px solid #e9e9e9;
+}
+.mp-desc-r {
+  width: 295px;
+  margin-left: 30px;
+}
+.section  .box_tit {
+  line-height: 40px;
+  font-size: 24px;
+  color: #09F;
+  border-bottom: 1px dashed #E0E0E0;
+  padding-bottom: 8px;
+  margin-top: 10px;
+}
+.box_tit .icon {
+  float: left;
+  display: inline;
+  width: 8px;
+  height: 19px;
+  margin: 12px 10px 0 10px;
+  background-color: #09F;
+  border-radius: 3px;
+  overflow: hidden;
+}
+.box_tit .txt {
+  float: left;
+  display: inline;
+  line-height: 40px;
+  font-size: 24px;
+}
+.box_cont {
+  position: relative;
+  padding: 1px 30px 25px;
+  border-top: 1px solid #f1f1f1;
+  font-size: 12px;
+}
+.box_cont-wrap {
+      margin-top: 20px;
+}
+.yuding-tips  dl {
+  clear: both;
+  font: 400 12px/20px 'microsoft yahei';
+  color: #666;
+  line-height: 20px;
+  padding: 4px 0;
+  border: 0;
+    margin-bottom: 20px;
+}
+.yuding-tips dl dt {
+  color: #333;
+  font-weight: 700;
+  float: left;
+  width: 5em;
+}
+.yuding-tips dl dd {
+  word-break: break-all;
+}
+.scereny-desc img {
+  width: 400px;
+  height: 220px;
+  margin: 10px 0;
+  white-space: normal;
+  opacity: .5;
+  transition: opacity 1s;
+}
