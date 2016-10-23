@@ -1,4 +1,4 @@
-@charset "utf-8";
+﻿@charset "utf-8";
 
 /*reset*/
 
@@ -237,7 +237,7 @@ header .title { color:#fff;}
 
     .ticket-list-content .ticket-title-wrapper {
         color: #333;
-        width: 10rem;
+      
         font: 400 0.8rem/1rem 'microsoft yahei';
     }
 
@@ -376,6 +376,10 @@ header .title { color:#fff;}
     color: #666;
     line-height: 1.2rem;
   }
+  .list-wrapper li {
+    position: relative;
+    margin-top: 0.2rem;
+}
   
   .list-wrapper .list-icon {
     display: inline-block;
@@ -387,7 +391,9 @@ header .title { color:#fff;}
     text-align: center;
     vertical-align: middle;
 }
-
+ .list-tips .list-icon-circle,.list-traffic .list-icon-circle{
+    background: url(http://image01.qilabi.com/icon/ticket-icon.png) no-repeat;
+}
 .list-tips .list-icon-circle {
     background-position: 0px -128px;
     position: absolute;
@@ -396,9 +402,34 @@ header .title { color:#fff;}
     height: 50px;
     margin: 0 auto;
 }
- .list-tips .list-icon-circle{
-    background: url(http://image01.qilabi.com/icon/ticket-icon.png) no-repeat;
+.list-traffic .list-icon-circle {
+    background-position: -60px -131px;
+    position: absolute;
+    display: block;
+    width: 50px;
+    height: 50px;
+    margin: 0 auto;
 }
+
 i {
     font-style: normal;
+}
+.list-content {
+     font: 400 0.7rem/1rem 'microsoft yahei';
+     color: #333;
+}
+.list-wrapper h4 {
+    margin: 0 0 .4rem;
+    color: #333;
+    font-weight: bold;
+}
+.list-wrapper h5 {
+  font: 400 0.7rem/1rem 'microsoft yahei';
+  color: #333;
+}
+.list-wrapper p {
+    font: 400 0.7rem/1rem 'microsoft yahei';
+    color: #666;
+    line-height: 1.2rem;
+    display: block;
 }
